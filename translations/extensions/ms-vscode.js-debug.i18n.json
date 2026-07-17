@@ -2,7 +2,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"longPredictionWarning.disable": "Vis ikke igen"
+			"longPredictionWarning.disable": "Vis ikke igen",
+			"node.launch.config.name": "Start"
 		}
 	}
 }

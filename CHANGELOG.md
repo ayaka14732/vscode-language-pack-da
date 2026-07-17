@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0
+
+- Expand the pack by 2,081 messages to 8,491 Danish translations (33.88% of the pinned catalog).
+- Complete the current Integrated Terminal, Extensions, Testing, Run and Debug, and Tasks modules.
+- Add translations for the `vscode.configuration-editing` built-in extension resource, bringing the
+  pack to 20 built-in extension resources.
+
 ## 0.2.2
 
 - Expand the pack by 1,308 messages to 6,410 Danish translations (25.58% of the pinned catalog).

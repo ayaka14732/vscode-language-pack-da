@@ -3,6 +3,7 @@
 	"contents": {
 		"bundle": {
 			"++CODE++185e5e9ad993828bbc0e3a5725272216c34e4afe4ae4a443d192226ee89bc185": "{0} resultat i {1} fil",
+			"++CODE++4004a79eaf29661f3548d4131219d944e668bc53c073de136e71c39a60f031a9": "Kør igen",
 			"++CODE++69824d3b0e70ca6aaa0da1613b65fd914c442bf1f7ad1bb22bcdfbdfe1a05e39": "Referencer",
 			"++CODE++7d05c35f8ff8c84f4caba207051023809b2f81210b2d430a2e0e6033e570895d": "{0} resultat i {1} filer",
 			"++CODE++913fd27ee590c08bfcc64cf5d7a1da544446fb19778bd8c2db9aa3878c165af1": "{0} resultater i {1} fil",
@@ -14,6 +15,7 @@
 			"cmd.references-view.copy": "Kopiér",
 			"cmd.references-view.copyAll": "Kopiér alle",
 			"cmd.references-view.copyPath": "Kopiér sti",
+			"cmd.references-view.refind": "Kør igen",
 			"cmd.references-view.refresh": "Opdater",
 			"cmd.references-view.removeCallItem": "Afvis",
 			"cmd.references-view.removeReferenceItem": "Afvis",

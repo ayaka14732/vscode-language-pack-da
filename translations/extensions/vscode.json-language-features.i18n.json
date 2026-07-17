@@ -9,7 +9,8 @@
 			"++CODE++6defafa2caa65304173956e3fbc26b6947c50bc769c08c3da32c1032fa6519d4": "Konfigurer",
 			"++CODE++88de0d1338e3af6177d484d8cff7b114005bc92546c8788708f6882e7be33d96": "Ugyldigt farveformat. Brug #RGB, #RGBA, #RRGGBB eller #RRGGBBAA.",
 			"++CODE++eabbf3abaf8d98abb9763d83f29b04716524a9d697dfdd06ae3ed77bdd12c929": "Disposition",
-			"++CODE++f9bdd6293b59d75658fd6f782d269ae046354bb65f9843b6e5fb55bf9ed5e2e1": "Der forventes en URI."
+			"++CODE++f9bdd6293b59d75658fd6f782d269ae046354bb65f9843b6e5fb55bf9ed5e2e1": "Der forventes en URI.",
+			"++CODE++fe73b33b867234bfd25771b58359306547b1edaa7f85435996838353bf94cb86": "Åbn udvidelse"
 		}
 	}
 }

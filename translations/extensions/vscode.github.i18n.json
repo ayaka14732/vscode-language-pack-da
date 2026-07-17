@@ -1,0 +1,13 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"bundle": {
+			"++CODE++03f69885814b5b7aa5e4758e46733da443a237e2ec63488bddd230f501ff166a": "Åbn på GitHub",
+			"++CODE++1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d": "Nej",
+			"++CODE++8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771": "Få mere at vide"
+		},
+		"package": {
+			"command.openOnGitHub": "Åbn på GitHub"
+		}
+	}
+}

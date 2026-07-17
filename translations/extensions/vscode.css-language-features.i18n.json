@@ -1,0 +1,21 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"bundle": {
+			"++CODE++2f52c2e39642f904d8ed4f131d62e95bae649657fbed32fad52e2a929b44951c": "Ukendt egenskab.",
+			"++CODE++48bbbfee3b3e69910b50a6b73a09cb78b1ff91523198f515d184da098655e597": "Ukendt leverandørspecifik egenskab.",
+			"++CODE++635a69943b3ccb14cb9a863b359dac9b322448618b41b0b57e243c9357f7a588": "Ukendt @-regel."
+		},
+		"package": {
+			"css.lint.unknownAtRules.desc": "Ukendt @-regel.",
+			"css.lint.unknownProperties.desc": "Ukendt egenskab.",
+			"css.lint.unknownVendorSpecificProperties.desc": "Ukendt leverandørspecifik egenskab.",
+			"less.lint.unknownAtRules.desc": "Ukendt @-regel.",
+			"less.lint.unknownProperties.desc": "Ukendt egenskab.",
+			"less.lint.unknownVendorSpecificProperties.desc": "Ukendt leverandørspecifik egenskab.",
+			"scss.lint.unknownAtRules.desc": "Ukendt @-regel.",
+			"scss.lint.unknownProperties.desc": "Ukendt egenskab.",
+			"scss.lint.unknownVendorSpecificProperties.desc": "Ukendt leverandørspecifik egenskab."
+		}
+	}
+}

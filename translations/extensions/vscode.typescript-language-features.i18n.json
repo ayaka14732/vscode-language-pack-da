@@ -1,0 +1,26 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"bundle": {
+			"++CODE++03f69885814b5b7aa5e4758e46733da443a237e2ec63488bddd230f501ff166a": "Åbn på GitHub",
+			"++CODE++1d60d0cdcb5408b8e39ed364f675c9cad8a2f6174a413324d1e34437bd41269b": "Vis ikke igen",
+			"++CODE++1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d": "Nej",
+			"++CODE++48845bff334a50a59aaecf499f28a7a24c3b4b891b8b18a9f1169ad8e8a6b261": "Afvis",
+			"++CODE++4e5374759acb5346cc22cfbece70ad33d2d775b391fe2d7655bdceebf3bb4a44": "Vis ikke igen",
+			"++CODE++569ca49f4aaf7846e952c1d4aeca72febd0b79fa1c4f9db08fd3127551218572": "Installer",
+			"++CODE++6300ef800bb884295b0b4b35682b75cecd7cc550d202db56d04a0643b8fb873f": "Aldrig",
+			"++CODE++653f005a60724912916a58829d3b7e40fa138ae0872c380f2b5dd0d330840997": "Rapportér problem",
+			"++CODE++773c6c3aafa8c9f58eea260fe7d5dedc52b3068c2e947a47683a088bd23a03d4": "Følg link",
+			"++CODE++85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e": "Ja",
+			"++CODE++8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771": "Få mere at vide",
+			"++CODE++d3711f47b53cbbff701820ac079cd74e4ed557dcaa0755b975b8c016eb852efd": "...1 yderligere fil vises ikke",
+			"++CODE++de9f057a471cdb8d3b082719bdc7ad2031788d042947349723fa83c9d13a517a": "Altid",
+			"++CODE++e213c161d5cefa520c8dd4155c9569076d9a40406111465136a6f1b207045761": "Tillad",
+			"++CODE++e75869fbe8b1c0131ba14d717b8b6d04e3e75a6f1c9d50f310f0a8c099f6fe57": "...yderligere {0} filer vises ikke"
+		},
+		"package": {
+			"configuration.format": "Formatering",
+			"configuration.preferences": "Indstillinger"
+		}
+	}
+}

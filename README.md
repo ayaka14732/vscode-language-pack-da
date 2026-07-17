@@ -5,26 +5,22 @@ Dansk brugerflade til Visual Studio Code.
 > This project is an early community preview. The import and validation pipeline is ready, but
 > translation coverage is still limited. Missing strings use VS Code's English fallback.
 
-Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 13 Danish translations. Run
-`pnpm coverage` for the live report.
+Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 4,285 Danish translations
+across the core UI and 18 built-in extension resources. Run `pnpm coverage` for the live report.
 
 ## Installation
 
-Build and install the local VSIX:
-
-```bash
-pnpm install --frozen-lockfile
-pnpm package
-code --install-extension vscode-language-pack-da-0.1.0.vsix
-```
-
-Run **Configure Display Language**, select **Dansk**, and restart VS Code.
+1. Run **Extensions: Install from VSIX...** from the Command Palette.
+2. Select `vscode-language-pack-da-0.2.0.vsix`.
+3. Run **Configure Display Language**, select **Dansk**, and restart VS Code.
 
 ## Development
 
 ```bash
+pnpm install --frozen-lockfile
 pnpm check
 pnpm coverage
+pnpm package
 ```
 
 The project uses Node.js 26, pnpm 11, TypeScript 7, Biome 2, Vitest 4, the official VS Code

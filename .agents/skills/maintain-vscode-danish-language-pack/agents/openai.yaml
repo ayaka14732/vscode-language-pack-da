@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain Danish VS Code Pack"
+  short_description: "Translate, validate, and package the Danish VS Code UI"
+  default_prompt: "Use $maintain-vscode-danish-language-pack to expand Danish UI coverage and build a validated VSIX."

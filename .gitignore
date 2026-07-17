@@ -1,0 +1,6 @@
+node_modules/
+*.vsix
+.cache/
+coverage/
+reports/
+.DS_Store

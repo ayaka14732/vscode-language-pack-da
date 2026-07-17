@@ -1,0 +1,15 @@
+.cache/**
+.github/**
+coverage/**
+reports/**
+scripts/**
+xliff/**
+.gitignore
+.node-version
+biome.json
+catalog.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+tsconfig.json
+vitest.config.ts
+**/*.test.ts

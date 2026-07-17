@@ -1,0 +1,65 @@
+{
+	"name": "vscode-language-pack-da",
+	"displayName": "Danish Language Pack for Visual Studio Code",
+	"description": "Danish (Dansk) user-interface localization for Visual Studio Code.",
+	"version": "0.1.0",
+	"publisher": "danish-language-pack",
+	"license": "MIT",
+	"preview": true,
+	"pricing": "Free",
+	"type": "module",
+	"engines": {
+		"vscode": "^1.129.0",
+		"node": ">=26.0.0"
+	},
+	"categories": [
+		"Language Packs"
+	],
+	"keywords": [
+		"Danish",
+		"Dansk",
+		"da",
+		"localization",
+		"language pack"
+	],
+	"contributes": {
+		"localizations": [
+			{
+				"languageId": "da",
+				"languageName": "Danish",
+				"localizedLanguageName": "Dansk",
+				"translations": [
+					{
+						"id": "vscode",
+						"path": "./translations/main.i18n.json"
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"check": "pnpm check:types && pnpm check:style && pnpm test && pnpm validate",
+		"check:style": "biome check .",
+		"check:types": "tsc --noEmit",
+		"coverage": "tsx scripts/coverage.ts",
+		"format": "biome check --write .",
+		"import:xlf": "tsx scripts/import-xlf.ts",
+		"package": "tsx scripts/package-vsix.ts",
+		"source:export": "tsx scripts/export-vscode-xliff.ts",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"validate": "tsx scripts/validate.ts",
+		"vscode:prepublish": "pnpm check"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.4",
+		"@types/node": "26.1.1",
+		"@vscode/l10n-dev": "0.0.35",
+		"@vscode/vsce": "3.9.2",
+		"fast-xml-parser": "5.10.1",
+		"tsx": "4.23.1",
+		"typescript": "7.0.2",
+		"vitest": "4.1.10"
+	},
+	"packageManager": "pnpm@11.13.1"
+}

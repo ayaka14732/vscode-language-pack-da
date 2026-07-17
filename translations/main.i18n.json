@@ -1,0 +1,30 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"vs/base/browser/ui/dialog/dialog": {
+			"dialogClose": "Luk dialog",
+			"dialogErrorMessage": "Fejl",
+			"dialogInfoMessage": "Oplysninger",
+			"dialogPendingMessage": "I gang",
+			"dialogWarningMessage": "Advarsel",
+			"ok": "OK"
+		},
+		"vs/base/browser/ui/dropdown/dropdownActionViewItem": {
+			"moreActions": "Flere handlinger..."
+		},
+		"vs/base/browser/ui/findinput/findInput": {
+			"defaultLabel": "Input"
+		},
+		"vs/base/browser/ui/findinput/findInputToggles": {
+			"caseDescription": "Forskel på store og små bogstaver",
+			"regexDescription": "Brug regulært udtryk",
+			"wordsDescription": "Kun hele ord"
+		},
+		"vs/base/browser/ui/progressbar/progressbar": {
+			"progress": "Fremdrift"
+		},
+		"vs/base/browser/ui/toolbar/toolbar": {
+			"moreActions": "Flere handlinger..."
+		}
+	}
+}

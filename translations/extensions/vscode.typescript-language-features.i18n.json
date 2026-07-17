@@ -20,7 +20,8 @@
 		},
 		"package": {
 			"configuration.format": "Formatering",
-			"configuration.preferences": "Indstillinger"
+			"configuration.preferences": "Indstillinger",
+			"configuration.suggest": "Forslag"
 		}
 	}
 }

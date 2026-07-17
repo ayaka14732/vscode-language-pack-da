@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.1
+
+- Expand the pack to 5,102 Danish messages, prioritizing Output and log controls, Problems,
+  Settings, Search, Source Control, Outline, snippets, keyboard shortcuts, default editor selection,
+  and accessibility guidance.
+- Add translations for the `vscode.git-base` built-in extension resource, bringing the pack to 19
+  built-in extension resources.
+
 ## 0.2.0
 
 - Expand the pack to 4,285 Danish messages, prioritizing menus, Explorer, Search, Settings,

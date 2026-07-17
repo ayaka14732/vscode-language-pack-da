@@ -2,8 +2,14 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
+			"++CODE++01cb6a9785390bfa4cc81e565c67ae5851ac36b0ba5a8256c9c6f0cd95a589c4": "Der forventes en URI.",
+			"++CODE++12a88fd39d7ba5010730f2b0c245bd8ae7562f2aca3349621a66c9d79e818976": "Der forventes en URI med et skema.",
+			"++CODE++3cdeb1631b3bf6c4c2db333c749ebb72e8555a997721e72552fa484048801006": "Værdien accepteres ikke. Gyldige værdier: {0}.",
 			"++CODE++3f940108cb1ecd9c0090da0b51b45f9fe673f00b22c7ffe3d013319b97456674": "Åbn indstillinger",
-			"++CODE++6defafa2caa65304173956e3fbc26b6947c50bc769c08c3da32c1032fa6519d4": "Konfigurer"
+			"++CODE++6defafa2caa65304173956e3fbc26b6947c50bc769c08c3da32c1032fa6519d4": "Konfigurer",
+			"++CODE++88de0d1338e3af6177d484d8cff7b114005bc92546c8788708f6882e7be33d96": "Ugyldigt farveformat. Brug #RGB, #RGBA, #RRGGBB eller #RRGGBBAA.",
+			"++CODE++eabbf3abaf8d98abb9763d83f29b04716524a9d697dfdd06ae3ed77bdd12c929": "Disposition",
+			"++CODE++f9bdd6293b59d75658fd6f782d269ae046354bb65f9843b6e5fb55bf9ed5e2e1": "Der forventes en URI."
 		}
 	}
 }

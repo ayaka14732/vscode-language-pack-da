@@ -228,6 +228,7 @@
 			"undo": "Fortryd"
 		},
 		"vs/editor/browser/widget/diffEditor/commands": {
+			"diffEditor": "Diffeditor",
 			"revert": "Før tilbage"
 		},
 		"vs/editor/browser/widget/diffEditor/components/accessibleDiffViewer": {
@@ -245,7 +246,8 @@
 			"symbolAriaLabel": "{0} ({1})"
 		},
 		"vs/editor/common/standaloneStrings": {
-			"gotoLineActionLabel": "Gå til linje/kolonne..."
+			"gotoLineActionLabel": "Gå til linje/kolonne...",
+			"helpQuickAccess": "Vis alle udbydere af Hurtig adgang"
 		},
 		"vs/editor/common/viewLayout/viewLineRenderer": {
 			"overflow.chars": "{0} tegn"
@@ -262,6 +264,7 @@
 			"codeAction.widget.id.more": "Flere handlinger..."
 		},
 		"vs/editor/contrib/contextmenu/browser/contextmenu": {
+			"context.minimap.minimap": "Minikort",
 			"context.minimap.side.left": "Venstre",
 			"context.minimap.side.right": "Højre",
 			"context.minimap.slider.always": "Altid"
@@ -335,6 +338,7 @@
 			"label.close": "Luk"
 		},
 		"vs/editor/contrib/quickAccess/browser/gotoSymbolQuickAccess": {
+			"openToBottom": "Åbn nederst",
 			"openToSide": "Åbn ved siden af"
 		},
 		"vs/editor/contrib/rename/browser/rename": {
@@ -378,6 +382,7 @@
 			"content": "{0} ({1})"
 		},
 		"vs/platform/actions/common/menuService": {
+			"configure keybinding": "Konfigurer tastebinding",
 			"hide.label": "Skjul '{0}'"
 		},
 		"vs/platform/actionWidget/browser/actionList": {
@@ -476,11 +481,24 @@
 			"extensionsConfigurationTitle": "Udvidelser",
 			"preferences": "Indstillinger"
 		},
+		"vs/platform/extensions/common/extensionValidator": {
+			"extensionDescription.browser1": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
+			"extensionDescription.engines.vscode": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
+			"extensionDescription.main1": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
+			"extensionDescription.name": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
+			"extensionDescription.version": "egenskaben `{0}` er obligatorisk og skal være af typen `string`"
+		},
 		"vs/platform/hover/browser/updatableHoverWidget": {
 			"iconLabel.loading": "Indlæser..."
 		},
 		"vs/platform/keybinding/common/abstractKeybindingService": {
 			"keybindingLabel": "{0} ({1})"
+		},
+		"vs/platform/keyboardLayout/common/keyboardConfig": {
+			"keyboardConfigurationTitle": "Tastatur"
+		},
+		"vs/platform/list/browser/listService": {
+			"workbenchConfigurationTitle": "Arbejdsflade"
 		},
 		"vs/platform/log/common/log": {
 			"debug": "Fejlfind",
@@ -750,6 +768,7 @@
 			"openFile": "Åbn fil"
 		},
 		"vs/sessions/contrib/changes/browser/checksWidget": {
+			"ci.checkTitle": "{0}: {1}",
 			"ci.openOnGitHub": "Åbn på GitHub"
 		},
 		"vs/sessions/contrib/changes/browser/sessionChangesEditorInput": {
@@ -875,6 +894,7 @@
 			"agentHostSessionConfig.boolean.offLabel": "Fra",
 			"agentHostSessionConfig.boolean.onLabel": "Til",
 			"agentHostSessionConfig.boolean.true": "Til",
+			"agentHostSessionConfig.triggerAria": "{0}: {1}",
 			"mobileAgentHostSessionConfig.repoSheet.title": "Arbejdstræ"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/baseAgentHostSessionsProvider": {
@@ -942,6 +962,7 @@
 		},
 		"vs/sessions/contrib/search/browser/search.contribution": {
 			"findInFolder": "Find i mappe...",
+			"miSearch": "&&Søg",
 			"openSearch": "Søg"
 		},
 		"vs/sessions/contrib/sessionInputBanners/browser/sessionInputBanners": {
@@ -977,6 +998,7 @@
 			"newSessionButtonAriaLabelWithoutKeybinding": "Ny session",
 			"newSessionButtonTitleWithoutKeybinding": "Ny session",
 			"openChatsGroup": "Åbn",
+			"recentlyOpened": "senest åbnet",
 			"renameSessionHeader": "Omdøb...",
 			"sessionsGoBack": "Gå tilbage",
 			"sessionsGoForward": "Gå frem"
@@ -1033,6 +1055,7 @@
 		"vs/workbench/api/browser/mainThreadAuthentication": {
 			"allow": "&&Tillad",
 			"cancel": "Annuller",
+			"keep": "Behold {0}",
 			"learnMore": "Få mere at vide",
 			"no": "Nej",
 			"yes": "Ja"
@@ -1049,7 +1072,8 @@
 			"ok": "&&OK"
 		},
 		"vs/workbench/api/browser/mainThreadMcp": {
-			"allow": "&&Tillad"
+			"allow": "&&Tillad",
+			"keep": "Behold {0}"
 		},
 		"vs/workbench/api/browser/mainThreadMessageService": {
 			"cancel": "Annuller",
@@ -1063,7 +1087,12 @@
 		"vs/workbench/api/browser/mainThreadProgress": {
 			"manageExtension": "Administrer udvidelse"
 		},
+		"vs/workbench/api/browser/mainThreadTask": {
+			"task.label": "{0}: {1}"
+		},
 		"vs/workbench/api/browser/viewsExtensionPoint": {
+			"optstring": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
+			"requirestring": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
 			"view container id": "Id",
 			"view container title": "Titel",
 			"view id": "Id",
@@ -1081,6 +1110,7 @@
 		},
 		"vs/workbench/browser/actions/developerActions": {
 			"removeLargeStorageEntriesPickerButton": "Fjern",
+			"screencastModeConfigurationTitle": "Screencast-tilstand",
 			"user": "Bruger",
 			"workspace": "Arbejdsområde"
 		},
@@ -1365,6 +1395,10 @@
 		"vs/workbench/browser/parts/editor/breadcrumbsPicker": {
 			"breadcrumbs": "Brødkrummer"
 		},
+		"vs/workbench/browser/parts/editor/diffEditorCommands": {
+			"compare.nextChange": "Gå til næste ændring",
+			"compare.previousChange": "Gå til forrige ændring"
+		},
 		"vs/workbench/browser/parts/editor/editor.contribution": {
 			"close": "Luk",
 			"closeEditor": "Luk editor",
@@ -1545,6 +1579,10 @@
 			"toggleModalEditorSidebar": "Vis/skjul sidepanel i modal editor",
 			"toggleSplitEditorInGroupLayout": "Skift layout for opdelt editor i gruppe",
 			"unlockEditorGroup": "Lås editorgruppe op"
+		},
+		"vs/workbench/browser/parts/editor/editorConfiguration": {
+			"editor.diffEditorAssociations": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) til editorer for diffvisninger (f.eks. `\"*.md\": \"vscode.markdown.preview.editor\"`). Disse tilsidesætter `workbench.editorAssociations` for diffvisninger.",
+			"editor.editorAssociations": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) til editorer (f.eks. `\"*.hex\": \"hexEditor.hexedit\"`). Disse har højere prioritet end standardfunktionsmåden."
 		},
 		"vs/workbench/browser/parts/editor/editorGroupWatermark": {
 			"watermark.findInFiles": "Find i filer",
@@ -1781,6 +1819,7 @@
 		},
 		"vs/workbench/browser/parts/views/viewFilter": {
 			"accessibilityHelpHintInLabel": "Tryk på {0} for hjælp til tilgængelighed",
+			"more filters": "Flere filtre...",
 			"viewFilter": "Filtrer"
 		},
 		"vs/workbench/browser/parts/views/viewPane": {
@@ -1801,8 +1840,11 @@
 			"zenModeConfigurationTitle": "Zen-tilstand"
 		},
 		"vs/workbench/common/configuration": {
+			"applicationConfigurationTitle": "Program",
 			"problemsConfigurationTitle": "Problemer",
-			"windowConfigurationTitle": "Vindue"
+			"securityConfigurationTitle": "Sikkerhed",
+			"windowConfigurationTitle": "Vindue",
+			"workbenchConfigurationTitle": "Arbejdsflade"
 		},
 		"vs/workbench/common/editor": {
 			"builtinProviderDisplayName": "Indbygget",
@@ -1810,6 +1852,9 @@
 		},
 		"vs/workbench/common/views": {
 			"views log": "Visninger"
+		},
+		"vs/workbench/contrib/accessibility/browser/accessibilityConfiguration": {
+			"accessibilityConfigurationTitle": "Tilgængelighed"
 		},
 		"vs/workbench/contrib/accessibility/browser/accessibilityStatus": {
 			"screenReaderDetectedExplanation.answerLearnMore": "Få mere at vide",
@@ -1864,6 +1909,7 @@
 		"vs/workbench/contrib/browserView/electron-browser/features/browserEditorChatFeatures": {
 			"browser.agentSharingContentWarning.dontShowAgain": "Vis ikke igen",
 			"browser.agentSharingContentWarning.ok": "&&OK",
+			"browser.chatActionsSubmenu": "Føj til chat",
 			"browserCategory": "Browser"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserEditorEmulationFeatures": {
@@ -1985,6 +2031,10 @@
 		"vs/workbench/contrib/chat/browser/actions/chatQueueActions": {
 			"chat.editPendingRequest": "Rediger"
 		},
+		"vs/workbench/contrib/chat/browser/actions/chatQuickInputActions": {
+			"interactiveSession.open": "Åbn Hurtig chat",
+			"quickChat": "Åbn Hurtig chat"
+		},
 		"vs/workbench/contrib/chat/browser/actions/chatTitleActions": {
 			"chat.retry.confirmation.checkbox": "Spørg ikke igen",
 			"chat.retry.confirmation.primaryButton": "Ja",
@@ -2031,7 +2081,8 @@
 			"agentHostChatInputPicker.boolean.onLabel": "Til",
 			"agentHostChatInputPicker.boolean.true": "Til",
 			"agentHostChatInputPicker.learnMorePermissions": "Få mere at vide om tilladelser",
-			"agentHostChatInputPicker.policyDisabledHover": "Deaktiveret af virksomhedspolitik"
+			"agentHostChatInputPicker.policyDisabledHover": "Deaktiveret af virksomhedspolitik",
+			"agentHostChatInputPicker.triggerAria": "{0}: {1}"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostChatInputPicker.contribution": {
 			"agentHost.folderPicker": "Mappe",
@@ -2062,6 +2113,7 @@
 			"agentHost.responseDetails.credit": "{0} kredit",
 			"agentHost.responseDetails.credits": "{0} kreditter",
 			"agentHost.responseDetails.resolvedModel": "{0} ({1})",
+			"contextAttribution.category.system": "System",
 			"contextAttribution.label.plugins": "Plugins",
 			"contextAttribution.label.skills": "Færdigheder"
 		},
@@ -2282,6 +2334,7 @@
 			"interactiveSessionConfigurationTitle": "Chat"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/agentHostChatDebugProvider": {
+			"agentHost.debug.customizationDisabled": "deaktiveret",
 			"agentHost.debug.reasoning": "Ræsonnement",
 			"agentHost.debug.sessionError": "Fejl",
 			"agentHost.debug.sessionWarning": "Advarsel"
@@ -2558,6 +2611,10 @@
 			"autoApprove2.button.disable": "Deaktiver",
 			"autoApprove2.button.enable": "Aktivér"
 		},
+		"vs/workbench/contrib/chat/browser/tools/toolSetsContribution": {
+			"bad_name1": "Ugyldigt filnavn",
+			"bad_name2": "'{0}' er ikke et gyldigt filnavn"
+		},
 		"vs/workbench/contrib/chat/browser/utilityModelContribution": {
 			"chat.utilityModel.defaultEntry.label": "Standard"
 		},
@@ -2639,6 +2696,7 @@
 			"chat.thinking.header": "Tænker",
 			"chat.thinking.header.initial": "Tænker",
 			"chat.thinking.insertions": "{0} indsættelser",
+			"chat.thinking.label": "{0}: {1}",
 			"chat.thinking.started": "Tænker",
 			"chat.thinking.terminal.2": "Kører",
 			"chat.thinking.thinking.1": "Tænker",
@@ -2709,6 +2767,9 @@
 			"folder": "Mappe",
 			"notebookOutput": "Output"
 		},
+		"vs/workbench/contrib/chat/browser/widget/chatListRenderer": {
+			"chat.planReview.feedbackInline": "{0}: {1}"
+		},
 		"vs/workbench/contrib/chat/browser/widget/input/chatGoalBannerWidget": {
 			"chat.goalBanner.dismiss": "Afvis"
 		},
@@ -2736,7 +2797,8 @@
 			"chat.queuePicker.moreActions": "Flere handlinger..."
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/editor/chatInputCompletions": {
-			"fileEntryDescription": "{0} ({1})"
+			"fileEntryDescription": "{0} ({1})",
+			"tool_source_completion": "{0}: {1}"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/modePickerActionItem": {
 			"built-in": "Indbygget"
@@ -2777,6 +2839,9 @@
 		},
 		"vs/workbench/contrib/chat/browser/widgetHosts/viewPane/chatViewTitleControl": {
 			"chat": "Chat"
+		},
+		"vs/workbench/contrib/chat/common/attachments/chatVariableEntries": {
+			"chat.attachment.problems.all": "Alle problemer"
 		},
 		"vs/workbench/contrib/chat/common/chatErrorMessages": {
 			"chatError.duration.hours": "{0} timer",
@@ -2866,14 +2931,20 @@
 		},
 		"vs/workbench/contrib/codeEditor/browser/editorFindAccessibilityHelp": {
 			"find.closingHeader": "Lukker:",
+			"find.focusHeader": "Fokusadfærd (vigtigt):",
+			"find.keyboardHeader": "Oversigt over tastaturnavigation:",
 			"find.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"find.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"find.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"find.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
 			"find.statusHeader": "Aktuel søgestatus:",
 			"replace.closingHeader": "Lukker:",
+			"replace.focusHeader": "Fokusadfærd (vigtigt):",
+			"replace.keyboardHeader": "Oversigt over tastaturnavigation:",
 			"replace.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"replace.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"replace.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"replace.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
 			"replace.statusHeader": "Aktuel søgestatus:"
 		},
 		"vs/workbench/contrib/codeEditor/browser/find/simpleFindWidget": {
@@ -3006,6 +3077,9 @@
 			"debugSession": "Fejlfindingssession",
 			"noConfigurations": "Ingen konfigurationer"
 		},
+		"vs/workbench/contrib/debug/browser/debugChatIntegration": {
+			"addToChat": "Føj til chat"
+		},
 		"vs/workbench/contrib/debug/browser/debugCommands": {
 			"addConfiguration": "Tilføj konfiguration...",
 			"addInlineBreakpoint": "Tilføj indlejret stoppunkt",
@@ -3109,7 +3183,15 @@
 			"workbench.debug.filter.placeholder": "Filtrer (f.eks. tekst, !udelad, \\escape)"
 		},
 		"vs/workbench/contrib/debug/browser/replAccessibilityHelp": {
-			"repl.closingHeader": "Lukker:"
+			"repl.closingHeader": "Lukker:",
+			"repl.filterHeader": "Hvad sker der, når du filtrerer:",
+			"repl.focusHeader": "Fokusadfærd (vigtigt):",
+			"repl.inputHeader": "I filterinputfeltet (dets funktion):",
+			"repl.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"repl.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
+			"repl.settingVerbosity": "- `accessibility.verbosity.find`: Styrer, om filterinputfeltet oplæser tippet om hjælp til tilgængelighed.",
+			"repl.statusHeader": "Aktuel filterstatus:",
+			"repl.syntaxHeader": "Filtersyntaks og -mønstre:"
 		},
 		"vs/workbench/contrib/debug/browser/replViewer": {
 			"debugConsole": "Fejlfindingskonsol"
@@ -3664,7 +3746,10 @@
 			"replaceButtonLabel": "&&Erstat"
 		},
 		"vs/workbench/contrib/files/browser/files.contribution": {
+			"explorer.autoRevealExclude.boolean": "Det globmønster, som filstier skal matches mod. Angiv true eller false for at aktivere eller deaktivere mønstret.",
 			"explorerConfigurationTitle": "Stifinder",
+			"files.exclude.boolean": "Det globmønster, som filstier skal matches mod. Angiv true eller false for at aktivere eller deaktivere mønstret.",
+			"files.exclude.when": "Yderligere kontrol af filer på samme niveau som en matchende fil. Brug \\$(basename) som variabel for det matchende filnavn.",
 			"filesConfigurationTitle": "Filer"
 		},
 		"vs/workbench/contrib/files/browser/views/explorerDecorationsProvider": {
@@ -3788,10 +3873,22 @@
 		},
 		"vs/workbench/contrib/issue/browser/screenshotAnnotation": {
 			"cancel": "Annuller",
+			"colorValue": "{0}: {1}",
 			"discard": "Kassér",
 			"redo": "Annuller fortrydelse",
 			"save": "Gem",
 			"undo": "Fortryd"
+		},
+		"vs/workbench/contrib/issue/electron-browser/issue.contribution": {
+			"issueReporterConfigurationTitle": "Problemrapportering",
+			"issueReporterEditorPaneTitle": "Problemrapportering"
+		},
+		"vs/workbench/contrib/keybindings/browser/keybindings.contribution": {
+			"toggleKeybindingsLog": "Slå fejlfinding af tastaturgenveje til/fra"
+		},
+		"vs/workbench/contrib/keybindings/electron-browser/systemWideKeybindings.contribution": {
+			"systemWideKeybindings.registrationFailed": "Nogle systemdækkende tastebindinger kunne ikke registreres ({0}); tastekombinationen bruges muligvis allerede af operativsystemet eller et andet program.",
+			"systemWideKeybindings.whenIgnored": "\"when\"-betingelsen ignoreres for systemdækkende tastebindinger ({0}); de er altid aktive, mens {1} kører."
 		},
 		"vs/workbench/contrib/limitIndicator/browser/limitIndicator.contribution": {
 			"status.button.configure": "Konfigurer"
@@ -3820,34 +3917,171 @@
 		"vs/workbench/contrib/logs/common/logsActions": {
 			"all": "Alle",
 			"current": "Aktuel",
-			"default": "Standard"
+			"default": "Standard",
+			"extensionLogs": "Udvidelseslogge",
+			"setLogLevel": "Angiv logniveau..."
 		},
 		"vs/workbench/contrib/markdown/browser/markdownSettingRenderer": {
 			"copySettingId": "Kopiér indstillings-id"
 		},
 		"vs/workbench/contrib/markers/browser/markers.contribution": {
+			"clearFiltersText": "Ryd filtertekst",
 			"collapseAll": "Fold alle sammen",
 			"copyMarker": "Kopiér",
+			"copyMessage": "Kopiér meddelelse",
+			"focusProblemsFilter": "Fokuser filteret Problemer",
+			"focusProblemsList": "Fokuser visningen Problemer",
+			"manyProblems": "10K+",
+			"markersViewIcon": "Visningsikon for markørvisningen.",
+			"miMarker": "&&Problemer",
+			"noProblems": "Ingen problemer",
 			"problems": "Problemer",
+			"show active file": "Vis kun aktiv fil",
+			"show errors": "Vis fejl",
+			"show excluded files": "Vis udeladte filer",
+			"show infos": "Vis oplysninger",
+			"show multiline": "Vis meddelelsen på flere linjer",
+			"show singleline": "Vis meddelelsen på én linje",
+			"show warnings": "Vis advarsler",
 			"status.problems": "Problemer",
-			"viewAsTree": "Vis som træ"
+			"status.problemsVisibility": "Synlighed af problemer",
+			"status.problemsVisibilityOff": "Problemer er slået fra. Klik for at åbne indstillingerne.",
+			"toggleActiveFileDescription": "Vis eller skjul kun problemer (fejl, advarsler og oplysninger) fra den aktive fil i visningen Problemer.",
+			"toggleErrorsDescription": "Vis eller skjul fejl i visningen Problemer.",
+			"toggleExcludedFilesDescription": "Vis eller skjul udeladte filer i visningen Problemer.",
+			"toggleInfosDescription": "Vis eller skjul oplysninger i visningen Problemer.",
+			"toggleWarningsDescription": "Vis eller skjul advarsler i visningen Problemer.",
+			"totalErrors": "Fejl: {0}",
+			"totalInfos": "Oplysninger: {0}",
+			"totalProblems": "I alt {0} problemer",
+			"totalWarnings": "Advarsler: {0}",
+			"viewAsTable": "Vis som tabel",
+			"viewAsTableDescription": "Vis visningen Problemer som en tabel.",
+			"viewAsTree": "Vis som træ",
+			"viewAsTreeDescription": "Vis visningen Problemer som et træ."
 		},
 		"vs/workbench/contrib/markers/browser/markersAccessibilityHelp": {
-			"problems.closingHeader": "Lukker:"
+			"problems.closingDesc": "Tryk på Escape for at rydde filteret og se alle problemer. Din filtertekst bevares, hvis du åbner panelet igen. Problemer fra hele arbejdsområdet vises. Brug Kun aktiv fil for at fokusere på en enkelt fil.",
+			"problems.closingHeader": "Lukker:",
+			"problems.context": "Du er i filterinputfeltet i panelet Problemer. Dette er et filter, ikke en navigationssøgning. Det skjuler straks problemer, der ikke matcher dit filter, så kun de problemer, du vil se, vises.",
+			"problems.filterDesc1": "Hver gang du ændrer filterteksten, opdateres panelet straks, så kun matchende problemer vises. Din skærmlæser fortæller, hvor mange problemer der nu er synlige. Dette er livefeedback: Når du skriver eller sletter tegn, opdateres de viste problemer med det samme.",
+			"problems.filterDesc2": "Panelet søger i problemmeddelelser, filnavne og fejlkoder, så du kan filtrere efter alle disse oplysninger.",
+			"problems.filterHeader": "Hvad sker der, når du filtrerer:",
+			"problems.focusDesc1": "Fokus forbliver i filterinputfeltet, mens panelet opdateres i baggrunden. Det er tilsigtet, så du kan fortsætte med at skrive uden at miste din placering.",
+			"problems.focusDesc2": "Hvis du vil navigere i de filtrerede problemer, skal du trykke på Pil ned for at flytte fokus fra filteret til problemlisten nedenfor.",
+			"problems.focusDesc3": "Når et problem har fokus, skal du trykke på Enter for at gå til problemet i editoren.",
+			"problems.focusDesc4": "Hvis du vil rydde filteret og se alle problemer, skal du trykke på Escape eller slette al filtertekst.",
+			"problems.focusHeader": "Fokusadfærd (vigtigt):",
+			"problems.header": "Hjælp til tilgængelighed: Filter i panelet Problemer",
+			"problems.inputDesc": "Mens du er i filterinputfeltet, forbliver fokus i feltet. Du kan skrive, redigere eller justere filteret uden at forlade inputfeltet. Mens du skriver, opdateres panelet Problemer med det samme, så kun problemer, der matcher dit filter, vises.",
+			"problems.inputHeader": "I filterinputfeltet (dets funktion):",
+			"problems.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"problems.keyDown": "- Pil ned: Flyt fokus fra filteret til problemlisten.",
+			"problems.keyEnter": "- Enter (på et problem): Gå til problemet i editoren.",
+			"problems.keyEscape": "- Escape: Ryd filteret, og vend tilbage til at vise alle problemer.",
+			"problems.keyF8": "- {0}: Gå til det næste problem globalt fra et vilkårligt sted i editoren.",
+			"problems.keyShiftF8": "- {0}: Gå til det forrige problem globalt fra et vilkårligt sted i editoren.",
+			"problems.keyTab": "- Tab: Flyt til knapperne til at slå alvorsgrad og omfang til eller fra.",
+			"problems.settingAutoReveal": "- `problems.autoReveal`: Vis automatisk problemer i editoren, når du vælger dem.",
+			"problems.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
+			"problems.settingShowCurrent": "- `problems.showCurrentInStatus`: Vis det aktuelle problem på statuslinjen.",
+			"problems.settingsIntro": "Disse indstillinger påvirker panelet Problemer.",
+			"problems.settingSortOrder": "- `problems.sortOrder`: Sortér problemer efter alvorsgrad eller placering.",
+			"problems.settingVerbosity": "- `accessibility.verbosity.find`: Styrer, om filterinputfeltet oplæser tippet om hjælp til tilgængelighed.",
+			"problems.settingViewMode": "- `problems.defaultViewMode`: Vis problemer som en tabel eller et træ.",
+			"problems.severityActiveFile": "- Knappen Kun aktiv fil: Når den er aktiveret, vises kun problemer i den fil, der er åben i øjeblikket.",
+			"problems.severityConclusion": "Disse knapper fungerer sammen med dit tekstfilter.",
+			"problems.severityErrors": "- Knappen Fejl: Slå visning af fejl til eller fra.",
+			"problems.severityHeader": "Filtrering efter alvorsgrad og omfang:",
+			"problems.severityInfo": "- Knappen Oplysninger: Slå visning af oplysningsproblemer til eller fra.",
+			"problems.severityIntro": "Over filterinputfeltet er der knapper til at slå alvorsgrader og omfang til eller fra:",
+			"problems.severityWarnings": "- Knappen Advarsler: Slå visning af advarsler til eller fra.",
+			"problems.statusDesc": "Du filtrerer problemerne.",
+			"problems.statusHeader": "Aktuel filterstatus:",
+			"problems.syntaxExample": "Eksempel: Hvis du skriver \"node_modules\", skjules alle problemer i node_modules.",
+			"problems.syntaxExclude": "- !text (udelad): Skjuler problemer, der indeholder teksten, og viser alle andre.",
+			"problems.syntaxHeader": "Filtersyntaks og -mønstre:",
+			"problems.syntaxText": "- Skriv tekst: Viser problemer, hvor meddelelsen, filstien eller koden indeholder teksten."
+		},
+		"vs/workbench/contrib/markers/browser/markersChatContext": {
+			"chatContext.diagnstic": "Problemer...",
+			"chatContext.diagnstic.placeholder": "Vælg et problem, der skal vedhæftes",
+			"markers.panel.allErrors": "Alle problemer",
+			"markers.panel.at.ln.col.number": "[Linje {0}, kolonne {1}]"
 		},
 		"vs/workbench/contrib/markers/browser/markersFileDecorations": {
-			"label": "Problemer"
+			"label": "Problemer",
+			"markers.showOnFile": "Vis fejl og advarsler på filer og mapper. Tilsidesættes af {0}, når indstillingen er slået fra.",
+			"tooltip.1": "1 problem i denne fil",
+			"tooltip.N": "{0} problemer i denne fil"
 		},
 		"vs/workbench/contrib/markers/browser/markersTable": {
+			"codeColumnLabel": "Kode",
 			"fileColumnLabel": "Fil",
+			"messageColumnLabel": "Meddelelse",
 			"sourceColumnLabel": "Kilde"
+		},
+		"vs/workbench/contrib/markers/browser/markersTreeViewer": {
+			"collapsedIcon": "Ikon, der angiver, at flere linjer er foldet sammen i markørvisningen.",
+			"expandedIcon": "Ikon, der angiver, at flere linjer vises i markørvisningen.",
+			"multi line": "Vis meddelelsen på flere linjer",
+			"problemsView": "Visningen Problemer",
+			"single line": "Vis meddelelsen på én linje"
 		},
 		"vs/workbench/contrib/markers/browser/markersView": {
 			"clearFilter": "Ryd filtre",
+			"No problems filtered": "Viser {0} problemer",
+			"problems filtered": "Viser {0} af {1} problemer",
 			"showing filtered problems": "Viser {0} af {1}"
 		},
 		"vs/workbench/contrib/markers/browser/messages": {
-			"markers.panel.title.problems": "Problemer"
+			"errors.warnings.show.label": "Vis fejl og advarsler",
+			"markers.panel.action.filter": "Filtrer problemer",
+			"markers.panel.action.moreFilters": "Flere filtre...",
+			"markers.panel.action.quickfix": "Vis rettelser",
+			"markers.panel.at.ln.col.number": "[Linje {0}, kolonne {1}]",
+			"markers.panel.filter.activeFile": "Vis kun aktiv fil",
+			"markers.panel.filter.ariaLabel": "Filtrer problemer",
+			"markers.panel.filter.errors": "fejl",
+			"markers.panel.filter.infos": "oplysninger",
+			"markers.panel.filter.placeholder": "Filter (f.eks. tekst, **/*.ts, !**/node_modules/**, @source:ts)",
+			"markers.panel.filter.showErrors": "Vis fejl",
+			"markers.panel.filter.showInfos": "Vis oplysninger",
+			"markers.panel.filter.showWarnings": "Vis advarsler",
+			"markers.panel.filter.useFilesExclude": "Skjul udeladte filer",
+			"markers.panel.filter.warnings": "advarsler",
+			"markers.panel.multiple.errors.label": "{0} fejl",
+			"markers.panel.multiple.infos.label": "{0} oplysninger",
+			"markers.panel.multiple.unknowns.label": "{0} ukendte",
+			"markers.panel.multiple.warnings.label": "{0} advarsler",
+			"markers.panel.no.problems.activeFile.build": "Der blev ikke registreret nogen problemer i den aktuelle fil.",
+			"markers.panel.no.problems.build": "Der blev ikke registreret nogen problemer i arbejdsområdet.",
+			"markers.panel.no.problems.filters": "Der blev ikke fundet nogen resultater med de angivne filterkriterier.",
+			"markers.panel.single.error.label": "1 fejl",
+			"markers.panel.single.info.label": "1 oplysning",
+			"markers.panel.single.unknown.label": "1 ukendt",
+			"markers.panel.single.warning.label": "1 advarsel",
+			"markers.panel.title.problems": "Problemer",
+			"problems.panel.configuration.autoreveal": "Styrer, om visningen Problemer automatisk skal vise filer, når de åbnes.",
+			"problems.panel.configuration.compareOrder": "Styrer den rækkefølge, som problemer gennemgås i.",
+			"problems.panel.configuration.compareOrder.position": "Naviger i problemer sorteret efter placering",
+			"problems.panel.configuration.compareOrder.severity": "Naviger i problemer sorteret efter alvorsgrad",
+			"problems.panel.configuration.showCurrentInStatus": "Når indstillingen er aktiveret, vises det aktuelle problem på statuslinjen.",
+			"problems.panel.configuration.title": "Visningen Problemer",
+			"problems.panel.configuration.viewMode": "Styrer standardvisningstilstanden for visningen Problemer.",
+			"problems.tree.aria.label.error.marker": "Fejl: {0} på linje {1} og tegn {2}.{3} genereret af {4}",
+			"problems.tree.aria.label.error.marker.nosource": "Fejl: {0} på linje {1} og tegn {2}.{3}",
+			"problems.tree.aria.label.info.marker": "Oplysning: {0} på linje {1} og tegn {2}.{3} genereret af {4}",
+			"problems.tree.aria.label.info.marker.nosource": "Oplysning: {0} på linje {1} og tegn {2}.{3}",
+			"problems.tree.aria.label.marker": "Problem: {0} på linje {1} og tegn {2}.{3} genereret af {4}",
+			"problems.tree.aria.label.marker.nosource": "Problem: {0} på linje {1} og tegn {2}.{3}",
+			"problems.tree.aria.label.marker.relatedInformation": " Dette problem har referencer til {0} placeringer.",
+			"problems.tree.aria.label.relatedinfo.message": "{0} på linje {1} og tegn {2} i {3}",
+			"problems.tree.aria.label.resource": "{0} problemer i filen {1} i mappen {2}",
+			"problems.tree.aria.label.warning.marker": "Advarsel: {0} på linje {1} og tegn {2}.{3} genereret af {4}",
+			"problems.tree.aria.label.warning.marker.nosource": "Advarsel: {0} på linje {1} og tegn {2}.{3}",
+			"problems.view.focus.label": "Fokuser Problemer (fejl, advarsler og oplysninger)",
+			"problems.view.toggle.label": "Slå Problemer (fejl, advarsler og oplysninger) til/fra"
 		},
 		"vs/workbench/contrib/mcp/browser/mcpCommands": {
 			"mcp.actions.resources": "Ressourcer",
@@ -3895,9 +4129,14 @@
 			"server.running": "Kører",
 			"server.starting": "Starter"
 		},
+		"vs/workbench/contrib/mcp/browser/mcpMigration": {
+			"mcp.migration.openRemoteConfig": "Åbn fjernbrugerens MCP-konfiguration",
+			"mcp.migration.openUserConfig": "Åbn brugerens MCP-konfiguration"
+		},
 		"vs/workbench/contrib/mcp/browser/mcpPromptArgumentPick": {
 			"loading": "Indlæser...",
-			"mcp.arg.files": "Filer"
+			"mcp.arg.files": "Filer",
+			"mcp.arg.suggestions": "Forslag"
 		},
 		"vs/workbench/contrib/mcp/browser/mcpServerActions": {
 			"config": "Vis konfiguration",
@@ -3999,7 +4238,9 @@
 			"status.meteredConnection.configure": "Konfigurer"
 		},
 		"vs/workbench/contrib/multiDiffEditor/browser/actions": {
-			"goToFile": "Åbn fil"
+			"goToFile": "Åbn fil",
+			"goToNextChange": "Gå til næste ændring",
+			"goToPreviousChange": "Gå til forrige ændring"
 		},
 		"vs/workbench/contrib/multiDiffEditor/browser/scmMultiDiffSourceResolver": {
 			"openChanges": "Åbn ændringer"
@@ -4055,6 +4296,10 @@
 			"pickLanguageToConfigure": "Vælg sprogtilstand",
 			"selectNotebookIndentation": "Vælg indrykning"
 		},
+		"vs/workbench/contrib/notebook/browser/controller/insertCellActions": {
+			"notebookActions.menu.insertCode": "Kode",
+			"notebookActions.menu.insertCode.ontoolbar": "Kode"
+		},
 		"vs/workbench/contrib/notebook/browser/controller/layoutActions": {
 			"cmd.toggle2": "Brødkrummer",
 			"mitoggleNotebookStickyScroll": "&&Fast rulning",
@@ -4065,6 +4310,8 @@
 			"toggleStickyScroll.short": "Fast rulning"
 		},
 		"vs/workbench/contrib/notebook/browser/diff/notebookDiffActions": {
+			"notebook.diff.action.next.title": "Vis næste ændring",
+			"notebook.diff.action.previous.title": "Vis forrige ændring",
 			"notebook.diff.openFile": "Åbn fil"
 		},
 		"vs/workbench/contrib/notebook/browser/diff/notebookMultiDiffEditor": {
@@ -4107,18 +4354,133 @@
 			"spotlight.done": "Udført",
 			"spotlight.next": "Næste"
 		},
+		"vs/workbench/contrib/outline/browser/outline.contribution": {
+			"filteredTypes.array": "Når indstillingen er aktiveret, viser Disposition symboler af typen `array`.",
+			"filteredTypes.boolean": "Når indstillingen er aktiveret, viser Disposition symboler af typen `boolean`.",
+			"filteredTypes.class": "Når indstillingen er aktiveret, viser Disposition symboler af typen `class`.",
+			"filteredTypes.constant": "Når indstillingen er aktiveret, viser Disposition symboler af typen `constant`.",
+			"filteredTypes.constructor": "Når indstillingen er aktiveret, viser Disposition symboler af typen `constructor`.",
+			"filteredTypes.enum": "Når indstillingen er aktiveret, viser Disposition symboler af typen `enum`.",
+			"filteredTypes.enumMember": "Når indstillingen er aktiveret, viser Disposition symboler af typen `enumMember`.",
+			"filteredTypes.event": "Når indstillingen er aktiveret, viser Disposition symboler af typen `event`.",
+			"filteredTypes.field": "Når indstillingen er aktiveret, viser Disposition symboler af typen `field`.",
+			"filteredTypes.file": "Når indstillingen er aktiveret, viser Disposition symboler af typen `file`.",
+			"filteredTypes.function": "Når indstillingen er aktiveret, viser Disposition symboler af typen `function`.",
+			"filteredTypes.interface": "Når indstillingen er aktiveret, viser Disposition symboler af typen `interface`.",
+			"filteredTypes.key": "Når indstillingen er aktiveret, viser Disposition symboler af typen `key`.",
+			"filteredTypes.method": "Når indstillingen er aktiveret, viser Disposition symboler af typen `method`.",
+			"filteredTypes.module": "Når indstillingen er aktiveret, viser Disposition symboler af typen `module`.",
+			"filteredTypes.namespace": "Når indstillingen er aktiveret, viser Disposition symboler af typen `namespace`.",
+			"filteredTypes.null": "Når indstillingen er aktiveret, viser Disposition symboler af typen `null`.",
+			"filteredTypes.number": "Når indstillingen er aktiveret, viser Disposition symboler af typen `number`.",
+			"filteredTypes.object": "Når indstillingen er aktiveret, viser Disposition symboler af typen `object`.",
+			"filteredTypes.operator": "Når indstillingen er aktiveret, viser Disposition symboler af typen `operator`.",
+			"filteredTypes.package": "Når indstillingen er aktiveret, viser Disposition symboler af typen `package`.",
+			"filteredTypes.property": "Når indstillingen er aktiveret, viser Disposition symboler af typen `property`.",
+			"filteredTypes.string": "Når indstillingen er aktiveret, viser Disposition symboler af typen `string`.",
+			"filteredTypes.struct": "Når indstillingen er aktiveret, viser Disposition symboler af typen `struct`.",
+			"filteredTypes.typeParameter": "Når indstillingen er aktiveret, viser Disposition symboler af typen `typeParameter`.",
+			"filteredTypes.variable": "Når indstillingen er aktiveret, viser Disposition symboler af typen `variable`.",
+			"name": "Disposition",
+			"outline.initialState": "Styrer, om elementer i Disposition er foldet sammen eller ud.",
+			"outline.initialState.collapsed": "Fold alle elementer sammen.",
+			"outline.initialState.expanded": "Fold alle elementer ud.",
+			"outline.problem.colors": "Brug farver til fejl og advarsler på elementer i Disposition. Tilsidesættes af {0}, når indstillingen er slået fra.",
+			"outline.problems.badges": "Brug mærker til fejl og advarsler på elementer i Disposition. Tilsidesættes af {0}, når indstillingen er slået fra.",
+			"outline.showIcons": "Gengiv elementer i Disposition med ikoner.",
+			"outline.showProblem": "Vis fejl og advarsler på elementer i Disposition. Tilsidesættes af {0}, når indstillingen er slået fra.",
+			"outlineConfigurationTitle": "Disposition",
+			"outlineViewIcon": "Visningsikon for visningen Disposition."
+		},
 		"vs/workbench/contrib/outline/browser/outlineActions": {
 			"collapse": "Fold alle sammen",
-			"expand": "Fold alle ud"
+			"expand": "Fold alle ud",
+			"filterOnType": "Filtrer efter type",
+			"followCur": "Følg markør",
+			"sortByKind": "Sortér efter: Kategori",
+			"sortByName": "Sortér efter: Navn",
+			"sortByPosition": "Sortér efter: Placering"
+		},
+		"vs/workbench/contrib/outline/browser/outlinePane": {
+			"loading": "Indlæser dokumentsymboler for '{0}'...",
+			"no-editor": "Den aktive editor kan ikke levere dispositionsoplysninger.",
+			"no-symbols": "Der blev ikke fundet nogen symboler i dokumentet '{0}'"
 		},
 		"vs/workbench/contrib/output/browser/output.contribution": {
-			"output": "Output"
+			"addCompoundLog": "Tilføj sammensat log...",
+			"clearFiltersText": "Ryd filtertekst",
+			"clearOutput.label": "Ryd output",
+			"exportLogs": "Eksportér logge...",
+			"extensionLogs": "Udvidelseslogge",
+			"importLog": "Importér log...",
+			"importLogFile": "Importér logfil",
+			"logFile": "Id'et på den logfil, der skal åbnes, f.eks. `\"window\"`. I øjeblikket er den bedste måde at finde dette på at hente id'et ved at kontrollere kommandoerne `workbench.action.output.show.<id>`",
+			"logFiles": "Logfiler",
+			"logLevel.label": "Angiv logniveau...",
+			"logLevelDefault.label": "Angiv som standard",
+			"miToggleOutput": "&&Output",
+			"nocustumoutput": "Der er ingen brugerdefinerede output at fjerne.",
+			"openActiveOutputFile": "Åbn output i editor",
+			"openActiveOutputFileInNewWindow": "Åbn output i nyt vindue",
+			"openLogFile": "Åbn log...",
+			"output": "Output",
+			"output.smartScroll.enabled": "Aktivér/deaktivér muligheden for intelligent rulning i outputvisningen. Med intelligent rulning kan du automatisk låse rulningen, når du klikker i outputvisningen, og låse den op, når du klikker på den sidste linje.",
+			"outputScrollOff": "Slå automatisk rulning fra",
+			"outputScrollOn": "Slå automatisk rulning til",
+			"outputViewIcon": "Visningsikon for outputvisningen.",
+			"removeLog": "Fjern output...",
+			"saveActiveOutputAs": "Gem output som...",
+			"selectlog": "Vælg log",
+			"selectlogFile": "Vælg logfil",
+			"selectOutput": "Vælg outputkanal",
+			"showLogs": "Vis logge...",
+			"showOutputChannels": "Vis outputkanaler...",
+			"switchBetweenOutputs.label": "Skift output",
+			"switchToOutput.label": "Skift output",
+			"toggleAutoScroll": "Slå automatisk rulning til/fra",
+			"toggleTraceDescription": "Vis eller skjul meddelelser af typen {0} i outputtet",
+			"userLogs": "Brugerlogge"
 		},
 		"vs/workbench/contrib/output/browser/outputAccessibilityHelp": {
-			"output.closingHeader": "Lukker:"
+			"output.closingDesc": "Tryk på Escape for at rydde filteret og se alt output, eller luk panelet Output. Din filtertekst bevares, hvis du åbner panelet igen.",
+			"output.closingHeader": "Lukker:",
+			"output.context": "Du er i filterinputfeltet i panelet Output. Dette er IKKE en navigationssøgning. I stedet skjules linjer, der ikke matcher dit filter, med det samme, så kun de linjer, du vil se, vises.",
+			"output.filterDesc1": "Hver gang du ændrer filterteksten, opdateres panelet øjeblikkeligt, så kun matchende linjer vises. Din skærmlæser fortæller, hvor mange linjer der nu er synlige. Dette er livefeedback: Når du skriver eller sletter tegn, opdateres de viste linjer med det samme.",
+			"output.filterDesc2": "Nyt output fra dit kørende program føjes til panelet og filtreres automatisk, så nyt matchende output vises med det samme.",
+			"output.filterHeader": "Hvad sker der, når du filtrerer:",
+			"output.focusDesc1": "Fokus forbliver i filterinputfeltet, mens panelet opdateres i baggrunden. Det er tilsigtet, så du kan fortsætte med at skrive uden at miste din placering.",
+			"output.focusDesc2": "Hvis du vil gennemse det filtrerede output, skal du trykke på Pil ned for at flytte fokus fra filteret til outputindholdet nedenfor.",
+			"output.focusDesc3": "Hvis du vil rydde filteret og se alt output, skal du trykke på Escape eller slette al filtertekst.",
+			"output.focusHeader": "Fokusadfærd (vigtigt):",
+			"output.header": "Hjælp til tilgængelighed: Filter i panelet Output",
+			"output.inputDesc": "Mens du er i filterinputfeltet, forbliver fokus i feltet. Du kan skrive, redigere eller justere filteret uden at forlade inputfeltet. Mens du skriver, opdateres panelet Output med det samme, så kun linjer, der matcher dit filter, vises.",
+			"output.inputHeader": "I filterinputfeltet (dets funktion):",
+			"output.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"output.keyDown": "- Pil ned: Flyt fokus fra filteret til outputindholdet.",
+			"output.keyEscape": "- Escape: Ryd filteret, og vend tilbage til at vise alt output.",
+			"output.keyTab": "- Tab: Flyt til filterknapperne for logniveau, hvis de er tilgængelige.",
+			"output.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
+			"output.settingsIntro": "Disse indstillinger påvirker, hvordan panelet Output fungerer.",
+			"output.settingSmartScroll": "- `output.smartScroll.enabled`: Rul automatisk til det seneste output, når der modtages meddelelser.",
+			"output.settingVerbosity": "- `accessibility.verbosity.find`: Styrer, om filterinputfeltet oplæser tippet om hjælp til tilgængelighed.",
+			"output.statusDesc": "Du filtrerer outputtet.",
+			"output.statusHeader": "Aktuel filterstatus:",
+			"output.syntaxEscape": "- \\\\! (escape): Brug omvendt skråstreg til at søge efter et bogstaveligt \"!\"-tegn.",
+			"output.syntaxExample": "Eksempel: Hvis du skriver \"error, warning\", vises linjer, der indeholder enten \"error\" eller \"warning\".",
+			"output.syntaxExclude": "- !text (udelad): Skjuler linjer, der indeholder 'text', og viser alle andre linjer.",
+			"output.syntaxHeader": "Filtersyntaks og -mønstre:",
+			"output.syntaxMultiple": "- text1, text2 (flere mønstre): Adskil mønstre med kommaer for at vise linjer, der matcher ET HVILKET SOM HELST mønster.",
+			"output.syntaxText": "- Skriv tekst: Viser kun linjer, der indeholder teksten (som standard skelnes der ikke mellem store og små bogstaver)."
+		},
+		"vs/workbench/contrib/output/browser/outputServices": {
+			"saveLog.dialogTitle": "Gem output som"
 		},
 		"vs/workbench/contrib/output/browser/outputView": {
-			"output": "Output"
+			"channel": "Outputkanal for '{0}'",
+			"output": "Output",
+			"output model title": "{0} - Output",
+			"outputView.filter.placeholder": "Filter (f.eks. text, !excludeText, text1,text2)",
+			"outputViewAriaLabel": "Outputpanel"
 		},
 		"vs/workbench/contrib/performance/electron-browser/startupProfiler": {
 			"prof.restart": "Genstart",
@@ -4156,6 +4518,11 @@
 			"source": "Kilde",
 			"title": "{0} ({1})",
 			"when": "Når"
+		},
+		"vs/workbench/contrib/preferences/browser/keybindingsEditorContribution": {
+			"defineKeybinding.kbLayoutErrorMessage": "Du kan ikke frembringe denne tastekombination med dit aktuelle tastaturlayout.",
+			"defineKeybinding.kbLayoutLocalAndUSMessage": "**{0}** for dit aktuelle tastaturlayout (**{1}** for amerikansk standard).",
+			"defineKeybinding.kbLayoutLocalMessage": "**{0}** for dit aktuelle tastaturlayout."
 		},
 		"vs/workbench/contrib/preferences/browser/keybindingWidgets": {
 			"defineKeybinding.chordsTo": "tastsekvens til",
@@ -4220,12 +4587,45 @@
 			"FullTextSearchPlaceholder": "Søg i {0}",
 			"preferencesTabSwitcherBarAriaLabel": "Faneskifter for indstillinger"
 		},
+		"vs/workbench/contrib/preferences/browser/preferencesIcons": {
+			"keybindingsAddIcon": "Ikon for tilføjelseshandlingen i brugerfladen til tastebindinger.",
+			"keybindingsEditIcon": "Ikon for redigeringshandlingen i brugerfladen til tastebindinger.",
+			"keybindingsRecordKeysIcon": "Ikon for handlingen 'registrér taster' i brugerfladen til tastebindinger.",
+			"keybindingsSortIcon": "Ikon for knappen 'sortér efter prioritet' i brugerfladen til tastebindinger.",
+			"preferencesAiResults": "Ikon til at vise AI-resultater i brugerfladen Indstillinger.",
+			"preferencesClearInput": "Ikon til at rydde input i brugerfladen Indstillinger og tastebindinger.",
+			"preferencesDiscardIcon": "Ikon for kassér-handlingen i brugerfladen Indstillinger.",
+			"preferencesOpenSettings": "Ikon for kommandoer, der åbner indstillinger.",
+			"settingsEditIcon": "Ikon for redigeringshandlingen i brugerfladen Indstillinger.",
+			"settingsFilter": "Ikon for knappen, der foreslår filtre i brugerfladen Indstillinger.",
+			"settingsMoreActionIcon": "Ikon for handlingen 'flere handlinger' i brugerfladen Indstillinger.",
+			"settingsRemoveIcon": "Ikon for fjern-handlingen i brugerfladen Indstillinger.",
+			"settingsScopeDropDownIcon": "Ikon for mapperullelisten i den opdelte JSON-editor til Indstillinger."
+		},
 		"vs/workbench/contrib/preferences/browser/preferencesRenderers": {
+			"allProfileSettingWhileInNonDefaultProfileSetting": "Denne indstilling kan ikke anvendes, fordi den via indstillingen {0} er konfigureret til at gælde for alle profiler. Værdien fra standardprofilen bruges i stedet.",
+			"copyDefaultValue": "Kopiér til Indstillinger",
+			"defaultProfileSettingWhileNonDefaultActive": "Denne indstilling kan ikke anvendes, mens en anden profil end standardprofilen er aktiv. Den anvendes, når standardprofilen er aktiv.",
 			"editTtile": "Rediger",
-			"manage workspace trust": "Administrer tillid til arbejdsområde"
+			"manage workspace trust": "Administrer tillid til arbejdsområde",
+			"mcp.renderer.openRemoteConfig": "Åbn fjernbrugerens MCP-konfiguration",
+			"mcp.renderer.openUserConfig": "Åbn brugerens MCP-konfiguration",
+			"mcp.renderer.remoteConfigFound": "MCP-servere bør ikke konfigureres i fjernbrugerindstillinger. Brug den særskilte MCP-konfiguration i stedet.",
+			"mcp.renderer.userConfigFound": "MCP-servere bør ikke konfigureres i brugerindstillinger. Brug den særskilte MCP-konfiguration i stedet.",
+			"replaceDefaultValue": "Erstat i Indstillinger",
+			"unknown configuration setting": "Ukendt konfigurationsindstilling",
+			"unsupportedApplicationSetting": "Denne indstilling har programomfang og kan kun angives i indstillingsfilen fra standardprofilen.",
+			"unsupportedMachineSetting": "Denne indstilling kan kun anvendes i brugerindstillinger i et lokalt vindue eller i fjernindstillinger i et fjernvindue.",
+			"unsupportedPolicySetting": "Denne indstilling kan ikke anvendes, fordi den er konfigureret i systempolitikken.",
+			"unsupportedProperty": "Egenskaben understøttes ikke",
+			"unsupportedRemoteMachineSetting": "Denne indstilling kan ikke anvendes i dette vindue. Den anvendes, når du åbner et lokalt vindue.",
+			"unsupportedWindowSetting": "Denne indstilling kan ikke anvendes i dette arbejdsområde. Den anvendes, når du åbner den tilhørende arbejdsområdemappe direkte.",
+			"unsupportLanguageOverrideSetting": "Denne indstilling kan ikke anvendes, fordi den ikke er registreret som en sprogspecifik tilsidesættelsesindstilling.",
+			"untrustedSetting": "Denne indstilling kan kun anvendes i et arbejdsområde, der er tillid til."
 		},
 		"vs/workbench/contrib/preferences/browser/preferencesWidgets": {
 			"folderSettings": "Mappe",
+			"settingsSwitcherBarAriaLabel": "Indstillingsvælger",
 			"userSettings": "Bruger",
 			"userSettingsRemote": "Fjern",
 			"workspaceSettings": "Arbejdsområde"
@@ -4251,55 +4651,132 @@
 			"turnOnSyncButton": "Sikkerhedskopiér og synkroniser indstillinger"
 		},
 		"vs/workbench/contrib/preferences/browser/settingsEditorSettingIndicators": {
+			"advancedLabel": "Avanceret",
+			"agentsWindowReadOnlyAccessible": "Kan ikke ændres i vinduet Agenter",
+			"agentsWindowReadOnlyDescription": "Denne indstilling kan ikke ændres i vinduet Agenter.",
+			"agentsWindowReadOnlyLabelText": "Kan ikke ændres i vinduet Agenter",
+			"alsoConfiguredElsewhere": "Også ændret et andet sted",
+			"alsoConfiguredIn": "Også ændret i",
+			"alsoModifiedInScopes": "Indstillingen er også blevet ændret i følgende omfang:",
+			"applicationSetting": "Gælder for alle profiler",
+			"applicationSettingDescription": "Indstillingen er ikke specifik for den aktuelle profil og bevarer sin værdi, når der skiftes profil.",
+			"applicationSettingDescriptionAccessible": "Indstillingsværdien bevares ved profilskift",
+			"configuredElsewhere": "Ændret et andet sted",
+			"configuredIn": "Ændret i",
+			"defaultOverriddenDetails": "Standardværdien for indstillingen tilsidesættes af `{0}`",
+			"defaultOverriddenDetailsAriaLabel": "{0} tilsidesætter standardværdien",
+			"defaultOverriddenLabel": "Standardværdien er ændret",
+			"defaultOverriddenLanguagesList": "Der findes sprogspecifikke standardværdier for {0}",
 			"experimentalLabel": "Eksperimentel",
+			"extensionSyncIgnoredLabel": "Ikke synkroniseret",
+			"hasDefaultOverridesForLanguages": "Følgende sprog har standardtilsidesættelser:",
 			"manageWorkspaceTrust": "Administrer tillid til arbejdsområde",
+			"modifiedInScopeForLanguage": "Omfanget {0} for {1}",
+			"modifiedInScopeForLanguageMidSentence": "omfanget {0} for {1}",
+			"modifiedInScopes": "Indstillingen er blevet ændret i følgende omfang:",
+			"multipledefaultOverriddenDetails": "En standardværdi er angivet af {0}",
+			"multipleDefaultOverriddenDetailsAriaLabel": "{0} tilsidesætter standardværdien",
+			"policyDescription": "Denne indstilling administreres af din organisation, og dens faktiske værdi kan ikke ændres.",
+			"policyDescriptionAccessible": "Administreret af organisationspolitik. Indstillingsværdien anvendes ikke",
+			"policyFilterLink": "Vis politikindstillinger",
+			"policyLabelText": "Administreret af organisationen",
 			"previewLabel": "Forhåndsvisning",
 			"remote": "Fjern",
+			"syncIgnoredAriaLabel": "Indstillingen ignoreres under synkronisering",
+			"syncIgnoredTitle": "Denne indstilling ignoreres under synkronisering",
+			"trustLabel": "Indstillingsværdien kan kun anvendes i et arbejdsområde, der er tillid til.",
 			"user": "Bruger",
-			"workspace": "Arbejdsområde"
+			"workspace": "Arbejdsområde",
+			"workspaceUntrustedAriaLabel": "Der er ikke tillid til arbejdsområdet. Indstillingsværdien anvendes ikke",
+			"workspaceUntrustedLabel": "Kræver tillid til arbejdsområdet"
 		},
 		"vs/workbench/contrib/preferences/browser/settingsLayout": {
+			"accessibility": "Tilgængelighed",
+			"accessibility.signals": "Tilgængelighedssignaler",
+			"appearance": "Udseende",
+			"application": "Program",
 			"breadcrumbs": "Brødkrummer",
 			"browser": "Browser",
 			"chat": "Chat",
 			"chatAgent": "Agent",
+			"chatAppearance": "Udseende",
+			"chatContext": "Kontekst",
 			"chatInlineChat": "Indlejret chat",
+			"chatMcp": "MCP",
+			"chatMiscellaneous": "Diverse",
 			"chatSessions": "Sessioner",
 			"chatTools": "Værktøjer",
 			"comments": "Kommentarer",
+			"commonlyUsed": "Ofte anvendte",
+			"cursor": "Markør",
 			"debug": "Fejlfind",
+			"diffEditor": "Diffeditor",
+			"editorManagement": "Administration af editorer",
 			"experimental": "Eksperimentel",
 			"extensions": "Udvidelser",
 			"features": "Funktioner",
 			"fileExplorer": "Stifinder",
 			"files": "Filer",
 			"find": "Find",
+			"font": "Skrifttype",
 			"formatting": "Formatering",
+			"issueReporter": "Problemrapportering",
+			"keyboard": "Tastatur",
 			"mergeEditor": "Fletningseditor",
+			"minimap": "Minikort",
+			"multiDiffEditor": "Diffeditor til flere filer",
 			"network": "Netværk",
 			"newWindow": "Nyt vindue",
 			"notebook": "Notesbog",
 			"other": "Andet",
 			"output": "Output",
 			"problems": "Problemer",
+			"proxy": "Proxy",
 			"remote": "Fjern",
 			"scm": "Kildekontrol",
+			"screencastMode": "Screencast-tilstand",
 			"search": "Søg",
+			"security": "Sikkerhed",
+			"settings": "Indstillingseditor",
 			"settingsSync": "Synkronisering af indstillinger",
+			"suggestions": "Forslag",
 			"task": "Opgave",
 			"telemetry": "Telemetri",
 			"terminal": "Terminal",
 			"testing": "Test",
 			"textEditor": "Teksteditor",
+			"timeline": "Tidslinje",
 			"update": "Opdater",
 			"window": "Vindue",
+			"workbench": "Arbejdsflade",
 			"workspace": "Arbejdsområde",
 			"zenMode": "Zen-tilstand"
 		},
 		"vs/workbench/contrib/preferences/browser/settingsSearchMenu": {
+			"advancedSettingsSearch": "Avanceret",
+			"advancedSettingsSearchTooltip": "Vis avancerede indstillinger",
 			"experimental": "Eksperimentel",
+			"experimentalSettingsSearchTooltip": "Vis eksperimentelle indstillinger",
+			"extSettingsSearch": "Udvidelses-id...",
+			"extSettingsSearchTooltip": "Tilføj filter for udvidelses-id",
+			"featureSettingsSearch": "Funktion...",
+			"featureSettingsSearchTooltip": "Tilføj funktionsfilter",
+			"idSettingsSearch": "Indstillings-id...",
+			"idSettingsSearchTooltip": "Tilføj filter for indstillings-id",
+			"langSettingsSearch": "Sprog...",
+			"langSettingsSearchTooltip": "Tilføj filter for sprog-id",
 			"modifiedSettingsSearch": "Ændret",
-			"previewSettings": "Forhåndsvisning"
+			"modifiedSettingsSearchTooltip": "Tilføj eller fjern filteret for ændrede indstillinger",
+			"onlineSettingsSearch": "Onlinetjenester",
+			"onlineSettingsSearchTooltip": "Vis indstillinger for onlinetjenester",
+			"policySettingsSearch": "Organisationspolitikker",
+			"policySettingsSearchTooltip": "Vis indstillinger for organisationspolitikker",
+			"previewSettings": "Forhåndsvisning",
+			"previewSettingsSearchTooltip": "Vis prøveindstillinger",
+			"stableSettings": "Stabil",
+			"stableSettingsSearchTooltip": "Vis stabile indstillinger",
+			"tagSettingsSearch": "Mærke...",
+			"tagSettingsSearchTooltip": "Tilføj mærkefilter"
 		},
 		"vs/workbench/contrib/preferences/browser/settingsTree": {
 			"applyToAllProfiles": "Anvend indstilling på alle profiler",
@@ -4353,6 +4830,45 @@
 			"removeItem": "Fjern element",
 			"resetItem": "Nulstil element"
 		},
+		"vs/workbench/contrib/preferences/browser/tocTree": {
+			"groupRowAriaLabel": "{0}, gruppe",
+			"settingsTOC": "Indholdsfortegnelse for Indstillinger"
+		},
+		"vs/workbench/contrib/preferences/common/preferences": {
+			"advancedIndicatorDescription": "Avanceret indstilling: Denne indstilling er beregnet til avancerede scenarier og konfigurationer. Rediger den kun, hvis du ved, hvad den gør.",
+			"experimentalIndicatorDescription": "Eksperimentel indstilling: Denne indstilling styrer en ny funktion, der udvikles aktivt og kan være ustabil. Den kan blive ændret eller fjernet.",
+			"previewIndicatorDescription": "Prøveindstilling: Denne indstilling styrer en ny funktion, der stadig forbedres, men er klar til brug. Feedback er velkommen."
+		},
+		"vs/workbench/contrib/preferences/common/preferencesContribution": {
+			"enableNaturalLanguageSettingsSearch": "Styrer, om søgning efter indstillinger med naturligt sprog skal aktiveres. Søgning med naturligt sprog leveres af en Microsoft-onlinetjeneste.",
+			"settingsSearchTocBehavior": "Styrer funktionsmåden for indholdsfortegnelsen i Indstillingseditoren under søgning. Hvis indstillingen ændres i Indstillingseditoren, træder den i kraft, når søgeforespørgslen ændres.",
+			"settingsSearchTocBehavior.filter": "Filtrer indholdsfortegnelsen, så kun kategorier med matchende indstillinger vises. Når du klikker på en kategori, filtreres resultaterne efter den kategori.",
+			"settingsSearchTocBehavior.hide": "Skjul indholdsfortegnelsen under søgning.",
+			"splitSettingsEditorLabel": "Opdel Indstillingseditor"
+		},
+		"vs/workbench/contrib/preferences/common/settingsEditorColorRegistry": {
+			"focusedRowBackground": "Baggrundsfarven på en indstillingsrække, når den har fokus.",
+			"headerForeground": "Forgrundsfarven på en sektionsoverskrift eller aktiv titel.",
+			"modifiedItemForeground": "Farven på indikatoren for en ændret indstilling.",
+			"numberInputBoxBackground": "Baggrund for talinputfeltet i Indstillingseditoren.",
+			"numberInputBoxBorder": "Kant for talinputfeltet i Indstillingseditoren.",
+			"numberInputBoxForeground": "Forgrund for talinputfeltet i Indstillingseditoren.",
+			"settings.focusedRowBorder": "Farven på rækkens øverste og nederste kant, når rækken har fokus.",
+			"settings.rowHoverBackground": "Baggrundsfarven på en indstillingsrække, når markøren holdes over den.",
+			"settingsCheckboxBackground": "Baggrund for afkrydsningsfeltet i Indstillingseditoren.",
+			"settingsCheckboxBorder": "Kant for afkrydsningsfeltet i Indstillingseditoren.",
+			"settingsCheckboxForeground": "Forgrund for afkrydsningsfeltet i Indstillingseditoren.",
+			"settingsDropdownBackground": "Baggrund for rullelisten i Indstillingseditoren.",
+			"settingsDropdownBorder": "Kant for rullelisten i Indstillingseditoren.",
+			"settingsDropdownForeground": "Forgrund for rullelisten i Indstillingseditoren.",
+			"settingsDropdownListBorder": "Kant for rullelisten i Indstillingseditoren. Den omgiver valgmulighederne og adskiller dem fra beskrivelsen.",
+			"settingsHeaderBorder": "Farven på overskriftsbeholderens kant.",
+			"settingsHeaderHoverForeground": "Forgrundsfarven på en sektionsoverskrift eller en titel, som markøren holdes over.",
+			"settingsSashBorder": "Farven på skillelinjen i den opdelte visning i Indstillingseditoren.",
+			"textInputBoxBackground": "Baggrund for tekstinputfeltet i Indstillingseditoren.",
+			"textInputBoxBorder": "Kant for tekstinputfeltet i Indstillingseditoren.",
+			"textInputBoxForeground": "Forgrund for tekstinputfeltet i Indstillingseditoren."
+		},
 		"vs/workbench/contrib/processExplorer/browser/processExplorer.contribution": {
 			"promptOpenWith.processExplorer.displayName": "Procesoversigt"
 		},
@@ -4370,20 +4886,40 @@
 		},
 		"vs/workbench/contrib/quickaccess/browser/commandsQuickAccess": {
 			"clearButtonLabel": "&&Ryd",
+			"clearCommandHistory": "Ryd kommandohistorik",
+			"commandsQuickAccess.askInChat": "Spørg i chat: {0}",
+			"commandsQuickAccess.configureAskInChatSetting": "Konfigurer synlighed",
+			"commandWithCategory": "{0}: {1}",
+			"configure keybinding": "Konfigurer tastebinding",
 			"confirmClearDetail": "Denne handling kan ikke fortrydes!",
+			"confirmClearMessage": "Vil du rydde historikken over senest anvendte kommandoer?",
+			"noCommandResults": "Ingen matchende kommandoer",
 			"showTriggerActions": "Vis alle kommandoer"
 		},
 		"vs/workbench/contrib/quickaccess/browser/quickAccess.contribution": {
 			"commandPalette": "Kommandopalet...",
+			"commandsQuickAccess": "Vis og kør kommandoer",
+			"commandsQuickAccessPlaceholder": "Skriv navnet på en kommando, der skal køres.",
+			"helpQuickAccess": "Vis alle udbydere af Hurtig adgang",
+			"helpQuickAccessPlaceholder": "Skriv '{0}' for at få hjælp til de handlinger, du kan udføre herfra.",
+			"miCommandPalette": "&&Kommandopalet...",
+			"miGotoLine": "Gå til &&linje/kolonne...",
+			"miOpenView": "&&Åbn visning...",
 			"miShowAllCommands": "Vis alle kommandoer",
-			"more": "Mere"
+			"more": "Mere",
+			"viewQuickAccess": "Åbn visning",
+			"viewQuickAccessPlaceholder": "Skriv navnet på en visning, outputkanal eller terminal, der skal åbnes."
 		},
 		"vs/workbench/contrib/quickaccess/browser/viewQuickAccess": {
 			"channels": "Output",
 			"debugConsoles": "Fejlfindingskonsol",
+			"noViewResults": "Ingen matchende visninger",
+			"openView": "Åbn visning",
 			"panels": "Panel",
+			"quickOpenView": "Åbn visning hurtigt",
 			"secondary side bar": "Sekundært sidepanel",
 			"terminals": "Terminal",
+			"terminalTitle": "{0}: {1}",
 			"views": "Sidepanel"
 		},
 		"vs/workbench/contrib/relauncher/browser/relauncher.contribution": {
@@ -4419,7 +4955,8 @@
 			"tunnelPrivacy.unknown": "Ukendt"
 		},
 		"vs/workbench/contrib/remote/common/remote.contribution": {
-			"remote": "Fjern"
+			"remote": "Fjern",
+			"remote.portsAttributes.labelDefault": "Program"
 		},
 		"vs/workbench/contrib/remote/electron-browser/remote.contribution": {
 			"remote": "Fjern",
@@ -4446,6 +4983,7 @@
 			"diffGutterPatternAdded": "Brug et mønster til forskelsmarkeringer i margenen for tilføjede linjer.",
 			"diffGutterPatternModifed": "Brug et mønster til forskelsmarkeringer i margenen for ændrede linjer.",
 			"diffGutterWidth": "Styrer bredden (px) af forskelsmarkeringer i margenen (tilføjet og ændret).",
+			"quickDiffDecoration": "Diffmarkeringer",
 			"scm.diffDecorations.all": "Vis forskelsmarkeringer på alle tilgængelige placeringer.",
 			"scm.diffDecorations.gutter": "Vis kun forskelsmarkeringer i editormargenen.",
 			"scm.diffDecorations.minimap": "Vis kun forskelsmarkeringer på minikortet.",
@@ -4462,8 +5000,25 @@
 			"scm.diffDecorationsIgnoreTrimWhitespace.true": "Ignorer indledende og afsluttende mellemrum.",
 			"scmConfigurationTitle": "Kildekontrol"
 		},
+		"vs/workbench/contrib/scm/browser/quickDiffDecorator": {
+			"diffAdded": "Tilføjede linjer",
+			"diffDeleted": "Fjernede linjer",
+			"diffModified": "Ændrede linjer"
+		},
 		"vs/workbench/contrib/scm/browser/quickDiffWidget": {
-			"label.close": "Luk"
+			"change": "{0} – {1} af {2} ændring",
+			"changes": "{0} – {1} af {2} ændringer",
+			"label.close": "Luk",
+			"miGotoNextChange": "Næste &&ændring",
+			"miGotoPreviousChange": "Forrige &&ændring",
+			"move to next change": "Gå til næste ændring",
+			"move to previous change": "Gå til forrige ændring",
+			"multiChange": "{0} af {1} ændring",
+			"multiChanges": "{0} af {1} ændringer",
+			"quickDiff.base.switch": "Skift grundlag for Hurtig diff",
+			"remotes": "Skift grundlag for hurtig diff",
+			"show next change": "Vis næste ændring",
+			"show previous change": "Vis forrige ændring"
 		},
 		"vs/workbench/contrib/scm/browser/scm.contribution": {
 			"alwaysShowActions": "Styrer, om indlejrede handlinger altid er synlige i visningen Kildekontrol.",
@@ -4554,18 +5109,85 @@
 			"source control view": "Kildekontrol",
 			"sourceControlViewIcon": "Visningsikon for Kildekontrol."
 		},
+		"vs/workbench/contrib/scm/browser/scmAccessibilityHelp": {
+			"disabled": "deaktiveret",
+			"enabled": "aktiveret",
+			"scm-graph-msg1": "Brug kommandoen \"Kildekontrol: Fokuser grafvisningen Kildekontrol\" til at åbne grafvisningen Kildekontrol.",
+			"scm-graph-msg2": "Grafvisningen Kildekontrol viser en graf over lagerets historikelementer. Hvis arbejdsområdet indeholder mere end ét lager, vises historikelementerne for det aktive lager.",
+			"scm-graph-msg3": "Når grafvisningen Kildekontrol er åben, kan du:",
+			"scm-graph-msg4": " - Bruge Pil op og Pil ned til at navigere i listen over historikelementer.",
+			"scm-graph-msg5": " - Bruge mellemrumstasten til at åbne oplysninger om historikelementet i diffeditoren til flere filer.",
+			"scm-msg1": "Brug kommandoen \"Kildekontrol: Fokuser visningen Kildekontrol\" til at åbne visningen Kildekontrol.",
+			"scm-msg2": "Visningen Kildekontrol viser lagerets ressourcegrupper og ressourcer. Hvis arbejdsområdet indeholder mere end ét lager, vises ressourcegrupperne og ressourcerne for de lagre, der er valgt i visningen Kildekontrollagre.",
+			"scm-msg3": "Når visningen Kildekontrol er åben, kan du:",
+			"scm-msg4": " - Bruge Pil op og Pil ned til at navigere i listen over lagre, ressourcegrupper og ressourcer.",
+			"scm-msg5": " - Bruge mellemrumstasten til at folde en ressourcegruppe ud eller sammen.",
+			"scm-repositories-msg1": "Brug kommandoen \"Kildekontrol: Fokuser visningen Kildekontrollagre\" til at åbne visningen Kildekontrollagre.",
+			"scm-repositories-msg2": "Visningen Kildekontrollagre viser alle lagre i arbejdsområdet og vises kun, når arbejdsområdet indeholder mere end ét lager.",
+			"scm-repositories-msg3": "Når visningen Kildekontrollagre er åben, kan du:",
+			"scm-repositories-msg4": " - Bruge Pil op og Pil ned til at navigere i listen over lagre.",
+			"scm-repositories-msg5": " - Bruge Enter eller mellemrumstasten til at vælge et lager.",
+			"scm-repositories-msg6": " - Bruge Shift + Pil op/Pil ned til at vælge flere lagre.",
+			"state-msg1": "Synlige lagre: {0}",
+			"state-msg2": "Lager: {0}",
+			"state-msg3": "Reference til historikelement: {0}",
+			"state-msg4": "Commitmeddelelse: {0}",
+			"state-msg5": "Handlingsknap: {0}, {1}",
+			"state-msg6": "Ressourcegrupper: {0}"
+		},
+		"vs/workbench/contrib/scm/browser/scmHistory": {
+			"incomingChanges": "Indgående ændringer",
+			"outgoingChanges": "Udgående ændringer",
+			"scmGraph.HistoryItemHoverAdditionsForeground": "Forgrundsfarve for tilføjelser i historikelementet ved pegning.",
+			"scmGraph.HistoryItemHoverDeletionsForeground": "Forgrundsfarve for sletninger i historikelementet ved pegning.",
+			"scmGraphForeground1": "Forgrundsfarve for kildekontrolgrafen (1).",
+			"scmGraphForeground2": "Forgrundsfarve for kildekontrolgrafen (2).",
+			"scmGraphForeground3": "Forgrundsfarve for kildekontrolgrafen (3).",
+			"scmGraphForeground4": "Forgrundsfarve for kildekontrolgrafen (4).",
+			"scmGraphForeground5": "Forgrundsfarve for kildekontrolgrafen (5).",
+			"scmGraphHistoryItemBaseRefColor": "Farve på historikelementets basisreference.",
+			"scmGraphHistoryItemHoverDefaultLabelBackground": "Baggrundsfarve for historikelementets standardetiket ved pegning.",
+			"scmGraphHistoryItemHoverDefaultLabelForeground": "Forgrundsfarve for historikelementets standardetiket ved pegning.",
+			"scmGraphHistoryItemHoverLabelForeground": "Forgrundsfarve for historikelementets etiket ved pegning.",
+			"scmGraphHistoryItemRefColor": "Farve på historikelementets reference.",
+			"scmGraphHistoryItemRemoteRefColor": "Farve på historikelementets fjernreference."
+		},
+		"vs/workbench/contrib/scm/browser/scmHistoryChatContext": {
+			"chat.action.scmHistoryItemContext": "Føj til chat",
+			"chat.action.scmHistoryItemSummarize": "Forklar ændringer",
+			"chatContext.scmHistoryItems": "Kildekontrol...",
+			"chatContext.scmHistoryItems.placeholder": "Vælg en ændring",
+			"files": "fil(er)"
+		},
 		"vs/workbench/contrib/scm/browser/scmHistoryViewPane": {
+			"activeRepository": "Vis kildekontrolgrafen for det aktive lager",
 			"all": "Alle",
+			"allHistoryItemRefs": "Alle referencer til historikelementer",
 			"auto": "Automatisk",
+			"currentHistoryItemRef": "Aktuelle referencer til historikelementer",
+			"goToCurrentHistoryItem": "Gå til aktuelt historikelement",
+			"incomingChanges": "Indgående ændringer",
+			"items": "{0} elementer",
+			"loadMore": "{0} Indlæs flere...",
 			"openChanges": "Åbn ændringer",
 			"openFile": "Åbn fil",
+			"outgoingChanges": "Udgående ændringer",
+			"referencePicker": "Vælger til referencer til historikelementer",
 			"refreshGraph": "Opdater",
+			"repositoryPicker": "Lagervælger",
+			"scm history": "Kildekontrolhistorik",
+			"scmGraphHistoryItemRef": "Vælg en eller flere referencer til historikelementer, der skal vises. Skriv for at filtrere",
+			"scmGraphRepository": "Vælg det lager, der skal vises. Skriv for at filtrere alle lagre",
+			"scmGraphViewOutdated": "Opdater grafen med opdateringshandlingen ({0}).",
 			"setListViewMode": "Vis som liste",
 			"setTreeViewMode": "Vis som træ"
 		},
 		"vs/workbench/contrib/scm/browser/scmInput": {
 			"label.close": "Luk",
+			"scmInput.accessibilityHelp": "{0}, brug {1} til at åbne hjælp til tilgængelighed for Kildekontrol.",
+			"scmInput.accessibilityHelpNoKb": "{0}, kør kommandoen Åbn hjælp til tilgængelighed for at få flere oplysninger.",
 			"scmInputCancelAction": "Annuller",
+			"scmInputGenerateCommitMessage": "Generér commitmeddelelse",
 			"scmInputMoreActions": "Flere handlinger..."
 		},
 		"vs/workbench/contrib/scm/browser/scmRepositoriesViewPane": {
@@ -4595,8 +5217,32 @@
 		"vs/workbench/contrib/scm/browser/scmViewService": {
 			"auto": "Automatisk"
 		},
+		"vs/workbench/contrib/scm/common/quickDiff": {
+			"editorGutterAddedBackground": "Baggrundsfarve i editormargenen for tilføjede linjer.",
+			"editorGutterAddedSecondaryBackground": "Sekundær baggrundsfarve i editormargenen for tilføjede linjer.",
+			"editorGutterDeletedBackground": "Baggrundsfarve i editormargenen for slettede linjer.",
+			"editorGutterDeletedSecondaryBackground": "Sekundær baggrundsfarve i editormargenen for slettede linjer.",
+			"editorGutterItemBackground": "Farve på editormargenens markering for margenelementets baggrund. Farven skal være uigennemsigtig.",
+			"editorGutterItemGlyphForeground": "Farve på editormargenens markering for margenelementers glyffer.",
+			"editorGutterModifiedBackground": "Baggrundsfarve i editormargenen for ændrede linjer.",
+			"editorGutterModifiedSecondaryBackground": "Sekundær baggrundsfarve i editormargenen for ændrede linjer.",
+			"minimapGutterAddedBackground": "Baggrundsfarve i minikortets margen for tilføjede linjer.",
+			"minimapGutterDeletedBackground": "Baggrundsfarve i minikortets margen for slettede linjer.",
+			"minimapGutterModifiedBackground": "Baggrundsfarve i minikortets margen for ændrede linjer.",
+			"overviewRulerAddedForeground": "Markørfarve på oversigtslinealen for tilføjet indhold.",
+			"overviewRulerDeletedForeground": "Markørfarve på oversigtslinealen for slettet indhold.",
+			"overviewRulerModifiedForeground": "Markørfarve på oversigtslinealen for ændret indhold."
+		},
 		"vs/workbench/contrib/search/browser/anythingQuickAccess": {
-			"openToSide": "Åbn ved siden af"
+			"chat": "Åbn Hurtig chat",
+			"closeEditor": "Fjern fra Senest åbnet",
+			"fileAndSymbolResultsSeparator": "fil- og symbolresultater",
+			"filePickAriaLabelDirty": "{0} ikke-gemte ændringer",
+			"fileResultsSeparator": "filresultater",
+			"noAnythingResults": "Ingen matchende resultater",
+			"openToBottom": "Åbn nederst",
+			"openToSide": "Åbn ved siden af",
+			"recentlyOpenedSeparator": "senest åbnet"
 		},
 		"vs/workbench/contrib/search/browser/patternInputWidget": {
 			"defaultLabel": "indtastning",
@@ -4605,17 +5251,93 @@
 			"useExcludesAndIgnoreFilesDescription": "Brug udeladelsesindstillinger og ignoreringsfiler"
 		},
 		"vs/workbench/contrib/search/browser/quickTextSearch/textSearchQuickAccess": {
+			"enterSearchTerm": "Skriv et udtryk, der skal søges efter i dine filer.",
+			"goToSearch": "Åbn i visningen Søg",
+			"noAnythingResults": "Ingen matchende resultater",
 			"QuickSearchMore": "Mere",
-			"QuickSearchOpenInFile": "Åbn fil"
+			"QuickSearchOpenInFile": "Åbn fil",
+			"QuickSearchSeeMoreFiles": "Se flere filer",
+			"showMore": "Åbn i visningen Søg"
+		},
+		"vs/workbench/contrib/search/browser/replaceService": {
+			"fileReplaceChanges": "{0} ↔ {1} (forhåndsvisning af erstatning)",
+			"searchReplace.source": "Søg og erstat"
+		},
+		"vs/workbench/contrib/search/browser/search.common.contribution": {
+			"search.searchOnType": "Søg i alle filer, mens du skriver.",
+			"search.searchOnTypeDebouncePeriod": "Når {0} er aktiveret, styrer dette forsinkelsen i millisekunder, fra et tegn skrives, til søgningen starter. Har ingen virkning, når {0} er deaktiveret."
 		},
 		"vs/workbench/contrib/search/browser/search.contribution": {
-			"search": "Søg"
+			"exclude": "Konfigurer [globmønstre](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options), der udelukker filer og mapper fra fuldtekstsøgninger og filsøgning i Hurtig åbning. For at udelukke filer fra listen Senest åbnet i Hurtig åbning skal mønstrene være absolutte (f.eks. `**/node_modules/**`). Nedarver alle globmønstre fra indstillingen `#files.exclude#`.",
+			"exclude.boolean": "Det globmønster, som filstier skal matches mod. Angiv true eller false for at aktivere eller deaktivere mønstret.",
+			"exclude.when": "Yderligere kontrol af filer på samme niveau som en matchende fil. Brug \\$(basename) som variabel for det matchende filnavn.",
+			"filterSortOrder": "Styrer sorteringsrækkefølgen for editorhistorikken i Hurtig åbning under filtrering.",
+			"filterSortOrder.default": "Historikelementer sorteres efter relevans ud fra den anvendte filterværdi. Mere relevante elementer vises først.",
+			"filterSortOrder.recency": "Historikelementer sorteres efter aktualitet. Elementer, der er åbnet for nylig, vises først.",
+			"maintainFileSearchCacheDeprecated": "Søgecachen opbevares i udvidelsesværten, som aldrig lukkes ned, så denne indstilling er ikke længere nødvendig.",
+			"miViewSearch": "&&Søg",
+			"scm.defaultViewMode.list": "Viser søgeresultater som en liste.",
+			"scm.defaultViewMode.tree": "Viser søgeresultater som et træ.",
+			"search": "Søg",
+			"search.actionsPosition": "Styrer placeringen af handlingslinjen på rækker i visningen Søg.",
+			"search.actionsPositionAuto": "Placer handlingslinjen til højre, når visningen Søg er smal, og umiddelbart efter indholdet, når visningen Søg er bred.",
+			"search.actionsPositionRight": "Placer altid handlingslinjen til højre.",
+			"search.collapseAllResults": "Styrer, om søgeresultaterne er foldet sammen eller ud.",
+			"search.collapseResults.auto": "Filer med færre end 10 resultater foldes ud. Andre foldes sammen.",
+			"search.decorations.badges": "Styrer, om filmarkeringer i søgningen skal bruge mærker.",
+			"search.decorations.colors": "Styrer, om filmarkeringer i søgningen skal bruge farver.",
+			"search.defaultViewMode": "Styrer standardvisningstilstanden for søgeresultater.",
+			"search.experimental.closedNotebookResults": "Vis resultater med avanceret indhold fra notesbogseditoren for lukkede notesbøger. Opdater søgeresultaterne, når du har ændret denne indstilling.",
+			"search.experimental.useIgnoreFilesInFindFiles": "Når indstillingen er aktiveret, respekterer den ældre udvidelses-API `findFiles` brugerens indstilling `#search.useIgnoreFiles#` i stedet for altid at ignorere `.gitignore`. Udvidelser, der udtrykkeligt sender `null` som argumentet `exclude`, får stadig ufiltrerede resultater. Telemetri udsendes uanset denne indstilling for at hjælpe med at fastlægge fremtidige standarder.",
+			"search.followSymlinks": "Styrer, om symbolske links skal følges under søgning.",
+			"search.globalFindClipboard": "Styrer, om visningen Søg skal læse eller ændre den delte søgeudklipsholder i macOS.",
+			"search.location": "Styrer, om søgningen vises som en visning i sidepanelet eller som et panel i panelområdet med mere vandret plads.",
+			"search.location.deprecationMessage": "Denne indstilling er forældet. Du kan i stedet trække søgeikonet til en ny placering.",
+			"search.maintainFileSearchCache": "Når indstillingen er aktiveret, holdes processen searchService i live i stedet for at blive lukket ned efter en times inaktivitet. Det bevarer filsøgecachen i hukommelsen.",
+			"search.maxResults": "Styrer det maksimale antal søgeresultater. Dette kan angives til `null` (tom) for at returnere et ubegrænset antal resultater.",
+			"search.mode": "Styrer, hvor nye handlinger af typen `Søg: Find i filer` og `Find i mappe` udføres: enten i visningen Søg eller i en søgeeditor.",
+			"search.mode.newEditor": "Søg i en ny søgeeditor.",
+			"search.mode.reuseEditor": "Søg i en eksisterende søgeeditor, hvis den findes, og ellers i en ny søgeeditor.",
+			"search.mode.view": "Søg i visningen Søg, enten i panelet eller sidepanelerne.",
+			"search.quickAccess.preserveInput": "Styrer, om det senest indtastede input til Hurtig søgning skal gendannes, næste gang den åbnes.",
+			"search.quickOpen.includeHistory": "Om resultater fra senest åbnede filer skal medtages i filresultaterne for Hurtig åbning.",
+			"search.quickOpen.includeSymbols": "Om resultater fra en global symbolsøgning skal medtages i filresultaterne for Hurtig åbning.",
+			"search.ripgrep.maxThreads": "Antallet af tråde, der skal bruges til søgning. Når værdien er 0, bestemmer programmet automatisk værdien.",
+			"search.searchView.keywordSuggestions": "Aktivér forslag til nøgleord i visningen Søg.",
+			"search.searchView.semanticSearchBehavior": "Styrer funktionsmåden for de semantiske søgeresultater, der vises i visningen Søg.",
+			"search.searchView.semanticSearchBehavior.auto": "Anmod automatisk om semantiske resultater ved hver søgning.",
+			"search.searchView.semanticSearchBehavior.manual": "Anmod kun manuelt om semantiske søgeresultater.",
+			"search.searchView.semanticSearchBehavior.runOnEmpty": "Anmod kun automatisk om semantiske resultater, når tekstsøgningen ikke giver nogen resultater.",
+			"search.seedOnFocus": "Opdater søgeforespørgslen til den markerede tekst i editoren, når visningen Søg får fokus. Dette sker enten ved klik, eller når kommandoen `workbench.views.search.focus` udløses.",
+			"search.seedWithNearestWord": "Aktivér udfyldning af søgningen med ordet nærmest markøren, når den aktive editor ikke har en markering.",
+			"search.showLineNumbers": "Styrer, om linjenumre skal vises for søgeresultater.",
+			"search.smartCase": "Søg uden forskel på store og små bogstaver, hvis mønstret kun består af små bogstaver. Ellers skelnes der mellem store og små bogstaver.",
+			"search.sortOrder": "Styrer sorteringsrækkefølgen for søgeresultater.",
+			"search.usePCRE2": "Om PCRE2-programmet til regulære udtryk skal bruges i tekstsøgning. Det gør det muligt at bruge avancerede funktioner som lookahead og tilbagereferencer. Ikke alle PCRE2-funktioner understøttes – kun funktioner, der også understøttes af JavaScript.",
+			"search.useReplacePreview": "Styrer, om Forhåndsvisning af erstatning skal åbnes, når et match vælges eller erstattes.",
+			"searchSortOrder.countAscending": "Resultater sorteres efter antal pr. fil i stigende rækkefølge.",
+			"searchSortOrder.countDescending": "Resultater sorteres efter antal pr. fil i faldende rækkefølge.",
+			"searchSortOrder.default": "Resultater sorteres alfabetisk efter mappe- og filnavne.",
+			"searchSortOrder.filesOnly": "Resultater sorteres alfabetisk efter filnavne uden hensyn til mapperækkefølgen.",
+			"searchSortOrder.modified": "Resultater sorteres efter filernes seneste ændringsdato i faldende rækkefølge.",
+			"searchSortOrder.type": "Resultater sorteres alfabetisk efter filtypenavne.",
+			"textSearchPickerHelp": "Søg efter tekst",
+			"textSearchPickerPlaceholder": "Søg efter tekst i filerne i dit arbejdsområde.",
+			"useGlobalIgnoreFiles": "Styrer, om din globale gitignore-fil (f.eks. `$HOME/.config/git/ignore`) skal bruges ved filsøgning. Kræver, at {0} er aktiveret.",
+			"useIgnoreFiles": "Styrer, om `.gitignore`- og `.ignore`-filer skal bruges ved filsøgning.",
+			"useParentIgnoreFiles": "Styrer, om `.gitignore`- og `.ignore`-filer i overordnede mapper skal bruges ved filsøgning. Kræver, at {0} er aktiveret.",
+			"usePCRE2Deprecated": "Forældet. PCRE2 bruges automatisk ved brug af funktioner til regulære udtryk, som kun understøttes af PCRE2.",
+			"useRipgrep": "Denne indstilling er forældet og bruger nu \"search.usePCRE2\" som reserve.",
+			"useRipgrepDeprecated": "Forældet. Overvej \"search.usePCRE2\" for understøttelse af avancerede funktioner til regulære udtryk."
 		},
 		"vs/workbench/contrib/search/browser/searchAccessibilityHelp": {
 			"search.closingHeader": "Lukker:",
+			"search.focusHeader": "Fokusadfærd (vigtigt):",
+			"search.keyboardHeader": "Oversigt over tastaturnavigation:",
 			"search.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"search.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"search.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"search.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
 			"search.statusHeader": "Aktuel søgestatus:"
 		},
 		"vs/workbench/contrib/search/browser/searchActionsBase": {
@@ -4763,6 +5485,7 @@
 			"showContext": "Vis/skjul kontekstlinjer"
 		},
 		"vs/workbench/contrib/search/browser/symbolsQuickAccess": {
+			"openToBottom": "Åbn nederst",
 			"openToSide": "Åbn ved siden af"
 		},
 		"vs/workbench/contrib/search/common/search": {
@@ -4795,14 +5518,77 @@
 			"snippets": "Kodestykker"
 		},
 		"vs/workbench/contrib/snippets/browser/commands/configureSnippets": {
+			"bad_name1": "Ugyldigt filnavn",
+			"bad_name2": "'{0}' er ikke et gyldigt filnavn",
+			"bad_name3": "'{0}' findes allerede",
 			"global.1": "({0})",
+			"global.scope": "(global)",
+			"group.global": "Eksisterende kodestykker",
+			"miOpenSnippets": "&&Kodestykker",
+			"name": "Skriv navnet på kodestykkefilen",
+			"new.folder": "Ny kodestykkefil til '{0}'...",
+			"new.global": "Ny global kodestykkefil...",
+			"new.global_scope": "global",
+			"new.global.sep": "Nye kodestykker",
+			"new.workspace_scope": "arbejdsområdet {0}",
+			"openSnippet.label": "Konfigurer kodestykker",
+			"openSnippet.pickLanguage": "Vælg en kodestykkefil, eller opret kodestykker",
 			"userSnippets": "Kodestykker"
 		},
+		"vs/workbench/contrib/snippets/browser/commands/fileTemplateSnippets": {
+			"label": "Udfyld fil med kodestykke",
+			"placeholder": "Vælg et kodestykke"
+		},
+		"vs/workbench/contrib/snippets/browser/commands/insertSnippet": {
+			"snippet.suggestions.label": "Indsæt kodestykke"
+		},
+		"vs/workbench/contrib/snippets/browser/commands/surroundWithSnippet": {
+			"label": "Omslut med kodestykke..."
+		},
 		"vs/workbench/contrib/snippets/browser/snippetCodeActionProvider": {
-			"more": "Mere..."
+			"more": "Mere...",
+			"overflow.start.title": "Start med kodestykke",
+			"title": "Start med: {0}"
 		},
 		"vs/workbench/contrib/snippets/browser/snippetCompletionProvider": {
 			"detail.snippet": "{0} ({1})"
+		},
+		"vs/workbench/contrib/snippets/browser/snippetPicker": {
+			"disableSnippet": "Skjul fra IntelliSense",
+			"enable.snippet": "Vis i IntelliSense",
+			"isDisabled": "(skjult fra IntelliSense)",
+			"pick.noSnippetAvailable": "Intet kodestykke er tilgængeligt",
+			"pick.placeholder": "Vælg et kodestykke",
+			"sep.userSnippet": "Brugerkodestykker",
+			"sep.workspaceSnippet": "Arbejdsområdets kodestykker"
+		},
+		"vs/workbench/contrib/snippets/browser/snippets.contribution": {
+			"editor.snippets.codeActions.enabled": "Styrer, om kodestykker til omslutning eller filskabeloner vises som kodehandlinger.",
+			"snippetSchema.json": "Konfiguration af brugerkodestykker",
+			"snippetSchema.json.body": "Kodestykkets indhold. Brug `$1` og `${1:defaultText}` til at definere markørplaceringer og `$0` til den endelige markørplacering. Indsæt variabelværdier med `${varName}` og `${varName:defaultText}`, f.eks. `This is file: $TM_FILENAME`.",
+			"snippetSchema.json.default": "Tomt kodestykke",
+			"snippetSchema.json.description": "Beskrivelsen af kodestykket.",
+			"snippetSchema.json.exclude": "En liste over [globmønstre](https://aka.ms/vscode-glob-patterns), der udelukker kodestykket fra bestemte filer, f.eks. `[\"**/*.min.js\"]` eller `\"*.min.js\"`. Mønstre matches mod en fils absolutte sti, hvis de indeholder en stiseparator, og ellers mod filens navn. Udeladelsesmønstre har højere prioritet end `include`-mønstre.",
+			"snippetSchema.json.include": "En liste over [globmønstre](https://aka.ms/vscode-glob-patterns), der medtager kodestykket for bestemte filer, f.eks. `[\"**/*.test.ts\", \"*.spec.ts\"]` eller `\"**/*.spec.ts\"`. Mønstre matches mod en fils absolutte sti, hvis de indeholder en stiseparator, og ellers mod filens navn. Du kan udelukke matchende filer via egenskaben `exclude`.",
+			"snippetSchema.json.isFileTemplate": "Kodestykket er beregnet til at udfylde eller erstatte en hel fil",
+			"snippetSchema.json.prefix": "Det præfiks, der skal bruges, når kodestykket vælges i IntelliSense",
+			"snippetSchema.json.scope": "En liste over sprognavne, som kodestykket gælder for, f.eks. 'typescript,javascript'."
+		},
+		"vs/workbench/contrib/snippets/browser/snippetsFile": {
+			"source.userSnippet": "Brugerkodestykke",
+			"source.userSnippetGlobal": "Globalt brugerkodestykke",
+			"source.workspaceSnippetGlobal": "Arbejdsområdets kodestykke"
+		},
+		"vs/workbench/contrib/snippets/browser/snippetsService": {
+			"badFile": "Kodestykkefilen \"{0}\" kunne ikke læses.",
+			"badVariableUse": "Et eller flere kodestykker fra udvidelsen '{0}' forveksler højst sandsynligt kodestykkevariabler og pladsholdere (se https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax for flere oplysninger)",
+			"invalid.language": "Ukendt sprog i `contributes.{0}.language`. Angivet værdi: {1}",
+			"invalid.language.0": "Når sproget udelades, skal værdien af `contributes.{0}.path` være en `.code-snippets`-fil. Angivet værdi: {1}",
+			"invalid.path.0": "Forventede en streng i `contributes.{0}.path`. Angivet værdi: {1}",
+			"invalid.path.1": "Forventede, at `contributes.{0}.path` ({1}) lå i udvidelsens mappe ({2}). Dette kan gøre udvidelsen ikke-portabel.",
+			"vscode.extension.contributes.snippets": "Bidrager med kodestykker.",
+			"vscode.extension.contributes.snippets-language": "Sprog-id, som dette kodestykke bidrages til.",
+			"vscode.extension.contributes.snippets-path": "Stien til kodestykkefilen. Stien er relativ til udvidelsesmappen og begynder typisk med './snippets/'."
 		},
 		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
 			"neverAgain": "Vis ikke igen"
@@ -5114,9 +5900,12 @@
 		},
 		"vs/workbench/contrib/terminalContrib/find/browser/terminalFindAccessibilityHelp": {
 			"terminal.closingHeader": "Lukker:",
+			"terminal.focusHeader": "Fokusadfærd (vigtigt):",
+			"terminal.keyboardHeader": "Oversigt over tastaturnavigation:",
 			"terminal.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"terminal.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"terminal.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"terminal.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
 			"terminal.statusHeader": "Aktuel søgestatus:"
 		},
 		"vs/workbench/contrib/terminalContrib/history/browser/terminalRunRecentQuickPick": {
@@ -5179,6 +5968,9 @@
 		"vs/workbench/contrib/testing/browser/testingDecorations": {
 			"debug test": "Fejlfind test"
 		},
+		"vs/workbench/contrib/testing/browser/testingExplorerFilter": {
+			"testing.filters.menu": "Flere filtre..."
+		},
 		"vs/workbench/contrib/testing/browser/testingExplorerView": {
 			"defaultTestProfile": "{0} (standard)",
 			"selectDefaultConfigs": "Vælg standardprofil"
@@ -5220,8 +6012,13 @@
 			"noIconThemeLabel": "Ingen",
 			"themes": "Temaer"
 		},
+		"vs/workbench/contrib/timeline/browser/timeline.contribution": {
+			"timelineConfigurationTitle": "Tidslinje"
+		},
 		"vs/workbench/contrib/timeline/browser/timelinePane": {
 			"refresh": "Opdater",
+			"timeline": "Tidslinje",
+			"timeline.aria.item": "{0}: {1}",
 			"timeline.loadingMore": "Indlæser..."
 		},
 		"vs/workbench/contrib/typeHierarchy/browser/typeHierarchy.contribution": {
@@ -5301,7 +6098,8 @@
 			"default": "Standard",
 			"report issue": "Rapportér problem",
 			"show sync log toolrip": "Vis log",
-			"show sync logs": "Vis log"
+			"show sync logs": "Vis log",
+			"stable": "Stabil"
 		},
 		"vs/workbench/contrib/userDataSync/browser/userDataSync.contribution": {
 			"reload": "Genindlæs",
@@ -5326,9 +6124,12 @@
 		},
 		"vs/workbench/contrib/webview/browser/webviewFindAccessibilityHelp": {
 			"webview.closingHeader": "Lukker:",
+			"webview.focusHeader": "Fokusadfærd (vigtigt):",
+			"webview.keyboardHeader": "Oversigt over tastaturnavigation:",
 			"webview.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"webview.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"webview.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"webview.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
 			"webview.statusHeader": "Aktuel søgestatus:"
 		},
 		"vs/workbench/contrib/welcomeAgentSessions/browser/agentSessionsWelcome": {
@@ -5345,7 +6146,8 @@
 			"goBack": "Gå tilbage",
 			"newItems": "Opdateret",
 			"showAll": "Mere...",
-			"welcome": "Velkommen"
+			"welcome": "Velkommen",
+			"welcomePage.removeRecent": "Fjern fra Senest åbnet"
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution": {
 			"miWelcome": "Velkommen",
@@ -5395,6 +6197,7 @@
 		},
 		"vs/workbench/contrib/welcomeViews/common/newFile.contribution": {
 			"Built-In": "Indbygget",
+			"change keybinding": "Konfigurer tastebinding",
 			"file": "Fil",
 			"newFileTitle": "Ny fil...",
 			"notebook": "Notesbog",
@@ -5439,6 +6242,7 @@
 			"zoomReset": "Nulstil zoom"
 		},
 		"vs/workbench/electron-browser/desktop.contribution": {
+			"keyboardConfigurationTitle": "Tastatur",
 			"telemetryConfigurationTitle": "Telemetri",
 			"windowConfigurationTitle": "Vindue"
 		},
@@ -5465,6 +6269,9 @@
 			"command name": "Id",
 			"command title": "Titel",
 			"keyboard shortcuts": "Tastaturgenveje",
+			"nonempty": "forventede en værdi, der ikke er tom.",
+			"optstring": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
+			"requirestring": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
 			"vscode.extension.contributes.commandType.icon.dark": "Ikonsti, når der bruges et mørkt tema",
 			"vscode.extension.contributes.commandType.icon.light": "Ikonsti, når der bruges et lyst tema",
 			"vscode.extension.contributes.submenu.icon.dark": "Ikonsti, når der bruges et mørkt tema",
@@ -5499,8 +6306,22 @@
 			"remoteFileDialog.cancel": "Annuller"
 		},
 		"vs/workbench/services/editor/browser/editorResolverService": {
+			"editorResolver.configureDefault": "Konfigurer standard",
+			"editorResolver.conflictingDefaults": "Der er flere standardeditorer tilgængelige for ressourcen.",
+			"editorResolver.keepDefault": "Behold {0}",
+			"promptOpenWith.configureDefault": "Konfigurer standardeditor for '{0}'...",
+			"promptOpenWith.configureDefaultDiff": "Konfigurer standardeditor (kun diff) for '{0}'...",
 			"promptOpenWith.currentDefault": "Standard",
-			"promptOpenWith.currentlyActive": "Aktiv"
+			"promptOpenWith.currentDefaultAndActive": "Aktiv og standard",
+			"promptOpenWith.currentlyActive": "Aktiv",
+			"promptOpenWith.placeHolder": "Vælg editor for '{0}'",
+			"promptOpenWith.updateDefaultDiffPlaceHolder": "Vælg ny standardeditor (kun diff) for '{0}'",
+			"promptOpenWith.updateDefaultPlaceHolder": "Vælg ny standardeditor for '{0}'"
+		},
+		"vs/workbench/services/editor/common/editorResolverService": {
+			"editor.diffEditorAssociations": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) til editorer for diffvisninger (f.eks. `\"*.md\": \"vscode.markdown.preview.editor\"`). Disse tilsidesætter `workbench.editorAssociations` for diffvisninger.",
+			"editor.editorAssociations": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) til editorer (f.eks. `\"*.hex\": \"hexEditor.hexedit\"`). Disse har højere prioritet end standardfunktionsmåden.",
+			"editor.markdownDefaultEditorInAgentsWindow": "Styrer, om Markdown-editoren bruges som standardeditor for Markdown-filer i vinduet Agenter."
 		},
 		"vs/workbench/services/extensionManagement/browser/extensionBisect": {
 			"continue": "Fortsæt"
@@ -5542,6 +6363,35 @@
 		"vs/workbench/services/integrity/electron-browser/integrityService": {
 			"integrity.dontShowAgain": "Vis ikke igen"
 		},
+		"vs/workbench/services/keybinding/browser/keybindingService": {
+			"invalid.keybindings": "Ugyldig `contributes.{0}`: {1}",
+			"keybindings.commandsIsArray": "Forkert type. Forventede \"{0}\". Feltet 'command' understøtter ikke kørsel af flere kommandoer. Brug kommandoen 'runCommands' til at sende flere kommandoer, der skal køres.",
+			"keybindings.json.args": "Argumenter, der skal sendes til den kommando, som skal udføres.",
+			"keybindings.json.command": "Navnet på den kommando, der skal udføres",
+			"keybindings.json.key": "Tast eller tastesekvens (adskilt med mellemrum)",
+			"keybindings.json.removalCommand": "Navnet på den kommando, som tastaturgenvejen skal fjernes for",
+			"keybindings.json.systemWide": "Når værdien er `true`, registreres tastebindingen som en systemomfattende (global for operativsystemet) genvej, der udløses, selvom programmet ikke har fokus. Kun til skrivebordet. Kun enkelte tastekombinationer understøttes (ingen akkorder), og eventuelle `when`-betingelser ignoreres for den globale udløser.",
+			"keybindings.json.title": "Konfiguration af tastebindinger",
+			"keybindings.json.when": "Betingelse for, hvornår tasten er aktiv.",
+			"nonempty": "forventede en værdi, der ikke er tom.",
+			"optstring": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
+			"requirestring": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
+			"unboundCommands": "Her er andre tilgængelige kommandoer: ",
+			"vscode.extension.contributes.keybindings": "Bidrager med tastebindinger.",
+			"vscode.extension.contributes.keybindings.args": "Argumenter, der skal sendes til den kommando, som skal udføres.",
+			"vscode.extension.contributes.keybindings.command": "Id for den kommando, der skal køres, når tastebindingen udløses.",
+			"vscode.extension.contributes.keybindings.key": "Tast eller tastesekvens (adskil taster med plustegn og sekvenser med mellemrum, f.eks. Ctrl+O og Ctrl+L L for en akkord).",
+			"vscode.extension.contributes.keybindings.linux": "Linux-specifik tast eller tastesekvens.",
+			"vscode.extension.contributes.keybindings.mac": "Mac-specifik tast eller tastesekvens.",
+			"vscode.extension.contributes.keybindings.when": "Betingelse for, hvornår tasten er aktiv.",
+			"vscode.extension.contributes.keybindings.win": "Windows-specifik tast eller tastesekvens."
+		},
+		"vs/workbench/services/keybinding/common/keybindingEditing": {
+			"emptyKeybindingsHeader": "Placer dine tastebindinger i denne fil for at tilsidesætte standarderne",
+			"errorInvalidConfiguration": "Der kan ikke skrives til konfigurationsfilen for tastebindinger. Den indeholder et objekt, som ikke er af typen Array. Åbn filen, ret den, og prøv igen.",
+			"errorKeybindingsFileDirty": "Der kan ikke skrives, fordi konfigurationsfilen for tastebindinger har ændringer, der ikke er gemt. Gem den først, og prøv derefter igen.",
+			"parseErrors": "Der kan ikke skrives til konfigurationsfilen for tastebindinger. Åbn den, ret fejl og advarsler i filen, og prøv igen."
+		},
 		"vs/workbench/services/label/common/labelService": {
 			"temporaryWorkspace": "Arbejdsområde",
 			"workspaceName": "{0} (arbejdsområde)",
@@ -5551,6 +6401,7 @@
 			"language id": "Id",
 			"language name": "Navn",
 			"languages": "Programmeringssprog",
+			"require.id": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
 			"snippets": "Kodestykker",
 			"vscode.extension.contributes.languages.icon.dark": "Ikonsti, når der bruges et mørkt tema",
 			"vscode.extension.contributes.languages.icon.light": "Ikonsti, når der bruges et lyst tema"
@@ -5569,19 +6420,69 @@
 			"accountPolicy.notification.signin.action": "Log på"
 		},
 		"vs/workbench/services/preferences/browser/keybindingsEditorInput": {
+			"keybindingsEditorLabelIcon": "Ikon for tastebindingseditorens etiket.",
 			"keybindingsInputName": "Tastaturgenveje"
 		},
 		"vs/workbench/services/preferences/browser/keybindingsEditorModel": {
+			"cat.title": "{0}: {1}",
+			"default": "System",
 			"extension": "Udvidelse",
+			"meta": "meta",
+			"option": "option",
 			"user": "Bruger"
+		},
+		"vs/workbench/services/preferences/browser/preferencesService": {
+			"defaultKeybindings": "Standardtastebindinger",
+			"emptyKeybindingsHeader": "Placer dine tastebindinger i denne fil for at tilsidesætte standarderne",
+			"fail.createSettings": "Kan ikke oprette '{0}' ({1}).",
+			"openFolderFirst": "Åbn først en mappe eller et arbejdsområde for at oprette arbejdsområde- eller mappeindstillinger."
 		},
 		"vs/workbench/services/preferences/common/preferencesEditorInput": {
 			"preferencesEditorInputName": "Indstillinger",
-			"settingsEditor2InputName": "Indstillinger"
+			"preferencesEditorLabelIcon": "Ikon for indstillingseditorens etiket.",
+			"settingsEditor2InputName": "Indstillinger",
+			"settingsEditorLabelIcon": "Ikon for Indstillingseditorens etiket."
+		},
+		"vs/workbench/services/preferences/common/preferencesModels": {
+			"commonlyUsed": "Ofte anvendte",
+			"defaultKeybindingsHeader": "Tilsidesæt tastebindinger ved at placere dem i din tastebindingsfil."
+		},
+		"vs/workbench/services/preferences/common/preferencesValidation": {
+			"invalidTypeError": "Indstillingen har en ugyldig type. Forventede {0}. Ret den i JSON.",
+			"regexParsingError": "Der opstod en fejl under fortolkning af følgende regulære udtryk både med og uden u-flaget:",
+			"validations.arrayIncorrectType": "Forkert type. Forventede en matrix.",
+			"validations.booleanIncorrectType": "Forkert type. Forventede \"boolean\".",
+			"validations.colorFormat": "Ugyldigt farveformat. Brug #RGB, #RGBA, #RRGGBB eller #RRGGBBAA.",
+			"validations.exclusiveMax": "Værdien skal være mindre end {0}.",
+			"validations.exclusiveMin": "Værdien skal være større end {0}.",
+			"validations.expectedInteger": "Værdien skal være et heltal.",
+			"validations.expectedNumeric": "Værdien skal være et tal.",
+			"validations.invalidStringEnumValue": "Værdien accepteres ikke. Gyldige værdier: {0}.",
+			"validations.max": "Værdien skal være mindre end eller lig med {0}.",
+			"validations.maxLength": "Værdien må højst være {0} tegn lang.",
+			"validations.min": "Værdien skal være større end eller lig med {0}.",
+			"validations.minLength": "Værdien skal være mindst {0} tegn lang.",
+			"validations.multipleOf": "Værdien skal være et multiplum af {0}.",
+			"validations.objectIncorrectType": "Forkert type. Forventede et objekt.",
+			"validations.objectPattern": "Egenskaben {0} er ikke tilladt.\n",
+			"validations.propertyNamePattern": "Egenskabsnavnet skal matche mønstret `{0}`.",
+			"validations.regex": "Værdien skal matche det regulære udtryk `{0}`.",
+			"validations.stringArrayIncorrectType": "Forkert type. Forventede en strengmatrix.",
+			"validations.stringArrayItemEnum": "Værdien {0} er ikke en af {1}",
+			"validations.stringArrayItemPattern": "Værdien {0} skal matche det regulære udtryk {1}.",
+			"validations.stringArrayMaxItem": "Matrixen må højst have {0} elementer",
+			"validations.stringArrayMinItem": "Matrixen skal have mindst {0} elementer",
+			"validations.stringArrayUniqueItems": "Matrixen har dublerede elementer",
+			"validations.stringIncorrectEnumOptions": "Enum-valgmulighederne skal være strenge, men en valgmulighed er ikke en streng. Opret en problemrapport hos udvidelsens forfatter.",
+			"validations.stringIncorrectType": "Forkert type. Forventede \"string\".",
+			"validations.uriEmpty": "Der forventes en URI.",
+			"validations.uriMissing": "Der forventes en URI.",
+			"validations.uriSchemeMissing": "Der forventes en URI med et skema."
 		},
 		"vs/workbench/services/progress/browser/progressService": {
 			"cancel": "Annuller",
-			"dismiss": "Afvis"
+			"dismiss": "Afvis",
+			"progress.text2": "{0}: {1}"
 		},
 		"vs/workbench/services/remote/common/remoteExplorerService": {
 			"RemoteHelpInformationExtPoint.feedback.deprecated": "Brug {0} i stedet"
@@ -5607,6 +6508,9 @@
 			"skip": "Spring over"
 		},
 		"vs/workbench/services/textMate/browser/textMateTokenizationFeatureImpl": {
+			"invalid.language": "Ukendt sprog i `contributes.{0}.language`. Angivet værdi: {1}",
+			"invalid.path.0": "Forventede en streng i `contributes.{0}.path`. Angivet værdi: {1}",
+			"invalid.path.1": "Forventede, at `contributes.{0}.path` ({1}) lå i udvidelsens mappe ({2}). Dette kan gøre udvidelsen ikke-portabel.",
 			"stop": "Stop"
 		},
 		"vs/workbench/services/themes/browser/productIconThemeData": {
@@ -5630,6 +6534,8 @@
 			"noIconThemeLabel": "Ingen"
 		},
 		"vs/workbench/services/themes/common/themeExtensionPoints": {
+			"invalid.path.1": "Forventede, at `contributes.{0}.path` ({1}) lå i udvidelsens mappe ({2}). Dette kan gøre udvidelsen ikke-portabel.",
+			"reqpath": "Forventede en streng i `contributes.{0}.path`. Angivet værdi: {1}",
 			"themes": "Temaer"
 		},
 		"vs/workbench/services/userDataProfile/browser/extensionsResource": {

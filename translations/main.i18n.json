@@ -237,6 +237,10 @@
 		"vs/editor/browser/widget/multiDiffEditor/multiDiffEditorWidgetImpl": {
 			"loading": "Indlæser..."
 		},
+		"vs/editor/common/config/editorConfigurationSchema": {
+			"schema.closeBracket": "Den afsluttende parentes eller tegnsekvens.",
+			"schema.openBracket": "Den indledende parentes eller tegnsekvens."
+		},
 		"vs/editor/common/languages": {
 			"File": "fil",
 			"suggestWidget.kind.file": "Fil",
@@ -247,6 +251,7 @@
 		},
 		"vs/editor/common/standaloneStrings": {
 			"gotoLineActionLabel": "Gå til linje/kolonne...",
+			"gotoOffsetActionLabel": "Gå til forskydning...",
 			"helpQuickAccess": "Vis alle udbydere af Hurtig adgang"
 		},
 		"vs/editor/common/viewLayout/viewLineRenderer": {
@@ -282,16 +287,23 @@
 			"ariaSearchNoResult": "{0} fundet for '{1}'",
 			"ariaSearchNoResultEmpty": "{0} fundet",
 			"ariaSearchNoResultWithLineNumNoCurrentMatch": "{0} fundet for '{1}'",
+			"findInputAriaLabelWithHint": "{0}, {1}",
 			"label.closeButton": "Luk",
 			"label.find": "Find",
 			"label.matchesLocation": "{0} af {1}",
+			"label.nextMatchButton": "Næste match",
 			"label.noResults": "Ingen resultater",
+			"label.previousMatchButton": "Forrige match",
 			"label.replace": "Erstat",
 			"label.replaceAllButton": "Erstat alle",
 			"label.replaceButton": "Erstat",
 			"label.toggleReplaceButton": "Vis/skjul Erstat",
 			"placeholder.find": "Find",
-			"placeholder.replace": "Erstat"
+			"placeholder.replace": "Erstat",
+			"replaceInputAriaLabelWithHint": "{0}, {1}"
+		},
+		"vs/editor/contrib/format/browser/formatActions": {
+			"formatDocument.label": "Formatér dokument"
 		},
 		"vs/editor/contrib/gotoError/browser/gotoErrorWidget": {
 			"Error": "Fejl",
@@ -355,6 +367,7 @@
 			"accept.replace": "Erstat"
 		},
 		"vs/editor/contrib/suggest/browser/suggestWidget": {
+			"label": "{0}, {1}",
 			"suggestWidget.loading": "Indlæser..."
 		},
 		"vs/editor/contrib/suggest/browser/suggestWidgetDetails": {
@@ -414,11 +427,16 @@
 		"vs/platform/agentHost/node/claude/claudeAgent": {
 			"claude.sessionConfig.permissionMode": "Godkendelser"
 		},
+		"vs/platform/agentHost/node/claude/claudeInteractiveTools": {
+			"claude.exitPlanMode.deny": "Afvis"
+		},
 		"vs/platform/agentHost/node/claude/claudeToolDisplay": {
 			"claude.toolComplete.bashCmd": "Kørte {0}",
 			"claude.toolComplete.editFile": "Redigerede {0}",
+			"claude.toolComplete.readFile": "Læs {0}",
 			"claude.toolInvoke.bashCmd": "Kører {0}",
-			"claude.toolInvoke.editFile": "Redigerer {0}"
+			"claude.toolInvoke.editFile": "Redigerer {0}",
+			"claude.toolInvoke.readFile": "Læser {0}"
 		},
 		"vs/platform/agentHost/node/codex/codexAgent": {
 			"codex.sessionConfig.approvalPolicy": "Godkendelser",
@@ -441,11 +459,14 @@
 			"toolComplete.patchFile": "Redigerede {0}",
 			"toolComplete.patchFiles": "Redigerede {0}",
 			"toolComplete.shellCmd": "Kørte {0}",
+			"toolComplete.viewFile": "Læs {0}",
 			"toolInvoke.createFile": "Opretter {0}",
 			"toolInvoke.editFile": "Redigerer {0}",
 			"toolInvoke.patchFile": "Redigerer {0}",
 			"toolInvoke.patchFiles": "Redigerer {0}",
 			"toolInvoke.shellCmd": "Kører {0}",
+			"toolInvoke.viewFile": "Læser {0}",
+			"toolName.create": "Opret fil",
 			"toolName.read": "Læs",
 			"toolName.search": "Søg",
 			"toolName.think": "Tænker"
@@ -460,6 +481,7 @@
 			"browserPermission.notifications.label": "Meddelelser"
 		},
 		"vs/platform/browserView/electron-main/browserViewMainService": {
+			"browser.contextMenu.addElementToChat": "Føj element til chat",
 			"browser.contextMenu.back": "Tilbage",
 			"browser.contextMenu.reload": "Genindlæs"
 		},
@@ -474,7 +496,8 @@
 			"open": "Åbn",
 			"openFile": "Åbn fil",
 			"openFolder": "Åbn mappe",
-			"openWorkspace": "&&Åbn"
+			"openWorkspace": "&&Åbn",
+			"openWorkspaceTitle": "Åbn arbejdsområde fra fil"
 		},
 		"vs/platform/extensionManagement/common/extensionManagement": {
 			"extensions": "Udvidelser",
@@ -566,6 +589,12 @@
 		},
 		"vs/platform/process/electron-main/processMainService": {
 			"local": "Lokal"
+		},
+		"vs/platform/quickinput/browser/commandsQuickAccess": {
+			"commandPickAriaLabelWithKeybinding": "{0}, {1}"
+		},
+		"vs/platform/quickinput/browser/helpQuickAccess": {
+			"helpPickAriaLabel": "{0}, {1}"
 		},
 		"vs/platform/quickinput/browser/quickInput": {
 			"ok": "OK",
@@ -727,6 +756,7 @@
 		},
 		"vs/sessions/contrib/aiCustomizationTreeView/browser/aiCustomizationTreeViewViews": {
 			"automations": "Automatiseringer",
+			"fileAriaLabel": "{0}, {1}",
 			"fileAriaLabelDisabled": "{0}, deaktiveret",
 			"instructions": "Instruktioner",
 			"mcpServers": "MCP-servere",
@@ -768,6 +798,7 @@
 			"openFile": "Åbn fil"
 		},
 		"vs/sessions/contrib/changes/browser/checksWidget": {
+			"ci.checkAriaLabel": "{0}, {1}",
 			"ci.checkTitle": "{0}: {1}",
 			"ci.openOnGitHub": "Åbn på GitHub"
 		},
@@ -777,6 +808,7 @@
 		"vs/sessions/contrib/changes/browser/sessionFilesWidget": {
 			"sessionFiles.created": "Oprettet",
 			"sessionFiles.deleted": "Slettet",
+			"sessionFiles.fileAriaLabel": "{0}, {1}",
 			"sessionFiles.modified": "Ændret",
 			"sessionFiles.openFileAction": "Åbn fil",
 			"sessionFiles.title": "{0} ({1})"
@@ -831,6 +863,9 @@
 		"vs/sessions/contrib/chat/browser/sessionRunningSubagentsControl": {
 			"runningSubagents.untitled": "Underagent"
 		},
+		"vs/sessions/contrib/chat/browser/sessionTypePicker": {
+			"sessionTypePicker.itemAriaLabel": "{0}, {1}"
+		},
 		"vs/sessions/contrib/chat/browser/sessionWorkspacePicker": {
 			"pickWorkspace": "arbejdsområde",
 			"workspacePicker.experimental": "Eksperimentel"
@@ -853,10 +888,18 @@
 		"vs/sessions/contrib/files/browser/files.contribution": {
 			"collapseExplorerFolders": "Fold mapper sammen i Stifinder",
 			"explore": "Stifinder",
-			"files": "Filer"
+			"files": "Filer",
+			"miFiles": "Fil&&er",
+			"sessionsFilesViewIcon": "Visningsikon for filvisningen i sessionsvinduet.",
+			"syncChanges": "Synkroniser ændringer"
+		},
+		"vs/sessions/contrib/files/browser/filesView": {
+			"filesView.noFiles": "Mapper og filer vises her."
 		},
 		"vs/sessions/contrib/files/browser/workspaceFolderActions": {
-			"agentSessions.files": "Filer"
+			"agentSessions.files": "Filer",
+			"agentSessions.openFilesView.ariaLabel": "Åbn filer: {0}",
+			"agentSessions.openFilesView.tooltip": "Åbn filer"
 		},
 		"vs/sessions/contrib/policyBlocked/browser/sessionsPolicyBlocked": {
 			"accountGate.learnMore": "Få mere at vide",
@@ -1396,13 +1439,17 @@
 			"breadcrumbs": "Brødkrummer"
 		},
 		"vs/workbench/browser/parts/editor/diffEditorCommands": {
+			"compare": "Sammenlign",
 			"compare.nextChange": "Gå til næste ændring",
 			"compare.previousChange": "Gå til forrige ændring"
 		},
 		"vs/workbench/browser/parts/editor/editor.contribution": {
 			"close": "Luk",
+			"closeAll": "Luk alle",
+			"closeAllSaved": "Luk gemte",
 			"closeEditor": "Luk editor",
 			"closeGroupAction": "Luk gruppe",
+			"closeOthers": "Luk andre",
 			"configureEditors": "Konfigurer editorer",
 			"configureTabs": "Konfigurer faner",
 			"copyEditorToNewWindow": "Kopiér editor til nyt vindue",
@@ -1418,6 +1465,7 @@
 			"moveEditorToNewWindow": "Flyt editor til nyt vindue",
 			"newWindow": "Nyt vindue",
 			"pin": "Fastgør",
+			"reopenWith": "Åbn editor igen med...",
 			"share": "Del",
 			"splitEditorDown": "Opdel editor nedad",
 			"splitEditorRight": "Opdel editor mod højre",
@@ -1589,9 +1637,11 @@
 			"watermark.newUntitledFile": "Ny unavngivet tekstfil",
 			"watermark.openChat": "Åbn chat",
 			"watermark.openFile": "Åbn fil",
+			"watermark.openFileFolder": "Åbn fil eller mappe",
 			"watermark.openFolder": "Åbn mappe",
 			"watermark.openRecent": "Åbn seneste",
 			"watermark.openSettings": "Åbn indstillinger",
+			"watermark.quickAccess": "Gå til fil",
 			"watermark.showCommands": "Vis alle kommandoer",
 			"watermark.startDebugging": "Start fejlfinding",
 			"watermark.toggleTerminal": "Vis/skjul terminal"
@@ -1600,10 +1650,12 @@
 			"ok": "&&OK"
 		},
 		"vs/workbench/browser/parts/editor/editorPlaceholder": {
-			"manageTrust": "Administrer tillid til arbejdsområde"
+			"manageTrust": "Administrer tillid til arbejdsområde",
+			"unavailableResourceErrorEditorText": "Editoren kunne ikke åbnes, fordi filen ikke blev fundet."
 		},
 		"vs/workbench/browser/parts/editor/editorQuickAccess": {
-			"closeEditor": "Luk editor"
+			"closeEditor": "Luk editor",
+			"entryAriaLabelWithGroup": "{0}, {1}"
 		},
 		"vs/workbench/browser/parts/editor/editorStatus": {
 			"autoDetect": "Registrer automatisk",
@@ -1617,6 +1669,8 @@
 			"currentProblem": "Aktuelt problem",
 			"disableColumnSelectionMode": "Deaktiver kolonnemarkering",
 			"disableTabMode": "Deaktiver tilgængelighedstilstand",
+			"endOfLineCarriageReturnLineFeed": "CRLF",
+			"endOfLineLineFeed": "LF",
 			"fileInfo": "Filoplysninger",
 			"gotoLine": "Gå til linje/kolonne",
 			"guessedEncoding": "Udledt af indholdet",
@@ -1663,7 +1717,8 @@
 			"tabSize": "Tabulatorstørrelse: {0}"
 		},
 		"vs/workbench/browser/parts/editor/editorTypePicker": {
-			"builtinProviderDisplayName": "Indbygget"
+			"builtinProviderDisplayName": "Indbygget",
+			"editorType.labelWithSource": "{0} - {1}"
 		},
 		"vs/workbench/browser/parts/editor/modalEditorPart": {
 			"navigationCounter": "{0} af {1}",
@@ -1829,8 +1884,11 @@
 			"views": "Visninger"
 		},
 		"vs/workbench/browser/window": {
+			"closeWindowMessage": "Er du sikker på, at du vil lukke vinduet?",
 			"doNotAskAgain": "Spørg mig ikke igen",
 			"openExternalDialogButtonInstall.v3": "&&Installer",
+			"quitMessage": "Er du sikker på, at du vil afslutte?",
+			"quitMessageMac": "Er du sikker på, at du vil afslutte?",
 			"reload": "&&Genindlæs",
 			"retry": "&&Prøv igen"
 		},
@@ -1850,6 +1908,9 @@
 			"builtinProviderDisplayName": "Indbygget",
 			"promptOpenWith.defaultEditor.displayName": "Teksteditor"
 		},
+		"vs/workbench/common/editor/sideBySideEditorInput": {
+			"sideBySideLabels": "{0} - {1}"
+		},
 		"vs/workbench/common/views": {
 			"views log": "Visninger"
 		},
@@ -1862,6 +1923,7 @@
 			"screenReaderDetectedExplanation.answerYes": "Ja"
 		},
 		"vs/workbench/contrib/agentsVoice/browser/transcriptsView/voiceTranscripts.contribution": {
+			"voiceTranscripts.deleteAll": "Slet alle",
 			"voiceTranscripts.deleteAllConfirmButton": "Slet",
 			"voiceTranscripts.refresh": "Opdater"
 		},
@@ -1896,76 +1958,427 @@
 		"vs/workbench/contrib/browserView/common/browserEditorInput": {
 			"browser.editorLabel": "Browser"
 		},
+		"vs/workbench/contrib/browserView/common/browserSearch": {
+			"browser.search.engine.bing": "Bing",
+			"browser.search.engine.duckduckgo": "DuckDuckGo",
+			"browser.search.engine.google": "Google",
+			"browser.search.engine.yahoo": "Yahoo!"
+		},
 		"vs/workbench/contrib/browserView/common/browserView": {
+			"browserView.shareBlocked.title": "Kan ikke dele med agent",
 			"browserView.shareWithAgent.allow": "&&Tillad",
-			"browserView.shareWithAgent.dontAskAgain": "Spørg ikke igen"
+			"browserView.shareWithAgent.deny": "Afvis",
+			"browserView.shareWithAgent.detail": "Agenten kan læse og ændre browserindhold og gemte data, herunder cookies.",
+			"browserView.shareWithAgent.dontAskAgain": "Spørg ikke igen",
+			"browserView.shareWithAgent.message": "Vil du dele denne browserside med agenten?",
+			"browserView.shareWithAgent.title": "Del med agent?"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/browserEditor": {
+			"browser.editorFocused": "Om browsereditoren har fokus",
+			"browser.hasError": "Om browseren har en indlæsningsfejl",
+			"browser.hasUrl": "Om browseren har indlæst en URL-adresse",
 			"browserCategory": "Browser"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/browserView.contribution": {
 			"browser.editorLabel": "Browser"
 		},
+		"vs/workbench/contrib/browserView/electron-browser/features/browserDataStorageFeatures": {
+			"browser.clearEphemeralStorageAction": "Ryd lager (midlertidigt)",
+			"browser.clearGlobalStorageAction": "Ryd lager (globalt)",
+			"browser.clearWorkspaceStorageAction": "Ryd lager (arbejdsområde)",
+			"browser.dataStorage": "Styrer, hvordan browserdata (cookies, cache og lager) deles mellem browservisninger.\n\n**Bemærk**: I arbejdsområder, der ikke er tillid til, ignoreres denne indstilling, og lageret `ephemeral` bruges altid.",
+			"browser.dataStorage.default": "`global` for lokale arbejdsområder, `workspace` for fjernarbejdsområder.",
+			"browser.dataStorage.ephemeral": "Hver browservisning har sin egen session, som ryddes, når den lukkes.",
+			"browser.dataStorage.global": "Alle browservisninger deler én vedvarende session på tværs af alle arbejdsområder. Ikke kompatibel med fjernsessioner.",
+			"browser.dataStorage.workspace": "Browservisninger i samme arbejdsområde deler en vedvarende session. Hvis intet arbejdsområde er åbent, bruges lageret `ephemeral`.",
+			"browser.storageScope": "Lageromfanget for den aktuelle browservisning"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/features/browserDevToolsFeature": {
+			"browser.devToolsOpen": "Om udviklerværktøjerne er åbne for den aktuelle browservisning",
+			"browser.toggleDevToolsAction": "Udviklerværktøjer"
+		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserEditorChatFeatures": {
+			"browser.addAreaScreenshotToChatAction": "Føj skærmbillede af område til chat",
+			"browser.addConsoleLogsToChatAction": "Føj konsollogge til chat",
+			"browser.addElementToChatAction": "Føj element til chat",
+			"browser.addFullPageScreenshotToChatAction": "Føj skærmbillede af hele siden til chat (eksperimentel)",
+			"browser.addScreenshotToChatAction": "Føj skærmbillede til chat",
+			"browser.agentSharingContentWarning.detail": "Sider kan indeholde skjulte prompter, der kan påvirke agentens adfærd. Kontrollér det vedhæftede indhold en ekstra gang, før du sender.",
 			"browser.agentSharingContentWarning.dontShowAgain": "Vis ikke igen",
+			"browser.agentSharingContentWarning.message": "Vær forsigtig, når du vedhæfter indhold fra kilder, der ikke er tillid til.",
 			"browser.agentSharingContentWarning.ok": "&&OK",
+			"browser.areaSelectionActive": "Om områdemarkering er aktiv i øjeblikket",
 			"browser.chatActionsSubmenu": "Føj til chat",
-			"browserCategory": "Browser"
+			"browser.elementSelectionActive": "Om elementmarkering er aktiv i øjeblikket",
+			"browser.enableChatTools": "Når dette er aktiveret, kan chatagenter bruge browserværktøjer til at åbne og interagere med sider i den integrerede browser.",
+			"browser.experimentalUserTools.enabled": "Når dette er aktiveret, er eksperimentelle brugervendte værktøjer tilgængelige i menuen Føj til chat i den integrerede browser.",
+			"browser.shareWithAgent": "Del med agent",
+			"browser.sharingWithAgent": "Deler med agent",
+			"browser.unshareWithAgent": "Stop deling med agent",
+			"browserAreaScreenshot": "Skærmbillede af browserområde",
+			"browserCategory": "Browser",
+			"browserFullPageScreenshot": "Skærmbillede af hele browsersiden",
+			"browserScreenshot": "Browserskærmbillede",
+			"consoleLogs": "Konsollogge",
+			"workbench.browser.sendElementsToChat.attachImages": "Styrer, om et skærmbillede af det valgte element føjes til chatten."
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserEditorEmulationFeatures": {
+			"browser.device.dimensionsLabel": "Dimensioner:",
+			"browser.device.dprAriaLabel": "Enhedens pixelforhold",
+			"browser.device.dprLabel": "DPR:",
+			"browser.device.dprTitle": "Enhedens pixelforhold (tom = systemstandard)",
+			"browser.device.heightAriaLabel": "Visningsområdets højde",
+			"browser.device.inputPlaceholderAuto": "automatisk",
+			"browser.device.scaleLabel": "Skalering:",
+			"browser.device.swapDimensionsTitle": "Ombyt dimensioner",
+			"browser.device.widthAriaLabel": "Visningsområdets bredde",
+			"browser.device.zoomAriaLabel": "Zoomfaktor",
+			"browser.device.zoomAuto": "Automatisk ({0} %)",
+			"browser.devicePresets.mobileTag": "mobil",
+			"browser.devicePresets.placeholder": "Vælg en enhedsforudindstilling",
+			"browser.emulationHasUserAgent": "Om browseremuleringen har en brugerdefineret brugeragent",
+			"browser.emulationIsMobile": "Om browseremuleringen er i mobiltilstand",
 			"browser.emulationToolbar.close": "Luk",
-			"browser.emulationToolbar.reset": "Nulstil"
+			"browser.emulationToolbar.mobile": "Mobilemulering",
+			"browser.emulationToolbar.presets": "Anvend forudindstilling...",
+			"browser.emulationToolbar.reset": "Nulstil",
+			"browser.emulationToolbar.userAgent": "Angiv brugeragent...",
+			"browser.emulationToolbarVisible": "Om værktøjslinjen til browseremulering er synlig",
+			"browser.pickDevicePreset": "Emuler enhed...",
+			"browser.resetEmulation": "Nulstil emulering",
+			"browser.setUserAgent": "Emuler brugeragent...",
+			"browser.toggleDeviceEmulation": "Enhedsemulering",
+			"browser.toggleMobileEmulation": "Slå mobilemulering til/fra",
+			"browser.userAgent.prompt": "Brugeragentstreng (lad feltet være tomt for VS Code-standarden)"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserEditorErrorFeatures": {
+			"browser.certCloseTab": "Luk fane",
+			"browser.certDetailsHeading": "Certifikatoplysninger",
 			"browser.certError": "Fejl",
-			"browser.certGoBack": "Gå tilbage"
+			"browser.certErrorDescription": "Webstedets sikkerhedscertifikat kunne ikke bekræftes.",
+			"browser.certErrorExtraWarning": " Din forbindelse er ikke privat.",
+			"browser.certErrorLabel": "Certifikatfejl",
+			"browser.certFingerprint": "Fingeraftryk",
+			"browser.certGoBack": "Gå tilbage",
+			"browser.certHoverDetail1": "Din forbindelse til dette websted er ikke sikker.",
+			"browser.certHoverDetail2": "Du valgte tidligere at fortsætte til '{0}' på trods af en certifikatfejl ({1}).",
+			"browser.certHoverHeading": "Der er ikke tillid til certifikatet",
+			"browser.certIssuer": "Udsteder",
+			"browser.certProceed": "Fortsæt alligevel (usikkert)",
+			"browser.certRevoke": "Tilbagekald og luk",
+			"browser.certSubject": "Emne",
+			"browser.certValid": "Gyldigt",
+			"browser.errorUrlLabel": "URL-adresse:",
+			"browser.loadErrorLabel": "Siden kunne ikke indlæses",
+			"browser.notSecure": "Ikke sikker",
+			"browser.remoteErrorExtraWarning": "Det betyder normalt, at værten ikke kunne findes.\nKontrollér, at URL-adressen er korrekt, og at serveren er tilgængelig fra fjernmaskinen."
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserEditorFindFeature": {
 			"browser.findNextAction": "Find næste",
-			"browser.findPreviousAction": "Find forrige"
+			"browser.findPreviousAction": "Find forrige",
+			"browser.findWidgetFocused": "Om browserens søgewidget har fokus",
+			"browser.findWidgetVisible": "Om browserens søgewidget er synlig",
+			"browser.hideFindAction": "Luk søgewidget",
+			"browser.showFindAction": "Søg på side"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserEditorZoomFeature": {
+			"browser.canZoomIn": "Om browseren kan zoome længere ind",
+			"browser.canZoomOut": "Om browseren kan zoome længere ud",
+			"browser.defaultZoomLevel.matchWindow": "Matcher programmets aktuelle zoomniveau for brugergrænsefladen.",
+			"browser.pageZoom": "Standardzoomniveau for alle websteder i den integrerede browser.",
+			"browser.resetZoomAction": "Nulstil zoom",
 			"browser.zoomInAction": "Zoom ind",
 			"browser.zoomOutAction": "Zoom ud"
 		},
+		"vs/workbench/contrib/browserView/electron-browser/features/browserFavoritesFeature": {
+			"browser.addFavorite": "Føj til favoritter",
+			"browser.addFavoriteAction": "Føj til favoritter",
+			"browser.favorites": "Favoritter",
+			"browser.removeFavorite": "Fjern fra favoritter",
+			"browser.removeFavoriteWithKb": "Fjern fra favoritter ({0})",
+			"browser.urlIsFavorited": "Om den aktuelle browser-URL er en favorit"
+		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserHistoryFeature": {
+			"browser.history": "Historik",
+			"browser.history.clearAll": "Ryd hele historikken",
+			"browser.history.clearDay": "Ryd poster for denne dag",
+			"browser.history.placeholder": "Filtrer browserhistorik",
+			"browser.history.title": "Browserhistorik",
 			"browser.history.today": "I dag",
-			"browser.history.yesterday": "I går"
+			"browser.history.yesterday": "I går",
+			"browser.maxHistoryEntries": "Det maksimale antal historikelementer, der bevares pr. sessionsomfang. De ældste poster fjernes først.",
+			"browser.recents": "Seneste",
+			"browser.removeFromHistory": "Fjern fra historik",
+			"browser.showHistory": "Historik"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserNavigationFeatures": {
+			"browser.canGoBack": "Om browseren kan gå tilbage",
+			"browser.canGoForward": "Om browseren kan gå frem",
+			"browser.configureSearchEngine": "Konfigurer søgemaskine",
+			"browser.focusUrlInputAction": "Fokuser på URL-input",
 			"browser.goBackAction": "Gå tilbage",
 			"browser.goForwardAction": "Gå frem",
-			"browser.reloadAction": "Genindlæs"
+			"browser.hardReloadAction": "Gennemtving genindlæsning",
+			"browser.openExternalAction": "Åbn i ekstern browser",
+			"browser.openSettingsAction": "Browserindstillinger",
+			"browser.reloadAction": "Genindlæs",
+			"browser.searchFor": "{0} - {1}-søgning",
+			"browser.urlOrSearchPlaceholder": "Søg, eller angiv en URL-adresse",
+			"browser.urlPlaceholder": "Angiv en URL-adresse"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserPermissionsFeature": {
+			"browser.device.kind.bluetooth": "en Bluetooth-enhed",
+			"browser.device.kind.hid": "en HID-enhed",
+			"browser.device.kind.serial": "en seriel port",
+			"browser.device.kind.usb": "en USB-enhed",
+			"browser.device.placeholder": "Vælg en enhed, der skal oprettes forbindelse til",
+			"browser.device.title": "{0} vil oprette forbindelse til {1}",
+			"browser.managePermissions": "Webstedstilladelser",
 			"browser.permissions.allow": "Tillad",
-			"browser.permissions.state.default": "{0} (standard)"
+			"browser.permissions.block": "Bloker",
+			"browser.permissions.noOrigin": "Tilladelser kan kun administreres for websider.",
+			"browser.permissions.placeholder": "Filtrer tilladelser",
+			"browser.permissions.prompt": "{0} vil have adgang til {1}",
+			"browser.permissions.saveMany": "Gem {0} ændringer",
+			"browser.permissions.saveOne": "Gem 1 ændring",
+			"browser.permissions.state.allowed": "Tilladt",
+			"browser.permissions.state.ask": "Spørg",
+			"browser.permissions.state.blocked": "Blokeret",
+			"browser.permissions.state.default": "{0} (standard)",
+			"browser.permissions.title": "Tilladelser for {0}"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/features/browserRemoteFeatures": {
+			"browser.connectedLocally.file": "Fil-URL-adresser leveres lokalt, ikke via fjernforbindelsen.",
+			"browser.connectedLocally.generic": "Forbundet lokalt",
+			"browser.connectedRemotely": "Forbundet via fjernforbindelse",
+			"browser.enableRemoteProxy": "Når dette er aktiveret, sendes browseranmodninger i fjernarbejdsområder via fjernforbindelsen. Det giver websider adgang til ressourcer, der er tilgængelige på fjernværten."
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserSearchFeatures": {
-			"browser.search.engine.none": "Ingen"
+			"browser.search.engine.none": "Ingen",
+			"browser.searchEngine": "Styrer den søgemaskine, der bruges til at søge på internettet fra den integrerede browsers adresselinje. Vælg 'Ingen' for at deaktivere søgning."
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserTabManagementFeatures": {
+			"browser.backgroundGroup": "Baggrund",
+			"browser.closeAll": "Luk alle browserfaner",
+			"browser.closeAllInGroup": "Luk alle browserfaner i gruppen",
+			"browser.closeAllInGroupShort": "Luk alle browserfaner",
+			"browser.closeAllTabs": "Luk alle",
 			"browser.closeTab": "Luk",
+			"browser.editorOpen": "Om en browsereditor er åben i øjeblikket",
+			"browser.linkOpenedHint.ariaLabel": "Dette link blev åbnet i den integrerede browser",
+			"browser.linkOpenedHint.detail": "**Integreret browser**\n\nLocalhost-links åbnes automatisk i den integrerede browser.",
 			"browser.linkOpenedHint.dismiss": "Vis ikke igen",
+			"browser.linkOpenedHint.label": "Link åbnet her",
 			"browser.linkOpenedHint.openSettings": "Åbn indstillinger",
-			"browser.openOrListAction": "Browser"
+			"browser.newTabAction": "Ny fane",
+			"browser.newTabPlacement": "Styrer, hvor nye faner i den integrerede browser åbnes.",
+			"browser.newTabPlacement.activeGroup": "Nye browserfaner åbnes i den aktive editorgruppe.",
+			"browser.newTabPlacement.sideGroup": "Nye browserfaner åbnes i en dedikeret editorgruppe ved siden af, som genbruges til efterfølgende faner. Gruppen er låst, så andre editorer ikke åbnes i den.",
+			"browser.newTabPlacement.window": "Nye browserfaner åbnes i et dedikeret vindue, som genbruges til efterfølgende faner. Vinduet er låst, så andre editorer ikke åbnes i det.",
+			"browser.openAction": "Åbn integreret browser",
+			"browser.openFileAction": "Åbn i integreret browser",
+			"browser.openLocalhostLinks": "Når dette er aktiveret, åbnes localhost-links (`localhost`, `127.0.0.1`, `[::1]`) og links til alle grænseflader (`0.0.0.0`, `[0:0:0:0:0:0:0:0]`, `[::]`) fra terminalen, chatten og andre kilder i den integrerede browser i stedet for systembrowseren.",
+			"browser.openNewTab": "Ny fane i integreret browser",
+			"browser.openOrListAction": "Browser",
+			"browser.openTabs": "Åbne faner",
+			"browser.openTabsDescription": "Vælg en fane, der skal skiftes til",
+			"browser.quickOpenAction": "Åbn browserfane hurtigt...",
+			"browser.quickOpenPlaceholder": "Vælg en browserfane",
+			"browser.showInTitleBar": "Styrer, om knappen Integreret browser vises på titellinjen.",
+			"browser.showInTitleBar.false": "Knappen vises aldrig på titellinjen.",
+			"browser.showInTitleBar.true": "Knappen vises altid på titellinjen.",
+			"browser.showInTitleBar.whenOpen": "Knappen vises på titellinjen, når en browsereditor er åben.",
+			"browserEntryAriaLabelWithGroup": "{0}, {1}",
+			"miOpenBrowser": "&&Browser",
+			"toggle.browser": "Integreret browser",
+			"toggle.browserDescription": "Slå synligheden af knappen Integreret browser på titellinjen til/fra"
 		},
 		"vs/workbench/contrib/browserView/electron-browser/features/browserWelcomeFeature": {
+			"browser.welcomeSubtitle": "Angiv en URL-adresse ovenfor for at komme i gang.",
+			"browser.welcomeSubtitleChat": "Brug Føj element til chat for at henvise til elementer i brugergrænsefladen i chatprompter.",
 			"browser.welcomeTitle": "Browser"
 		},
+		"vs/workbench/contrib/browserView/electron-browser/features/webContentsViewRendererFeature": {
+			"browser.overlayPauseDetail.notification": "Afvis meddelelsen for at fortsætte med at bruge browseren.",
+			"browser.overlayPauseHeading.notification": "Sat på pause på grund af meddelelse"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/browserToolHelpers": {
+			"browser.blockedByPolicy": "Blokeret af netværkets domænepolitik",
+			"browser.element": "element",
+			"browser.open.alreadyOpen": "Allerede åben: {0}"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/browserTools.contribution": {
+			"browserContext.label": "Browsersider",
+			"browserToolSet.description": "Åbn og interager med sider i den integrerede browser"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/clickBrowserTool": {
+			"browser.click.invocation": "Klikker på {0} i {1}",
+			"browser.click.invocation.middle": "Midterklikker på {0} i {1}",
+			"browser.click.invocation.right": "Højreklikker på {0} i {1}",
+			"browser.click.past": "Klikkede på {0} i {1}",
+			"browser.click.past.middle": "Midterklikkede på {0} i {1}",
+			"browser.click.past.right": "Højreklikkede på {0} i {1}",
+			"browser.dblClick.invocation": "Dobbeltklikker på {0} i {1}",
+			"browser.dblClick.past": "Dobbeltklikkede på {0} i {1}",
+			"clickBrowserTool.displayName": "Klik på element",
+			"clickBrowserTool.userDescription": "Klik på et element på en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/dragElementTool": {
+			"browser.drag.invocation": "Trækker {0} til {1} i {2}",
+			"browser.drag.past": "Trak {0} til {1} i {2}",
+			"dragElementTool.displayName": "Træk element",
+			"dragElementTool.userDescription": "Træk et element over et andet element"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/handleDialogBrowserTool": {
+			"browser.handleDialog.invocation": "Håndterer dialog i {0}",
+			"browser.handleDialog.past": "Håndterede dialog i {0}",
+			"handleDialogBrowserTool.displayName": "Håndter dialog",
+			"handleDialogBrowserTool.userDescription": "Svar på en dialog på en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/hoverElementTool": {
+			"browser.hover.invocation": "Holder markøren over {0} i {1}",
+			"browser.hover.past": "Holdt markøren over {0} i {1}",
+			"hoverElementTool.displayName": "Hold markøren over element",
+			"hoverElementTool.userDescription": "Hold markøren over et element på en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/navigateBrowserTool": {
+			"browser.goBack.invocation": "Navigerer tilbage i {0}",
+			"browser.goBack.past": "Navigerede tilbage i {0}",
+			"browser.goForward.invocation": "Navigerer frem i {0}",
+			"browser.goForward.past": "Navigerede frem i {0}",
+			"browser.navigate.confirmMessage": "Dette navigerer browseren til {0} og giver agenten adgang til indholdet.",
+			"browser.navigate.confirmTitle": "Naviger browser?",
+			"browser.navigate.invocation": "Navigerer til {0} i {1}",
+			"browser.navigate.past": "Navigerede til {0} i {1}",
+			"browser.reload.invocation": "Genindlæser {0}",
+			"browser.reload.past": "Genindlæste {0}",
+			"navigateBrowserTool.displayName": "Naviger på side",
+			"navigateBrowserTool.userDescription": "Naviger til eller genindlæs en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/openBrowserTool": {
+			"browser.open.confirmMessage": "Dette åbner {0} i den integrerede browser. Agenten kan læse og interagere med indholdet.",
+			"browser.open.confirmTitle": "Åbn browserside?",
+			"browser.open.invocation": "Åbner browserside på {0}",
+			"browser.open.newPageOption": "Nej, åbn en ny side på {0}",
+			"browser.open.noPagesOption": "Nej - del ingen faner med agenten",
+			"browser.open.past": "Åbnede browserside på {0}",
+			"browser.open.prompt.invocation": "Beder brugeren om at dele en browserfane",
+			"browser.open.prompt.past": "Bad brugeren om at dele en browserfane",
+			"browser.open.result": "Åbnede {0}",
+			"browser.open.sharedResult": "Brugeren delte {0}",
+			"browser.open.shareExistingOption": "Ja, del \"{0}\" - {1}",
+			"browser.open.shareQuestion.message": "Del en eksisterende browserfane?",
+			"browser.open.shareQuestion.title": "Del browserfane",
+			"openBrowserTool.displayName": "Åbn browserside",
+			"openBrowserTool.userDescription": "Åbn en URL-adresse i den integrerede browser"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/openBrowserToolNonAgentic": {
+			"browser.open.nonAgentic.confirmMessage": "Dette åbner {0} i den integrerede browser. Agenten kan ikke læse indholdet.",
+			"browser.open.nonAgentic.confirmTitle": "Åbn browserside?",
+			"browser.open.nonAgentic.invocation": "Åbner browserside på {0}",
+			"browser.open.nonAgentic.past": "Åbnede browserside på {0}",
+			"browser.open.nonAgentic.result": "Åbnede {0}"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/readBrowserTool": {
+			"browser.read.invocation": "Læser {0}",
+			"browser.read.past": "Læs {0}",
+			"readBrowserTool.displayName": "Læs side",
+			"readBrowserTool.userDescription": "Læs indholdet af en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/runPlaywrightCodeTool": {
+			"browser.runCode.confirmDisclaimer": "Sørg for, at du har tillid til koden, før du fortsætter.",
+			"browser.runCode.confirmTitle": "Kør Playwright-kode?",
+			"browser.runCode.invocation": "Kører Playwright-kode...",
+			"browser.runCode.past": "Kørte Playwright-kode",
+			"browser.runCode.waitInvocation": "Venter på, at Playwright-koden fuldføres...",
+			"browser.runCode.waitPast": "Ventede på Playwright-koden",
+			"runPlaywrightCodeTool.displayName": "Kør Playwright-kode",
+			"runPlaywrightCodeTool.userDescription": "Kør et Playwright-kodestykke mod en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/screenshotBrowserTool": {
+			"browser.screenshot.invocation": "Tager browserskærmbillede",
+			"browser.screenshot.invocation.element": "Tager skærmbillede af {0}",
+			"browser.screenshot.past": "Tog browserskærmbillede",
+			"browser.screenshot.past.element": "Tog skærmbillede af {0}",
+			"screenshotBrowserTool.displayName": "Tag skærmbillede af side",
+			"screenshotBrowserTool.userDescription": "Tag et skærmbillede af en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/tools/typeBrowserTool": {
+			"browser.pressKey.invocation": "Trykker på tasten `{0}` i {1}",
+			"browser.pressKey.invocation.element": "Trykker på tasten `{0}` i {1} i {2}",
+			"browser.pressKey.past": "Trykkede på tasten `{0}` i {1}",
+			"browser.pressKey.past.element": "Trykkede på tasten `{0}` i {1} i {2}",
+			"browser.type.invocation": "Skriver tekst i {0}",
+			"browser.type.invocation.element": "Skriver tekst i {0} i {1}",
+			"browser.type.past": "Skrev tekst i {0}",
+			"browser.type.past.element": "Skrev tekst i {0} i {1}",
+			"browser.typeAndSubmit.invocation": "Skriver tekst i {0} og trykker på Enter",
+			"browser.typeAndSubmit.invocation.element": "Skriver tekst i {0} i {1} og trykker på Enter",
+			"browser.typeAndSubmit.past": "Skrev tekst i {0} og trykkede på Enter",
+			"browser.typeAndSubmit.past.element": "Skrev tekst i {0} i {1} og trykkede på Enter",
+			"typeBrowserTool.displayName": "Skriv på side",
+			"typeBrowserTool.userDescription": "Skriv tekst, eller tryk på taster på en browserside"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/widgets/browserUrlBarWidget": {
+			"browser.goTo": "Gå til {0}",
+			"browser.urlPlaceholder": "Angiv en URL-adresse"
+		},
+		"vs/workbench/contrib/bulkEdit/browser/bulkEditService": {
+			"areYouSureQuiteBulkEdit.detail": "'{0}' er i gang.",
+			"changeWorkspace.message": "Er du sikker på, at du vil skifte arbejdsområde?",
+			"closeTheWindow.message": "Er du sikker på, at du vil lukke vinduet?",
+			"fileOperation": "Filhandling",
+			"nothing": "Foretog ingen ændringer",
+			"quitMessage": "Er du sikker på, at du vil afslutte?",
+			"quitMessageMac": "Er du sikker på, at du vil afslutte?",
+			"refactoring.autoSave": "Styrer, om filer, der indgik i en refaktorering, gemmes automatisk",
+			"reloadTheWindow.message": "Er du sikker på, at du vil genindlæse vinduet?",
+			"summary.0": "Foretog ingen ændringer",
+			"summary.n0": "Foretog {0} tekstændringer i én fil",
+			"summary.nm": "Foretog {0} tekstændringer i {1} filer",
+			"summary.textFiles": "Foretog {0} tekstændringer i {1} filer og oprettede eller slettede desuden {2} filer",
+			"workspaceEdit": "Arbejdsområdeændring"
+		},
 		"vs/workbench/contrib/bulkEdit/browser/preview/bulkEdit.contribution": {
-			"continue": "&&Fortsæt"
+			"apply": "Anvend refaktorering",
+			"cat": "Eksempel på refaktorering",
+			"continue": "&&Fortsæt",
+			"detail": "Tryk på 'Fortsæt' for at kassere den forrige refaktorering og fortsætte med den aktuelle.",
+			"Discard": "Kassér refaktorering",
+			"groupByFile": "Gruppér ændringer efter fil",
+			"groupByType": "Gruppér ændringer efter type",
+			"overlap": "Der vises allerede et eksempel på en anden refaktorering.",
+			"panel": "Eksempel på refaktorering",
+			"refactorPreviewViewIcon": "Visningsikon for visningen med eksempel på refaktorering.",
+			"toogleSelection": "Slå ændring til/fra"
 		},
 		"vs/workbench/contrib/bulkEdit/browser/preview/bulkEditPane": {
-			"cancel": "Kassér"
+			"cancel": "Kassér",
+			"conflict.1": "Refaktoreringen kan ikke anvendes, fordi '{0}' er blevet ændret i mellemtiden.",
+			"conflict.N": "Refaktoreringen kan ikke anvendes, fordi {0} andre filer er blevet ændret i mellemtiden.",
+			"empty.msg": "Aktivér en kodehandling, f.eks. omdøbning, for at se et eksempel på dens ændringer her.",
+			"ok": "Anvend"
 		},
 		"vs/workbench/contrib/bulkEdit/browser/preview/bulkEditPreview": {
 			"default": "Andet"
 		},
 		"vs/workbench/contrib/bulkEdit/browser/preview/bulkEditTree": {
 			"aria.create": "Opretter {0}",
+			"aria.createAndEdit": "Opretter {0} og foretager også tekstændringer",
+			"aria.del": "linje {0}, fjerner {1}",
 			"aria.delete": "Sletter {0}",
-			"aria.rename": "Omdøber {0} til {1}"
+			"aria.deleteAndEdit": "Sletter {0} og foretager også tekstændringer",
+			"aria.editOnly": "{0}, foretager tekstændringer",
+			"aria.insert": "linje {0}, indsætter {1}",
+			"aria.rename": "Omdøber {0} til {1}",
+			"aria.renameAndEdit": "Omdøber {0} til {1} og foretager også tekstændringer",
+			"aria.replace": "linje {0}, erstatter {1} med {2}",
+			"bulkEdit": "Masseredigering",
+			"detail.create": "(opretter)",
+			"detail.del": "(sletter)",
+			"detail.rename": "(omdøber)",
+			"rename.label": "{0} → {1}",
+			"title": "{0} - {1}"
 		},
 		"vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution": {
 			"close": "Luk",
@@ -2089,6 +2502,9 @@
 			"agentHost.modePicker": "Agenttilstand",
 			"agentHost.permissionModePicker": "Godkendelser"
 		},
+		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostDownloadProgress": {
+			"agentHost.download.titleFallback": "Downloader"
+		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostFolderPickerActionItem": {
 			"agentHost.selectFolder": "Mappe"
 		},
@@ -2096,7 +2512,8 @@
 			"agentHost.auto.discount": "{0} % rabat"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostPermissionUiContribution": {
-			"agentHost.permission.allow": "Tillad"
+			"agentHost.permission.allow": "Tillad",
+			"agentHost.permission.deny": "Afvis"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSessionHandler": {
 			"agentHost.elicit.url.cancel": "Annuller"
@@ -2132,6 +2549,7 @@
 			"chat.openSessionInNewEditorGroup.label": "Åbn ved siden af",
 			"chat.openSessionInNewWindow.label": "Åbn i nyt vindue",
 			"collapseAll": "Fold alle sammen",
+			"deleteAllChats.button": "Slet alle",
 			"deleteAllChats.detail": "Denne handling kan ikke fortrydes.",
 			"deleteSession.delete": "Slet",
 			"deleteSession.detail": "Denne handling kan ikke fortrydes.",
@@ -2171,6 +2589,7 @@
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/experiments/agentTitleBarStatusWidget": {
 			"agentStatusWidget.search": "Søg",
+			"openQuickOpenTooltip2": "Gå til fil",
 			"review": "Gennemgå"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/experiments/unifiedQuickAccess": {
@@ -2185,6 +2604,7 @@
 			"builtinGroup": "Indbygget",
 			"builtinSource": "Indbygget",
 			"collapsed": "sammenfoldet",
+			"copyRelativePath": "Kopiér relativ sti",
 			"countPrompts": "{0} prompter",
 			"expanded": "udfoldet",
 			"extensionGroup": "Udvidelser",
@@ -2247,6 +2667,7 @@
 			"tools": "Værktøjer"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/automationsListWidget": {
+			"automationAriaLabel": "{0}, {1}",
 			"automationAriaLabelDisabled": "{0}, deaktiveret",
 			"automationDisabled": "Deaktiveret",
 			"automationFolderLabel": "om {0}",
@@ -2279,6 +2700,7 @@
 			"expanded": "udfoldet",
 			"extensionGroup": "Udvidelser",
 			"mcpBrowseBack": "Tilbage",
+			"mcpServerAriaLabelWithStatus": "{0}, {1}",
 			"mcpServers": "MCP-servere",
 			"mcpServersListAriaLabel": "MCP-servere",
 			"pluginGroup": "Plugins",
@@ -2316,7 +2738,9 @@
 			"chat.attachment.saveFileButton": "Gem som...",
 			"chat.terminalCommandHoverCommandTitle": "Kommando",
 			"instructions": "Instruktioner",
-			"prompt": "Prompt"
+			"prompt": "Prompt",
+			"tool": "{0} - {1}",
+			"toolset": "{0} - {1}"
 		},
 		"vs/workbench/contrib/chat/browser/attachments/implicitContextAttachment": {
 			"file.lowercase": "fil"
@@ -2331,10 +2755,12 @@
 			"chat.permissions.default.autoApprove.label": "Omgå godkendelser",
 			"chat.permissions.default.autopilot.label": "Autopilot (forhåndsvisning)",
 			"chat.permissions.default.default.label": "Standardgodkendelser",
+			"chat.toolReferenceName.description": "{0} - {1}",
 			"interactiveSessionConfigurationTitle": "Chat"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/agentHostChatDebugProvider": {
 			"agentHost.debug.customizationDisabled": "deaktiveret",
+			"agentHost.debug.modelChangeFromTo": "{0} → {1}",
 			"agentHost.debug.reasoning": "Ræsonnement",
 			"agentHost.debug.sessionError": "Fejl",
 			"agentHost.debug.sessionWarning": "Advarsel"
@@ -2354,6 +2780,9 @@
 			"chatDebug.cache.truncatedSideCurr": "Aktuel",
 			"chatDebug.cache.truncatedSidePrev": "Forrige",
 			"chatDebug.title": "Agentens fejlfindingslogge"
+		},
+		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugCacheInsights": {
+			"chatDebug.cache.insight.model.detail": "{0} → {1}"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugDetailPanel": {
 			"chatDebug.closeDetail": "Luk",
@@ -2607,6 +3036,9 @@
 		"vs/workbench/contrib/chat/browser/promptSyntax/skillActions": {
 			"configure-skills.short": "Færdigheder"
 		},
+		"vs/workbench/contrib/chat/browser/tools/clientToolSetsContribution": {
+			"clientToolSet.browser.description": "Integreret browser"
+		},
 		"vs/workbench/contrib/chat/browser/tools/languageModelToolsService": {
 			"autoApprove2.button.disable": "Deaktiver",
 			"autoApprove2.button.enable": "Aktivér"
@@ -2667,6 +3099,7 @@
 			"chat.planReview.commentRowLine": "Linje {0}",
 			"chat.planReview.expand": "Fold ud",
 			"chat.planReview.expandSize": "Fold ud",
+			"chat.planReview.inlineCommentLocation": "Linje {0}, kolonne {1}",
 			"chat.planReview.inlineCommentLocationLine": "Linje {0}"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatQuestionCarouselPart": {
@@ -2701,7 +3134,11 @@
 			"chat.thinking.terminal.2": "Kører",
 			"chat.thinking.thinking.1": "Tænker",
 			"chat.thinking.thinking.2": "Ræsonnement",
+			"chat.thinking.titleWithDuration": "{0} - {1}",
 			"chat.thinking.tool.3": "Indlæser"
+		},
+		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatTodoListWidget": {
+			"chat.todoList.item": "{0}, {1}"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatToolInputOutputContentPart": {
 			"chat.input": "Input",
@@ -2926,50 +3363,334 @@
 		"vs/workbench/contrib/chat/electron-browser/toggleRemoteConnectionsActionViewItem": {
 			"tunnelHost.hover.showOutput": "Vis output"
 		},
+		"vs/workbench/contrib/codeEditor/browser/accessibility/accessibility": {
+			"announceCursorPosition": "Oplæs markørplacering",
+			"announceCursorPosition.description": "Oplæs den aktuelle markørplacering (linje og kolonne) via skærmlæseren.",
+			"screenReader.lineColPosition": "Linje {0}, kolonne {1}",
+			"toggleScreenReaderMode": "Slå tilgængelighedstilstand for skærmlæser til/fra",
+			"toggleScreenReaderModeDescription": "Slår en optimeret tilstand til eller fra til brug med skærmlæsere, brailleenheder og andre hjælpeteknologier."
+		},
 		"vs/workbench/contrib/codeEditor/browser/dictation/editorDictation": {
-			"stopDictationShort2": "Stop diktering"
+			"startDictation": "Start diktering i editor",
+			"stopDictation": "Stop diktering i editor",
+			"stopDictationShort1": "Stop diktering ({0})",
+			"stopDictationShort2": "Stop diktering",
+			"voiceCategory": "Stemme"
+		},
+		"vs/workbench/contrib/codeEditor/browser/diffEditorAccessibilityHelp": {
+			"msg1": "Du er i en diffeditor.",
+			"msg2": "Vis den næste{0} eller forrige{1} diff i diffgennemgangstilstand, som er optimeret til skærmlæsere.",
+			"msg3": "Kør kommandoen Diffeditor: Skift side{0} for at skifte mellem den oprindelige og den ændrede editor.",
+			"msg4": "Du kan styre, hvilke tilgængelighedssignaler der skal afspilles, ved at konfigurere følgende indstillinger: {0}.",
+			"msg5": "Indstillingen accessibility.verbosity.diffEditorActive styrer, om diffeditoren annonceres, når den bliver den aktive editor."
+		},
+		"vs/workbench/contrib/codeEditor/browser/diffEditorHelper": {
+			"hintTimeout": "Diffalgoritmen blev stoppet tidligt (efter {0} ms.)",
+			"hintWhitespace": "Vis forskelle i blanktegn",
+			"removeTimeout": "Fjern grænse"
 		},
 		"vs/workbench/contrib/codeEditor/browser/editorFindAccessibilityHelp": {
+			"find.closingDesc": "Tryk på Escape for at lukke Find. Fokus vender tilbage til editoren ved det seneste match, og din søgehistorik bevares.",
 			"find.closingHeader": "Lukker:",
+			"find.context": "Du er i dialogboksen Find for den aktive editor. Her skriver du det, du vil finde. Editoren er en separat flade, der viser hvert match og den omgivende kontekst.",
+			"find.dialogDesc": "Mens du er i dialogboksen Find, forbliver fokus i inputfeltet. Du kan fortsætte med at skrive, redigere søgeteksten eller gå gennem match uden at forlade dialogboksen. Når du går til et match herfra, opdateres editoren i baggrunden, men fokus forbliver i dialogboksen Find.",
+			"find.dialogHeader": "I dialogboksen Find (dens funktion):",
+			"find.focusDesc1": "Når du navigerer fra dialogboksen Find, opdateres editoren, mens fokus forbliver i inputfeltet. Det er tilsigtet, så du kan fortsætte med at justere søgningen uden at miste din placering.",
+			"find.focusDesc2": "Hvis du vil flytte fokus til editoren for at redigere tekst eller undersøge den omgivende kode, skal du trykke på Escape for at lukke Find. Fokus vender tilbage til editoren ved det seneste match.",
 			"find.focusHeader": "Fokusadfærd (vigtigt):",
+			"find.header": "Hjælp til tilgængelighed: Find i editor",
+			"find.hear1": "1) Hele linjen, der indeholder matchet, læses først op, så du straks får konteksten.",
+			"find.hear2": "2) Din placering blandt matchene oplyses, så du ved, hvor langt du er i resultaterne.",
+			"find.hear3": "3) Den nøjagtige linje og kolonne oplyses, så du ved præcis, hvor matchet findes i filen.",
+			"find.hearConclusion": "Denne rækkefølge bruges, hver gang du går frem eller tilbage.",
+			"find.hearDesc": "Hvert navigationstrin giver dig en komplet oplæst opdatering, så du altid ved, hvor du er. Rækkefølgen er den samme:",
+			"find.hearHeader": "Det hører du, hver gang du går til et match:",
 			"find.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"find.keyEnter": "- Enter: Gå til næste match uden at forlade dialogboksen Find.",
+			"find.keyF3": "- {0}: Gå til næste match.",
+			"find.keyNavEditorHeader": "Mens fokus er I editoren (ikke i feltet Find):",
+			"find.keyNavFindHeader": "Mens fokus er I feltet Find:",
+			"find.keyNavNote": "Bemærk: Tryk ikke på Enter eller Shift+Enter, når editoren har fokus – det indsætter linjeskift i stedet for at navigere.",
+			"find.keyShiftEnter": "- Shift+Enter: Gå til forrige match uden at forlade dialogboksen Find.",
+			"find.keyShiftF3": "- {0}: Gå til forrige match.",
+			"find.macSetting": "- `editor.find.globalFindClipboard`: Bruger den delte macOS-søgeudklipsholder, når den er tilgængelig.",
+			"find.macSettingHeader": "Platformsspecifik indstilling (kun macOS):",
+			"find.matchStatus": "Match {0} af {1}.",
+			"find.noMatches": "Der blev ikke fundet nogen match i den aktuelle fil. Prøv at justere søgeteksten eller indstillingerne nedenfor.",
+			"find.noSearchTerm": "Der er endnu ikke angivet nogen søgetekst. Begynd at skrive for at finde match i editoren.",
 			"find.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"find.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
+			"find.optionSelection": "- Find i markering: Begræns match til den aktuelle markering.",
+			"find.optionsHeader": "Indstillinger for Find i dialogboksen:",
 			"find.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"find.outsideConclusion": "Du hører den samme rækkefølge i tre trin: Hele linjen, matchplaceringen og derefter linje og kolonne.",
+			"find.outsideDesc": "Når editoren har fokus i stedet for dialogboksen Find, kan du stadig navigere mellem match.",
+			"find.outsideF3": "- Tryk på {0} for at gå til næste match.",
+			"find.outsideHeader": "Uden for dialogboksen Find (i editoren):",
+			"find.outsideShiftF3": "- Tryk på {0} for at gå til forrige match.",
+			"find.searchTerm": "Du søger efter: \"{0}\".",
+			"find.settingAutoSelection": "- `editor.find.autoFindInSelection`: Aktiverer automatisk Find i markering ud fra markeringstypen.",
+			"find.settingCloseOnResult": "- `editor.find.closeOnResult`: Lukker dialogboksen Find, når en udtrykkelig navigationskommando til Find lander på et match.",
+			"find.settingCursorMove": "- `editor.find.cursorMoveOnType`: Flytter markøren til det bedste match, mens du skriver.",
+			"find.settingExtraSpace": "- `editor.find.addExtraSpaceOnTop`: Tilføjer ekstra rulleplads, så match ikke skjules bag dialogboksen Find.",
+			"find.settingFindOnType": "- `editor.find.findOnType`: Kører Find, mens du skriver.",
+			"find.settingHistory": "- `editor.find.history`: Styrer, om søgehistorikken for Find gemmes.",
+			"find.settingLoop": "- `editor.find.loop`: Fortsætter søgningen fra begyndelsen eller slutningen af filen.",
+			"find.settingOccurrences": "- `editor.occurrencesHighlight`: Fremhæver andre forekomster af det aktuelle symbol.",
+			"find.settingOccurrencesDelay": "- `editor.occurrencesHighlightDelay`: Styrer, hvor hurtigt forekomster fremhæves.",
+			"find.settingSeed": "- `editor.find.seedSearchStringFromSelection`: Styrer, hvornår markeret tekst bruges til at udfylde Find.",
+			"find.settingSelectionHighlight": "- `editor.selectionHighlight`: Fremhæver andre match for den aktuelle markering.",
+			"find.settingSelectionMaxLength": "- `editor.selectionHighlightMaxLength`: Begrænser længden på fremhævede markeringer.",
+			"find.settingSelectionMultiline": "- `editor.selectionHighlightMultiline`: Styrer, om markeringer over flere linjer fremhæves.",
 			"find.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
+			"find.settingsIntro": "Disse indstillinger påvirker, hvordan Find fungerer, eller hvordan match fremhæves.",
+			"find.settingVerbosity": "- `accessibility.verbosity.find`: Styrer, om feltet Find oplæser tippet om hjælp til tilgængelighed.",
 			"find.statusHeader": "Aktuel søgestatus:",
+			"replace.closingDesc": "Tryk på Escape for at lukke Find og erstat. Fokus vender tilbage til editoren ved den seneste erstatningsplacering, og din søge- og erstatningshistorik bevares.",
 			"replace.closingHeader": "Lukker:",
+			"replace.context": "Du er i dialogboksen Find og erstat for den aktive editor. Her kan du finde og erstatte tekst. Editoren er en separat flade, der viser hvert match og den omgivende kontekst.",
+			"replace.dialogDesc": "Mens du er i et af inputfelterne, forbliver fokus i feltet. Du kan skrive, redigere eller navigere mellem match uden at forlade det. Når du går til et match fra feltet Find, opdateres editoren i baggrunden, men fokus forbliver i dialogboksen. Tab flytter dig mellem Find og Erstat.",
+			"replace.dialogHeader": "I dialogboksen Find og erstat (dens funktion):",
+			"replace.focusDesc1": "Når du navigerer fra dialogboksen Find, opdateres editoren, mens fokus forbliver i inputfeltet. Det er tilsigtet, så du kan fortsætte med at justere søgningen uden at miste din placering.",
+			"replace.focusDesc2": "Når du erstatter fra feltet Erstat, erstattes matchet, og fokus flyttes til næste match. Hvis du har erstattet alle match, forbliver dialogboksen åben.",
+			"replace.focusDesc3": "Hvis du vil flytte fokus til editoren for at redigere tekst, skal du trykke på Escape for at lukke dialogboksen. Fokus vender tilbage til editoren ved den seneste erstatningsplacering.",
 			"replace.focusHeader": "Fokusadfærd (vigtigt):",
+			"replace.header": "Hjælp til tilgængelighed: Find og erstat i editor",
+			"replace.hear1": "1) Hele linjen, der indeholder matchet, læses først op, så du straks får konteksten.",
+			"replace.hear2": "2) Din placering blandt matchene oplyses, så du ved, hvor langt du er i resultaterne.",
+			"replace.hear3": "3) Den nøjagtige linje og kolonne oplyses, så du ved præcis, hvor matchet findes i filen.",
+			"replace.hearDesc": "Hvert navigationstrin giver dig en komplet oplæst opdatering:",
+			"replace.hearHeader": "Det hører du, hver gang du går til et match:",
 			"replace.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"replace.keyEnter": "- Enter: Gå til næste match uden at forlade Find.",
+			"replace.keyF3": "- {0}: Gå til næste match.",
+			"replace.keyNavEditorHeader": "Mens fokus er I editoren (ikke i feltet Find):",
+			"replace.keyNavFindHeader": "Mens fokus er I feltet Find:",
+			"replace.keyNavNote": "Bemærk: Tryk ikke på Enter eller Shift+Enter, når editoren har fokus – det indsætter linjeskift i stedet for at navigere.",
+			"replace.keyNavReplaceHeader": "Mens fokus er I feltet Erstat:",
+			"replace.keyReplaceAll": "- {0}: Erstat alle match på én gang.",
+			"replace.keyReplaceEnter": "- Enter: Erstat det aktuelle match, og gå til det næste.",
+			"replace.keyReplaceOne": "- {0}: Erstat kun det aktuelle match.",
+			"replace.keyShiftEnter": "- Shift+Enter: Gå til forrige match uden at forlade Find.",
+			"replace.keyShiftF3": "- {0}: Gå til forrige match.",
+			"replace.keyTab": "- Tab: Flyt mellem felterne Find og Erstat.",
+			"replace.macSetting": "- `editor.find.globalFindClipboard`: Bruger den delte macOS-søgeudklipsholder, når den er tilgængelig.",
+			"replace.macSettingHeader": "Platformsspecifik indstilling (kun macOS):",
+			"replace.matchStatus": "Match {0} af {1}.",
+			"replace.noMatches": "Der blev ikke fundet nogen match i den aktuelle fil. Prøv at justere søgeteksten eller indstillingerne nedenfor.",
+			"replace.noReplaceText": "Der er endnu ikke angivet nogen erstatningstekst. Tryk på Tab for at gå til feltet Erstat, og skriv erstatningen.",
+			"replace.noSearchTerm": "Der er endnu ikke angivet nogen søgetekst. Begynd at skrive for at finde match i editoren.",
 			"replace.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
+			"replace.optionPreserve": "- Bevar store og små bogstaver: Bevarer brugen af store og små bogstaver i det oprindelige match ved erstatning.",
 			"replace.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
+			"replace.optionSelection": "- Find i markering: Begræns match til den aktuelle markering.",
+			"replace.optionsHeader": "Indstillinger for Find og erstat i dialogboksen:",
 			"replace.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"replace.replaceText": "Erstatningstekst: \"{0}\".",
+			"replace.searchTerm": "Du søger efter: \"{0}\".",
+			"replace.settingAutoSelection": "- `editor.find.autoFindInSelection`: Aktiverer automatisk Find i markering ud fra markeringstypen.",
+			"replace.settingCursorMove": "- `editor.find.cursorMoveOnType`: Flytter markøren til det bedste match, mens du skriver.",
+			"replace.settingExtraSpace": "- `editor.find.addExtraSpaceOnTop`: Tilføjer ekstra rulleplads, så match ikke skjules bag dialogboksen Find og erstat.",
+			"replace.settingFindHistory": "- `editor.find.history`: Styrer, om søgehistorikken for Find gemmes.",
+			"replace.settingFindOnType": "- `editor.find.findOnType`: Kører Find, mens du skriver.",
+			"replace.settingLoop": "- `editor.find.loop`: Fortsætter søgningen fra begyndelsen eller slutningen af filen.",
+			"replace.settingOccurrences": "- `editor.occurrencesHighlight`: Fremhæver andre forekomster af det aktuelle symbol.",
+			"replace.settingOccurrencesDelay": "- `editor.occurrencesHighlightDelay`: Styrer, hvor hurtigt forekomster fremhæves.",
+			"replace.settingReplaceHistory": "- `editor.find.replaceHistory`: Styrer, om erstatningshistorikken gemmes.",
+			"replace.settingSeed": "- `editor.find.seedSearchStringFromSelection`: Styrer, hvornår markeret tekst bruges til at udfylde Find.",
+			"replace.settingSelectionHighlight": "- `editor.selectionHighlight`: Fremhæver andre match for den aktuelle markering.",
+			"replace.settingSelectionMaxLength": "- `editor.selectionHighlightMaxLength`: Begrænser længden på fremhævede markeringer.",
+			"replace.settingSelectionMultiline": "- `editor.selectionHighlightMultiline`: Styrer, om markeringer over flere linjer fremhæves.",
 			"replace.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
+			"replace.settingsIntro": "Disse indstillinger påvirker, hvordan Find og erstat fungerer, eller hvordan match fremhæves.",
+			"replace.settingVerbosity": "- `accessibility.verbosity.find`: Styrer, om felterne Find og Erstat oplæser tippet om hjælp til tilgængelighed.",
 			"replace.statusHeader": "Aktuel søgestatus:"
+		},
+		"vs/workbench/contrib/codeEditor/browser/emptyTextEditorHint/emptyTextEditorHint": {
+			"defaultHintAriaLabelWithInlineChat": "Kør {0} for at stille et spørgsmål, eller kør {1} for at vælge et sprog og komme i gang. Begynd at skrive for at afvise.",
+			"defaultHintAriaLabelWithoutInlineChat": "Kør {0} for at vælge et sprog og komme i gang. Begynd at skrive for at afvise.",
+			"disableEditorEmptyHint": "Deaktiver tip i tom editor",
+			"disableHint": " Slå {0} til eller fra i indstillingerne for at deaktivere dette tip.",
+			"emptyTextEditorHintWithInlineChat": "[[Generér kode]] ({0}), eller [[vælg et sprog]] ({1}). Begynd at skrive for at afvise, eller [[vis ikke]] dette igen.",
+			"emptyTextEditorHintWithoutInlineChat": "[[Vælg et sprog]] ({0}) for at komme i gang. Begynd at skrive for at afvise, eller [[vis ikke]] dette igen."
 		},
 		"vs/workbench/contrib/codeEditor/browser/find/simpleFindWidget": {
 			"accessibilityHelpHintInLabel": "Tryk på {0} for hjælp til tilgængelighed",
+			"ariaSearchNoInput": "Angiv søgeinput",
 			"ariaSearchNoResult": "{0} fundet for '{1}'",
 			"ariaSearchNoResultEmpty": "{0} fundet",
 			"ariaSearchNoResultWithLineNumNoCurrentMatch": "{0} fundet for '{1}'",
 			"label.closeButton": "Luk",
 			"label.find": "Find",
-			"placeholder.find": "Find"
+			"label.nextMatchButton": "Næste match",
+			"label.previousMatchButton": "Forrige match",
+			"placeholder.find": "Find",
+			"simpleFindWidget.sashBorder": "Kantfarve på skillelinjen."
 		},
 		"vs/workbench/contrib/codeEditor/browser/inspectEditorTokens/inspectEditorTokens": {
+			"inspectEditorTokens": "Udvikler: Undersøg editortokens og -omfang",
 			"inspectTMScopesWidget.loading": "Indlæser..."
 		},
+		"vs/workbench/contrib/codeEditor/browser/inspectKeybindings": {
+			"workbench.action.inspectKeyMap": "Undersøg tastetilknytninger",
+			"workbench.action.inspectKeyMapJSON": "Undersøg tastetilknytninger (JSON)"
+		},
+		"vs/workbench/contrib/codeEditor/browser/largeFileOptimizations": {
+			"largeFile": "{0}: tokenisering, ombrydning, foldning, CodeLens, ordfremhævning og fastgjort rulning er slået fra for denne store fil for at reducere hukommelsesforbruget og undgå, at programmet fryser eller går ned.",
+			"removeOptimizations": "Gennemtving aktivering af funktioner",
+			"reopenFilePrompt": "Åbn filen igen, før denne indstilling træder i kraft."
+		},
+		"vs/workbench/contrib/codeEditor/browser/outline/documentSymbolsOutline": {
+			"document": "Dokumentsymboler"
+		},
 		"vs/workbench/contrib/codeEditor/browser/outline/documentSymbolsTree": {
+			"1.problem": "1 problem i dette element",
+			"deep.problem": "Indeholder elementer med problemer",
+			"N.problem": "{0} problemer i dette element",
 			"title.template": "{0} ({1})"
 		},
 		"vs/workbench/contrib/codeEditor/browser/quickaccess/gotoLineQuickAccess": {
 			"gotoLine": "Gå til linje/kolonne...",
-			"gotoLineQuickAccess": "Gå til linje/kolonne"
+			"gotoLineQuickAccess": "Gå til linje/kolonne",
+			"gotoLineQuickAccessPlaceholder": "Skriv linjenummeret og eventuelt kolonnen, der skal gås til (f.eks. :42:5 for linje 42, kolonne 5). Skriv :: for at gå til en tegnforskydning (f.eks. ::1024 for tegn 1024 fra filens begyndelse). Brug negative værdier til at navigere baglæns.",
+			"gotoOffset": "Gå til forskydning...",
+			"gotoOffsetQuickAccess": "Gå til forskydning"
+		},
+		"vs/workbench/contrib/codeEditor/browser/quickaccess/gotoSymbolQuickAccess": {
+			"empty": "Ingen matchende elementer",
+			"gotoSymbol": "Gå til symbol i editor...",
+			"gotoSymbolByCategoryQuickAccess": "Gå til symbol i editor efter kategori",
+			"gotoSymbolQuickAccess": "Gå til symbol i editor",
+			"gotoSymbolQuickAccessPlaceholder": "Skriv navnet på det symbol, der skal gås til.",
+			"miGotoSymbolInEditor": "Gå til &&symbol i editor..."
+		},
+		"vs/workbench/contrib/codeEditor/browser/saveParticipants": {
+			"codeaction": "Hurtige rettelser",
+			"codeAction.apply": "Anvender kodehandlingen '{0}'.",
+			"codeaction.get2": "Henter kodehandlinger fra {0} ([konfigurer]({1})).",
+			"formatting2": "Kører formateringsværktøjet '{0}' ([konfigurer]({1}))."
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleColumnSelection": {
+			"miColumnSelection": "&&Kolonnemarkeringstilstand",
+			"toggleColumnSelection": "Slå kolonnemarkeringstilstand til/fra"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleMinimap": {
+			"miMinimap": "&&Minikort",
+			"toggleMinimap": "Slå minikort til/fra"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleMultiCursorModifier": {
+			"miMultiCursorAlt": "Skift til Alt+klik for flere markører",
+			"miMultiCursorCmd": "Skift til Cmd+klik for flere markører",
+			"miMultiCursorCtrl": "Skift til Ctrl+klik for flere markører",
+			"toggleLocation": "Skift ændringstast til flere markører"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleOvertype": {
+			"mitoggleOvertypeInsertMode": "&&Slå overskrivnings-/indsættelsestilstand til/fra",
+			"toggleOvertypeInsertMode": "Slå overskrivnings-/indsættelsestilstand til/fra",
+			"toggleOvertypeMode.description": "Skift mellem overskrivnings- og indsættelsestilstand"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleRenderControlCharacter": {
+			"miToggleRenderControlCharacters": "Gengiv &&kontroltegn",
+			"toggleRenderControlCharacters": "Slå kontroltegn til/fra"
 		},
 		"vs/workbench/contrib/codeEditor/browser/toggleRenderWhitespace": {
+			"renderWhitespace": "Gengiv blanktegn",
 			"renderWhitespace.all": "Alle",
+			"renderWhitespace.boundary": "Grænse",
 			"renderWhitespace.none": "Ingen",
-			"renderWhitespace.selection": "Markering"
+			"renderWhitespace.selection": "Markering",
+			"renderWhitespace.setAll": "Angiv gengivelse af blanktegn til Alle",
+			"renderWhitespace.setBoundary": "Angiv gengivelse af blanktegn til Grænse",
+			"renderWhitespace.setNone": "Angiv gengivelse af blanktegn til Ingen",
+			"renderWhitespace.setSelection": "Angiv gengivelse af blanktegn til Markering",
+			"renderWhitespace.setTrailing": "Angiv gengivelse af blanktegn til Efterfølgende",
+			"renderWhitespace.trailing": "Efterfølgende",
+			"toggleRenderWhitespace": "Slå gengivelse af blanktegn til/fra"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleWordWrap": {
+			"editorWordWrap": "Om editoren bruger tekstombrydning i øjeblikket.",
+			"miToggleWordWrap": "&&Tekstombrydning",
+			"toggle.wordwrap": "Vis: Slå tekstombrydning til/fra",
+			"unwrapMinified": "Deaktiver ombrydning for denne fil",
+			"wrapMinified": "Aktivér ombrydning for denne fil"
+		},
+		"vs/workbench/contrib/codeEditor/common/languageConfigurationExtensionPoint": {
+			"formatError": "{0}: Ugyldigt format. Der forventes et JSON-objekt.",
+			"parseErrors": "Fejl under fortolkning af {0}: {1}",
+			"schema.autoCloseBefore": "Definerer, hvilke tegn der skal stå efter markøren, for at parenteser eller anførselstegn lukkes automatisk, når indstillingen 'languageDefined' for automatisk lukning bruges. Dette er typisk de tegn, der ikke kan indlede et udtryk.",
+			"schema.autoClosingPairs": "Definerer parentesparrene. Når en indledende parentes skrives, indsættes den afsluttende parentes automatisk.",
+			"schema.autoClosingPairs.notIn": "Definerer en liste over områder, hvor automatiske par er deaktiveret.",
+			"schema.blockComment.begin": "Tegnsekvensen, der indleder en blokkommentar.",
+			"schema.blockComment.end": "Tegnsekvensen, der afslutter en blokkommentar.",
+			"schema.blockComments": "Definerer, hvordan blokkommentarer markeres.",
+			"schema.brackets": "Definerer de parentestegn, der øger eller reducerer indrykningen. Når farvelægning af parentespar er aktiveret, og {0} ikke er defineret, definerer dette også de parentespar, der farvelægges efter deres indlejringsniveau.",
+			"schema.closeBracket": "Den afsluttende parentes eller tegnsekvens.",
+			"schema.colorizedBracketPairs": "Definerer de parentespar, der farvelægges efter deres indlejringsniveau, hvis farvelægning af parentespar er aktiveret. Parenteser, der er medtaget her, men ikke i {0}, medtages automatisk i {0}.",
+			"schema.comments": "Definerer kommentarsymbolerne",
+			"schema.folding": "Sprogets indstillinger for foldning.",
+			"schema.folding.markers": "Sprogspecifikke foldemarkører såsom '#region' og '#endregion'. De regulære start- og slutudtryk afprøves mod indholdet af alle linjer og skal udformes effektivt",
+			"schema.folding.markers.end": "RegExp-mønsteret for slutmarkøren. Det regulære udtryk skal begynde med '^'.",
+			"schema.folding.markers.end.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.folding.markers.end.flags": "RegExp-flagene for slutmarkøren.",
+			"schema.folding.markers.end.pattern": "RegExp-mønsteret for slutmarkøren.",
+			"schema.folding.markers.start": "RegExp-mønsteret for startmarkøren. Det regulære udtryk skal begynde med '^'.",
+			"schema.folding.markers.start.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.folding.markers.start.flags": "RegExp-flagene for startmarkøren.",
+			"schema.folding.markers.start.pattern": "RegExp-mønsteret for startmarkøren.",
+			"schema.folding.offSide": "Et sprog følger indrykningsreglen, hvis blokke i sproget udtrykkes ved deres indrykning. Hvis dette er angivet, tilhører tomme linjer den efterfølgende blok.",
+			"schema.indentationRules": "Sprogets indstillinger for indrykning.",
+			"schema.indentationRules.decreaseIndentPattern": "Hvis en linje matcher dette mønster, skal alle efterfølgende linjer rykkes ét niveau ud (indtil en anden regel matcher).",
+			"schema.indentationRules.decreaseIndentPattern.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.indentationRules.decreaseIndentPattern.flags": "RegExp-flagene for decreaseIndentPattern.",
+			"schema.indentationRules.decreaseIndentPattern.pattern": "RegExp-mønsteret for decreaseIndentPattern.",
+			"schema.indentationRules.increaseIndentPattern": "Hvis en linje matcher dette mønster, skal alle efterfølgende linjer rykkes ét niveau ind (indtil en anden regel matcher).",
+			"schema.indentationRules.increaseIndentPattern.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.indentationRules.increaseIndentPattern.flags": "RegExp-flagene for increaseIndentPattern.",
+			"schema.indentationRules.increaseIndentPattern.pattern": "RegExp-mønsteret for increaseIndentPattern.",
+			"schema.indentationRules.indentNextLinePattern": "Hvis en linje matcher dette mønster, skal **kun den næste linje** rykkes ét niveau ind.",
+			"schema.indentationRules.indentNextLinePattern.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.indentationRules.indentNextLinePattern.flags": "RegExp-flagene for indentNextLinePattern.",
+			"schema.indentationRules.indentNextLinePattern.pattern": "RegExp-mønsteret for indentNextLinePattern.",
+			"schema.indentationRules.unIndentedLinePattern": "Hvis en linje matcher dette mønster, må dens indrykning ikke ændres, og den må ikke vurderes i forhold til de øvrige regler.",
+			"schema.indentationRules.unIndentedLinePattern.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.indentationRules.unIndentedLinePattern.flags": "RegExp-flagene for unIndentedLinePattern.",
+			"schema.indentationRules.unIndentedLinePattern.pattern": "RegExp-mønsteret for unIndentedLinePattern.",
+			"schema.lineComment.comment": "Tegnsekvensen, der indleder en linjekommentar.",
+			"schema.lineComment.noIndent": "Om kommentarsymbolet ikke skal indrykkes og skal placeres i den første kolonne. Standardværdien er falsk.",
+			"schema.lineComment.object": "Konfiguration af linjekommentarer.",
+			"schema.onEnterRules": "Sprogets regler, der skal evalueres, når der trykkes på Enter.",
+			"schema.onEnterRules.action": "Den handling, der skal udføres.",
+			"schema.onEnterRules.action.appendText": "Beskriver den tekst, der skal tilføjes efter den nye linje og indrykningen.",
+			"schema.onEnterRules.action.indent": "Beskriver, hvad der skal ske med indrykningen",
+			"schema.onEnterRules.action.indent.indent": "Indsæt en ny linje, og ryk ét niveau ind (i forhold til den forrige linjes indrykning).",
+			"schema.onEnterRules.action.indent.indentOutdent": "Indsæt to nye linjer:\n - den første er indrykket og indeholder markøren\n - den anden har samme indrykningsniveau",
+			"schema.onEnterRules.action.indent.none": "Indsæt en ny linje, og kopiér den forrige linjes indrykning.",
+			"schema.onEnterRules.action.indent.outdent": "Indsæt en ny linje, og ryk ét niveau ud (i forhold til den forrige linjes indrykning).",
+			"schema.onEnterRules.action.removeText": "Beskriver antallet af tegn, der skal fjernes fra den nye linjes indrykning.",
+			"schema.onEnterRules.afterText": "Denne regel udføres kun, hvis teksten efter markøren matcher dette regulære udtryk.",
+			"schema.onEnterRules.afterText.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.onEnterRules.afterText.flags": "RegExp-flagene for afterText.",
+			"schema.onEnterRules.afterText.pattern": "RegExp-mønsteret for afterText.",
+			"schema.onEnterRules.beforeText": "Denne regel udføres kun, hvis teksten før markøren matcher dette regulære udtryk.",
+			"schema.onEnterRules.beforeText.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.onEnterRules.beforeText.flags": "RegExp-flagene for beforeText.",
+			"schema.onEnterRules.beforeText.pattern": "RegExp-mønsteret for beforeText.",
+			"schema.onEnterRules.previousLineText": "Denne regel udføres kun, hvis teksten over linjen matcher dette regulære udtryk.",
+			"schema.onEnterRules.previousLineText.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.onEnterRules.previousLineText.flags": "RegExp-flagene for previousLineText.",
+			"schema.onEnterRules.previousLineText.pattern": "RegExp-mønsteret for previousLineText.",
+			"schema.openBracket": "Den indledende parentes eller tegnsekvens.",
+			"schema.surroundingPairs": "Definerer de parentespar, der kan bruges til at omslutte en markeret streng.",
+			"schema.wordPattern": "Definerer, hvad der betragtes som et ord i programmeringssproget.",
+			"schema.wordPattern.flags": "RegExp-flagene, der bruges til at matche ord.",
+			"schema.wordPattern.flags.errorMessage": "Skal matche mønsteret `/^([gimuy]+)$/`.",
+			"schema.wordPattern.pattern": "RegExp-mønsteret, der bruges til at matche ord."
+		},
+		"vs/workbench/contrib/codeEditor/electron-browser/selectionClipboard": {
+			"actions.pasteSelectionClipboard": "Indsæt markeringsudklipsholder"
+		},
+		"vs/workbench/contrib/codeEditor/electron-browser/startDebugTextMate": {
+			"startDebugTextMate": "Start logføring af TextMate-syntaksgrammatik"
 		},
 		"vs/workbench/contrib/comments/browser/comments.contribution": {
 			"collapseAll": "Fold alle sammen",
@@ -3004,11 +3725,41 @@
 			"discard": "Kassér"
 		},
 		"vs/workbench/contrib/customEditor/browser/customEditorDiffInput": {
+			"customEditorDiffLabel": "{0} - {1}",
 			"customEditorDiffTitle": "{0} ({1})",
 			"customEditorSideBySideDiffTitle": "{0} ({1})"
 		},
+		"vs/workbench/contrib/customEditor/browser/customEditorInput": {
+			"editorCannotMove": "'{0}' kan ikke flyttes: Editoren indeholder ændringer, der kun kan gemmes i det aktuelle vindue.",
+			"editorUnsupportedInWindow": "Editoren kan ikke åbnes i dette vindue, da den indeholder ændringer, der kun kan gemmes i det oprindelige vindue.",
+			"reopenInOriginalWindow": "Åbn i det oprindelige vindue"
+		},
 		"vs/workbench/contrib/customEditor/common/contributedCustomEditors": {
 			"builtinProviderDisplayName": "Indbygget"
+		},
+		"vs/workbench/contrib/customEditor/common/customEditor": {
+			"context.customEditor": "Den aktive brugerdefinerede editors viewType."
+		},
+		"vs/workbench/contrib/customEditor/common/customTextEditorModel": {
+			"vetoExtHostRestart": "En teksteditor, som en udvidelse leverer til '{0}', er stadig åben og ville ellers blive lukket."
+		},
+		"vs/workbench/contrib/customEditor/common/extensionPoint": {
+			"contributes.customEditors": "Bidragede brugerdefinerede editorer.",
+			"contributes.displayName": "Brugervenligt navn på den brugerdefinerede editor. Det vises, når brugerne vælger, hvilken editor der skal bruges.",
+			"contributes.priority": "Styrer, om den brugerdefinerede editor aktiveres automatisk, når brugeren åbner en fil, forskelseditor eller fletteeditor. Brugerne kan tilsidesætte dette med indstillingen `workbench.editorAssociations` eller `workbench.diffEditorAssociations`. Når det udelades, er standarden `default` for den normale editor og `never` for forskels- og fletteeditorer, så den ikke bruges til forskelle eller fletninger, medmindre den vælger det.",
+			"contributes.priority.default": "Editoren bruges automatisk, når brugeren åbner en ressource, forudsat at der ikke er registreret andre brugerdefinerede standardeditorer til ressourcen.",
+			"contributes.priority.diffEditor": "Styrer, om den brugerdefinerede editor aktiveres automatisk, når brugeren åbner en forskel. Når det ikke er angivet, er standarden `never`, så editoren ikke bruges til forskelle, medmindre den vælger det.",
+			"contributes.priority.mergeEditor": "Styrer, om den brugerdefinerede editor aktiveres automatisk, når brugeren åbner en fletteeditor. Når det ikke er angivet, er standarden `never`, så editoren ikke bruges til fletninger, medmindre den vælger det.",
+			"contributes.priority.never": "Editoren bruges aldrig automatisk, og den springes også over, når brugeren peger en `workbench.editorAssociations`-post på den. Den kan stadig åbnes med kommandoen `Åbn igen med` eller den særlige indstilling `workbench.diffEditorAssociations`.",
+			"contributes.priority.option": "Editoren bruges ikke automatisk, når brugeren åbner en ressource, men brugeren kan skifte til editoren med kommandoen `Åbn igen med`.",
+			"contributes.priority.textEditor": "Styrer, om den brugerdefinerede editor aktiveres automatisk, når brugeren åbner en fil. `diffEditor` og `mergeEditor` arver ikke denne værdi. Når de ikke er angivet, er standarden `never`.",
+			"contributes.selector": "Det sæt globmønstre, som den brugerdefinerede editor er aktiveret for.",
+			"contributes.selector.filenamePattern": "Det globmønster, som den brugerdefinerede editor er aktiveret for.",
+			"contributes.viewType": "Id for den brugerdefinerede editor. Det skal være entydigt på tværs af alle brugerdefinerede editorer, så vi anbefaler at medtage udvidelses-id'et som en del af `viewType`. `viewType` bruges ved registrering af brugerdefinerede editorer med `vscode.registerCustomEditorProvider` og i [aktiveringshændelsen](https://code.visualstudio.com/api/references/activation-events) `onCustomEditor:${id}`.",
+			"customEditors": "Brugerdefinerede editorer",
+			"customEditors filenamePattern": "Filnavnsmønster",
+			"customEditors priority": "Prioritet",
+			"customEditors view type": "Visningstype"
 		},
 		"vs/workbench/contrib/debug/browser/breakpointEditorContribution": {
 			"breakpoint": "Stoppunkt"
@@ -3595,16 +4346,40 @@
 			"scopedConsoleAction.external": "Åbn i ekstern terminal",
 			"scopedConsoleAction.Integrated": "Åbn i integreret terminal"
 		},
+		"vs/workbench/contrib/files/browser/editors/binaryFileEditor": {
+			"binaryFileEditor": "Fremviser til binære filer"
+		},
 		"vs/workbench/contrib/files/browser/editors/textFileEditor": {
-			"openFolder": "Åbn mappe"
+			"createFile": "Opret fil",
+			"fileIsDirectory": "Filen vises ikke i teksteditoren, fordi den er en mappe.",
+			"fileTooLargeForHeapErrorWithoutSize": "Filen vises ikke i teksteditoren, fordi den er meget stor.",
+			"fileTooLargeForHeapErrorWithSize": "Filen vises ikke i teksteditoren, fordi den er meget stor ({0}).",
+			"openFolder": "Åbn mappe",
+			"reveal": "Vis mappe",
+			"textFileEditor": "Tekstfileditor",
+			"unavailableResourceErrorEditorText": "Editoren kunne ikke åbnes, fordi filen ikke blev fundet."
 		},
 		"vs/workbench/contrib/files/browser/editors/textFileSaveErrorHandler": {
+			"compareChanges": "Sammenlign",
 			"configure": "Konfigurer",
 			"dontShowAgain": "Vis ikke igen",
 			"genericSaveError": "Kunne ikke gemme '{0}': {1}",
 			"learnMore": "Få mere at vide",
+			"overwrite": "Overskriv",
+			"overwriteElevated": "Overskriv som administrator...",
+			"overwriteElevatedSudo": "Overskriv med sudo...",
+			"permissionDeniedSaveError": "Kunne ikke gemme '{0}': Utilstrækkelige tilladelser. Vælg 'Prøv igen som administrator' for at prøve igen som administrator.",
+			"permissionDeniedSaveErrorSudo": "Kunne ikke gemme '{0}': Utilstrækkelige tilladelser. Vælg 'Prøv igen med sudo' for at prøve igen som superbruger.",
+			"readonlySaveError": "Kunne ikke gemme '{0}': Filen er skrivebeskyttet. Vælg 'Overskriv' for at forsøge at gøre den skrivbar.",
+			"readonlySaveErrorAdmin": "Kunne ikke gemme '{0}': Filen er skrivebeskyttet. Vælg 'Overskriv som administrator' for at prøve igen som administrator.",
+			"readonlySaveErrorSudo": "Kunne ikke gemme '{0}': Filen er skrivebeskyttet. Vælg 'Overskriv med sudo' for at prøve igen som superbruger.",
 			"retry": "Prøv igen",
-			"revert": "Før tilbage"
+			"revert": "Før tilbage",
+			"saveConflictDiffLabel": "{0} (i filen) ↔ {1} (i {2}) - Løs lagringskonflikt",
+			"saveElevated": "Prøv igen som administrator...",
+			"saveElevatedSudo": "Prøv igen med sudo...",
+			"staleSaveError": "Kunne ikke gemme '{0}': Filens indhold er nyere. Sammenlign din version med filens indhold, eller overskriv filens indhold med dine ændringer.",
+			"userGuide": "Brug handlingerne på editorens værktøjslinje til enten at fortryde dine ændringer eller overskrive filens indhold med dine ændringer."
 		},
 		"vs/workbench/contrib/files/browser/explorerViewlet": {
 			"addAFolder": "tilføj en mappe",
@@ -3718,42 +4493,215 @@
 			"upload": "Overfør..."
 		},
 		"vs/workbench/contrib/files/browser/fileActions.contribution": {
+			"acceptLocalChanges": "Brug dine ændringer, og overskriv filens indhold",
 			"close": "Luk",
+			"closeAll": "Luk alle",
+			"closeOthers": "Luk andre",
+			"closeSaved": "Luk gemte",
+			"compareActiveWithSaved": "Sammenlign aktiv fil med gemt version",
+			"compareActiveWithSavedMeta": "Åbner en ny forskelseditor for at sammenligne den aktive fil med versionen på disken.",
+			"compareSelected": "Sammenlign valgte",
+			"compareSource": "Vælg til sammenligning",
+			"compareWithSaved": "Sammenlign med gemt version",
+			"compareWithSelected": "Sammenlign med valgte",
 			"copyPath": "Kopiér sti",
+			"copyPathOfActive": "Kopiér stien til den aktive fil",
+			"copyRelativePath": "Kopiér relativ sti",
+			"copyRelativePathOfActive": "Kopiér den aktive fils relative sti",
 			"cut": "Klip",
+			"deleteFile": "Slet permanent",
+			"explorerOpenWith": "Åbn med...",
+			"miAutoSave": "A&&utomatisk lagring",
+			"miCloseEditor": "&&Luk editor",
+			"miGotoFile": "Gå til &&fil...",
+			"miNewFile": "&&Ny tekstfil",
+			"miRevert": "Gendan &&fil",
 			"miSave": "&&Gem",
+			"miSaveAll": "Gem a&&lle",
+			"miSaveAs": "Gem &&som...",
+			"newFile": "Ny tekstfil",
+			"newFolderDescription": "Opret en ny mappe",
+			"openFile": "Åbn fil...",
 			"openToSide": "Åbn ved siden af",
+			"reopenWith": "Åbn editor igen med...",
 			"revealInSideBar": "Vis i Stifinder",
+			"revert": "Gendan fil",
+			"revertLocalChanges": "Kassér dine ændringer, og gendan filens indhold",
 			"saveAll": "Gem alle",
-			"saveAllInGroup": "Gem alle i gruppen"
+			"saveAllInGroup": "Gem alle i gruppen",
+			"saveFiles": "Gem alle filer"
 		},
 		"vs/workbench/contrib/files/browser/fileCommands": {
+			"genericRevertError": "Kunne ikke gendanne '{0}': {1}",
 			"genericSaveError": "Kunne ikke gemme '{0}': {1}",
+			"modifiedLabel": "{0} (i filen) ↔ {1}",
+			"newFileCommand.saveLabel": "Opret fil",
 			"retry": "Prøv igen",
-			"revert": "Før tilbage"
+			"revert": "Før tilbage",
+			"revertAll": "Gendan alle"
 		},
 		"vs/workbench/contrib/files/browser/fileConstants": {
 			"newUntitledFile": "Ny unavngivet tekstfil",
+			"removeFolderFromWorkspace": "Fjern mappe fra arbejdsområde",
 			"save": "Gem",
 			"saveAll": "Gem alle",
-			"saveAs": "Gem som..."
+			"saveAs": "Gem som...",
+			"saveWithoutFormatting": "Gem uden formatering"
 		},
 		"vs/workbench/contrib/files/browser/fileImportExport": {
+			"addFolder": "&&Føj mappe til arbejdsområde",
+			"addFolders": "&&Føj mapper til arbejdsområde",
+			"chooseWhereToDownload": "Vælg placering til download",
+			"confirmManyOverwrites": "Følgende {0} filer og/eller mapper findes allerede i destinationsmappen. Vil du erstatte dem?",
 			"confirmOverwrite": "Der findes allerede en fil eller mappe med navnet '{0}' i destinationsmappen. Vil du erstatte den?",
+			"copyfolder": "Er du sikker på, at du vil kopiere '{0}'?",
+			"copyFolder": "&&Kopiér mappe",
+			"copyfolders": "Er du sikker på, at du vil kopiere mapperne?",
+			"copyFolders": "&&Kopiér mapper",
 			"copyingFile": "Kopierer {0}",
+			"copyingFiles": "Kopierer...",
+			"copyingnFile": "Kopierer {0} ressourcer",
+			"downloadBulkEdit": "Download {0}",
 			"downloadButton": "Hent",
+			"downloadingBulkEdit": "Downloader {0}",
+			"downloadingFiles": "Downloader",
+			"downloadProgressLarge": "{0} ({1} af {2}, {3}/s)",
+			"downloadProgressSmallMany": "{0} af {1} filer ({2}/s)",
+			"dropFolder": "Vil du kopiere '{0}' eller tilføje '{0}' som en mappe i arbejdsområdet?",
+			"dropFolders": "Vil du kopiere mapperne eller tilføje dem til arbejdsområdet?",
+			"fileInaccessible": "Den fil, der blev sluppet, kunne ikke tilgås med henblik på import.",
+			"filesInaccessible": "Nogle af eller alle de filer, der blev sluppet, kunne ikke tilgås med henblik på import.",
+			"importFile": "Importér {0}",
+			"importnFile": "Importér {0} ressourcer",
 			"irreversible": "Denne handling kan ikke fortrydes!",
-			"replaceButtonLabel": "&&Erstat"
+			"overwrite": "Overskriv {0}",
+			"overwriting": "Overskriver {0}",
+			"replaceButtonLabel": "&&Erstat",
+			"uploadingFiles": "Uploader",
+			"uploadProgressLarge": "{0} ({1} af {2}, {3}/s)",
+			"uploadProgressSmallMany": "{0} af {1} filer ({2}/s)"
 		},
 		"vs/workbench/contrib/files/browser/files.contribution": {
+			"askUser": "Afviser at gemme og beder om, at lagringskonflikten løses manuelt.",
+			"associations": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) for filtilknytninger til sprog (f.eks. `\"*.filtype\": \"html\"`). Mønstre matches mod filens absolutte sti, hvis de indeholder en stiseparator, og ellers mod filens navn. De har forrang for de installerede sprogs standardtilknytninger.",
+			"autoGuessEncoding": "Når dette er aktiveret, forsøger editoren at gætte tegnsætkodningen, når filer åbnes. Indstillingen kan også konfigureres pr. sprog. Bemærk, at tekstsøgning ikke respekterer denne indstilling. Kun {0} respekteres.",
+			"autoOpenDroppedFile": "Styrer, om Stifinder automatisk skal åbne en fil, når den slippes i Stifinder",
+			"autoReveal": "Styrer, om Stifinder automatisk skal vise og vælge filer, når de åbnes.",
+			"autoReveal.focusNoScroll": "Filer rulles ikke ind i visningen, men får stadig fokus.",
+			"autoReveal.off": "Filer vises og vælges ikke.",
+			"autoReveal.on": "Filer vises og vælges.",
+			"autoRevealExclude": "Konfigurer stier eller [globmønstre](https://aka.ms/vscode-glob-patterns) for at udelukke filer og mapper fra at blive vist og valgt i Stifinder, når de åbnes. Globmønstre evalueres altid i forhold til arbejdsområdemappens sti, medmindre de er absolutte stier.",
+			"autoSave": "Styrer [automatisk lagring](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) af editorer med ændringer, der ikke er gemt.",
+			"autoSaveDelay": "Styrer forsinkelsen i millisekunder, hvorefter en editor med ændringer, der ikke er gemt, gemmes automatisk. Gælder kun, når `#files.autoSave#` er angivet til `{0}`.",
+			"autoSaveWhenNoErrors": "Når dette er aktiveret, begrænses [automatisk lagring](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) til filer, der ikke har rapporterede fejl, når den automatiske lagring udløses. Gælder kun, når {0} er aktiveret.",
+			"autoSaveWorkspaceFilesOnly": "Når dette er aktiveret, begrænses [automatisk lagring](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save) til filer i det åbne arbejdsområde. Gælder kun, når {0} er aktiveret.",
+			"binaryFileEditor": "Editor til binære filer",
+			"candidateGuessEncodings": "Liste over tegnsætkodninger, som editoren skal forsøge at gætte i den angivne rækkefølge. Hvis kodningen ikke kan bestemmes, respekteres {0}",
+			"compressSingleChildFolders": "Styrer, om Stifinder skal vise mapper kompakt. I denne form komprimeres mapper med en enkelt undermappe til et kombineret træelement. Det er f.eks. nyttigt til Java-pakkestrukturer.",
+			"confirmDelete": "Styrer, om Stifinder skal bede om bekræftelse, når filer og mapper slettes.",
+			"confirmDragAndDrop": "Styrer, om Stifinder skal bede om bekræftelse, når filer og mapper flyttes med træk og slip.",
+			"confirmPasteNative": "Styrer, om Stifinder skal bede om bekræftelse, når oprindelige filer og mapper indsættes.",
+			"confirmUndo": "Styrer, om Stifinder skal bede om bekræftelse ved fortrydelse.",
+			"copyPathSeparator": "Stiseparatortegnet, der bruges ved kopiering af filstier.",
+			"copyPathSeparator.auto": "Bruger operativsystemets stiseparatortegn.",
+			"copyPathSeparator.backslash": "Brug omvendt skråstreg som stiseparatortegn.",
+			"copyPathSeparator.slash": "Brug skråstreg som stiseparatortegn.",
+			"copyRelativePathSeparator": "Stiseparatortegnet, der bruges ved kopiering af relative filstier.",
+			"copyRelativePathSeparator.auto": "Bruger operativsystemets stiseparatortegn.",
+			"copyRelativePathSeparator.backslash": "Brug omvendt skråstreg som stiseparatortegn.",
+			"copyRelativePathSeparator.slash": "Brug skråstreg som stiseparatortegn.",
+			"defaultLanguage": "Det standardsprog-id, der tildeles nye filer. Hvis det konfigureres til `${activeEditorLanguage}`, bruges sprog-id'et for den aktive teksteditor, hvis der er en.",
+			"defaultPathErrorMessage": "Standardstien til fildialoger skal være en absolut sti (f.eks. C:\\\\minMappe eller /minMappe).",
+			"disabled": "Deaktiverer fortløbende navngivning. Hvis der findes to filer med samme navn, bliver du bedt om at overskrive den eksisterende fil.",
+			"enableDragAndDrop": "Styrer, om Stifinder skal tillade flytning af filer og mapper med træk og slip. Indstillingen påvirker kun træk og slip inde fra Stifinder.",
+			"enableUndo": "Styrer, om Stifinder skal understøtte fortrydelse af fil- og mappehandlinger.",
+			"enableUndo.default": "Stifinder spørger før destruktive fortrydelseshandlinger.",
+			"enableUndo.light": "Stifinder spørger ikke før fortrydelseshandlinger, når den har fokus.",
+			"enableUndo.verbose": "Stifinder spørger før alle fortrydelseshandlinger.",
+			"encoding": "Den standardtegnsætkodning, der bruges ved læsning og skrivning af filer. Indstillingen kan også konfigureres pr. sprog.",
+			"eol": "Standardtegnet for linjeafslutning.",
+			"eol.auto": "Bruger operativsystemets tegn for linjeafslutning.",
+			"eol.CRLF": "CRLF",
+			"eol.LF": "LF",
+			"everything": "Formatér hele filen.",
+			"exclude": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) for at udelukke filer og mapper. Stifinder bruger f.eks. denne indstilling til at afgøre, hvilke filer og mapper der skal vises eller skjules. Se indstillingen `#search.exclude#` for søgespecifikke udeladelser. Se `#explorer.excludeGitIgnore#` for at ignorere filer på baggrund af din `.gitignore`.",
+			"excludeGitignore": "Styrer, om poster i .gitignore skal fortolkes og udelades fra Stifinder. Svarer til {0}.",
+			"expandSingleFolderWorkspaces": "Styrer, om Stifinder skal udvide arbejdsområder med flere rødder, der kun indeholder én mappe, under initialisering",
 			"explorer.autoRevealExclude.boolean": "Det globmønster, som filstier skal matches mod. Angiv true eller false for at aktivere eller deaktivere mønstret.",
+			"explorer.autoRevealExclude.when": "Yderligere kontrol af søskende til en matchende fil. Brug {0} som variabel for navnet på den matchende fil.",
+			"explorer.decorations.badges": "Styrer, om fildekorationer skal bruge badges.",
+			"explorer.decorations.colors": "Styrer, om fildekorationer skal bruge farver.",
+			"explorer.incrementalNaming": "Styrer, hvilken navngivningsstrategi der bruges, når et duplikeret element i Stifinder får et nyt navn ved indsættelse.",
 			"explorerConfigurationTitle": "Stifinder",
+			"falseDescription": "Deaktiver mønsteret.",
+			"fileDialogDefaultPath": "Standardsti til fildialoger, som tilsidesætter brugerens hjemmesti. Bruges kun, når der ikke findes en kontekstspecifik sti, f.eks. den senest åbnede fil eller mappe.",
+			"fileNesting.description": "Hvert nøglemønster kan indeholde ét `*`-tegn, som matcher en vilkårlig streng.",
+			"fileNestingEnabled": "Styrer, om filindlejring er aktiveret i Stifinder. Filindlejring gør det muligt at gruppere relaterede filer i en mappe visuelt under en enkelt overordnet fil.",
+			"fileNestingExpand": "Styrer, om filindlejringer udvides automatisk. {0} skal være angivet, før dette træder i kraft.",
+			"fileNestingPatterns": "Styrer indlejring af filer i Stifinder. {0} skal være angivet, før dette træder i kraft. Hvert __Element__ repræsenterer et overordnet mønster og kan indeholde ét `*`-tegn, der matcher en vilkårlig streng. Hver __Værdi__ repræsenterer en kommasepareret liste over de underordnede mønstre, der skal vises indlejret under en given overordnet fil. Underordnede mønstre kan indeholde flere særlige symboler:\n- `${capture}`: Matcher den fortolkede værdi af `*` fra det overordnede mønster\n- `${basename}`: Matcher den overordnede fils basisnavn, dvs. `file` i `file.ts`\n- `${extname}`: Matcher den overordnede fils filtype, dvs. `ts` i `file.ts`\n- `${dirname}`: Matcher den overordnede fils mappenavn, dvs. `src` i `src/file.ts`\n- `*`: Matcher en vilkårlig streng og må kun bruges én gang pr. underordnet mønster",
+			"files.autoSave.afterDelay": "En editor med ændringer gemmes automatisk efter den konfigurerede `#files.autoSaveDelay#`.",
+			"files.autoSave.off": "En editor med ændringer gemmes aldrig automatisk.",
+			"files.autoSave.onFocusChange": "En editor med ændringer gemmes automatisk, når editoren mister fokus.",
+			"files.autoSave.onWindowChange": "En editor med ændringer gemmes automatisk, når vinduet mister fokus.",
 			"files.exclude.boolean": "Det globmønster, som filstier skal matches mod. Angiv true eller false for at aktivere eller deaktivere mønstret.",
 			"files.exclude.when": "Yderligere kontrol af filer på samme niveau som en matchende fil. Brug \\$(basename) som variabel for det matchende filnavn.",
-			"filesConfigurationTitle": "Filer"
+			"files.participants.timeout": "Timeout i millisekunder, hvorefter fildeltagere til oprettelse, omdøbning og sletning annulleres. Brug `0` til at deaktivere deltagere.",
+			"files.restoreUndoStack": "Gendan fortrydelsesstakken, når en fil åbnes igen.",
+			"files.saveConflictResolution": "Der kan opstå en lagringskonflikt, når en fil gemmes på disken, efter at et andet program har ændret den. For at forhindre datatab bliver brugeren bedt om at sammenligne ændringerne i editoren med versionen på disken. Denne indstilling bør kun ændres, hvis du ofte oplever lagringskonflikter, og kan medføre datatab, hvis den bruges uden omtanke.",
+			"files.simpleDialog.enable": "Aktiverer den enkle fildialog til åbning og lagring af filer og mapper. Den enkle fildialog erstatter systemets fildialog, når den er aktiveret.",
+			"filesConfigurationTitle": "Filer",
+			"filesReadonlyExclude": "Konfigurer stier eller [globmønstre](https://aka.ms/vscode-glob-patterns), der ikke skal markeres som skrivebeskyttede, hvis de matcher som følge af indstillingen `#files.readonlyInclude#`. Globmønstre evalueres altid i forhold til arbejdsområdemappens sti, medmindre de er absolutte stier. Filer fra skrivebeskyttede filsystemudbydere er altid skrivebeskyttede uanset denne indstilling.",
+			"filesReadonlyFromPermissions": "Markerer filer som skrivebeskyttede, når deres filtilladelser angiver det. Dette kan tilsidesættes med indstillingerne `#files.readonlyInclude#` og `#files.readonlyExclude#`.",
+			"filesReadonlyInclude": "Konfigurer stier eller [globmønstre](https://aka.ms/vscode-glob-patterns), der skal markeres som skrivebeskyttede. Globmønstre evalueres altid i forhold til arbejdsområdemappens sti, medmindre de er absolutte stier. Du kan udelukke matchende stier med indstillingen `#files.readonlyExclude#`. Filer fra skrivebeskyttede filsystemudbydere er altid skrivebeskyttede uanset denne indstilling.",
+			"formatOnSave": "Formatér en fil ved lagring. Der skal være et formateringsværktøj tilgængeligt, og editoren må ikke være ved at lukke. Når {0} er angivet til `afterDelay`, formateres filen kun, når den gemmes udtrykkeligt.",
+			"formatOnSaveMode": "Styrer, om formatering ved lagring formaterer hele filen eller kun ændringer. Gælder kun, når `#editor.formatOnSave#` er aktiveret.",
+			"hotExit": "[Hurtig afslutning](https://aka.ms/vscode-hot-exit) styrer, om ikke-gemte filer huskes mellem sessioner, så spørgsmålet om lagring kan springes over, når editoren afsluttes.",
+			"hotExit.off": "Deaktiver hurtig afslutning. Der vises et spørgsmål, når du forsøger at lukke et vindue med editorer, der har ændringer, som ikke er gemt.",
+			"hotExit.onExit": "Hurtig afslutning udløses, når det sidste vindue lukkes på Windows/Linux, eller når kommandoen `workbench.action.quit` udløses (kommandopaletten, tastaturgenvej eller menu). Alle vinduer uden åbne mapper gendannes ved næste start. En liste over tidligere åbne vinduer med filer, der ikke er gemt, kan tilgås via `Fil > Åbn seneste > Flere...`",
+			"hotExit.onExitAndWindowClose": "Hurtig afslutning udløses, når det sidste vindue lukkes på Windows/Linux, eller når kommandoen `workbench.action.quit` udløses (kommandopaletten, tastaturgenvej eller menu), samt for alle vinduer med en åben mappe, uanset om det er det sidste vindue. Alle vinduer uden åbne mapper gendannes ved næste start. En liste over tidligere åbne vinduer med filer, der ikke er gemt, kan tilgås via `Fil > Åbn seneste > Flere...`",
+			"hotExit.onExitAndWindowCloseBrowser": "Hurtig afslutning udløses, når browseren afsluttes, eller vinduet eller fanen lukkes.",
+			"insertFinalNewline": "Når dette er aktiveret, indsættes en afsluttende ny linje i slutningen af filen, når den gemmes.",
+			"modification": "Formatér ændringer. Kræver kildekodestyring og et formateringsværktøj, der understøtter 'Formatér markering'.",
+			"modificationIfAvailable": "Forsøger kun at formatere ændringer (kræver kildekodestyring og et formateringsværktøj, der understøtter 'Formatér markering'). Hvis kildekodestyring ikke kan bruges, formateres hele filen.",
+			"openEditorsSortOrder": "Styrer editorernes sorteringsrækkefølge i ruden Åbne editorer.",
+			"openEditorsVisible": "Det indledende maksimale antal editorer, der vises i ruden Åbne editorer. Når grænsen overskrides, vises et rullepanel, og ruden kan ændres for at vise flere elementer.",
+			"openEditorsVisibleMin": "Det mindste antal editorpladser, der på forhånd tildeles i ruden Åbne editorer. Hvis værdien er 0, ændres rudens størrelse dynamisk efter antallet af editorer.",
+			"overwriteFileOnDisk": "Løser lagringskonflikten ved at overskrive filen på disken med ændringerne i editoren.",
+			"simple": "Føjer ordet \"kopi\" til slutningen af det duplikerede navn, eventuelt efterfulgt af et tal.",
+			"smart": "Føjer et tal til slutningen af det duplikerede navn. Hvis navnet allerede indeholder et tal, forsøges det at forøge tallet.",
+			"sortOrder": "Styrer den egenskabsbaserede sortering af filer og mapper i Stifinder. Når `#explorer.fileNesting.enabled#` er aktiveret, styrer den også sorteringen af indlejrede filer.",
+			"sortOrder.alphabetical": "Editorer sorteres alfabetisk efter fanenavn i hver editorgruppe.",
+			"sortOrder.default": "Filer og mapper sorteres efter navn. Mapper vises før filer.",
+			"sortOrder.editorOrder": "Editorer sorteres i den rækkefølge, editorfanerne vises.",
+			"sortOrder.filesFirst": "Filer og mapper sorteres efter navn. Filer vises før mapper.",
+			"sortOrder.foldersNestsFiles": "Filer og mapper sorteres efter navn. Mapper vises før filer. Filer med indlejrede underordnede filer vises før andre filer.",
+			"sortOrder.fullPath": "Editorer sorteres alfabetisk efter fuld sti i hver editorgruppe.",
+			"sortOrder.mixed": "Filer og mapper sorteres efter navn. Filer blandes med mapper.",
+			"sortOrder.modified": "Filer og mapper sorteres faldende efter seneste ændringsdato. Mapper vises før filer.",
+			"sortOrder.type": "Filer og mapper grupperes efter filtype og sorteres derefter efter navn. Mapper vises før filer.",
+			"sortOrderLexicographicOptions": "Styrer den leksikografiske sortering af fil- og mappenavne i Stifinder.",
+			"sortOrderLexicographicOptions.default": "Navne med store og små bogstaver blandes.",
+			"sortOrderLexicographicOptions.lower": "Navne med små bogstaver grupperes før navne med store bogstaver.",
+			"sortOrderLexicographicOptions.unicode": "Navne sorteres i Unicode-rækkefølge.",
+			"sortOrderLexicographicOptions.upper": "Navne med store bogstaver grupperes før navne med små bogstaver.",
+			"sortOrderReverse": "Styrer, om sorteringsrækkefølgen for filer og mapper skal vendes om.",
+			"textFileEditor": "Tekstfileditor",
+			"trimFinalNewlines": "Når dette er aktiveret, fjernes alle nye linjer efter den sidste nye linje i slutningen af filen, når den gemmes.",
+			"trimTrailingWhitespace": "Når dette er aktiveret, fjernes efterfølgende blanktegn, når en fil gemmes.",
+			"trimTrailingWhitespaceInRegexAndStrings": "Når dette er aktiveret, fjernes efterfølgende blanktegn fra strenge med flere linjer og regulære udtryk ved lagring, eller når 'editor.action.trimTrailingWhitespace' udføres. Det kan medføre, at blanktegn ikke fjernes fra linjer, når symboloplysningerne ikke er opdaterede.",
+			"trueDescription": "Aktivér mønsteret.",
+			"useTrash": "Flytter filer/mapper til operativsystemets papirkurv ved sletning. Deaktivering medfører, at filer/mapper slettes permanent.",
+			"watcherExclude": "Konfigurer stier eller [globmønstre](https://aka.ms/vscode-glob-patterns), der skal udelukkes fra filovervågning. Stier kan være relative i forhold til den overvågede mappe eller absolutte. Globmønstre matches i forhold til den overvågede mappe. Hvis filovervågningsprocessen bruger meget CPU, skal du udelukke store mapper, der er mindre interessante, f.eks. mapper med byggeoutput.",
+			"watcherInclude": "Konfigurer ekstra stier, der skal overvåges for ændringer i arbejdsområdet. Som standard overvåges alle arbejdsområdemapper rekursivt med undtagelse af mapper, der er symbolske links. Du kan udtrykkeligt tilføje absolutte eller relative stier for at understøtte overvågning af mapper, der er symbolske links. Relative stier fortolkes som en absolut sti ved hjælp af det aktuelt åbne arbejdsområde."
+		},
+		"vs/workbench/contrib/files/browser/views/emptyView": {
+			"noWorkspace": "Ingen mappe åben"
 		},
 		"vs/workbench/contrib/files/browser/views/explorerDecorationsProvider": {
-			"label": "Stifinder"
+			"canNotResolve": "Arbejdsområdemappen ({0}) kan ikke fortolkes",
+			"label": "Stifinder",
+			"symbolicLlink": "Symbolsk link",
+			"unknown": "Ukendt filtype"
 		},
 		"vs/workbench/contrib/files/browser/views/explorerView": {
 			"collapseExplorerFolders": "Fold mapper sammen i Stifinder",
@@ -3765,12 +4713,22 @@
 			"refreshExplorerMetadata": "Gennemtvinger en opdatering af Stifinder."
 		},
 		"vs/workbench/contrib/files/browser/views/explorerViewer": {
+			"confirmMove": "Er du sikker på, at du vil flytte '{0}' til '{1}'?",
+			"confirmMultiMove": "Er du sikker på, at du vil flytte følgende {0} filer til '{1}'?",
+			"confirmRootMove": "Er du sikker på, at du vil ændre rækkefølgen af rodmappen '{0}' i arbejdsområdet?",
+			"confirmRootsMove": "Er du sikker på, at du vil ændre rækkefølgen af flere rodmapper i arbejdsområdet?",
+			"copy": "Kopiér {0}",
 			"copying": "Kopierer {0}",
 			"doNotAskAgain": "Spørg mig ikke igen",
+			"explorerHighlightFolderBadgeTitle": "Mappen indeholder {0} match",
+			"fileInputAriaLabel": "Skriv filnavnet. Tryk på Enter for at bekræfte eller Escape for at annullere.",
 			"move": "Flyt {0}",
+			"moveButtonLabel": "&&Flyt",
 			"moving": "Flytter {0}",
 			"numberOfFiles": "{0} filer",
-			"searchMaxResultsWarning": "Resultatsættet indeholder kun en delmængde af alle forekomster. Gør søgningen mere specifik for at indsnævre resultaterne."
+			"numberOfFolders": "{0} mapper",
+			"searchMaxResultsWarning": "Resultatsættet indeholder kun en delmængde af alle forekomster. Gør søgningen mere specifik for at indsnævre resultaterne.",
+			"treeAriaLabel": "Stifinder"
 		},
 		"vs/workbench/contrib/files/browser/views/openEditorsView": {
 			"dirtyCounter": "{0} ikke gemt",
@@ -3781,8 +4739,32 @@
 			"openEditors": "Åbne editorer"
 		},
 		"vs/workbench/contrib/files/browser/workspaceWatcher": {
+			"enospcError": "Filændringer kan ikke overvåges. Følg linket med instruktioner for at løse problemet.",
+			"eshutdownError": "Overvågningen af filændringer stoppede uventet. En genindlæsning af vinduet kan aktivere overvågningen igen, medmindre arbejdsområdet ikke kan overvåges for filændringer.",
 			"learnMore": "Instruktioner",
 			"reload": "Genindlæs"
+		},
+		"vs/workbench/contrib/files/common/dirtyFilesIndicator": {
+			"dirtyFile": "1 fil er ikke gemt",
+			"dirtyFiles": "{0} filer er ikke gemt"
+		},
+		"vs/workbench/contrib/files/common/files": {
+			"explorerFindProviderActive": "Sand, når Stifinder-træet bruger Stifinders søgeudbyder.",
+			"explorerResourceCut": "Sand, når et element i STIFINDER er klippet ud med henblik på klip og indsæt.",
+			"explorerResourceIsFolder": "Sand, når elementet med fokus i STIFINDER er en mappe.",
+			"explorerResourceIsRoot": "Sand, når elementet med fokus i STIFINDER er en rodmappe.",
+			"explorerResourceMoveableToTrash": "Sand, når elementet med fokus i STIFINDER kan flyttes til papirkurven.",
+			"explorerResourceParentReadonly": "Sand, når det overordnede element til elementet med fokus i STIFINDER er skrivebeskyttet.",
+			"explorerResourceReadonly": "Sand, når elementet med fokus i STIFINDER er skrivebeskyttet.",
+			"explorerViewletCompressedFirstFocus": "Sand, når fokus er i den første del af et kompakt element i visningen STIFINDER.",
+			"explorerViewletCompressedFocus": "Sand, når elementet med fokus i visningen STIFINDER er et kompakt element.",
+			"explorerViewletCompressedLastFocus": "Sand, når fokus er i den sidste del af et kompakt element i visningen STIFINDER.",
+			"explorerViewletFocus": "Sand, når fokus er i visningen STIFINDER.",
+			"explorerViewletVisible": "Sand, når visningen STIFINDER er synlig.",
+			"filesExplorerFocus": "Sand, når fokus er i visningen STIFINDER.",
+			"foldersViewVisible": "Sand, når visningen MAPPER (filtræet i Stifinders visningsobjektbeholder) er synlig.",
+			"openEditorsFocus": "Sand, når fokus er i visningen ÅBNE EDITORER.",
+			"viewHasSomeCollapsibleItem": "Sand, når et arbejdsområde i visningen STIFINDER har et sammenklappeligt direkte underordnet element."
 		},
 		"vs/workbench/contrib/files/electron-browser/fileActions.contribution": {
 			"filesCategory": "Fil",
@@ -3795,11 +4777,34 @@
 			"null": "Alle"
 		},
 		"vs/workbench/contrib/format/browser/formatActionsMultiple": {
+			"config": "Konfigurer standardformatering...",
+			"config.bad": "Udvidelsen '{0}' er konfigureret som formateringsværktøj, men er ikke tilgængelig. Vælg et andet standardformateringsværktøj for at fortsætte.",
+			"config.needed": "Der er flere formateringsværktøjer til '{0}'-filer. Et af dem skal konfigureres som standard.",
+			"def": "(standard)",
+			"do.config": "&&Konfigurer...",
 			"do.config.command": "Konfigurer...",
 			"do.config.notification": "Konfigurer...",
+			"format.placeHolder": "Vælg et formateringsværktøj",
+			"formatDocument.label.multiple": "Formatér dokument med...",
+			"formatSelection.label.multiple": "Formatér markering med...",
 			"formatter": "Formatering",
+			"formatter.default": "Definerer et standardformateringsværktøj, der har forrang for alle andre formateringsindstillinger. Skal være id'et for en udvidelse, der bidrager med et formateringsværktøj.",
+			"miss": "Konfigurer standardformatering",
+			"miss.1": "Udvidelsen '{0}' er konfigureret som formateringsværktøj, men den kan ikke formatere '{1}'-filer",
+			"miss.2": "Udvidelsen '{0}' er konfigureret som formateringsværktøj, men den kan kun formatere hele '{1}'-filer, ikke markeringer eller dele af dem.",
 			"null": "Ingen",
-			"nullFormatterDescription": "Ingen"
+			"nullFormatterDescription": "Ingen",
+			"select": "Vælg et standardformateringsværktøj til '{0}'-filer",
+			"summary": "Konflikter mellem formateringsværktøjer"
+		},
+		"vs/workbench/contrib/format/browser/formatActionsNone": {
+			"formatDocument.label.multiple": "Formatér dokument",
+			"install.formatter": "&&Installér formateringsværktøj...",
+			"no.provider": "Der er ikke installeret et formateringsværktøj til '{0}'-filer.",
+			"too.large": "Filen kan ikke formateres, fordi den er for stor"
+		},
+		"vs/workbench/contrib/format/browser/formatModified": {
+			"formatChanges": "Formatér ændrede linjer"
 		},
 		"vs/workbench/contrib/imageCarousel/browser/imageCarousel.contribution": {
 			"imageCarousel.explorerTitle": "Forhåndsvisning af billeder",
@@ -3833,6 +4838,9 @@
 		"vs/workbench/contrib/interactive/browser/interactive.contribution": {
 			"interactiveScrollToBottom": "Rul til bunden",
 			"interactiveScrollToTop": "Rul til toppen"
+		},
+		"vs/workbench/contrib/interactive/browser/replInputHintContentWidget": {
+			"disableHint": " Slå {0} til eller fra i indstillingerne for at deaktivere dette tip."
 		},
 		"vs/workbench/contrib/issue/browser/baseIssueReporterService": {
 			"description": "Beskrivelse",
@@ -3872,6 +4880,7 @@
 			"Stop": "Stop"
 		},
 		"vs/workbench/contrib/issue/browser/screenshotAnnotation": {
+			"apply": "Anvend",
 			"cancel": "Annuller",
 			"colorValue": "{0}: {1}",
 			"discard": "Kassér",
@@ -3890,15 +4899,53 @@
 			"systemWideKeybindings.registrationFailed": "Nogle systemdækkende tastebindinger kunne ikke registreres ({0}); tastekombinationen bruges muligvis allerede af operativsystemet eller et andet program.",
 			"systemWideKeybindings.whenIgnored": "\"when\"-betingelsen ignoreres for systemdækkende tastebindinger ({0}); de er altid aktive, mens {1} kører."
 		},
+		"vs/workbench/contrib/languageStatus/browser/languageStatus": {
+			"aria.1": "{0}, {1}"
+		},
 		"vs/workbench/contrib/limitIndicator/browser/limitIndicator.contribution": {
 			"status.button.configure": "Konfigurer"
 		},
+		"vs/workbench/contrib/localHistory/browser/localHistory": {
+			"localHistoryIcon": "Ikon for en lokal historikpost i tidslinjevisningen.",
+			"localHistoryRestore": "Ikon til gendannelse af indholdet i en lokal historikpost."
+		},
 		"vs/workbench/contrib/localHistory/browser/localHistoryCommands": {
 			"confirmDeleteAllDetail": "Denne handling kan ikke fortrydes!",
+			"confirmDeleteAllMessage": "Vil du slette alle poster for alle filer i den lokale historik?",
 			"confirmDeleteDetail": "Denne handling kan ikke fortrydes!",
+			"confirmDeleteMessage": "Vil du slette den lokale historikpost for '{0}' fra {1}?",
+			"confirmRestoreDetail": "Gendannelse kasserer alle ændringer, der ikke er gemt.",
+			"confirmRestoreMessage": "Vil du gendanne indholdet af '{0}'?",
+			"createLocalHistoryEntryTitle": "Opret lokal historikpost",
+			"createLocalHistoryPlaceholder": "Angiv det nye navn på den lokale historikpost for '{0}'",
+			"deleteAllButtonLabel": "&&Slet alle",
 			"deleteButtonLabel": "&&Slet",
+			"localHistory.category": "Lokal historik",
+			"localHistory.compareWithFile": "Sammenlign med fil",
+			"localHistory.compareWithPrevious": "Sammenlign med forrige",
+			"localHistory.compareWithSelected": "Sammenlign med valgte",
+			"localHistory.create": "Opret post",
 			"localHistory.delete": "Slet",
-			"localHistory.rename": "Omdøb"
+			"localHistory.deleteAll": "Slet alle",
+			"localHistory.open": "Vis indhold",
+			"localHistory.rename": "Omdøb",
+			"localHistory.restore": "Gendan indhold",
+			"localHistory.restoreViaPicker": "Find post, der skal gendannes",
+			"localHistory.restoreViaPickerMenu": "Lokal historik: Find post, der skal gendannes...",
+			"localHistory.selectForCompare": "Vælg til sammenligning",
+			"localHistoryCompareToFileEditorLabel": "{0} ({1} • {2}) ↔ {3}",
+			"localHistoryCompareToPreviousEditorLabel": "{0} ({1} • {2}) ↔ {3} ({4} • {5})",
+			"localHistoryEditorLabel": "{0} ({1} • {2})",
+			"localHistoryRestore.source": "Fil gendannet",
+			"renameLocalHistoryEntryTitle": "Omdøb lokal historikpost",
+			"renameLocalHistoryPlaceholder": "Angiv det nye navn på den lokale historikpost",
+			"restoreButtonLabel": "&&Gendan",
+			"restoreViaPicker.entryPlaceholder": "Vælg den lokale historikpost, der skal åbnes",
+			"restoreViaPicker.filePlaceholder": "Vælg den fil, der skal vises lokal historik for",
+			"unableToRestore": "'{0}' kan ikke gendannes."
+		},
+		"vs/workbench/contrib/localHistory/browser/localHistoryTimeline": {
+			"localHistory": "Lokal historik"
 		},
 		"vs/workbench/contrib/localHistory/electron-browser/localHistoryCommands": {
 			"openContainer": "Åbn indeholdende mappe",
@@ -4170,6 +5217,7 @@
 			"repository": "Lager",
 			"resources": "Ressourcer",
 			"tags": "Mærker",
+			"url": "URL-adresse:",
 			"Version": "Version"
 		},
 		"vs/workbench/contrib/mcp/browser/mcpServersView": {
@@ -4187,6 +5235,9 @@
 		},
 		"vs/workbench/contrib/mcp/common/mcpLanguageModelToolContribution": {
 			"msg.run": "Kører {0}"
+		},
+		"vs/workbench/contrib/mcp/common/mcpRegistry": {
+			"mcp.trust.yes": "Hav tillid"
 		},
 		"vs/workbench/contrib/mcp/common/mcpSamplingService": {
 			"cancel": "Annuller",
@@ -4224,6 +5275,7 @@
 			"workspace.detail1.handled": "Dine ændringer går tabt, hvis du ikke gemmer dem.",
 			"workspace.detailN.handled": "Dine ændringer går tabt, hvis du ikke gemmer dem.",
 			"workspace.doNotSave": "Gem &&ikke",
+			"workspace.message1": "Vil du gemme de ændringer, du har foretaget i {0}?",
 			"workspace.save": "&&Gem"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/view/editors/inputCodeEditorView": {
@@ -4262,6 +5314,8 @@
 		"vs/workbench/contrib/notebook/browser/contrib/find/notebookFindReplaceWidget": {
 			"label.closeButton": "Luk",
 			"label.find": "Find",
+			"label.nextMatchButton": "Næste match",
+			"label.previousMatchButton": "Forrige match",
 			"label.replace": "Erstat",
 			"label.replaceAllButton": "Erstat alle",
 			"label.replaceButton": "Erstat",
@@ -4278,6 +5332,7 @@
 			"copyWorkspaceVariableValue": "Kopiér værdi"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/saveParticipants/saveParticipants": {
+			"codeAction.apply": "Anvender kodehandlingen '{0}'.",
 			"notebookFormatSave.formatting": "Formatering"
 		},
 		"vs/workbench/contrib/notebook/browser/controller/coreActions": {
@@ -4324,6 +5379,8 @@
 			"notebookTreeAriaLabel": "Notesbog"
 		},
 		"vs/workbench/contrib/notebook/browser/notebookExtensionPoint": {
+			"contributes.priority.default": "Editoren bruges automatisk, når brugeren åbner en ressource, forudsat at der ikke er registreret andre brugerdefinerede standardeditorer til ressourcen.",
+			"contributes.priority.option": "Editoren bruges ikke automatisk, når brugeren åbner en ressource, men brugeren kan skifte til editoren med kommandoen `Åbn igen med`.",
 			"Notebook id": "Id",
 			"Notebook name": "Navn",
 			"Notebook renderer name": "Navn"
@@ -5239,6 +6296,7 @@
 			"fileAndSymbolResultsSeparator": "fil- og symbolresultater",
 			"filePickAriaLabelDirty": "{0} ikke-gemte ændringer",
 			"fileResultsSeparator": "filresultater",
+			"helpPickAriaLabel": "{0}, {1}",
 			"noAnythingResults": "Ingen matchende resultater",
 			"openToBottom": "Åbn nederst",
 			"openToSide": "Åbn ved siden af",
@@ -5331,14 +6389,61 @@
 			"useRipgrepDeprecated": "Forældet. Overvej \"search.usePCRE2\" for understøttelse af avancerede funktioner til regulære udtryk."
 		},
 		"vs/workbench/contrib/search/browser/searchAccessibilityHelp": {
+			"search.closingDesc": "Tryk på Escape for at lukke Søg. Fokus vender tilbage til editoren, og din søgehistorik bevares.",
 			"search.closingHeader": "Lukker:",
+			"search.context": "Du er i visningen Søg. Med dette værktøj til hele arbejdsområdet kan du finde tekst eller mønstre i alle filer i arbejdsområdet.",
+			"search.focusDesc1": "Når du navigerer fra søgefeltet, opdateres editoren, mens fokus forbliver i søgefeltet. Det er tilsigtet, så du kan fortsætte med at justere søgningen uden at miste din placering.",
+			"search.focusDesc2": "Hvis du trykker på Tab, flyttes fokus til resultatetræet under inputfeltet, hvor du kan navigere i og åbne resultater. Når du trykker på Enter på et resultat, vises matchet i editoren.",
+			"search.focusDesc3": "Hvis du vil fokusere editoren for at redigere tekst ved et søgeresultat, skal du bruge {0} til at gå til resultatet og automatisk fokusere editoren der.",
 			"search.focusHeader": "Fokusadfærd (vigtigt):",
+			"search.header": "Hjælp til tilgængelighed: Søg på tværs af filer",
+			"search.hear1": "1) Filnavnet, hvor resultatet findes, læses først op, så du ved, hvilken fil der indeholder matchet.",
+			"search.hear2": "2) Hele linjen, der indeholder matchet, læses op, så du straks får konteksten.",
+			"search.hear3": "3) Din placering blandt resultaterne oplyses, så du ved, hvor langt du er i resultaterne.",
+			"search.hear4": "4) Den nøjagtige linje og kolonne oplyses, så du ved præcis, hvor matchet findes i filen.",
+			"search.hearDesc": "Hvert navigationstrin giver dig en komplet oplæst opdatering:",
+			"search.hearHeader": "Det hører du, hver gang du går til et resultat:",
+			"search.inputDesc": "Mens du er i søgefeltet, forbliver fokus i feltet. Du kan skrive søgeudtrykket og navigere i listen over søgeresultater uden at forlade inputfeltet. Når du går til et resultat, opdateres editoren i baggrunden for at vise matchet.",
+			"search.inputHeader": "I søgefeltet (dets funktion):",
+			"search.keyArrow": "- Pil ned: Naviger gennem resultaterne i træet.",
 			"search.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"search.keyEnter": "- Enter: Kør eller opdater søgningen.",
+			"search.keyF4": "- {0}: Gå til næste resultat, og fokuser editoren.",
+			"search.keyNavGlobalHeader": "Fra et vilkårligt sted (søgefelt eller editor):",
+			"search.keyNavResultsHeader": "Navigation i søgeresultater:",
+			"search.keyNavSearchHeader": "Mens fokus er I søgefeltet:",
+			"search.keyResultEnter": "- Enter (når et resultat har fokus): Gå til resultatet i editoren.",
+			"search.keyShiftF4": "- {0}: Gå til forrige resultat, og fokuser editoren.",
+			"search.keyTab": "- Tab: Flyt fokus til resultatetræet nedenfor.",
+			"search.macSetting": "- `search.globalFindClipboard`: Bruger den delte macOS-søgeudklipsholder, når den er tilgængelig.",
+			"search.macSettingHeader": "Platformsspecifik indstilling (kun macOS):",
+			"search.noResults": "Der blev ikke fundet nogen resultater. Kontrollér søgeudtrykket, eller juster indstillingerne nedenfor.",
+			"search.noSearch": "Skriv et søgeudtryk for at finde resultater.",
 			"search.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"search.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
+			"search.optionsHeader": "Søgeindstillinger i dialogboksen:",
 			"search.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"search.replaceDesc1": "Tryk på Tab for at gå til feltet Erstat, og skriv erstatningsteksten.",
+			"search.replaceDesc2": "Du kan erstatte enkelte match eller alle match på én gang.",
+			"search.replaceHeader": "Erstat på tværs af filer (erstatningstilstand aktiv):",
+			"search.replaceWarning": "Advarsel: Denne handling påvirker flere filer. Sørg for, at du har søgt efter præcis det, du vil erstatte.",
+			"search.resultCount": "{0} resultater fundet.",
+			"search.settingActions": "- `search.actionsPosition`: Placering af handlingsknapper.",
+			"search.settingCollapse": "- `search.collapseResults`: Fold resultater ud eller sammen.",
+			"search.settingContextLines": "- `search.searchEditor.defaultNumberOfContextLines`: Antal kontekstlinjer, der vises omkring match.",
+			"search.settingDebounce": "- `search.searchOnTypeDebouncePeriod`: Ventetid i millisekunder, før der søges, mens du skriver.",
+			"search.settingLineNumbers": "- `search.showLineNumbers`: Vis linjenumre for resultater.",
+			"search.settingMaxResults": "- `search.maxResults`: Det maksimale antal søgeresultater, der skal vises.",
+			"search.settingReplacePreview": "- `search.useReplacePreview`: Åbn forhåndsvisning, når match erstattes.",
+			"search.settingSearchOnType": "- `search.searchOnType`: Søg i alle filer, mens du skriver.",
 			"search.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
-			"search.statusHeader": "Aktuel søgestatus:"
+			"search.settingsIntro": "Disse indstillinger påvirker, hvordan søgning på tværs af filer fungerer.",
+			"search.settingSmartCase": "- `search.smartCase`: Søg uden forskel på store og små bogstaver, hvis søgeudtrykket kun består af små bogstaver.",
+			"search.settingSortOrder": "- `search.sortOrder`: Sortér resultater efter filnavn, type, ændringstidspunkt eller antal match.",
+			"search.settingVerbosity": "- `accessibility.verbosity.find`: Styrer, om søgefeltet oplæser tippet om hjælp til tilgængelighed.",
+			"search.settingViewMode": "- `search.defaultViewMode`: Vis resultater som en liste eller et træ.",
+			"search.statusHeader": "Aktuel søgestatus:",
+			"search.statusIntro": "Du søger på tværs af arbejdsområdet."
 		},
 		"vs/workbench/contrib/search/browser/searchActionsBase": {
 			"search": "Søg"
@@ -5346,7 +6451,8 @@
 		"vs/workbench/contrib/search/browser/searchActionsCopy": {
 			"copyAllLabel": "Kopiér alle",
 			"copyMatchLabel": "Kopiér",
-			"copyPathLabel": "Kopiér sti"
+			"copyPathLabel": "Kopiér sti",
+			"getSearchResultsLabel": "Hent søgeresultater"
 		},
 		"vs/workbench/contrib/search/browser/searchActionsFind": {
 			"excludeFileTypeFromSearch": "Udelad filtype fra søgning",
@@ -5386,6 +6492,13 @@
 			"match.replace.label": "Erstat",
 			"RemoveAction.label": "Afvis"
 		},
+		"vs/workbench/contrib/search/browser/searchActionsSymbol": {
+			"miGotoSymbolInWorkspace": "Gå til symbol i &&arbejdsområde...",
+			"showTriggerActions": "Gå til symbol i arbejdsområde..."
+		},
+		"vs/workbench/contrib/search/browser/searchActionsTextQuickAccess": {
+			"quickTextSearch": "Hurtig søgning"
+		},
 		"vs/workbench/contrib/search/browser/searchActionsTopBar": {
 			"CancelSearchAction.label": "Annuller søgning",
 			"clearSearchHistoryLabel": "Ryd søgehistorik",
@@ -5396,6 +6509,48 @@
 			"SearchWithAIAction.label": "Søg med AI",
 			"ViewAsListAction.label": "Vis som liste",
 			"ViewAsTreeAction.label": "Vis som træ"
+		},
+		"vs/workbench/contrib/search/browser/searchChatContext": {
+			"chatContext.attach.files.placeholder": "Søg efter fil eller mappe efter navn",
+			"chatContext.folder": "Filer og mapper...",
+			"chatContext.searchResults": "Søgeresultater",
+			"select.symb": "Vælg et symbol",
+			"symbols": "Symboler..."
+		},
+		"vs/workbench/contrib/search/browser/searchFindInput": {
+			"searchFindInputNotebookFilter.label": "Søgefiltre til notesbog"
+		},
+		"vs/workbench/contrib/search/browser/searchIcons": {
+			"searchClearIcon": "Ikon til at rydde resultater i visningen Søg.",
+			"searchCollapseAllIcon": "Ikon til at folde resultater sammen i visningen Søg.",
+			"searchDetailsIcon": "Ikon til at gøre søgeoplysninger synlige.",
+			"searchExpandAllIcon": "Ikon til at folde resultater ud i visningen Søg.",
+			"searchHideReplaceIcon": "Ikon til at folde erstatningssektionen sammen i visningen Søg.",
+			"searchNewEditorIcon": "Ikon for handlingen, der åbner en ny søgeeditor.",
+			"searchOpenInFile": "Ikon for handlingen, der går til filen for det aktuelle søgeresultat.",
+			"searchRefreshIcon": "Ikon til opdatering i visningen Søg.",
+			"searchRemoveIcon": "Ikon til at fjerne et søgeresultat.",
+			"searchReplaceAllIcon": "Ikon til Erstat alle i visningen Søg.",
+			"searchReplaceIcon": "Ikon til Erstat i visningen Søg.",
+			"searchSeeMoreIcon": "Ikon til at vise mere kontekst i visningen Søg.",
+			"searchShowAsList": "Ikon til at vise resultater som en liste i visningen Søg.",
+			"searchShowAsTree": "Ikon til at vise resultater som et træ i visningen Søg.",
+			"searchShowContextIcon": "Ikon til at slå kontekst til eller fra i søgeeditoren.",
+			"searchShowReplaceIcon": "Ikon til at folde erstatningssektionen ud i visningen Søg.",
+			"searchSparkleEmpty": "Ikon til at skjule AI-resultater i søgningen.",
+			"searchSparkleFilled": "Ikon til at vise AI-resultater i søgningen.",
+			"searchStopIcon": "Ikon til stop i visningen Søg.",
+			"searchViewIcon": "Visningsikon for visningen Søg."
+		},
+		"vs/workbench/contrib/search/browser/searchMessage": {
+			"unable to open": "Kan ikke åbne ukendt link: {0}",
+			"unable to open trust": "Kan ikke åbne kommandolink fra en kilde, der ikke er tillid til: {0}"
+		},
+		"vs/workbench/contrib/search/browser/searchQuickAccess.contribution": {
+			"anythingQuickAccess": "Gå til fil",
+			"anythingQuickAccessPlaceholder": "Søg efter filer efter navn (tilføj {0} for at gå til en linje eller {1} for at gå til et symbol)",
+			"symbolsQuickAccess": "Gå til symbol i arbejdsområde",
+			"symbolsQuickAccessPlaceholder": "Skriv navnet på et symbol, der skal åbnes."
 		},
 		"vs/workbench/contrib/search/browser/searchResultsView": {
 			"fileMatchAriaLabel": "{0} forekomster i filen {1} i mappen {2}, søgeresultat",
@@ -5485,6 +6640,7 @@
 			"showContext": "Vis/skjul kontekstlinjer"
 		},
 		"vs/workbench/contrib/search/browser/symbolsQuickAccess": {
+			"noSymbolResults": "Ingen matchende symboler i arbejdsområdet",
 			"openToBottom": "Åbn nederst",
 			"openToSide": "Åbn ved siden af"
 		},
@@ -5492,20 +6648,60 @@
 			"searchConfigurationTitle": "Søg"
 		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditor": {
+			"label.excludes": "Udeladelsesmønstre for søgning",
+			"label.includes": "Medtagelsesmønstre for søgning",
 			"moreSearch": "Vis/skjul søgedetaljer",
+			"runSearch": "Kør søgning",
 			"searchEditor": "Søg",
+			"searchResultItem": "Matchede {0} ved {1} i filen {2}",
 			"searchScope.excludes": "filer, der skal udelades",
-			"searchScope.includes": "filer, der skal medtages"
+			"searchScope.includes": "filer, der skal medtages",
+			"textInputBoxBorder": "Kant på søgeeditorens tekstinputfelt."
 		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditor.contribution": {
-			"searchEditor.action.toggleSearchEditorContextLines": "Vis/skjul kontekstlinjer"
+			"promptOpenWith.searchEditor.displayName": "Søgeeditor",
+			"search": "Søgeeditor",
+			"search.action.focusFilesToExclude": "Fokuser på Filer, der skal udelades, i søgeeditoren",
+			"search.action.focusFilesToInclude": "Fokuser på Filer, der skal medtages, i søgeeditoren",
+			"search.action.focusQueryEditorWidget": "Fokuser på søgeeditorens input",
+			"search.openNewEditor": "Åbn ny søgeeditor",
+			"search.openNewEditorToSide": "Åbn ny søgeeditor ved siden af",
+			"search.openNewSearchEditor": "Ny søgeeditor",
+			"search.openResultsInEditor": "Åbn resultater i editor",
+			"search.openSearchEditor": "Åbn søgeeditor",
+			"search.rerunSearchInEditor": "Søg igen",
+			"search.searchEditor.defaultNumberOfContextLines": "Standardantallet af omgivende kontekstlinjer, der bruges ved oprettelse af nye søgeeditorer. Hvis `#search.searchEditor.reusePriorSearchConfiguration#` bruges, kan dette angives til `null` (tom) for at bruge den forrige søgeeditors konfiguration.",
+			"search.searchEditor.doubleClickBehaviour": "Konfigurer effekten af at dobbeltklikke på et resultat i en søgeeditor.",
+			"search.searchEditor.doubleClickBehaviour.goToLocation": "Et dobbeltklik åbner resultatet i den aktive editorgruppe.",
+			"search.searchEditor.doubleClickBehaviour.openLocationToSide": "Et dobbeltklik åbner resultatet i editorgruppen ved siden af og opretter gruppen, hvis den ikke findes.",
+			"search.searchEditor.doubleClickBehaviour.selectWord": "Et dobbeltklik markerer ordet under markøren.",
+			"search.searchEditor.focusResultsOnSearch": "Når en søgning udløses, fokuseres søgeeditorens resultater i stedet for søgeeditorens input.",
+			"search.searchEditor.reusePriorSearchConfiguration": "Når dette er aktiveret, genbruger nye søgeeditorer medtagelser, udeladelser og flag fra den senest åbnede søgeeditor.",
+			"search.searchEditor.singleClickBehaviour": "Konfigurer effekten af at enkeltklikke på et resultat i en søgeeditor.",
+			"search.searchEditor.singleClickBehaviour.default": "Et enkeltklik gør ingenting.",
+			"search.searchEditor.singleClickBehaviour.peekDefinition": "Et enkeltklik åbner vinduet Vis definition.",
+			"searchEditor": "Søgeeditor",
+			"searchEditor.action.decreaseSearchEditorContextLines": "Reducer kontekstlinjer",
+			"searchEditor.action.increaseSearchEditorContextLines": "Forøg kontekstlinjer",
+			"searchEditor.action.selectAllSearchEditorMatches": "Markér alle match",
+			"searchEditor.action.toggleSearchEditorCaseSensitive": "Slå Forskel på store og små bogstaver til/fra",
+			"searchEditor.action.toggleSearchEditorContextLines": "Vis/skjul kontekstlinjer",
+			"searchEditor.action.toggleSearchEditorRegex": "Slå Brug regulært udtryk til/fra",
+			"searchEditor.action.toggleSearchEditorWholeWord": "Slå Match hele ord til/fra",
+			"searchEditor.deleteResultBlock": "Slet filresultater"
 		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditorInput": {
-			"searchTitle": "Søg"
+			"searchEditorLabelIcon": "Ikon for søgeeditorens etiket.",
+			"searchTitle": "Søg",
+			"searchTitle.withQuery": "Søgning: {0}"
 		},
 		"vs/workbench/contrib/searchEditor/browser/searchEditorSerialization": {
+			"invalidQueryStringError": "Alle omvendte skråstreger i forespørgselsstrengen skal escape-tegnes (\\\\)",
+			"noResults": "Ingen resultater",
 			"numFiles": "{0} filer",
+			"numResults": "{0} resultater",
 			"oneFile": "1 fil",
+			"oneResult": "1 resultat",
 			"searchMaxResultsWarning": "Resultatsættet indeholder kun en delmængde af alle forekomster. Gør søgningen mere specifik for at indsnævre resultaterne."
 		},
 		"vs/workbench/contrib/share/browser/share.contribution": {
@@ -5551,7 +6747,8 @@
 			"title": "Start med: {0}"
 		},
 		"vs/workbench/contrib/snippets/browser/snippetCompletionProvider": {
-			"detail.snippet": "{0} ({1})"
+			"detail.snippet": "{0} ({1})",
+			"snippetSuggest.longLabel": "{0}, {1}"
 		},
 		"vs/workbench/contrib/snippets/browser/snippetPicker": {
 			"disableSnippet": "Skjul fra IntelliSense",
@@ -5609,7 +6806,8 @@
 		},
 		"vs/workbench/contrib/tasks/browser/runAutomaticTasks": {
 			"allow": "Tillad",
-			"openTask": "Åbn fil"
+			"openTask": "Åbn fil",
+			"openTasks": "Åbn filer"
 		},
 		"vs/workbench/contrib/tasks/browser/task.contribution": {
 			"task.allowAutomaticTasks.off": "Aldrig",
@@ -5901,7 +7099,12 @@
 		"vs/workbench/contrib/terminalContrib/find/browser/terminalFindAccessibilityHelp": {
 			"terminal.closingHeader": "Lukker:",
 			"terminal.focusHeader": "Fokusadfærd (vigtigt):",
+			"terminal.hear1": "1) Hele linjen, der indeholder matchet, læses først op, så du straks får konteksten.",
+			"terminal.hear2": "2) Din placering blandt matchene oplyses, så du ved, hvor langt du er i resultaterne.",
+			"terminal.hearDesc": "Hvert navigationstrin giver dig en komplet oplæst opdatering:",
+			"terminal.hearHeader": "Det hører du, hver gang du går til et match:",
 			"terminal.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"terminal.keyNavHeader": "Mens fokus er I feltet Find:",
 			"terminal.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"terminal.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"terminal.optionWord": "- Hele ord: Der søges kun efter hele ord.",
@@ -5910,6 +7113,9 @@
 		},
 		"vs/workbench/contrib/terminalContrib/history/browser/terminalRunRecentQuickPick": {
 			"openShellHistoryFile": "Åbn fil"
+		},
+		"vs/workbench/contrib/terminalContrib/inlineHint/browser/terminal.initialHint.contribution": {
+			"disableHint": " Slå {0} til eller fra i indstillingerne for at deaktivere dette tip."
 		},
 		"vs/workbench/contrib/terminalContrib/links/browser/terminalLinkDetectorAdapter": {
 			"followLink": "Følg link"
@@ -5947,7 +7153,8 @@
 			"remote": "Fjern"
 		},
 		"vs/workbench/contrib/terminalContrib/voice/browser/terminalVoiceActions": {
-			"installExtension": "Installer udvidelse"
+			"installExtension": "Installer udvidelse",
+			"voiceCategory": "Stemme"
 		},
 		"vs/workbench/contrib/terminalContrib/wslRecommendation/browser/terminal.wslRecommendation.contribution": {
 			"install": "Installer"
@@ -6013,13 +7220,33 @@
 			"themes": "Temaer"
 		},
 		"vs/workbench/contrib/timeline/browser/timeline.contribution": {
-			"timelineConfigurationTitle": "Tidslinje"
+			"files.openTimeline": "Åbn tidslinje",
+			"filterTimeline": "Filtrer tidslinje",
+			"timeline.pageOnScroll": "Styrer, om tidslinjevisningen indlæser den næste side med elementer, når du ruller til slutningen af listen.",
+			"timeline.pageSize": "Antallet af elementer, der som standard vises i tidslinjevisningen og ved indlæsning af flere elementer. Hvis værdien er `null`, vælges sidestørrelsen automatisk ud fra det synlige område i tidslinjevisningen.",
+			"timelineConfigurationTitle": "Tidslinje",
+			"timelineFilter": "Ikon for handlingen Filtrer tidslinje.",
+			"timelineOpenIcon": "Ikon for handlingen Åbn tidslinje.",
+			"timelineViewIcon": "Visningsikon for tidslinjevisningen."
 		},
 		"vs/workbench/contrib/timeline/browser/timelinePane": {
 			"refresh": "Opdater",
 			"timeline": "Tidslinje",
 			"timeline.aria.item": "{0}: {1}",
-			"timeline.loadingMore": "Indlæser..."
+			"timeline.editorCannotProvideTimeline": "Den aktive editor kan ikke levere tidslinjeoplysninger.",
+			"timeline.loading": "Indlæser tidslinje for {0}...",
+			"timeline.loadingMore": "Indlæser...",
+			"timeline.loadMore": "Indlæs flere",
+			"timeline.noLocalHistoryYet": "Lokal historik sporer de seneste ændringer, når du gemmer dem, medmindre filen er udeladt eller for stor.",
+			"timeline.noSCM": "Kildekodestyring er ikke konfigureret.",
+			"timeline.noTimelineInfo": "Der blev ikke leveret tidslinjeoplysninger.",
+			"timeline.noTimelineInfoFromEnabledSources": "Der blev ikke leveret filtrerede tidslinjeoplysninger.",
+			"timeline.noTimelineSourcesEnabled": "Alle tidslinjekilder er filtreret fra.",
+			"timeline.toggleFollowActiveEditorCommand.follow": "Fastgør den aktuelle tidslinje",
+			"timeline.toggleFollowActiveEditorCommand.unfollow": "Frigør den aktuelle tidslinje",
+			"timelinePin": "Ikon for handlingen Fastgør tidslinje.",
+			"timelineRefresh": "Ikon for handlingen Opdater tidslinje.",
+			"timelineUnpin": "Ikon for handlingen Frigør tidslinje."
 		},
 		"vs/workbench/contrib/typeHierarchy/browser/typeHierarchy.contribution": {
 			"close": "Luk",
@@ -6036,6 +7263,7 @@
 		},
 		"vs/workbench/contrib/update/browser/update.contribution": {
 			"developerCategory": "Udvikler",
+			"openDownloadPage": "Download {0}",
 			"restartToUpdate": "Genstart for at opdatere"
 		},
 		"vs/workbench/contrib/update/browser/updateTitleBarEntry": {
@@ -6065,11 +7293,15 @@
 		},
 		"vs/workbench/contrib/userDataProfile/browser/userDataProfilesEditor": {
 			"activeProfile": "Aktiv",
+			"addButton": "Tilføj mappe",
+			"addFolder": "Tilføj mappe",
 			"builtIn": "Indbygget",
 			"copy description": "Kopiér",
 			"default": "Standard",
+			"deleteTrustedUri": "Slet sti",
 			"empty profile": "Ingen",
 			"extensions": "Udvidelser",
+			"hostColumnLabel": "Vært",
 			"keybindings": "Tastaturgenveje",
 			"localAuthority": "Lokal",
 			"mcp": "MCP-servere",
@@ -6082,6 +7314,9 @@
 			"settings": "Indstillinger",
 			"snippets": "Kodestykker",
 			"tasks": "Opgaver",
+			"trustedFolderAriaLabel": "{0}, der er tillid til",
+			"trustedFoldersAndWorkspaces": "Mapper og arbejdsområder, der er tillid til",
+			"trustedFolderWithHostAriaLabel": "{0} på {1}, der er tillid til",
 			"userDataProfiles": "Profiler"
 		},
 		"vs/workbench/contrib/userDataProfile/browser/userDataProfilesEditorModel": {
@@ -6125,7 +7360,11 @@
 		"vs/workbench/contrib/webview/browser/webviewFindAccessibilityHelp": {
 			"webview.closingHeader": "Lukker:",
 			"webview.focusHeader": "Fokusadfærd (vigtigt):",
+			"webview.hear2": "2) Din placering blandt matchene oplyses, så du ved, hvor langt du er i resultaterne.",
+			"webview.hearDesc": "Hvert navigationstrin giver dig en komplet oplæst opdatering:",
+			"webview.hearHeader": "Det hører du, hver gang du går til et match:",
 			"webview.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"webview.keyNavHeader": "Mens fokus er I feltet Find:",
 			"webview.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"webview.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"webview.optionWord": "- Hele ord: Der søges kun efter hele ord.",
@@ -6167,6 +7406,7 @@
 		"vs/workbench/contrib/welcomeGettingStarted/common/gettingStartedContent": {
 			"enableSync": "Sikkerhedskopiér og synkroniser indstillinger",
 			"gettingStarted.newFile.title": "Ny fil...",
+			"gettingStarted.openFile.title": "Åbn fil...",
 			"gettingStarted.openFolder.title": "Åbn mappe...",
 			"gettingStarted.setupAccessibility.title": "Kom i gang med tilgængelighedsfunktioner",
 			"keyboardShortcuts": "Tastaturgenveje",
@@ -6204,18 +7444,146 @@
 			"welcome.newFile": "Ny fil..."
 		},
 		"vs/workbench/contrib/workspace/browser/workspace.contribution": {
+			"addWorkspaceFolderDetail": "Du føjer filer, der ikke er tillid til i øjeblikket, til et arbejdsområde, der er tillid til. Har du tillid til forfatterne af de nye filer?",
+			"addWorkspaceFolderMessage": "Har du tillid til forfatterne af filerne i denne mappe?",
 			"cancelWorkspaceTrustButton": "Annuller",
+			"checkboxString": "Hav tillid til forfatterne af alle filer i den overordnede mappe '{0}'",
+			"configureWorkspaceTrustSettings": "Konfigurer indstillinger for tillid til arbejdsområde",
+			"dontTrustFolderOptionDescription": "Åbn mappe i begrænset tilstand",
+			"dontTrustOption": "&&Nej, jeg har ikke tillid til forfatterne",
+			"dontTrustWorkspaceOptionDescription": "Åbn arbejdsområde i begrænset tilstand",
+			"folderStartupTrustDetails": "{0} leverer funktioner, der kan køre filer i denne mappe automatisk.",
+			"folderTrust": "Har du tillid til forfatterne af filerne i denne mappe?",
+			"grantFolderTrustButton": "&&Hav tillid til mappen, og fortsæt",
+			"grantWorkspaceTrustButton": "&&Hav tillid til arbejdsområdet, og fortsæt",
+			"immediateTrustRequestLearnMore": "Hvis du ikke har tillid til filernes forfattere, anbefaler vi ikke, at du fortsætter, da filerne kan være skadelige. Se [vores dokumentation](https://aka.ms/vscode-workspace-trust) for at få mere at vide.",
+			"immediateTrustRequestMessage": "En funktion, du forsøger at bruge, kan udgøre en sikkerhedsrisiko, hvis du ikke har tillid til kilden til de filer eller mapper, du har åbne i øjeblikket.",
 			"manageWorkspaceTrust": "Administrer tillid til arbejdsområde",
+			"manageWorkspaceTrustButton": "&&Administrer",
+			"newWindow": "Åbn i &&begrænset tilstand",
 			"no": "Nej",
 			"open": "&&Åbn",
+			"openLooseFileLearnMore": "Hvis du ikke vil åbne filer, der ikke er tillid til, anbefaler vi at åbne dem i Begrænset tilstand i et nyt vindue, da filerne kan være skadelige. Se [vores dokumentation](https://aka.ms/vscode-workspace-trust) for at få mere at vide.",
+			"openLooseFileWindowDetails": "Du forsøger at åbne filer, der ikke er tillid til, i et vindue, der er tillid til.",
+			"openLooseFileWindowMesssage": "Vil du tillade filer, der ikke er tillid til, i dette vindue?",
+			"openLooseFileWorkspaceCheckbox": "Husk min beslutning for alle arbejdsområder",
+			"openLooseFileWorkspaceDetails": "Du forsøger at åbne filer, der ikke er tillid til, i et arbejdsområde, der er tillid til.",
+			"openLooseFileWorkspaceMesssage": "Vil du tillade filer, der ikke er tillid til, i dette arbejdsområde?",
+			"resourcesTrustDetails": "Du forsøger at åbne en mappe, der ikke er tillid til. Har du tillid til forfatterne af indholdet?",
+			"resourcesTrustLearnMore": "Hvis du ikke har tillid til filernes forfattere, anbefaler vi, at du ikke fortsætter, da filerne kan være skadelige. Se [vores dokumentation](https://aka.ms/vscode-workspace-trust) for at få mere at vide.",
+			"resourcesTrustMessage": "Har du tillid til forfatterne af filerne i denne mappe?",
+			"restrictedModeBannerAriaLabelFolder": "Begrænset tilstand er beregnet til sikker gennemsyn af kode. Hav tillid til mappen for at aktivere alle funktioner. Brug navigationstasterne til at åbne bannerhandlingerne.",
+			"restrictedModeBannerAriaLabelWindow": "Begrænset tilstand er beregnet til sikker gennemsyn af kode. Hav tillid til vinduet for at aktivere alle funktioner. Brug navigationstasterne til at åbne bannerhandlingerne.",
+			"restrictedModeBannerAriaLabelWorkspace": "Begrænset tilstand er beregnet til sikker gennemsyn af kode. Hav tillid til arbejdsområdet for at aktivere alle funktioner. Brug navigationstasterne til at åbne bannerhandlingerne.",
 			"restrictedModeBannerLearnMore": "Få mere at vide",
 			"restrictedModeBannerManage": "Administrer",
-			"status.WorkspaceTrust": "Tillid til arbejdsområde"
+			"restrictedModeBannerMessageFolder": "Begrænset tilstand er beregnet til sikker gennemsyn af kode. Hav tillid til mappen for at aktivere alle funktioner.",
+			"restrictedModeBannerMessageWindow": "Begrænset tilstand er beregnet til sikker gennemsyn af kode. Hav tillid til vinduet for at aktivere alle funktioner.",
+			"restrictedModeBannerMessageWorkspace": "Begrænset tilstand er beregnet til sikker gennemsyn af kode. Hav tillid til arbejdsområdet for at aktivere alle funktioner.",
+			"sessionsWindowFolderTrustNote": "Hvis du har tillid til denne mappe, markeres den også som en mappe, der er tillid til, i {0}.",
+			"sessionsWindowWorkspaceTrustNote": "Hvis du har tillid til dette arbejdsområde, markeres det også som et arbejdsområde, der er tillid til, i {0}.",
+			"startupTrustRequestLearnMore": "Hvis du ikke har tillid til filernes forfattere, anbefaler vi at fortsætte i begrænset tilstand, da filerne kan være skadelige. Se [vores dokumentation](https://aka.ms/vscode-workspace-trust) for at få mere at vide.",
+			"status.ariaUntrustedFolder": "Begrænset tilstand: Nogle funktioner er deaktiveret, fordi der ikke er tillid til mappen.",
+			"status.ariaUntrustedWindow": "Begrænset tilstand: Nogle funktioner er deaktiveret, fordi der ikke er tillid til vinduet.",
+			"status.ariaUntrustedWorkspace": "Begrænset tilstand: Nogle funktioner er deaktiveret, fordi der ikke er tillid til arbejdsområdet.",
+			"status.tooltipUntrustedFolder2": "Kører i begrænset tilstand\n\nNogle [funktioner er deaktiveret]({0}), fordi der [ikke er tillid til mappen]({1}).",
+			"status.tooltipUntrustedWindow2": "Kører i begrænset tilstand\n\nNogle [funktioner er deaktiveret]({0}), fordi der [ikke er tillid til vinduet]({1}).",
+			"status.tooltipUntrustedWorkspace2": "Kører i begrænset tilstand\n\nNogle [funktioner er deaktiveret]({0}), fordi der [ikke er tillid til arbejdsområdet]({1}).",
+			"status.WorkspaceTrust": "Tillid til arbejdsområde",
+			"trustFolderOptionDescription": "Hav tillid til mappen, og aktivér alle funktioner",
+			"trustOption": "&&Ja, jeg har tillid til forfatterne",
+			"trustResources": "&&Hav tillid til mappen, og fortsæt",
+			"trustWorkspaceOptionDescription": "Hav tillid til arbejdsområdet, og aktivér alle funktioner",
+			"untrusted": "Begrænset tilstand",
+			"workspace.trust.banner.always": "Vis banneret, hver gang et arbejdsområde, der ikke er tillid til, er åbent.",
+			"workspace.trust.banner.description": "Styrer, hvornår banneret for begrænset tilstand vises.",
+			"workspace.trust.banner.never": "Vis ikke banneret, når et arbejdsområde, der ikke er tillid til, er åbent.",
+			"workspace.trust.banner.untilDismissed": "Vis banneret, når et arbejdsområde, der ikke er tillid til, åbnes, indtil banneret afvises.",
+			"workspace.trust.description": "Styrer, om Tillid til arbejdsområde er aktiveret i VS Code.",
+			"workspace.trust.emptyWindow.description": "Styrer, om der som standard er tillid til det tomme vindue i VS Code. Når dette bruges sammen med `#{0}#`, kan du aktivere alle VS Code-funktioner uden at blive spurgt i et tomt vindue.",
+			"workspace.trust.startupPrompt.always": "Spørg om tillid, hver gang et arbejdsområde, der ikke er tillid til, åbnes.",
+			"workspace.trust.startupPrompt.description": "Styrer, hvornår startspørgsmålet om tillid til et arbejdsområde vises.",
+			"workspace.trust.startupPrompt.never": "Spørg ikke om tillid, når et arbejdsområde, der ikke er tillid til, åbnes.",
+			"workspace.trust.startupPrompt.once": "Spørg om tillid, første gang et arbejdsområde, der ikke er tillid til, åbnes.",
+			"workspace.trust.untrustedFiles.description": "Styrer, hvordan åbning af filer, der ikke er tillid til, håndteres i et arbejdsområde, der er tillid til. Indstillingen gælder også ved åbning af filer i et tomt vindue, som der er tillid til via `#{0}#`.",
+			"workspace.trust.untrustedFiles.newWindow": "Åbn altid filer, der ikke er tillid til, i et separat vindue i begrænset tilstand uden at spørge.",
+			"workspace.trust.untrustedFiles.open": "Tillad altid, at filer, der ikke er tillid til, føjes til et arbejdsområde, der er tillid til, uden at spørge.",
+			"workspace.trust.untrustedFiles.prompt": "Spørg, hvordan filer, der ikke er tillid til, skal håndteres for hvert arbejdsområde. Når de er føjet til et arbejdsområde, der er tillid til, bliver du ikke spurgt igen.",
+			"workspacesCategory": "Arbejdsområder",
+			"workspaceStartupTrustDetails": "{0} leverer funktioner, der kan køre filer i dette arbejdsområde automatisk.",
+			"workspaceTrust": "Har du tillid til forfatterne af filerne i dette arbejdsområde?",
+			"workspaceTrustEditor": "Editor til tillid til arbejdsområde"
 		},
 		"vs/workbench/contrib/workspace/browser/workspaceTrustEditor": {
+			"addButton": "Tilføj mappe",
+			"checkListIcon": "Ikon for fluebenet i editoren til tillid til arbejdsområde.",
+			"deleteTrustedUri": "Slet sti",
+			"dontTrustButton": "Hav ikke tillid",
+			"editIcon": "Ikon for redigering af mappe i editoren til tillid til arbejdsområde.",
+			"editTrustedUri": "Rediger sti",
+			"folderPickerIcon": "Ikon for valg af mappe i editoren til tillid til arbejdsområde.",
+			"hostColumnLabel": "Vært",
+			"invalidTrust": "Du kan ikke have tillid til enkelte mapper i et lager.",
+			"keyboardShortcut": "Tastaturgenvej: {0}",
 			"localAuthority": "Lokal",
+			"no untrustedSettings": "Arbejdsområdeindstillinger, der kræver tillid, anvendes ikke",
+			"noTrustedFoldersDescriptions": "Du har endnu ikke angivet tillid til mapper eller arbejdsområdefiler.",
 			"pathColumnLabel": "Sti",
-			"root element label": "Administrer tillid til arbejdsområde"
+			"pickerTrustedUri": "Åbn filvælger",
+			"removeIcon": "Ikon for fjernelse af mappe i editoren til tillid til arbejdsområde.",
+			"root element label": "Administrer tillid til arbejdsområde",
+			"selectTrustedUri": "Vælg en mappe, der skal være tillid til",
+			"shieldIcon": "Ikon for tillid til arbejdsområde i banneret.",
+			"trustAll": "Du vil have tillid til alle lagre på {0}.",
+			"trustButton": "Hav tillid",
+			"trustedDebugging": "Fejlfinding er aktiveret",
+			"trustedDescription": "Alle funktioner er aktiveret, fordi arbejdsområdet er blevet angivet som et arbejdsområde, der er tillid til.",
+			"trustedExtensions": "Alle aktiverede udvidelser er aktiveret",
+			"trustedFolder": "I en mappe, der er tillid til",
+			"trustedFolderAriaLabel": "{0}, der er tillid til",
+			"trustedFoldersAndWorkspaces": "Mapper og arbejdsområder, der er tillid til",
+			"trustedFoldersDescription": "Du har tillid til følgende mapper, deres undermapper og arbejdsområdefiler.",
+			"trustedFolderSubtitle": "Du har tillid til forfatterne af filerne i den aktuelle mappe. Alle funktioner er aktiveret:",
+			"trustedFolderWithHostAriaLabel": "{0} på {1}, der er tillid til",
+			"trustedForcedReason": "Der er tillid til dette vindue på grund af det åbne arbejdsområde.",
+			"trustedHeaderFolder": "Du har tillid til denne mappe",
+			"trustedHeaderWindow": "Du har tillid til dette vindue",
+			"trustedHeaderWorkspace": "Du har tillid til dette arbejdsområde",
+			"trustedSettings": "Alle arbejdsområdeindstillinger anvendes",
+			"trustedTasks": "Opgaver må køre",
+			"trustedUnsettableWindow": "Der er tillid til dette vindue",
+			"trustedWindow": "I et vindue, der er tillid til",
+			"trustedWindowSubtitle": "Du har tillid til forfatterne af filerne i det aktuelle vindue. Alle funktioner er aktiveret:",
+			"trustedWorkspace": "I et arbejdsområde, der er tillid til",
+			"trustedWorkspaceSubtitle": "Du har tillid til forfatterne af filerne i det aktuelle arbejdsområde. Alle funktioner er aktiveret:",
+			"trustOrg": "Du vil have tillid til alle lagre og forgreninger under '{0}' på {1}.",
+			"trustUri": "Hav tillid til mappe",
+			"untrustedDebugging": "Fejlfinding er deaktiveret",
+			"untrustedDescription": "{0} er i en begrænset tilstand, der er beregnet til sikker gennemsyn af kode.",
+			"untrustedExtensions": "[{0} udvidelser]({1}) er deaktiveret eller har begrænset funktionalitet",
+			"untrustedFolderReason": "Der er tillid til denne mappe via posterne med fed skrift blandt mapperne nedenfor.",
+			"untrustedFolderSubtitle": "Du har ikke tillid til forfatterne af filerne i den aktuelle mappe. Følgende funktioner er deaktiveret:",
+			"untrustedHeader": "Du er i begrænset tilstand",
+			"untrustedSettings": "[{0} arbejdsområdeindstillinger]({1}) anvendes ikke",
+			"untrustedTasks": "Opgaver må ikke køre",
+			"untrustedWindowSubtitle": "Du har ikke tillid til forfatterne af filerne i det aktuelle vindue. Følgende funktioner er deaktiveret:",
+			"untrustedWorkspace": "I begrænset tilstand",
+			"untrustedWorkspaceReason": "Der er tillid til dette arbejdsområde via posterne med fed skrift blandt mapperne nedenfor.",
+			"untrustedWorkspaceSubtitle": "Du har ikke tillid til forfatterne af filerne i det aktuelle arbejdsområde. Følgende funktioner er deaktiveret:",
+			"workspaceTrustEditorHeaderActions": "[Konfigurer dine indstillinger]({0}), eller [få mere at vide](https://aka.ms/vscode-workspace-trust).",
+			"xListIcon": "Ikon for krydset i editoren til tillid til arbejdsområde."
+		},
+		"vs/workbench/contrib/workspace/common/workspace": {
+			"workspaceTrustedCtx": "Om brugeren har angivet tillid til det aktuelle arbejdsområde.",
+			"workspaceTrustEnabledCtx": "Om funktionen Tillid til arbejdsområde er aktiveret."
+		},
+		"vs/workbench/contrib/workspaces/browser/workspaces.contribution": {
+			"alreadyOpen": "Dette arbejdsområde er allerede åbent.",
+			"foundWorkspace": "Denne mappe indeholder arbejdsområdefilen '{0}'. Vil du åbne den? [Få mere at vide]({1}) om arbejdsområdefiler.",
+			"foundWorkspaces": "Denne mappe indeholder flere arbejdsområdefiler. Vil du åbne en af dem? [Få mere at vide]({0}) om arbejdsområdefiler.",
+			"openWorkspace": "Åbn arbejdsområde",
+			"selectToOpen": "Vælg et arbejdsområde, der skal åbnes",
+			"selectWorkspace": "Vælg arbejdsområde"
 		},
 		"vs/workbench/electron-browser/actions/windowActions": {
 			"close": "Luk vindue",
@@ -6257,6 +7625,9 @@
 			"restart": "Genstart",
 			"showArgvParseWarningAction": "Åbn fil",
 			"shutdownErrorDetail": "Fejl: {0}",
+			"shutdownForceClose": "Luk alligevel",
+			"shutdownForceQuit": "Afslut alligevel",
+			"shutdownForceReload": "Genindlæs alligevel",
 			"zoomIn": "Zoom ind",
 			"zoomOut": "Zoom ud",
 			"zoomReset": "Nulstil",
@@ -6286,6 +7657,9 @@
 		"vs/workbench/services/auxiliaryWindow/browser/auxiliaryWindowService": {
 			"retry": "&&Prøv igen"
 		},
+		"vs/workbench/services/auxiliaryWindow/electron-browser/auxiliaryWindowService": {
+			"backupErrorDetails": "Prøv først at gemme eller gendanne editorerne med ændringer, der ikke er gemt, og prøv derefter igen."
+		},
 		"vs/workbench/services/chat/common/chatEntitlementService": {
 			"learnMore": "Få mere at vide",
 			"ok": "OK",
@@ -6295,15 +7669,46 @@
 			"open": "Åbn indstillinger"
 		},
 		"vs/workbench/services/dialogs/browser/abstractFileDialogService": {
+			"allFiles": "Alle filer",
 			"dontSave": "Gem &&ikke",
 			"filterName.workspace": "Arbejdsområde",
+			"noExt": "Ingen filtype",
 			"openFile.title": "Åbn fil",
+			"openFileOrFolder.title": "Åbn fil eller mappe",
 			"openFolder.title": "Åbn mappe",
+			"openWorkspace.title": "Åbn arbejdsområde fra fil",
 			"save": "&&Gem",
-			"saveChangesDetail": "Dine ændringer går tabt, hvis du ikke gemmer dem."
+			"saveAll": "&&Gem alle",
+			"saveAsTitle": "Gem som",
+			"saveChangesDetail": "Dine ændringer går tabt, hvis du ikke gemmer dem.",
+			"saveChangesMessage": "Vil du gemme de ændringer, du har foretaget i {0}?",
+			"saveChangesMessages": "Vil du gemme ændringerne i følgende {0} filer?",
+			"saveFileAs.title": "Gem som"
 		},
 		"vs/workbench/services/dialogs/browser/simpleFileDialog": {
-			"remoteFileDialog.cancel": "Annuller"
+			"openLocalFile": "Åbn lokal fil...",
+			"openLocalFileFolder": "Åbn lokalt...",
+			"openLocalFolder": "Åbn lokal mappe...",
+			"remoteFileDialog.badPath": "Stien findes ikke. Brug ~ for at gå til din hjemmemappe.",
+			"remoteFileDialog.cancel": "Annuller",
+			"remoteFileDialog.createFolderFailed": "Mappen kunne ikke oprettes: {0}",
+			"remoteFileDialog.hideDotFiles": "Skjul punktumfiler",
+			"remoteFileDialog.invalidPath": "Angiv en gyldig sti.",
+			"remoteFileDialog.local": "Vis lokalt",
+			"remoteFileDialog.notConnectedToRemote": "Filsystemudbyderen for {0} er ikke tilgængelig.",
+			"remoteFileDialog.placeholder": "Mappesti",
+			"remoteFileDialog.showDotFiles": "Vis punktumfiler",
+			"remoteFileDialog.validateBadFilename": "Angiv et gyldigt filnavn.",
+			"remoteFileDialog.validateCreateDirectory": "Mappen {0} findes ikke. Vil du oprette den?",
+			"remoteFileDialog.validateCreateDirectoryOpen": "Mappen {0} findes ikke. Vil du oprette den?",
+			"remoteFileDialog.validateExisting": "{0} findes allerede. Er du sikker på, at du vil overskrive den?",
+			"remoteFileDialog.validateFileOnly": "Vælg en fil.",
+			"remoteFileDialog.validateFolder": "Mappen findes allerede. Brug et nyt filnavn.",
+			"remoteFileDialog.validateFolderOnly": "Vælg en mappe.",
+			"remoteFileDialog.validateNonexistentDir": "Angiv en sti, der findes.",
+			"remoteFileDialog.validateReadonlyFolder": "Denne mappe kan ikke bruges som lagringsdestination. Vælg en anden mappe",
+			"remoteFileDialog.windowsDriveLetter": "Start stien med et drevbogstav.",
+			"saveLocalFile": "Gem lokal fil..."
 		},
 		"vs/workbench/services/editor/browser/editorResolverService": {
 			"editorResolver.configureDefault": "Konfigurer standard",
@@ -6491,6 +7896,7 @@
 			"network": "Netværk"
 		},
 		"vs/workbench/services/suggest/browser/simpleSuggestWidget": {
+			"label": "{0}, {1}",
 			"suggestWidget.loading": "Indlæser..."
 		},
 		"vs/workbench/services/suggest/browser/simpleSuggestWidgetDetails": {
@@ -6498,13 +7904,27 @@
 			"loading": "Indlæser..."
 		},
 		"vs/workbench/services/textfile/browser/textFileService": {
+			"confirmMakeWriteable": "'{0}' er markeret som skrivebeskyttet. Vil du gemme alligevel?",
+			"confirmMakeWriteableDetail": "Stier kan konfigureres som skrivebeskyttede via indstillinger.",
+			"confirmOverwrite": "'{0}' findes allerede. Vil du erstatte den?",
 			"deleted": "Slettet",
-			"replaceButtonLabel": "&&Erstat"
+			"makeWriteableButtonLabel": "&&Gem alligevel",
+			"overwriteIrreversible": "Der findes allerede en fil eller mappe med navnet '{0}' i mappen '{1}'. Hvis den erstattes, overskrives det aktuelle indhold.",
+			"readonly": "Skrivebeskyttet",
+			"readonlyAndDeleted": "Slettet, skrivebeskyttet",
+			"replaceButtonLabel": "&&Erstat",
+			"textFileCreate.source": "Fil oprettet",
+			"textFileOverwrite.source": "Fil erstattet"
+		},
+		"vs/workbench/services/textfile/common/textFileEditorModel": {
+			"saveParticipants": "Gemmer '{0}'",
+			"saveTextFile": "Skriver til fil..."
 		},
 		"vs/workbench/services/textfile/common/textFileEditorModelManager": {
 			"genericSaveError": "Kunne ikke gemme '{0}': {1}"
 		},
 		"vs/workbench/services/textfile/common/textFileSaveParticipant": {
+			"saveParticipants1": "Kører kodehandlinger og formateringsværktøjer...",
 			"skip": "Spring over"
 		},
 		"vs/workbench/services/textMate/browser/textMateTokenizationFeatureImpl": {
@@ -6593,20 +8013,70 @@
 			"editor": "Teksteditor"
 		},
 		"vs/workbench/services/workingCopy/common/fileWorkingCopyManager": {
+			"confirmMakeWriteable": "'{0}' er markeret som skrivebeskyttet. Vil du gemme alligevel?",
+			"confirmMakeWriteableDetail": "Stier kan konfigureres som skrivebeskyttede via indstillinger.",
+			"confirmOverwrite": "'{0}' findes allerede. Vil du erstatte den?",
 			"deleted": "Slettet",
+			"fileWorkingCopyCreate.source": "Fil oprettet",
+			"fileWorkingCopyDecorations": "Dekorationer for filarbejdskopier",
+			"fileWorkingCopyReplace.source": "Fil erstattet",
+			"makeWriteableButtonLabel": "&&Gem alligevel",
+			"overwriteIrreversible": "Der findes allerede en fil eller mappe med navnet '{0}' i mappen '{1}'. Hvis den erstattes, overskrives det aktuelle indhold.",
+			"readonly": "Skrivebeskyttet",
+			"readonlyAndDeleted": "Slettet, skrivebeskyttet",
 			"replaceButtonLabel": "&&Erstat"
 		},
 		"vs/workbench/services/workingCopy/common/storedFileWorkingCopy": {
 			"genericSaveError": "Kunne ikke gemme '{0}': {1}",
+			"overwrite": "Overskriv",
+			"overwriteElevated": "Overskriv som administrator...",
+			"overwriteElevatedSudo": "Overskriv med sudo...",
+			"permissionDeniedSaveError": "Kunne ikke gemme '{0}': Utilstrækkelige tilladelser. Vælg 'Prøv igen som administrator' for at prøve igen som administrator.",
+			"permissionDeniedSaveErrorSudo": "Kunne ikke gemme '{0}': Utilstrækkelige tilladelser. Vælg 'Prøv igen med sudo' for at prøve igen som superbruger.",
+			"readonlySaveError": "Kunne ikke gemme '{0}': Filen er skrivebeskyttet. Vælg 'Overskriv' for at forsøge at gøre den skrivbar.",
+			"readonlySaveErrorAdmin": "Kunne ikke gemme '{0}': Filen er skrivebeskyttet. Vælg 'Overskriv som administrator' for at prøve igen som administrator.",
+			"readonlySaveErrorSudo": "Kunne ikke gemme '{0}': Filen er skrivebeskyttet. Vælg 'Overskriv med sudo' for at prøve igen som superbruger.",
 			"retry": "Prøv igen",
 			"revert": "Før tilbage",
-			"saveAs": "Gem som..."
+			"saveAs": "Gem som...",
+			"saveElevated": "Prøv igen som administrator...",
+			"saveElevatedSudo": "Prøv igen med sudo...",
+			"saveParticipants": "Gemmer '{0}'",
+			"saveTextFile": "Skriver til fil...",
+			"staleSaveError": "Kunne ikke gemme '{0}': Filens indhold er nyere. Vil du overskrive filen med dine ændringer?"
+		},
+		"vs/workbench/services/workingCopy/common/storedFileWorkingCopyManager": {
+			"join.fileWorkingCopyManager": "Gemmer arbejdskopier"
 		},
 		"vs/workbench/services/workingCopy/common/storedFileWorkingCopySaveParticipant": {
+			"saveParticipants1": "Kører kodehandlinger og formateringsværktøjer...",
 			"skip": "Spring over"
 		},
+		"vs/workbench/services/workingCopy/common/workingCopyHistoryService": {
+			"default.source": "Fil gemt",
+			"join.workingCopyHistory": "Gemmer lokal historik",
+			"moved.source": "Fil flyttet",
+			"renamed.source": "Fil omdøbt"
+		},
+		"vs/workbench/services/workingCopy/common/workingCopyHistoryTracker": {
+			"undoRedo.source": "Fortryd/Annuller fortrydelse"
+		},
+		"vs/workbench/services/workingCopy/electron-browser/workingCopyBackupService": {
+			"join.workingCopyBackups": "Sikkerhedskopiér arbejdskopier"
+		},
 		"vs/workbench/services/workingCopy/electron-browser/workingCopyBackupTracker": {
-			"ok": "&&OK"
+			"backupBeforeShutdownDetail": "Klik på 'Annuller' for at stoppe ventetiden og gemme eller gendanne editorer med ændringer, der ikke er gemt.",
+			"backupBeforeShutdownMessage": "Sikkerhedskopiering af editorer med ændringer, der ikke er gemt, tager lidt længere tid...",
+			"backupErrorDetails": "Prøv først at gemme eller gendanne editorerne med ændringer, der ikke er gemt, og prøv derefter igen.",
+			"backupTrackerBackupFailed": "Følgende editorer med ændringer, der ikke er gemt, kunne ikke gemmes på sikkerhedskopiplaceringen.",
+			"backupTrackerConfirmFailed": "Følgende editorer med ændringer, der ikke er gemt, kunne ikke gemmes eller gendannes.",
+			"discardBackupsBeforeShutdown": "Kassering af sikkerhedskopier tager lidt længere tid...",
+			"ok": "&&OK",
+			"revertBeforeShutdown": "Gendannelse af editorer med ændringer, der ikke er gemt, tager lidt længere tid...",
+			"saveBeforeShutdown": "Lagring af editorer med ændringer, der ikke er gemt, tager lidt længere tid...",
+			"shutdownForceClose": "Luk alligevel",
+			"shutdownForceQuit": "Afslut alligevel",
+			"shutdownForceReload": "Genindlæs alligevel"
 		},
 		"vs/workbench/services/workspaces/browser/abstractWorkspaceEditingService": {
 			"save": "Gem"

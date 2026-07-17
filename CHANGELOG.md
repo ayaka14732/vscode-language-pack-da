@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.2
+
+- Expand the pack by 1,308 messages to 6,410 Danish translations (25.58% of the pinned catalog).
+- Complete the current Search, code-editor contribution, Explorer/files, Integrated Browser,
+  Workspace Trust, refactoring preview, custom-editor, formatting, local-history, Search Editor,
+  Timeline, dialog, and working-copy modules.
+
 ## 0.2.1
 
 - Expand the pack to 5,102 Danish messages, prioritizing Output and log controls, Problems,

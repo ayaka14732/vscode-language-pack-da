@@ -2,7 +2,7 @@
 	"name": "vscode-language-pack-da",
 	"displayName": "Danish Language Pack for Visual Studio Code",
 	"description": "Danish (Dansk) user-interface localization for Visual Studio Code.",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"publisher": "danish-language-pack",
 	"license": "MIT",
 	"preview": true,

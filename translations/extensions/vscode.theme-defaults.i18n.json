@@ -3,9 +3,11 @@
 	"contents": {
 		"package": {
 			"darkModernThemeLabel": "Mørk moderne",
+			"darkPlusColorThemeLabel": "Mørk+",
 			"hcColorThemeLabel": "Mørk høj kontrast",
 			"lightHcColorThemeLabel": "Lys høj kontrast",
-			"lightModernThemeLabel": "Lys moderne"
+			"lightModernThemeLabel": "Lys moderne",
+			"lightPlusColorThemeLabel": "Lys+"
 		}
 	}
 }

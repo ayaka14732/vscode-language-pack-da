@@ -211,13 +211,19 @@
 			"notFound": "{0} blev ikke fundet i zip-filen."
 		},
 		"vs/code/electron-main/app": {
+			"cancel": "&&Nej",
 			"open": "&&Ja"
 		},
 		"vs/code/electron-main/main": {
-			"close": "&&Luk"
+			"close": "&&Luk",
+			"mainLog": "Hoved"
 		},
 		"vs/code/electron-utility/sharedProcess/sharedProcessMain": {
-			"networkk": "Netværk"
+			"networkk": "Netværk",
+			"sharedLog": "Delt"
+		},
+		"vs/code/node/cliProcessMain": {
+			"cli": "CLI"
 		},
 		"vs/editor/browser/controller/editContext/native/screenReaderSupport": {
 			"editor": "editor"
@@ -235,9 +241,11 @@
 		},
 		"vs/editor/browser/widget/diffEditor/commands": {
 			"diffEditor": "Diffeditor",
-			"revert": "Før tilbage"
+			"revert": "Før tilbage",
+			"toggleCollapseUnchangedRegions": "Slå sammenfoldning af uændrede områder til/fra"
 		},
 		"vs/editor/browser/widget/diffEditor/components/accessibleDiffViewer": {
+			"blankLine": "tom",
 			"label.close": "Luk"
 		},
 		"vs/editor/browser/widget/diffEditor/features/revertButtonsFeature": {
@@ -247,25 +255,56 @@
 			"loading": "Indlæser..."
 		},
 		"vs/editor/common/config/editorConfigurationSchema": {
+			"diffAlgorithm.advanced": "Bruger den avancerede forskelsalgoritme.",
+			"diffAlgorithm.legacy": "Bruger den ældre forskelsalgoritme.",
 			"editorConfigurationTitle": "Editor",
 			"schema.closeBracket": "Den afsluttende parentes eller tegnsekvens.",
-			"schema.openBracket": "Den indledende parentes eller tegnsekvens."
+			"schema.openBracket": "Den indledende parentes eller tegnsekvens.",
+			"wordWrap.off": "Linjer ombrydes aldrig.",
+			"wordWrap.on": "Linjer ombrydes ved visningsområdets bredde."
 		},
 		"vs/editor/common/config/editorOptions": {
 			"editorViewAccessibleLabel": "Editorindhold",
 			"fastScrollSensitivity": "Multiplikator for rullehastighed, når der trykkes på `Alt`.",
-			"fontWeightErrorMessage": "Kun nøgleordene \"normal\" og \"bold\" eller tal mellem 1 og 1000 er tilladt."
+			"fontWeightErrorMessage": "Kun nøgleordene \"normal\" og \"bold\" eller tal mellem 1 og 1000 er tilladt.",
+			"wordWrap.off": "Linjer ombrydes aldrig.",
+			"wordWrap.on": "Linjer ombrydes ved visningsområdets bredde."
 		},
 		"vs/editor/common/languages": {
+			"Array": "matrix",
+			"Boolean": "boolesk",
+			"Class": "klasse",
+			"Event": "hændelse",
+			"Field": "felt",
 			"File": "fil",
+			"Key": "nøgle",
+			"Method": "metode",
+			"Module": "modul",
+			"Null": "null",
+			"Number": "tal",
+			"Object": "objekt",
+			"String": "streng",
+			"Struct": "struktur",
+			"suggestWidget.kind.class": "Klasse",
+			"suggestWidget.kind.color": "Farve",
+			"suggestWidget.kind.enum": "Enum",
 			"suggestWidget.kind.event": "Hændelse",
+			"suggestWidget.kind.field": "Felt",
 			"suggestWidget.kind.file": "Fil",
 			"suggestWidget.kind.folder": "Mappe",
+			"suggestWidget.kind.issue": "Problem",
 			"suggestWidget.kind.method": "Metode",
+			"suggestWidget.kind.module": "Modul",
+			"suggestWidget.kind.struct": "Struktur",
 			"suggestWidget.kind.text": "Tekst",
+			"suggestWidget.kind.tool": "Værktøj",
+			"suggestWidget.kind.unit": "Enhed",
 			"suggestWidget.kind.user": "Bruger",
 			"suggestWidget.kind.value": "Værdi",
 			"symbolAriaLabel": "{0} ({1})"
+		},
+		"vs/editor/common/model/editStack": {
+			"edit": "Skrivning"
 		},
 		"vs/editor/common/standaloneStrings": {
 			"accessibilityHelpTitle": "Hjælp til tilgængelighed",
@@ -282,17 +321,24 @@
 			"actions.clipboard.copyLabel": "Kopiér",
 			"actions.clipboard.cutLabel": "Klip",
 			"actions.clipboard.pasteLabel": "Indsæt",
+			"copy as": "Kopiér som",
 			"miCopy": "&&Kopiér",
+			"miCut": "Kli&&p",
 			"miPaste": "&&Indsæt",
 			"share": "Del"
 		},
 		"vs/editor/contrib/codeAction/browser/codeActionCommands": {
 			"editor.action.codeAction.noneMessage": "Ingen tilgængelige kodehandlinger",
 			"editor.action.quickFix.noneMessage": "Ingen tilgængelige kodehandlinger",
+			"fixAll.label": "Ret alle",
+			"organizeImports.label": "Organiser importer",
 			"quickfix.trigger.label": "Hurtig rettelse..."
 		},
 		"vs/editor/contrib/codeAction/browser/codeActionMenu": {
+			"codeAction.widget.id.extract": "Udtræk",
+			"codeAction.widget.id.inline": "Indlejret",
 			"codeAction.widget.id.more": "Flere handlinger...",
+			"codeAction.widget.id.move": "Flyt",
 			"codeAction.widget.id.quickfix": "Hurtig rettelse"
 		},
 		"vs/editor/contrib/codeAction/browser/lightBulbWidget": {
@@ -300,14 +346,22 @@
 		},
 		"vs/editor/contrib/contextmenu/browser/contextmenu": {
 			"context.minimap.minimap": "Minikort",
+			"context.minimap.side": "Side",
 			"context.minimap.side.left": "Venstre",
 			"context.minimap.side.right": "Højre",
+			"context.minimap.size.fill": "Udfyld",
+			"context.minimap.size.fit": "Tilpas",
+			"context.minimap.slider": "Skyder",
 			"context.minimap.slider.always": "Altid"
+		},
+		"vs/editor/contrib/dropOrPasteInto/browser/copyPasteController": {
+			"noPreferences": "tom"
 		},
 		"vs/editor/contrib/find/browser/findController": {
 			"ariaSearchNoResult": "{0} fundet for '{1}'",
 			"findNextMatchAction": "Find næste",
 			"findPreviousMatchAction": "Find forrige",
+			"miFind": "&&Find",
 			"miReplace": "&&Erstat",
 			"startFindAction": "Find",
 			"startReplace": "Erstat"
@@ -328,22 +382,34 @@
 			"label.replaceAllButton": "Erstat alle",
 			"label.replaceButton": "Erstat",
 			"label.toggleReplaceButton": "Vis/skjul Erstat",
+			"label.toggleSelectionFind": "Find i markering",
 			"placeholder.find": "Find",
 			"placeholder.replace": "Erstat",
 			"replaceInputAriaLabelWithHint": "{0}, {1}"
 		},
 		"vs/editor/contrib/folding/browser/folding": {
-			"toggleFoldAction.label": "Slå sammenfoldning til/fra"
+			"foldAction.label": "Fold sammen",
+			"toggleFoldAction.label": "Slå sammenfoldning til/fra",
+			"toggleFoldRecursivelyAction.label": "Slå rekursiv sammenfoldning til/fra",
+			"unfoldAction.label": "Fold ud"
 		},
 		"vs/editor/contrib/format/browser/formatActions": {
 			"formatDocument.label": "Formatér dokument"
 		},
 		"vs/editor/contrib/gotoError/browser/gotoErrorWidget": {
 			"Error": "Fejl",
+			"Hint": "Forslag",
 			"Info": "Oplysninger",
 			"Warning": "Advarsel"
 		},
 		"vs/editor/contrib/gotoSymbol/browser/goToCommands": {
+			"actions.goToDecl.label": "Gå til definition",
+			"actions.goToImplementation.label": "Gå til implementeringer",
+			"goToReferences.label": "Gå til referencer",
+			"miGotoDefinition": "Gå til &&definition",
+			"miGotoImplementation": "Gå til &&implementeringer",
+			"miGotoReference": "Gå til &&referencer",
+			"peek.submenu": "Kig",
 			"ref.title": "Referencer"
 		},
 		"vs/editor/contrib/gotoSymbol/browser/peek/referencesController": {
@@ -358,7 +424,11 @@
 			"noResults": "Ingen resultater",
 			"peekView.alternateTitle": "Referencer"
 		},
+		"vs/editor/contrib/hover/browser/hoverActions": {
+			"showOrFocusHover": "Vis eller fokuser hover"
+		},
 		"vs/editor/contrib/hover/browser/hoverCopyButton": {
+			"hover.copied": "Kopieret til udklipsholderen",
 			"hover.copy": "Kopiér"
 		},
 		"vs/editor/contrib/hover/browser/markdownHoverParticipant": {
@@ -366,6 +436,14 @@
 		},
 		"vs/editor/contrib/hover/browser/markerHoverParticipant": {
 			"quick fixes": "Hurtig rettelse..."
+		},
+		"vs/editor/contrib/indentation/browser/indentation": {
+			"changeTabDisplaySize": "Skift tabulatorvisningsstørrelse",
+			"indentationToSpaces": "Konvertér indrykning til mellemrum",
+			"indentationToTabs": "Konvertér indrykning til tabulatorer",
+			"indentUsingSpaces": "Indryk med mellemrum",
+			"indentUsingTabs": "Indryk med tabulatorer",
+			"selectTabWidth": "Vælg tabulatorstørrelse for den aktuelle fil"
 		},
 		"vs/editor/contrib/inlayHints/browser/inlayHintsHover": {
 			"links.navigate.kb.alt": "Alt + klik",
@@ -375,10 +453,14 @@
 		},
 		"vs/editor/contrib/inlineCompletions/browser/controller/commands": {
 			"accept": "Acceptér",
+			"action.inlineSuggest.trigger": "Udløs indlejret forslag",
+			"jump": "Spring",
 			"reject": "Afvis"
 		},
 		"vs/editor/contrib/inlineCompletions/browser/hintsWidget/inlineCompletionsHintsWidget": {
 			"next": "Næste",
+			"parameterHintsNextIcon": "Ikon til visning af næste parameterforslag.",
+			"parameterHintsPreviousIcon": "Ikon til visning af forrige parameterforslag.",
 			"previous": "Forrige"
 		},
 		"vs/editor/contrib/inlineCompletions/browser/model/renameSymbolProcessor": {
@@ -392,6 +474,9 @@
 		"vs/editor/contrib/inlineCompletions/browser/view/inlineEdits/components/gutterIndicatorView": {
 			"inlineSuggestion": "Indlejret forslag"
 		},
+		"vs/editor/contrib/insertFinalNewLine/browser/insertFinalNewLine": {
+			"insertFinalNewLine": "Indsæt afsluttende ny linje"
+		},
 		"vs/editor/contrib/links/browser/links": {
 			"label": "Åbn link",
 			"links.navigate.follow": "Følg link",
@@ -399,6 +484,14 @@
 			"links.navigate.kb.alt.mac": "Option + klik",
 			"links.navigate.kb.meta": "Ctrl + klik",
 			"links.navigate.kb.meta.mac": "Cmd + klik"
+		},
+		"vs/editor/contrib/multicursor/browser/multicursor": {
+			"addSelectionToNextFindMatch": "Føj markering til næste søgeresultat",
+			"selectAllOccurrencesOfFindMatch": "Markér alle forekomster af søgeresultatet"
+		},
+		"vs/editor/contrib/parameterHints/browser/parameterHintsWidget": {
+			"parameterHintsNextIcon": "Ikon til visning af næste parameterforslag.",
+			"parameterHintsPreviousIcon": "Ikon til visning af forrige parameterforslag."
 		},
 		"vs/editor/contrib/peekView/browser/peekView": {
 			"label.close": "Luk",
@@ -416,15 +509,38 @@
 			"cancelRenameSuggestionsButton": "Annuller"
 		},
 		"vs/editor/contrib/snippet/browser/snippetVariables": {
+			"April": "April",
+			"AprilShort": "Apr",
+			"August": "August",
+			"AugustShort": "Aug",
+			"DecemberShort": "Dec",
+			"FebruaryShort": "Feb",
 			"Friday": "Fredag",
+			"FridayShort": "Fre",
+			"JanuaryShort": "Jan",
+			"July": "Juli",
+			"JulyShort": "Jul",
+			"June": "Juni",
+			"JuneShort": "Jun",
+			"March": "Marts",
+			"MarchShort": "Mar",
 			"May": "Maj",
 			"MayShort": "Maj",
 			"Monday": "Mandag",
+			"MondayShort": "Man",
+			"NovemberShort": "Nov",
+			"OctoberShort": "Okt",
 			"Saturday": "Lørdag",
+			"SaturdayShort": "Lør",
+			"SeptemberShort": "Sep",
 			"Sunday": "Søndag",
+			"SundayShort": "Søn",
 			"Thursday": "Torsdag",
+			"ThursdayShort": "Tor",
 			"Tuesday": "Tirsdag",
-			"Wednesday": "Onsdag"
+			"TuesdayShort": "Tir",
+			"Wednesday": "Onsdag",
+			"WednesdayShort": "Ons"
 		},
 		"vs/editor/contrib/stickyScroll/browser/stickyScrollActions": {
 			"miStickyScroll": "&&Fast rulning",
@@ -434,14 +550,18 @@
 			"accept.insert": "Indsæt",
 			"accept.replace": "Erstat",
 			"detail.less": "Vis mere",
-			"detail.more": "Vis mindre"
+			"detail.more": "Vis mindre",
+			"focus.suggestion": "Vælg",
+			"suggest.reset.label": "Nulstil størrelsen på forslagswidgetten",
+			"suggest.trigger.label": "Udløs forslag"
 		},
 		"vs/editor/contrib/suggest/browser/suggestWidget": {
 			"ariaCurrenttSuggestionReadDetails": "{0}, dokumentation: {1}",
 			"label": "{0}, {1}",
 			"label.desc": "{0}, {1}, {2}",
 			"suggest": "Foreslå",
-			"suggestWidget.loading": "Indlæser..."
+			"suggestWidget.loading": "Indlæser...",
+			"suggestWidget.noSuggestions": "Ingen forslag."
 		},
 		"vs/editor/contrib/suggest/browser/suggestWidgetDetails": {
 			"details.close": "Luk",
@@ -588,6 +708,7 @@
 			"agentHost.config.mcpServers.args.title": "Argumenter",
 			"agentHost.config.mcpServers.command.title": "Kommando",
 			"agentHost.config.mcpServers.entry.title": "MCP-server",
+			"agentHost.config.mcpServers.headers.title": "Headere",
 			"agentHost.config.mcpServers.title": "MCP-servere",
 			"agentHost.config.mcpServers.url.title": "URL-adresse",
 			"agentHost.sessionConfig.autoApprove": "Godkendelser",
@@ -1041,6 +1162,7 @@
 			"toolName.webSearch": "Websøgning"
 		},
 		"vs/platform/agentHost/node/localCommands/bangLocalCommand": {
+			"agentHostBang.exited": "Kommandoen afsluttede med koden {0}",
 			"agentHostBang.terminal": "Terminal"
 		},
 		"vs/platform/agentHost/node/sessionPermissions": {
@@ -1055,6 +1177,8 @@
 			"tunnelHost.log": "Fjernforbindelser"
 		},
 		"vs/platform/browserView/common/browserPermissions": {
+			"browserPermission.camera.label": "Kamera",
+			"browserPermission.devices.label": "Enheder",
 			"browserPermission.location.label": "Placering",
 			"browserPermission.notifications.label": "Meddelelser"
 		},
@@ -1067,6 +1191,7 @@
 			"browser.contextMenu.copyImage": "Kopiér billede",
 			"browser.contextMenu.copyLink": "Kopiér link",
 			"browser.contextMenu.forward": "Fremad",
+			"browser.contextMenu.inspect": "Undersøg",
 			"browser.contextMenu.reload": "Genindlæs"
 		},
 		"vs/platform/dialogs/common/dialogs": {
@@ -1083,6 +1208,11 @@
 			"openWorkspace": "&&Åbn",
 			"openWorkspaceTitle": "Åbn arbejdsområde fra fil"
 		},
+		"vs/platform/environment/node/argv": {
+			"cliPrompt": "prompt",
+			"paths": "stier",
+			"usage": "Brug"
+		},
 		"vs/platform/extensionManagement/common/extensionManagement": {
 			"extensions": "Udvidelser",
 			"extensionsConfigurationTitle": "Udvidelser",
@@ -1093,8 +1223,11 @@
 			"notFound": "Udvidelsen '{0}' blev ikke fundet."
 		},
 		"vs/platform/extensions/common/extensionValidator": {
+			"extensionDescription.activationEvents1": "egenskaben `{0}` kan udelades eller skal være af typen `string[]`",
 			"extensionDescription.browser1": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
 			"extensionDescription.engines.vscode": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
+			"extensionDescription.extensionAffinity": "egenskaben `{0}` kan udelades eller skal være af typen `string[]`",
+			"extensionDescription.extensionDependencies": "egenskaben `{0}` kan udelades eller skal være af typen `string[]`",
 			"extensionDescription.main1": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
 			"extensionDescription.name": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
 			"extensionDescription.version": "egenskaben `{0}` er obligatorisk og skal være af typen `string`"
@@ -1106,6 +1239,10 @@
 			"sizeMB": "{0} MB",
 			"sizeTB": "{0} TB"
 		},
+		"vs/platform/files/common/fileService": {
+			"err.readonly": "Den skrivebeskyttede fil '{0}' kan ikke ændres",
+			"fileModifiedError": "Fil ændret siden"
+		},
 		"vs/platform/hover/browser/updatableHoverWidget": {
 			"iconLabel.loading": "Indlæser..."
 		},
@@ -1114,6 +1251,11 @@
 		},
 		"vs/platform/keyboardLayout/common/keyboardConfig": {
 			"keyboardConfigurationTitle": "Tastatur"
+		},
+		"vs/platform/languagePacks/common/localizedStrings": {
+			"close": "luk",
+			"find": "find",
+			"open": "åbn"
 		},
 		"vs/platform/list/browser/listService": {
 			"Fast Scroll Sensitivity": "Multiplikator for rullehastighed, når der trykkes på `Alt`.",
@@ -1124,12 +1266,14 @@
 			"error": "Fejl",
 			"info": "Oplysninger",
 			"off": "Fra",
+			"trace": "Sporing",
 			"warn": "Advarsel"
 		},
 		"vs/platform/markers/common/markers": {
 			"sev.error": "Fejl",
 			"sev.errors": "Fejl",
 			"sev.info": "Oplysninger",
+			"sev.infos": "Oplysninger",
 			"sev.warning": "Advarsel"
 		},
 		"vs/platform/menubar/electron-main/menubar": {
@@ -1200,12 +1344,22 @@
 		"vs/platform/quickinput/browser/quickInput": {
 			"ok": "OK",
 			"quickInput.back": "Tilbage",
-			"quickInput.steps": "{0}/{1}"
+			"quickInput.steps": "{0}/{1}",
+			"quickInputBox.ariaLabel": "Skriv for at indsnævre resultaterne."
 		},
 		"vs/platform/quickinput/browser/quickInputController": {
 			"custom": "Brugerdefineret",
 			"ok": "OK",
 			"quickInput.back": "Tilbage"
+		},
+		"vs/platform/quickinput/browser/quickInputUtils": {
+			"executeCommand": "Klik for at udføre kommandoen '{0}'"
+		},
+		"vs/platform/quickinput/browser/quickPickPin": {
+			"terminal.commands.pinned": "fastgjort"
+		},
+		"vs/platform/quickinput/browser/tree/quickTree": {
+			"quickInputBox.ariaLabel": "Skriv for at indsnævre resultaterne."
 		},
 		"vs/platform/request/common/request": {
 			"httpConfigurationTitle": "HTTP"
@@ -1220,12 +1374,16 @@
 			"terminalLoggerName": "Terminal"
 		},
 		"vs/platform/terminal/common/terminalPlatformConfiguration": {
+			"terminalAutomationProfile.path": "En sti til en eksekverbar shellfil.",
 			"terminalIntegratedConfigurationTitle": "Integreret terminal",
 			"terminalProfile.linuxExtensionId": "Udvidelsesterminalens id",
+			"terminalProfile.linuxExtensionIdentifier": "Den udvidelse, der bidrog med denne profil.",
 			"terminalProfile.linuxExtensionTitle": "Udvidelsesterminalens navn",
 			"terminalProfile.osxExtensionId": "Udvidelsesterminalens id",
+			"terminalProfile.osxExtensionIdentifier": "Den udvidelse, der bidrog med denne profil.",
 			"terminalProfile.osxExtensionTitle": "Udvidelsesterminalens navn",
 			"terminalProfile.windowsExtensionId": "Udvidelsesterminalens id",
+			"terminalProfile.windowsExtensionIdentifier": "Den udvidelse, der bidrog med denne profil.",
 			"terminalProfile.windowsExtensionTitle": "Udvidelsesterminalens navn"
 		},
 		"vs/platform/terminal/node/ptyHostMain": {
@@ -1233,6 +1391,11 @@
 		},
 		"vs/platform/theme/common/colors/editorColors": {
 			"hoverHighlight": "Fremhævning under det ord, som der vises oplysninger for, når markøren holdes over det. Farven må ikke være uigennemsigtig, da underliggende dekorationer ellers skjules."
+		},
+		"vs/platform/theme/common/tokenClassificationRegistry": {
+			"schema.token.fontStyle.none": "Ingen (ryd nedarvet stil)",
+			"schema.token.foreground": "Forgrundsfarve for tokenet.",
+			"schema.token.settings": "Farver og typografier for tokenet."
 		},
 		"vs/platform/undoRedo/common/undoRedoService": {
 			"confirmDifferentSource.no": "Nej",
@@ -1266,12 +1429,15 @@
 			"confirmClearDetail": "Denne handling kan ikke fortrydes!",
 			"confirmClearRecentsMessage": "Vil du rydde alle senest åbnede filer og arbejdsområder?",
 			"newWindow": "Nyt vindue",
+			"untitledWorkspace": "Unavngivet (arbejdsområde)",
 			"workspaceName": "{0} (arbejdsområde)"
 		},
 		"vs/platform/workspaces/electron-main/workspacesManagementMainService": {
-			"ok": "&&OK"
+			"ok": "&&OK",
+			"workspaceOpenedMessage": "Arbejdsområdet '{0}' kunne ikke gemmes"
 		},
 		"vs/sessions/browser/accountTitleBarState": {
+			"loadingAccount": "Indlæser konto...",
 			"signInLabel": "Log på"
 		},
 		"vs/sessions/browser/layoutActions": {
@@ -1280,6 +1446,9 @@
 			"openAndCloseSidebar": "Åbn/vis og luk/skjul sidepanel",
 			"sidebarHidden": "Primært sidepanel skjult",
 			"sidebarVisible": "Primært sidepanel vist"
+		},
+		"vs/sessions/browser/parts/auxiliaryBarPart": {
+			"auxiliaryBarAriaLabel": "Sessionsoplysninger"
 		},
 		"vs/sessions/browser/parts/chatCompositeBar": {
 			"chatCompositeBar.addChat": "Ny chat",
@@ -1300,12 +1469,16 @@
 		"vs/sessions/browser/parts/mobile/contributions/mobileChangesView": {
 			"changesView.back": "Tilbage",
 			"changesView.backLabel": "Tilbage",
+			"changesView.changeAdded": "tilføjet",
+			"changesView.changeDeleted": "slettet",
 			"changesView.subtitleFilePlural": "{0} filer",
-			"changesView.subtitleFileSingular": "1 fil"
+			"changesView.subtitleFileSingular": "1 fil",
+			"changesView.title": "Sessionsændringer"
 		},
 		"vs/sessions/browser/parts/mobile/contributions/mobileDiffView": {
 			"diffView.back": "Tilbage",
 			"diffView.loading": "Indlæser…",
+			"diffView.noChanges": "Ingen ændringer i denne fil.",
 			"diffView.position": "{0} / {1}"
 		},
 		"vs/sessions/browser/parts/mobile/contributions/mobileMultiDiffView": {
@@ -1313,7 +1486,9 @@
 			"multiDiffView.file": "fil",
 			"multiDiffView.fileCount": "{0} {1}",
 			"multiDiffView.fileFallback": "fil",
+			"multiDiffView.files": "filer",
 			"multiDiffView.loading": "Indlæser…",
+			"multiDiffView.noChanges": "Ingen ændringer i denne fil.",
 			"multiDiffView.toggleFile": "Slå {0} til/fra"
 		},
 		"vs/sessions/browser/parts/mobile/mobilePickerSheet": {
@@ -1340,7 +1515,11 @@
 			"mobileTopBar.singleFileChanged": "1 fil",
 			"mobileTopBar.singleFileChangedTooltip": "1 fil ændret"
 		},
+		"vs/sessions/browser/parts/sessionReadOnlyBanner": {
+			"sessionReadOnlyBanner.message": "Denne chat er skrivebeskyttet"
+		},
 		"vs/sessions/browser/parts/sessionView": {
+			"sessionReadOnlyBanner.message": "Denne chat er skrivebeskyttet",
 			"sessionReadOnlyBanner.restore": "Gendan"
 		},
 		"vs/sessions/browser/sessionsSetUpService": {
@@ -1354,9 +1533,13 @@
 		"vs/sessions/contrib/accountMenu/browser/account.contribution": {
 			"accountMenuHeaderFallback": "Konto",
 			"agenticSignOutButton": "&&Log af",
+			"loadingAccountHeader": "Indlæser konto...",
 			"settings": "Indstillinger",
 			"signIn": "Log på",
 			"signOut": "Log af"
+		},
+		"vs/sessions/contrib/agentFeedback/browser/agentFeedback.contribution": {
+			"agentFeedback.submitFeedbackCount": "Send feedback ({0})"
 		},
 		"vs/sessions/contrib/agentFeedback/browser/agentFeedbackAttachmentEntry": {
 			"agentFeedback.many": "{0} kommentarer",
@@ -1367,6 +1550,9 @@
 		},
 		"vs/sessions/contrib/agentFeedback/browser/agentFeedbackEditorActions": {
 			"agentFeedback.clear": "Ryd",
+			"agentFeedback.clearAllTooltip": "Ryd al feedback",
+			"agentFeedback.next": "Gå til næste feedbackkommentar",
+			"agentFeedback.previous": "Gå til forrige feedbackkommentar",
 			"agentFeedback.submit": "Send feedback",
 			"agentFeedback.submitFeedback": "Send feedback",
 			"agentFeedback.submitShort": "Send",
@@ -1402,6 +1588,9 @@
 			"agentFeedbackReview.agentReview": "Agentgennemgang",
 			"agentFeedbackReview.prReview": "PR-gennemgang"
 		},
+		"vs/sessions/contrib/aiCustomizationTreeView/browser/aiCustomizationTreeView": {
+			"aiCustomization": "Chattilpasning"
+		},
 		"vs/sessions/contrib/aiCustomizationTreeView/browser/aiCustomizationTreeView.contribution": {
 			"confirmDelete": "Er du sikker på, at du vil slette '{0}'?",
 			"copyPath": "Kopiér sti",
@@ -1414,6 +1603,7 @@
 		"vs/sessions/contrib/aiCustomizationTreeView/browser/aiCustomizationTreeViewViews": {
 			"automations": "Automatiseringer",
 			"customAgents": "Brugerdefinerede agenter",
+			"extensionsWithCount": "Udvidelser ({0})",
 			"fileAriaLabel": "{0}, {1}",
 			"fileAriaLabelDisabled": "{0}, deaktiveret",
 			"instructions": "Instruktioner",
@@ -1430,8 +1620,11 @@
 			"automation.form.isolation.worktree": "Arbejdstræ",
 			"automation.form.name": "Navn",
 			"automation.form.prompt": "Prompt",
+			"automation.form.time": "Tid",
+			"automation.interval.daily": "Dagligt",
 			"automation.interval.hourly": "Hver time",
-			"automation.interval.manual": "Manuel"
+			"automation.interval.manual": "Manuel",
+			"automation.interval.weekly": "Ugentligt"
 		},
 		"vs/sessions/contrib/automations/browser/automationDialogService": {
 			"automation.dialog.cancel": "Annuller",
@@ -1453,11 +1646,14 @@
 			"changes": "Ændringer",
 			"changesView.diffStats.file": "1 fil",
 			"changesView.diffStats.files": "{0} filer",
+			"changesView.viewChanges": "Vis alle ændringer",
 			"revealChecks": "Vis kontroller",
 			"setListViewMode": "Vis som liste",
 			"setTreeViewMode": "Vis som træ"
 		},
 		"vs/sessions/contrib/changes/browser/changesViewActions": {
+			"agentSessions.collapseAllDiffs": "Fold alle forskelle sammen",
+			"agentSessions.expandAllDiffs": "Fold alle forskelle ud",
 			"agentSessions.setChangesListViewMode": "Vis som liste",
 			"agentSessions.setChangesTreeViewMode": "Vis som træ",
 			"changes": "Ændringer",
@@ -1467,6 +1663,7 @@
 			"openPullRequest": "Åbn pull request"
 		},
 		"vs/sessions/contrib/changes/browser/checksActions": {
+			"ci.failedState": "mislykkedes",
 			"ci.pendingState": "afventer",
 			"fixChecks": "Ret kontroller"
 		},
@@ -1479,6 +1676,9 @@
 		},
 		"vs/sessions/contrib/changes/browser/sessionChangesEditorInput": {
 			"sessionChangesEditor.name": "Ændringer"
+		},
+		"vs/sessions/contrib/changes/browser/sessionChangesService": {
+			"sessions.changes.title": "Sessionsændringer"
 		},
 		"vs/sessions/contrib/changes/browser/sessionFilesWidget": {
 			"sessionFiles.created": "Oprettet",
@@ -1504,6 +1704,7 @@
 			"sessionsModelPicker": "Model"
 		},
 		"vs/sessions/contrib/chat/browser/newChatContextAttachments": {
+			"imageFromClipboard": "Billede fra udklipsholder",
 			"pastedImage": "Indsat billede",
 			"removeAttachment": "Fjern"
 		},
@@ -1519,10 +1720,14 @@
 		},
 		"vs/sessions/contrib/chat/browser/newChatVoice": {
 			"agentsVoice.connecting": "Opretter forbindelse...",
+			"agentsVoice.disconnect": "Afbryd stemmetilstand",
+			"agentsVoice.openSettings": "Indstillinger for stemmetilstand",
+			"agentsVoice.pttStopInChat": "Stemmetilstand: Stop optagelse",
 			"agentsVoice.startVoiceInChat": "Stemmetilstand"
 		},
 		"vs/sessions/contrib/chat/browser/newChatWidget": {
-			"newChatHeader": "Ny chat"
+			"newChatHeader": "Ny chat",
+			"newSessionWith": "med"
 		},
 		"vs/sessions/contrib/chat/browser/noAgentHostEmptyState": {
 			"noAgentHost.learnMore": "Få mere at vide"
@@ -1541,6 +1746,8 @@
 			"removeTask": "Fjern",
 			"run": "Kør",
 			"runActionTooltipKeybinding": "{0} ({1})",
+			"runPrimaryTask": "Kør primær opgave",
+			"runPrimaryTaskTooltip": "Kør primær opgave",
 			"tasksActionsCategory": "Opgaver",
 			"unpinBrowser": "Frigør",
 			"unpinBrowserTooltip": "Frigør",
@@ -1571,9 +1778,20 @@
 			"workspacePicker.browseSelectLocal": "Vælg...",
 			"workspacePicker.experimental": "Eksperimentel"
 		},
+		"vs/sessions/contrib/chat/browser/slashCommands": {
+			"slashCommand.models": "Åbn modelvælgeren"
+		},
 		"vs/sessions/contrib/chat/browser/variableCompletions": {
 			"activeFile": "Aktiv fil",
 			"fileEntryDescription": "{0} ({1})"
+		},
+		"vs/sessions/contrib/chat/browser/voiceInputDecorations": {
+			"voiceMode.clickMicHint": "Klik på stemmetilstand for at tale",
+			"voiceMode.pttHint": "Tryk på {0} for at tale"
+		},
+		"vs/sessions/contrib/codeReview/browser/codeReview.contributions": {
+			"sessions.runCodeReview": "Kør kodegennemgang",
+			"sessions.runCodeReview.tooltip": "Kør kodegennemgang"
 		},
 		"vs/sessions/contrib/editor/browser/addTabActions": {
 			"newBrowserTab": "Browser",
@@ -1581,9 +1799,14 @@
 			"newFileTab": "Filer",
 			"newSearchTab": "Søg"
 		},
+		"vs/sessions/contrib/editor/browser/editor.contribution": {
+			"closeMainEditorPart": "Luk editorområde"
+		},
 		"vs/sessions/contrib/editor/browser/emptyFileEditor": {
 			"emptyFileEditor.search": "Søg i filer",
+			"emptyFileEditor.searchAria": "Søg i filer ({0})",
 			"emptyFileEditor.searchAriaNoKeybinding": "Søg i filer",
+			"emptyFileEditor.searchTooltip": "Søg i filer ({0})",
 			"emptyFileEditor.searchTooltipNoKeybinding": "Søg i filer"
 		},
 		"vs/sessions/contrib/editor/browser/emptyFileEditor.contribution": {
@@ -1612,6 +1835,19 @@
 			"agentSessions.openPullRequest": "Åbn pull request",
 			"agentSessions.openPullRequest.tooltip": "Åbn pull request"
 		},
+		"vs/sessions/contrib/github/browser/pullRequestHover": {
+			"agentSessions.pullRequestHover.baseFallback": "mål",
+			"agentSessions.pullRequestHover.headFallback": "kilde",
+			"agentSessions.pullRequestHover.onDate": "på {0}"
+		},
+		"vs/sessions/contrib/onboardingTours/browser/tours/newSessionTour": {
+			"sessions.onboarding.isolation.title": "Isoler dit arbejde",
+			"sessions.onboarding.workspace.title": "Arbejd på tværs af arbejdsområder"
+		},
+		"vs/sessions/contrib/onboardingTours/browser/tours/newSessionViewTour": {
+			"sessions.onboarding.newSessionView.isolation.title": "Isoler dit arbejde",
+			"sessions.onboarding.newSessionView.workspace.title": "Arbejd på tværs af arbejdsområder"
+		},
 		"vs/sessions/contrib/policyBlocked/browser/sessionsPolicyBlocked": {
 			"accountGate.learnMore": "Få mere at vide",
 			"accountGate.signIn": "Log på",
@@ -1632,19 +1868,26 @@
 			"agentHostAgentPicker": "Agent"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostClaudePermissionModePicker": {
+			"agentHostClaudePermissionModePicker.ariaLabel": "Godkendelsesvælger",
+			"agentHostClaudePermissionModePicker.triggerAriaLabel": "Vælg godkendelser, {0}",
 			"permissions.learnMore": "Få mere at vide om tilladelser"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostCodexApprovalsPicker": {
+			"agentHostCodexApprovalsPicker.ariaLabel": "Godkendelsesvælger",
+			"agentHostCodexApprovalsPicker.triggerAriaLabel": "Vælg godkendelser, {0}",
 			"codexApprovals.learnMore": "Få mere at vide om tilladelser"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostSessionChangesets": {
-			"lastTurnChanges": "Ændringer i seneste tur"
+			"lastTurnChanges": "Ændringer i seneste tur",
+			"lastTurnChangesDescription": "Vis kun ændringer foretaget i den seneste tur"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostSessionConfigPicker": {
+			"agentHostNewSessionApprovePicker": "Sessionsgodkendelser",
 			"agentHostNewSessionCodexApprovalsPicker": "Godkendelser",
 			"agentHostNewSessionModePicker": "Agenttilstand",
 			"agentHostNewSessionPermissionModePicker": "Godkendelser",
 			"agentHostRunningSessionCodexApprovalsPicker": "Godkendelser",
+			"agentHostRunningSessionConfigPicker": "Sessionsgodkendelser",
 			"agentHostRunningSessionModePicker": "Agenttilstand",
 			"agentHostRunningSessionPermissionModePicker": "Godkendelser",
 			"agentHostSessionConfig.ariaLabel": "{0}-vælger",
@@ -1654,16 +1897,25 @@
 			"agentHostSessionConfig.boolean.true": "Til",
 			"agentHostSessionConfig.isolation.worktree": "Nyt arbejdstræ",
 			"agentHostSessionConfig.triggerAria": "{0}: {1}",
+			"agentHostSessionConfig.triggerAriaReadOnly": "{0}: {1}, skrivebeskyttet",
 			"mobileAgentHostSessionConfig.repoSheet.isolationSection": "Isolation",
 			"mobileAgentHostSessionConfig.repoSheet.title": "Arbejdstræ"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostSettings.contribution": {
-			"agentHostSettings.label": "Værtsindstillinger"
+			"agentHostSettings.label": "Værtsindstillinger",
+			"openHostSettings": "Åbn værtsindstillinger"
+		},
+		"vs/sessions/contrib/providers/agentHost/browser/agentHostSettingsFileSystemProvider": {
+			"agentHostSettings.header": "Indstillinger for agentvært."
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostSkillButtons": {
 			"agentSessions.runSkill.createDraftPR": "Opret kladde til pull request",
 			"agentSessions.runSkill.createPR": "Opret pull request",
 			"agentSessions.runSkill.merge": "Flet ændringer"
+		},
+		"vs/sessions/contrib/providers/agentHost/browser/agentSessionSettings.contribution": {
+			"agentSessionSettings.label": "Sessionsindstillinger",
+			"openSessionSettings": "Åbn sessionsindstillinger"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/baseAgentHostSessionsProvider": {
 			"copilotCLI": "Copilot",
@@ -1673,6 +1925,12 @@
 			"new chat": "Ny chat",
 			"new session": "Ny session",
 			"newChatTab": "Ny chat"
+		},
+		"vs/sessions/contrib/providers/agentHost/browser/exportDebugLogsAction": {
+			"exportAgentHostDebugLogs": "Eksportér agentværtens fejlfindingslogge..."
+		},
+		"vs/sessions/contrib/providers/agentHost/browser/openSessionEventsFileActions": {
+			"openSessionEventsFile": "Åbn Copilot CLI-tilstandsfil"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/openSubagentChat": {
 			"chat.subagent.prefix": "Underagent"
@@ -1685,10 +1943,12 @@
 			"claude.permissionMode.auto": "Automatisk",
 			"claude.permissionMode.bypass": "Tilsidesæt tilladelser",
 			"claude.permissionMode.default": "Spørg før redigeringer",
-			"claude.permissionMode.plan": "Plantilstand"
+			"claude.permissionMode.plan": "Plantilstand",
+			"claudePermissionModePicker.ariaLabel": "Tilladelsestilstand"
 		},
 		"vs/sessions/contrib/providers/copilotChatSessions/browser/copilotChatSessionsActions": {
 			"branchPicker": "Gren",
+			"claudePermissionModePicker": "Tilladelsestilstand",
 			"isolationPicker": "Isolationstilstand",
 			"modePicker": "Tilstand",
 			"permissionPicker": "Tilladelser"
@@ -1699,6 +1959,7 @@
 			"branchChanges": "Grenændringer",
 			"changesCategory": "Ændringer",
 			"lastTurnChanges": "Ændringer i seneste tur",
+			"lastTurnChangesDescription": "Vis kun ændringer foretaget i den seneste tur",
 			"uncommittedChanges": "Ikke-committede ændringer",
 			"uncommittedChangesDescription": "Vis ikke-committede ændringer i denne session"
 		},
@@ -1747,9 +2008,16 @@
 			"manageHosts.removeTooltip": "Fjern"
 		},
 		"vs/sessions/contrib/providers/remoteAgentHost/browser/remoteAgentHostActions": {
+			"addNewSSHHost": "Tilføj ny SSH-vært...",
+			"configureSSHHosts": "Konfigurer SSH-værter...",
+			"connectViaSSHShort": "SSH...",
+			"connectViaWSLShort": "WSL...",
 			"nameRemotePlaceholder": "Mit fjernlager",
+			"sshAddNewHost": "Tilføj ny SSH-vært...",
 			"sshAuthPassword": "Adgangskode",
+			"sshConfigureHosts": "Konfigurer SSH-værter...",
 			"sshNamePlaceholder": "Mit fjernlager",
+			"tunnelConnecting": "Opretter forbindelse til tunnelen '{0}'...",
 			"wslDistroRunning": "Kører",
 			"wslDistroStopped": "Stoppet"
 		},
@@ -1761,7 +2029,14 @@
 			"workspacePicker.copyAddress": "Kopiér adresse",
 			"workspacePicker.openSettings": "Åbn indstillinger",
 			"workspacePicker.removeRemote": "Fjern fjernlager",
-			"workspacePicker.updateServer": "Opdater server"
+			"workspacePicker.statusOnline": "Online",
+			"workspacePicker.updateServer": "Opdater server",
+			"workspacePicker.upgradeFailed": "{0} kunne ikke opdateres: {1}",
+			"workspacePicker.upgradeFailedWithReason": "{0} kunne ikke opdateres: {1}",
+			"workspacePicker.upgradingServer": "Opdaterer {0}..."
+		},
+		"vs/sessions/contrib/providers/remoteAgentHost/browser/tunnelAgentHost.contribution": {
+			"tunnelConnecting": "Opretter forbindelse til tunnelen '{0}'..."
 		},
 		"vs/sessions/contrib/search/browser/search.contribution": {
 			"findInFolder": "Find i mappe...",
@@ -1769,8 +2044,10 @@
 			"openSearch": "Søg"
 		},
 		"vs/sessions/contrib/sessionInputBanners/browser/sessionInputBanners": {
+			"ci.dismiss": "Skjul i denne session",
 			"ci.fixChecks": "Ret kontroller",
 			"ci.revealChecks": "Vis kontroller",
+			"comments.dismiss": "Skjul i denne session",
 			"comments.many": "{0} kommentarer",
 			"comments.one": "1 kommentar"
 		},
@@ -1800,14 +2077,19 @@
 			"chatCompositeBar.addChat.compact": "Ny chat",
 			"chatCompositeBar.close": "Luk",
 			"closedChatsGroup": "Lukket",
+			"closeEditorArea": "Luk editorområde",
 			"deleteActiveChat": "Slet chat",
 			"miSessionsBack": "&&Tilbage",
 			"miSessionsForward": "&&Frem",
+			"newChatButtonAriaLabel": "Ny chat ({0})",
 			"newChatButtonAriaLabelWithoutKeybinding": "Ny chat",
+			"newChatButtonTitle": "Ny chat ({0})",
 			"newChatButtonTitleWithoutKeybinding": "Ny chat",
 			"newCompact": "Ny",
 			"newSession": "Ny session",
+			"newSessionButtonAriaLabel": "Ny session ({0})",
 			"newSessionButtonAriaLabelWithoutKeybinding": "Ny session",
+			"newSessionButtonTitle": "Ny session ({0})",
 			"newSessionButtonTitleWithoutKeybinding": "Ny session",
 			"openChatsGroup": "Åbn",
 			"recentlyOpened": "senest åbnet",
@@ -1819,6 +2101,7 @@
 		"vs/sessions/contrib/sessions/browser/sessionsTitleBarWidget": {
 			"agentSessionsControl": "Agentsessioner",
 			"agentSessionsShowSessions": "Vis sessioner",
+			"showAllSessions": "Vis alle sessioner",
 			"showSessions": "Vis sessioner"
 		},
 		"vs/sessions/contrib/sessions/browser/views/sessionsList": {
@@ -1828,12 +2111,16 @@
 			"chatsSection": "Chats",
 			"failed": "Mislykket",
 			"older": "Ældre",
+			"pendingVoiceResponse": "Stemmesvar klar",
 			"pinned": "Fastgjort",
 			"recent": "Seneste",
 			"renameGroupAction": "Omdøb...",
 			"secondsDuration": "nu",
 			"sessionsList": "Sessioner",
 			"showLessCompact": "Vis mindre",
+			"showLessWorkspacesAria": "Vis færre arbejdsområder",
+			"showLessWorkspacesCompact": "Vis færre arbejdsområder",
+			"showMoreAria": "Vis {0} sessioner mere",
 			"showMoreCompact": "+{0} mere",
 			"unknown": "Ukendt",
 			"working": "Arbejder..."
@@ -1842,10 +2129,12 @@
 			"filterArchived": "Udført",
 			"filterRead": "Læs",
 			"groupByTime": "Gruppér efter tid",
+			"groupByWorkspace": "Gruppér efter arbejdsområde",
 			"resetFilters": "Nulstil",
 			"sessionsHeader": "Sessioner",
 			"sortByCreated": "Sortér efter oprettelse",
 			"sortByUpdated": "Sortér efter opdatering",
+			"sortGroupSheet.group": "Gruppe",
 			"sortGroupSheet.sort": "Sortér",
 			"sortGroupSheet.title": "Sortér",
 			"statusCompleted": "Fuldført",
@@ -1863,6 +2152,7 @@
 			"doNotAskAgain": "Spørg mig ikke igen",
 			"filter": "Filtrer",
 			"groupByTime": "Gruppér efter tid",
+			"groupByWorkspace": "Gruppér efter arbejdsområde",
 			"markAllInGroupAsDone": "Markér alle som udført",
 			"markAllRead": "Markér alle som læst",
 			"markRead": "Markér som læst",
@@ -1872,7 +2162,9 @@
 			"openToTheSide": "Åbn ved siden af",
 			"pinSession": "Fastgør",
 			"renameSession": "Omdøb...",
+			"renameSession.prompt": "Ny titel på agentsession",
 			"restore": "Gendan",
+			"showAllSessions": "Vis alle sessioner",
 			"sortByCreated": "Sortér efter oprettelse",
 			"sortByUpdated": "Sortér efter opdatering",
 			"unarchiveSession": "Gendan",
@@ -1884,11 +2176,17 @@
 		"vs/sessions/contrib/terminal/browser/sessionsTerminalContribution": {
 			"openInTerminal": "Åbn terminal"
 		},
+		"vs/sessions/contrib/tunnelHost/electron-browser/tunnelHost.contribution": {
+			"toggleSharing": "Tillad fjernforbindelser"
+		},
 		"vs/sessions/electron-browser/actions/vscodeActions": {
 			"openInVSCode": "Åbn i editor"
 		},
 		"vs/sessions/electron-browser/parts/titlebarPart": {
 			"agentsWindowTitle": "Agenter"
+		},
+		"vs/sessions/electron-browser/sessions.main": {
+			"join.closeStorage": "Gemmer brugerfladetilstand"
 		},
 		"vs/sessions/services/sessions/common/session": {
 			"agentSessions.newChat": "Ny chat",
@@ -1902,6 +2200,7 @@
 		"vs/workbench/api/browser/mainThreadAuthentication": {
 			"allow": "&&Tillad",
 			"cancel": "Annuller",
+			"incorrectAccount": "Forkert konto registreret",
 			"keep": "Behold {0}",
 			"learnMore": "Få mere at vide",
 			"loginWith": "Log på med {0}",
@@ -1915,6 +2214,8 @@
 			"defaultEditLabel": "Rediger"
 		},
 		"vs/workbench/api/browser/mainThreadExtensionService": {
+			"enable dep": "Aktivér og genindlæs",
+			"install missing dep": "Installer og genindlæs",
 			"manageWorkspaceTrust": "Administrer tillid til arbejdsområde",
 			"reload": "Genindlæs vindue"
 		},
@@ -1927,6 +2228,7 @@
 		},
 		"vs/workbench/api/browser/mainThreadMcp": {
 			"allow": "&&Tillad",
+			"incorrectAccount": "Forkert konto registreret",
 			"keep": "Behold {0}",
 			"loginWith": "Log på med {0}"
 		},
@@ -1937,7 +2239,9 @@
 			"ok": "&&OK"
 		},
 		"vs/workbench/api/browser/mainThreadOutputService": {
-			"status.showOutput": "Vis output"
+			"status.showOutput": "Vis output",
+			"status.showOutputAria": "Vis outputkanalen {0}",
+			"status.showOutputTooltip": "Vis outputkanalen {0}"
 		},
 		"vs/workbench/api/browser/mainThreadProgress": {
 			"manageExtension": "Administrer udvidelse"
@@ -1945,10 +2249,14 @@
 		"vs/workbench/api/browser/mainThreadTask": {
 			"task.label": "{0}: {1}"
 		},
+		"vs/workbench/api/browser/mainThreadTunnelService": {
+			"remote.tunnelsView.elevationButton": "Brug port {0} som sudo..."
+		},
 		"vs/workbench/api/browser/viewsExtensionPoint": {
 			"optstring": "egenskaben `{0}` kan udelades eller skal være af typen `string`",
 			"requirestring": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
 			"view container id": "Id",
+			"view container location": "Hvor",
 			"view container title": "Titel",
 			"view id": "Id",
 			"view name title": "Navn",
@@ -1960,9 +2268,19 @@
 			"setting name": "Id",
 			"settings": "Indstillinger"
 		},
+		"vs/workbench/api/common/extHostNotebook": {
+			"err.readonly": "Den skrivebeskyttede fil '{0}' kan ikke ændres",
+			"fileModifiedError": "Fil ændret siden"
+		},
 		"vs/workbench/api/common/extHostTunnelService": {
 			"tunnelPrivacy.private": "Privat",
 			"tunnelPrivacy.public": "Offentlig"
+		},
+		"vs/workbench/api/common/jsonValidationExtensionPoint": {
+			"schema": "Skema"
+		},
+		"vs/workbench/api/node/extHostAuthentication": {
+			"waitingForAuth": "Åbn [{0}]({0}) i en ny fane, og indsæt din engangskode: {1}"
 		},
 		"vs/workbench/browser/actions/developerActions": {
 			"global": "Global",
@@ -2186,6 +2504,13 @@
 			"saveWorkspaceAsAction": "Gem arbejdsområde som...",
 			"workspaces": "Arbejdsområder"
 		},
+		"vs/workbench/browser/actions/workspaceCommands": {
+			"add": "&&Tilføj",
+			"workspaceFolderPickerPlaceholder": "Vælg arbejdsområdemappe"
+		},
+		"vs/workbench/browser/labels": {
+			"notebookCellOutputLabel": "{0} • Celle {1} • Output {2}"
+		},
 		"vs/workbench/browser/parts/activitybar/activitybarPart": {
 			"activity bar position": "Placering af aktivitetslinje",
 			"activity bar size": "Størrelse på aktivitetslinje",
@@ -2259,6 +2584,7 @@
 			"openAnyway": "Åbn alligevel"
 		},
 		"vs/workbench/browser/parts/editor/breadcrumbsControl": {
+			"cmd.toggle": "Slå brødkrummer til/fra",
 			"cmd.toggle.short": "Brødkrummer",
 			"cmd.toggle2": "Brødkrummer"
 		},
@@ -2268,7 +2594,8 @@
 		"vs/workbench/browser/parts/editor/diffEditorCommands": {
 			"compare": "Sammenlign",
 			"compare.nextChange": "Gå til næste ændring",
-			"compare.previousChange": "Gå til forrige ændring"
+			"compare.previousChange": "Gå til forrige ændring",
+			"toggleInlineView": "Slå indlejret visning til/fra"
 		},
 		"vs/workbench/browser/parts/editor/editor.contribution": {
 			"close": "Luk",
@@ -2279,7 +2606,9 @@
 			"closeOthers": "Luk andre",
 			"configureEditors": "Konfigurer editorer",
 			"configureTabs": "Konfigurer faner",
+			"copyEditorGroupToNewWindow": "Kopiér til nyt vindue",
 			"copyEditorToNewWindow": "Kopiér editor til nyt vindue",
+			"copyToNewWindow": "Kopiér til nyt vindue",
 			"editorActionsPosition": "Placering af editorhandlinger",
 			"hidden": "Skjult",
 			"hideTabs": "Skjult",
@@ -2291,18 +2620,24 @@
 			"miJoinEditorInGroupWithoutMnemonic": "Deltag i gruppe",
 			"miMoveEditorToNewWindow": "&&Flyt editor til nyt vindue",
 			"miShare": "Del",
+			"miSingleColumnEditorLayoutWithoutMnemonic": "Enkelt",
 			"miSplitEditorDownWithoutMnemonic": "Opdel nedad",
+			"miSplitEditorInGroupWithoutMnemonic": "Opdel i gruppe",
 			"miSplitEditorLeftWithoutMnemonic": "Opdel mod venstre",
 			"miSplitEditorRightWithoutMnemonic": "Opdel mod højre",
 			"miSplitEditorUpWithoutMnemonic": "Opdel opad",
+			"moveEditorGroupToNewWindow": "Flyt til nyt vindue",
 			"moveEditorToNewWindow": "Flyt editor til nyt vindue",
+			"moveToNewWindow": "Flyt til nyt vindue",
 			"newWindow": "Nyt vindue",
 			"pin": "Fastgør",
 			"reopenWith": "Åbn editor igen med...",
 			"share": "Del",
+			"sideBySideEditor": "Editor side om side",
 			"splitDown": "Opdel nedad",
 			"splitEditorDown": "Opdel editor nedad",
 			"splitEditorRight": "Opdel editor mod højre",
+			"splitInGroup": "Opdel i gruppe",
 			"splitLeft": "Opdel mod venstre",
 			"splitRight": "Opdel mod højre",
 			"splitUp": "Opdel opad",
@@ -2471,6 +2806,7 @@
 		"vs/workbench/browser/parts/editor/editorConfiguration": {
 			"editor.diffEditorAssociations": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) til editorer for diffvisninger (f.eks. `\"*.md\": \"vscode.markdown.preview.editor\"`). Disse tilsidesætter `workbench.editorAssociations` for diffvisninger.",
 			"editor.editorAssociations": "Konfigurer [globmønstre](https://aka.ms/vscode-glob-patterns) til editorer (f.eks. `\"*.hex\": \"hexEditor.hexedit\"`). Disse har højere prioritet end standardfunktionsmåden.",
+			"interactiveWindow": "Interaktivt vindue",
 			"simpleBrowser": "Enkel browser"
 		},
 		"vs/workbench/browser/parts/editor/editorGroupWatermark": {
@@ -2517,6 +2853,7 @@
 			"guessedEncoding": "Udledt af indholdet",
 			"indentConvert": "konvertér fil",
 			"indentView": "skift visning",
+			"inputModeOvertype": "OVR",
 			"languageDescription": "({0}) – konfigureret sprog",
 			"languageDescriptionConfigured": "({0})",
 			"languagesPicks": "sprog (id)",
@@ -2567,6 +2904,12 @@
 			"nextItem": "Næste",
 			"previousItem": "Forrige"
 		},
+		"vs/workbench/browser/parts/editor/multiEditorTabsControl": {
+			"addTab": "Tilføj fane"
+		},
+		"vs/workbench/browser/parts/editor/sideBySideEditor": {
+			"sideBySideEditor": "Editor side om side"
+		},
 		"vs/workbench/browser/parts/editor/textCodeEditor": {
 			"textEditor": "Teksteditor"
 		},
@@ -2606,6 +2949,7 @@
 			"alertWarningMessage": "Advarsel: {0}"
 		},
 		"vs/workbench/browser/parts/notifications/notificationsCenter": {
+			"moreSources": "Mere…",
 			"notifications": "Meddelelser"
 		},
 		"vs/workbench/browser/parts/notifications/notificationsCommands": {
@@ -2623,6 +2967,10 @@
 			"toggleDoNotDisturbModeBySource": "Slå Forstyr ikke til/fra efter kilde...",
 			"toggleNotifications": "Vis/skjul meddelelser"
 		},
+		"vs/workbench/browser/parts/notifications/notificationsList": {
+			"notificationAriaLabel": "{0}, meddelelse",
+			"notificationWithSourceAriaLabel": "{0}, kilde: {1}, meddelelse"
+		},
 		"vs/workbench/browser/parts/notifications/notificationsStatus": {
 			"hideNotifications": "Skjul meddelelser",
 			"noNotifications": "Ingen nye meddelelser",
@@ -2636,6 +2984,13 @@
 			"status.message": "Statusmeddelelse",
 			"status.notifications": "Meddelelser",
 			"zeroNotifications": "Ingen meddelelser"
+		},
+		"vs/workbench/browser/parts/notifications/notificationsToasts": {
+			"notificationAriaLabel": "{0}, meddelelse",
+			"notificationWithSourceAriaLabel": "{0}, kilde: {1}, meddelelse"
+		},
+		"vs/workbench/browser/parts/notifications/notificationsViewer": {
+			"executeCommand": "Klik for at udføre kommandoen '{0}'"
 		},
 		"vs/workbench/browser/parts/paneCompositeBar": {
 			"auxiliarybar": "Sekundært sidepanel",
@@ -2723,13 +3078,23 @@
 		},
 		"vs/workbench/browser/parts/titlebar/titlebarActions": {
 			"accounts": "Konti",
+			"hideCustomTitleBar": "Skjul brugerdefineret titellinje",
+			"hideCustomTitleBarInFullScreen": "Skjul brugerdefineret titellinje i fuld skærm",
 			"manage": "Administrer",
 			"toggle.commandCenter": "Kommandocenter",
+			"toggle.hideCustomTitleBar": "Skjul brugerdefineret titellinje",
+			"toggle.hideCustomTitleBarInFullScreen": "Skjul brugerdefineret titellinje i fuld skærm",
 			"toggle.notifications": "Meddelelser"
+		},
+		"vs/workbench/browser/parts/views/checkbox": {
+			"checked": "Markeret"
 		},
 		"vs/workbench/browser/parts/views/treeView": {
 			"collapseAll": "Fold alle sammen",
-			"refresh": "Opdater"
+			"refresh": "Opdater",
+			"treeActionBarAriaLabelNoName": "Handlinger",
+			"treeAriaLabelHasActionsSuffix": "{0}, har handlinger",
+			"treeAriaLabelHasActionsTooltip": "{0}, har handlinger"
 		},
 		"vs/workbench/browser/parts/views/viewFilter": {
 			"accessibilityHelpHintInLabel": "Tryk på {0} for hjælp til tilgængelighed",
@@ -2746,15 +3111,21 @@
 		"vs/workbench/browser/window": {
 			"closeWindowMessage": "Er du sikker på, at du vil lukke vinduet?",
 			"doNotAskAgain": "Spørg mig ikke igen",
+			"exitButtonLabel": "&&Afslut",
 			"openExternalDialogButtonInstall.v3": "&&Installer",
+			"quitButtonLabel": "&&Afslut",
 			"quitMessage": "Er du sikker på, at du vil afslutte?",
 			"quitMessageMac": "Er du sikker på, at du vil afslutte?",
 			"reload": "&&Genindlæs",
 			"retry": "&&Prøv igen"
 		},
+		"vs/workbench/browser/workbench.contribution": {
+			"workbench.editor.showTabs.none": "Editorens titelområde vises ikke."
+		},
 		"vs/workbench/browser/workbench.zenMode.contribution": {
 			"miToggleZenMode": "Zen-tilstand",
 			"tabBar": "Fanelinje",
+			"zenMode.showTabs.none": "Editorens titelområde vises ikke.",
 			"zenModeConfigurationTitle": "Zen-tilstand"
 		},
 		"vs/workbench/common/configuration": {
@@ -2779,6 +3150,17 @@
 			"views log": "Visninger"
 		},
 		"vs/workbench/contrib/accessibility/browser/accessibilityConfiguration": {
+			"accessibility.signals.format.never": "Afspiller aldrig lyden.",
+			"accessibility.signals.lineHasWarning": "Afspiller et signal – lyd (lydsignal) og/eller oplæsning (advarsel) – når den aktive linje har en advarsel.",
+			"accessibility.signals.lineHasWarning.announcement": "Oplæser, når den aktive linje har en advarsel.",
+			"accessibility.signals.lineHasWarning.sound": "Afspiller en lyd, når den aktive linje har en advarsel.",
+			"accessibility.signals.positionHasError": "Afspiller et signal – lyd (lydsignal) og/eller oplæsning (advarsel) – når den aktive linje har en advarsel.",
+			"accessibility.signals.positionHasError.announcement": "Oplæser, når den aktive linje har en advarsel.",
+			"accessibility.signals.positionHasError.sound": "Afspiller en lyd, når den aktive linje har en advarsel.",
+			"accessibility.signals.positionHasWarning": "Afspiller et signal – lyd (lydsignal) og/eller oplæsning (advarsel) – når den aktive linje har en advarsel.",
+			"accessibility.signals.positionHasWarning.announcement": "Oplæser, når den aktive linje har en advarsel.",
+			"accessibility.signals.positionHasWarning.sound": "Afspiller en lyd, når den aktive linje har en advarsel.",
+			"accessibility.signals.save.sound.never": "Afspiller aldrig lyden.",
 			"accessibility.voice.autoSynthesize.off": "Deaktiver funktionen.",
 			"accessibilityConfigurationTitle": "Tilgængelighed"
 		},
@@ -2789,20 +3171,36 @@
 		},
 		"vs/workbench/contrib/accessibility/browser/accessibleView": {
 			"accessibility-help": "Hjælp til tilgængelighed",
+			"accessible-view": "Tilgængelighedsvisning",
 			"accessibleHelpToolbar": "Hjælp til tilgængelighed",
+			"accessibleViewToolbar": "Tilgængelighedsvisning",
 			"symbolLabel": "({0}) {1}",
 			"symbolLabelAria": "({0}) {1}"
 		},
+		"vs/workbench/contrib/accessibility/browser/accessibleViewActions": {
+			"editor.action.accessibilityHelp": "Åbn hjælp til tilgængelighed",
+			"editor.action.accessibleView": "Åbn tilgængelighedsvisning"
+		},
 		"vs/workbench/contrib/agentsVoice/browser/agentsVoice.contribution": {
+			"agents.voice.voice.daniel": "Daniel.",
+			"agents.voice.voice.kevin": "Kevin.",
+			"agents.voice.voice.maya": "Maya.",
 			"agentsVoice.connecting": "Opretter forbindelse...",
+			"agentsVoice.disconnect": "Afbryd stemmetilstand",
+			"agentsVoice.openSettings": "Indstillinger for stemmetilstand",
+			"agentsVoice.pttStopInChat": "Stemmetilstand: Stop optagelse",
 			"agentsVoice.startVoiceInChat": "Stemmetilstand",
 			"agentsVoiceConfigurationTitle": "Stemmetilstand"
 		},
 		"vs/workbench/contrib/agentsVoice/browser/transcriptsView/voiceTranscripts.contribution": {
+			"agentsVoice.showTranscripts": "Vis stemmetransskriptioner",
+			"agentsVoice.showTranscripts.menu": "Vis stemmetransskriptioner",
 			"voiceTranscripts.archiveAll": "Arkivér alle",
 			"voiceTranscripts.deleteAll": "Slet alle",
 			"voiceTranscripts.deleteAllConfirmButton": "Slet",
-			"voiceTranscripts.refresh": "Opdater"
+			"voiceTranscripts.refresh": "Opdater",
+			"voiceTranscriptsContainer": "Stemmetransskriptioner",
+			"voiceTranscriptsView": "Stemmetransskriptioner"
 		},
 		"vs/workbench/contrib/agentsVoice/browser/transcriptsView/voiceTranscriptsView": {
 			"voiceTranscripts.older": "Ældre",
@@ -2810,10 +3208,16 @@
 			"voiceTranscripts.yesterday": "I går"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageAccountPreferencesForExtensionAction": {
-			"accounts": "Konti"
+			"accounts": "Konti",
+			"currentAccount": "Aktuel konto",
+			"use new account": "Brug en ny konto..."
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageAccountPreferencesForMcpServerAction": {
-			"accounts": "Konti"
+			"accounts": "Konti",
+			"currentAccount": "Aktuel konto",
+			"manageAccountPreferenceForMcpServer": "Administrer kontoindstillinger for MCP-server",
+			"pickAProviderTitle": "Administrer kontoindstillinger for MCP-server",
+			"use new account": "Brug en ny konto..."
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageAccountsAction": {
 			"accounts": "Konti",
@@ -2826,15 +3230,19 @@
 			"remove": "Fjern"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageTrustedExtensionsForAccountAction": {
+			"accountLastUsedDate": "Brugte sidst denne konto {0}",
 			"accounts": "Konti",
 			"manageTrustedExtensions": "Administrer udvidelser, der er tillid til",
 			"manageTrustedExtensions.cancel": "Annuller",
+			"notUsed": "Har ikke brugt denne konto",
 			"trustedExtensions": "Betroet af Microsoft"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageTrustedMcpServersForAccountAction": {
+			"accountLastUsedDate": "Brugte sidst denne konto {0}",
 			"accounts": "Konti",
 			"manageTrustedMcpServers": "Administrer MCP-servere, der er tillid til",
 			"manageTrustedMcpServers.cancel": "Annuller",
+			"notUsed": "Har ikke brugt denne konto",
 			"trustedMcpServers": "Betroet af Microsoft"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/signOutOfAccountAction": {
@@ -2842,7 +3250,8 @@
 		},
 		"vs/workbench/contrib/authentication/browser/authentication.contribution": {
 			"authentication": "Godkendelse",
-			"authenticationid": "Id"
+			"authenticationid": "Id",
+			"authenticationlabel": "Etiket"
 		},
 		"vs/workbench/contrib/browserView/common/browserEditorInput": {
 			"browser.editorLabel": "Browser"
@@ -3271,7 +3680,9 @@
 		},
 		"vs/workbench/contrib/callHierarchy/browser/callHierarchy.contribution": {
 			"close": "Luk",
-			"no.item": "Ingen resultater"
+			"no.item": "Ingen resultater",
+			"title.incoming": "Vis indgående kald",
+			"title.outgoing": "Vis udgående kald"
 		},
 		"vs/workbench/contrib/callHierarchy/browser/callHierarchyPeek": {
 			"title.loading": "Indlæser..."
@@ -3305,9 +3716,12 @@
 			"generateSkill.short": "Generér færdighed",
 			"manageChat": "Administrer Copilot-indstillinger",
 			"openChat": "Åbn chat",
+			"openChatCustomizations": "Åbn tilpasninger",
 			"openChatFeatureSettings": "Chatindstillinger",
 			"openChatFeatureSettings.short": "Chatindstillinger",
 			"toggleChat": "Slå chat til/fra",
+			"upgradeChat": "Opgrader GitHub Copilot-abonnement",
+			"upgradePlan": "Opgrader GitHub Copilot-abonnement",
 			"upgradePro": "Opgrader til GitHub Copilot Pro"
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatCodeblockActions": {
@@ -3317,6 +3731,7 @@
 		"vs/workbench/contrib/chat/browser/actions/chatContext": {
 			"chatContext.attachScreenshot.labelWeb": "Skærmbillede",
 			"chatContext.editors": "Åbne editorer",
+			"imageFromClipboard": "Billede fra udklipsholder",
 			"pastedImage": "Indsat billede",
 			"terminal": "Terminal"
 		},
@@ -3327,18 +3742,22 @@
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatContinueInAction": {
 			"chat.learnMore": "Få mere at vide",
-			"continueIn": "Fortsæt i"
+			"continueIn": "Fortsæt i",
+			"continueSessionIn": "Fortsæt i {0}"
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatCopyActions": {
 			"interactive.copyAll.label": "Kopiér alle",
 			"interactive.copyItem.ariaLabel": "Kopiér",
 			"interactive.copyItem.copied": "Kopieret",
 			"interactive.copyItem.copiedAriaLabel": "Kopieret",
-			"interactive.copyItem.label": "Kopiér"
+			"interactive.copyItem.label": "Kopiér",
+			"interactive.copyItem.status": "Kopieret til udklipsholderen"
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatExecuteActions": {
 			"chat.remove.confirmation.checkbox": "Spørg ikke igen",
 			"chat.remove.confirmation.primaryButton": "Ja",
+			"chat.remove.confirmation.title": "Vil du fortryde {0} redigeringer?",
+			"chat.removeLast.confirmation.title": "Vil du fortryde din seneste redigering?",
 			"edits.submit.label": "Send",
 			"interactive.cancel.label": "Annuller",
 			"interactive.submit.label": "Send",
@@ -3362,6 +3781,7 @@
 			"chatDebugLog.openExportedFile": "Åbn fil"
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatPluginActions": {
+			"installPluginFromSource": "Installer plugin fra kilde",
 			"localMarketplace": "Lokal",
 			"openMarketplaceDirectory": "Åbn mappe",
 			"plugins": "Plugins",
@@ -3369,7 +3789,9 @@
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatQueueActions": {
 			"chat.editPendingRequest": "Rediger",
-			"chat.queueMessage": "Føj til kø"
+			"chat.queueMessage": "Føj til kø",
+			"chat.queueSubmenu": "Kø",
+			"chat.steerWithMessage": "Styr med meddelelse"
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatQuickInputActions": {
 			"interactiveSession.open": "Åbn Hurtig chat",
@@ -3379,14 +3801,18 @@
 			"chat.retry.confirmation.checkbox": "Spørg ikke igen",
 			"chat.retry.confirmation.primaryButton": "Ja",
 			"chat.retry.label": "Prøv igen",
+			"interactive.helpful.label": "Nyttig",
 			"interactive.reportIssueForBug.label": "Rapportér problem"
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatToolActions": {
 			"chat.accept": "Acceptér",
 			"chat.skip": "Spring over",
+			"chat.tools.placeholder.agent": "Vælg værktøjer til denne brugerdefinerede agent",
+			"chat.tools.placeholder.readOnlyAgent": "Vælg værktøjer til denne brugerdefinerede agent",
 			"label": "Konfigurer værktøjer..."
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatToolPicker": {
+			"configToolSets": "Konfigurer værktøjssæt...",
 			"defaultBucketLabel": "Indbygget",
 			"deleteToolSet.confirm.primary": "Slet",
 			"mcpShowOutput": "Vis output"
@@ -3400,6 +3826,12 @@
 			"mcpServers": "MCP-servere",
 			"prompts": "Prompter",
 			"skills": "Færdigheder"
+		},
+		"vs/workbench/contrib/chat/browser/actions/exportAgentHostDebugLogsAction": {
+			"exportAgentHostDebugLogs": "Eksportér agentværtens fejlfindingslogge..."
+		},
+		"vs/workbench/contrib/chat/browser/actions/openCopilotCliStateFileAction": {
+			"openSessionEventsFile": "Åbn Copilot CLI-tilstandsfil"
 		},
 		"vs/workbench/contrib/chat/browser/agentPluginActions": {
 			"disable": "Deaktiver",
@@ -3418,7 +3850,10 @@
 			"agentPluginInputName": "Plugin: {0}"
 		},
 		"vs/workbench/contrib/chat/browser/agentPluginRepositoryService": {
-			"showGitOutput": "Vis Git-output"
+			"cloneFailed": "Pluginet '{0}' kunne ikke installeres: {1}",
+			"pullFailed": "Pluginet '{0}' kunne ikke opdateres: {1}",
+			"showGitOutput": "Vis Git-output",
+			"updatingPlugin": "Opdaterer pluginet '{0}'..."
 		},
 		"vs/workbench/contrib/chat/browser/agentPluginsView": {
 			"agent-plugins": "Agentplugins",
@@ -3439,7 +3874,8 @@
 			"agentHostChatInputPicker.boolean.true": "Til",
 			"agentHostChatInputPicker.learnMorePermissions": "Få mere at vide om tilladelser",
 			"agentHostChatInputPicker.policyDisabledHover": "Deaktiveret af virksomhedspolitik",
-			"agentHostChatInputPicker.triggerAria": "{0}: {1}"
+			"agentHostChatInputPicker.triggerAria": "{0}: {1}",
+			"agentHostChatInputPicker.triggerAriaReadOnly": "{0}: {1}, skrivebeskyttet"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostChatInputPicker.contribution": {
 			"agentHost.folderPicker": "Mappe",
@@ -3464,14 +3900,25 @@
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSessionHandler": {
 			"agentHost.elicit.url.cancel": "Annuller",
+			"agentHost.elicit.url.instruction": "Åbn denne URL-adresse?",
 			"agentHost.elicit.url.open": "Åbn {0}",
-			"agentHost.forkedSessionLabel": "Forgrenet session"
+			"agentHost.elicit.url.title": "Godkendelse påkrævet",
+			"agentHost.forkedSessionLabel": "Forgrenet session",
+			"agentHost.workspaceTrust": "AI-funktioner understøttes i øjeblikket kun i arbejdsområder, der er tillid til."
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSettings.contribution": {
-			"agentHostSettings.label": "Værtsindstillinger"
+			"agentHostSettings.label": "Værtsindstillinger",
+			"openAgentHostSettings": "Åbn værtsindstillinger"
+		},
+		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSettingsFileSystemProvider": {
+			"agentHostSettings.header": "Indstillinger for agentvært."
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostTerminalContribution": {
 			"agentHostTerminal.local": "Lokal"
+		},
+		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentSessionSettings.contribution": {
+			"agentSessionSettings.label": "Sessionsindstillinger",
+			"openAgentSessionSettings": "Åbn sessionsindstillinger"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/importLocalConversationToAgentSession": {
 			"chat.importConversation.subagent": "Underagent"
@@ -3479,6 +3926,7 @@
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/stateToProgressAdapter": {
 			"agentFeedback.many": "{0} kommentarer",
 			"agentFeedback.one": "1 kommentar",
+			"agentFeedback.reveal": "Vis markerede",
 			"agentHost.responseDetails.credit": "{0} kredit",
 			"agentHost.responseDetails.credits": "{0} kreditter",
 			"agentHost.responseDetails.resolvedModel": "{0} ({1})",
@@ -3501,6 +3949,9 @@
 			"chat.session.providerLabel.cloud": "Cloud",
 			"chat.session.providerLabel.local": "Lokal"
 		},
+		"vs/workbench/contrib/chat/browser/agentSessions/agentSessions.contribution": {
+			"agentSessionsQuickAccessPlaceholder": "Søg efter agentsessioner efter navn"
+		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentSessionsActions": {
 			"archive": "Arkivér",
 			"archiveAllSessions.archive": "Arkivér",
@@ -3521,6 +3972,7 @@
 			"markRead": "Markér som læst",
 			"markSectionRead": "Markér alle som læst",
 			"markUnread": "Markér som ulæst",
+			"newChatTitle": "Ny titel på agentsession",
 			"pin": "Fastgør",
 			"rename": "Omdøb...",
 			"unarchive": "Fjern fra arkiv",
@@ -3542,8 +3994,12 @@
 		"vs/workbench/contrib/chat/browser/agentSessions/agentSessionsModel": {
 			"agentSessionsOutput": "Agentsessioner"
 		},
+		"vs/workbench/contrib/chat/browser/agentSessions/agentSessionsOpener": {
+			"chat.openSessionFailed": "Chatsessionen kunne ikke åbnes: {0}"
+		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentSessionsPicker": {
 			"archiveSession": "Arkivér",
+			"chatAgentPickerPlaceholder": "Søg efter agentsessioner efter navn",
 			"deleteSession": "Slet",
 			"renameSession": "Omdøb",
 			"unarchiveSession": "Fjern fra arkiv"
@@ -3563,11 +4019,19 @@
 			"agentSessions.showMoreCompact": "+{0} mere",
 			"agentSessions.todaySection": "I dag",
 			"agentSessions.yesterdaySection": "I går",
+			"agentSessionShowMoreAriaLabel": "Vis {0} sessioner mere",
 			"allowAction": "Tillad",
 			"allowActionOnce": "Tillad én gang",
 			"chat.session.status.failed": "Mislykket",
 			"chat.session.status.inProgress": "Arbejder...",
+			"date.fromNow.days.multiple": "2 dage",
+			"date.fromNow.days.singular": "1 dag",
+			"pendingVoiceResponse": "Stemmesvar klar",
 			"secondsDuration": "nu"
+		},
+		"vs/workbench/contrib/chat/browser/agentSessions/experiments/agentSessionProjectionActions": {
+			"enterAgentSessionProjection": "Åbn projektion af agentsession",
+			"exitAgentSessionProjection": "Afslut projektion af agentsession"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/experiments/agentSessionsExperiments.contribution": {
 			"agentsControl": "Agenter",
@@ -3575,10 +4039,16 @@
 			"title4": "Chat"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/experiments/agentTitleBarStatusWidget": {
+			"agentSessionReady": "Gennemgå ændringer",
 			"agentStatus.sparkle.dropdown": "Flere handlinger",
 			"agentStatusWidget.search": "Søg",
+			"askTooltip2": "Åbn Hurtig adgang",
+			"enterAgentSessionProjection": "Åbn projektion af agentsession",
+			"enterAgentSessionProjectionTooltipNoKey": "Gennemgå ændringer",
+			"exitAgentSessionProjection": "Afslut projektion af agentsession",
 			"label1": "{0} {1}",
 			"label2": "{0} {1}",
+			"openQuickAccess": "Åbn Hurtig adgang",
 			"openQuickOpenTooltip2": "Gå til fil",
 			"review": "Gennemgå",
 			"toggleChat": "Slå chat til/fra"
@@ -3590,32 +4060,44 @@
 			"openChat": "Åbn chat",
 			"send": "Send"
 		},
+		"vs/workbench/contrib/chat/browser/agentSessions/sessionTypeAvailability": {
+			"chat.sessionType.noModels": "Ingen tilgængelige modeller"
+		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationItemSource": {
-			"hookUnset": "(ikke angivet)"
+			"hookUnset": "(ikke angivet)",
+			"uiIntegrationBadge": "Integration med brugerfladen"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationListWidget": {
 			"agent": "Agent",
+			"agentInstructionsGroup": "Agentinstruktioner",
 			"agents": "Agenter",
 			"builtinGroup": "Indbygget",
 			"builtinSource": "Indbygget",
 			"collapsed": "sammenfoldet",
 			"copyRelativePath": "Kopiér relativ sti",
+			"countAgentsOne": "1 agent",
+			"countHooksOne": "1 hook",
 			"countPrompts": "{0} prompter",
+			"countSkillsOne": "1 færdighed",
 			"expanded": "udfoldet",
 			"extensionGroup": "Udvidelser",
 			"fromExtension": "Udvidelse: {0}",
 			"fromPlugin": "Plugin: {0}",
 			"groupAriaLabel": "{0}, {1} elementer, {2}",
+			"hook": "Hook",
 			"hooks": "Hooks",
 			"instructions": "Instruktioner",
 			"itemAriaLabel": "{0}. {1}",
 			"itemAriaLabelDisabled": "{0}, deaktiveret",
+			"learnMoreSkills": "Få mere at vide om agentfærdigheder",
+			"listAriaLabel": "Agenttilpasninger",
 			"pluginGroup": "Plugins",
 			"prompt": "Prompt",
 			"prompts": "Prompter",
 			"remoteClientGroupShort": "Lokal",
 			"remoteHostGroupShort": "Fjern",
 			"searchPlaceholder": "Skriv for at søge...",
+			"skill": "Færdighed",
 			"skills": "Færdigheder",
 			"tryDifferentSearch": "Prøv et andet søgeord",
 			"userGroup": "Bruger",
@@ -3629,7 +4111,10 @@
 			"delete": "Slet",
 			"disable": "Deaktiver",
 			"enable": "Aktivér",
+			"Install Chat Customization Extension": "Installer udvidelse til chattilpasning",
+			"installChatCustomizationExtension": "Installer udvidelse til chattilpasning",
 			"open": "Åbn",
+			"openAICustomizations": "Åbn tilpasninger",
 			"openContainer": "Åbn indeholdende mappe",
 			"revealInMac": "Vis i Finder",
 			"revealInWindows": "Vis i Stifinder",
@@ -3643,8 +4128,14 @@
 			"automations": "Automatiseringer",
 			"backToList": "Tilbage til listen",
 			"backToListTooltip": "Tilbage til listen",
+			"backToMcpList": "Tilbage til MCP-servere",
+			"backToMcpListTooltip": "Tilbage til MCP-servere",
 			"backToOverview": "Tilbage til oversigten",
 			"backToOverviewTooltip": "Tilbage til oversigten",
+			"backToPluginList": "Tilbage til plugins",
+			"backToPluginListTooltip": "Tilbage til plugins",
+			"backToPromptMigration": "Tilbage til migrering af promptfiler",
+			"backToPromptMigrationTooltip": "Tilbage til migrering af promptfiler",
 			"backToToolsList": "Tilbage til værktøjer",
 			"backToToolsListTooltip": "Tilbage til værktøjer",
 			"cancelSaveTarget": "Annuller",
@@ -3655,6 +4146,7 @@
 			"homeButtonTooltip": "Tilbage til oversigten",
 			"hooks": "Hooks",
 			"instructions": "Instruktioner",
+			"learnMoreSkills": "Få mere at vide om agentfærdigheder",
 			"localHarnessLabel": "Lokal",
 			"mcpServers": "MCP-servere",
 			"models": "Modeller",
@@ -3665,10 +4157,15 @@
 			"promptMigrationUserGroup": "Bruger",
 			"promptMigrationWorkspaceGroup": "Arbejdsområde",
 			"prompts": "Prompter",
+			"saved": "Gemt",
 			"skills": "Færdigheder",
 			"tools": "Værktøjer",
 			"userSaveTarget": "Bruger",
 			"workspaceSaveTarget": "Arbejdsområde"
+		},
+		"vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationManagementEditorInput": {
+			"aiCustomizationManagementEditorName": "Agenttilpasninger",
+			"aiCustomizationManagementEditorNameWithHarness": "Agenttilpasninger for {0}"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationWelcomePagePromptLaunchers": {
 			"agents": "Agenter",
@@ -3676,9 +4173,11 @@
 			"instructions": "Instruktioner",
 			"mcpServers": "MCP-servere",
 			"migratePromptFiles": "Migrer",
+			"new": "Ny...",
 			"plugins": "Plugins",
 			"skills": "Færdigheder",
-			"tools": "Værktøjer"
+			"tools": "Værktøjer",
+			"welcomeHeadingWithHarness": "Agenttilpasninger for {0}"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/automationsListWidget": {
 			"automationAriaLabel": "{0}, {1}",
@@ -3703,7 +4202,8 @@
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/embeddedExtensionToolsDetail": {
 			"toolDetailBy": "af {0}",
-			"toolDetailToolsLoaded": "{0} værktøjer"
+			"toolDetailToolsLoaded": "{0} værktøjer",
+			"toolDetailToolsLoadedOne": "1 værktøj"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/embeddedMcpServerDetail": {
 			"mcpScopeUser": "Bruger",
@@ -3718,10 +4218,12 @@
 		"vs/workbench/contrib/chat/browser/aiCustomization/mcpListWidget": {
 			"activeSessionMcpServerDisable": "Deaktiver server",
 			"activeSessionMcpServerEnable": "Aktivér server",
+			"activeSessionMcpServerOptions": "Serverindstillinger",
 			"activeSessionMcpServerStart": "Start server",
 			"activeSessionMcpServerStop": "Stop server",
 			"addServer": "Tilføj server",
 			"addServerTooltip": "Tilføj server",
+			"authRequired": "Godkendelse påkrævet",
 			"browseMarketplace": "Gennemse Marketplace",
 			"builtInGroup": "Indbygget",
 			"collapsed": "sammenfoldet",
@@ -3732,11 +4234,14 @@
 			"fromPlugin": "Plugin: {0}",
 			"galleryError": "Marketplace kunne ikke indlæses",
 			"loadingGallery": "Indlæser Marketplace...",
+			"mcpAccessDisabledSettingLink": "Konfigurer i indstillinger.",
 			"mcpBrowseBack": "Tilbage",
 			"mcpGroupAriaLabel": "{0}, {1} elementer, {2}",
 			"mcpServerAriaLabelWithStatus": "{0}, {1}",
 			"mcpServers": "MCP-servere",
 			"mcpServersListAriaLabel": "MCP-servere",
+			"noGalleryResults": "Ingen servere matcher '{0}'",
+			"noMatchingServers": "Ingen servere matcher '{0}'",
 			"pluginGroup": "Plugins",
 			"running": "Kører",
 			"searchMcpPlaceholder": "Skriv for at søge...",
@@ -3755,17 +4260,22 @@
 			"collapsed": "sammenfoldet",
 			"createPlugin": "Opret plugin",
 			"expanded": "udfoldet",
+			"installFromSource": "Installer plugin fra kilde",
 			"loadingMarketplace": "Indlæser Marketplace...",
 			"marketplaceError": "Marketplace kunne ikke indlæses",
+			"noMarketplaceResults": "Ingen plugins matcher '{0}'",
+			"noMatchingPlugins": "Ingen plugins matcher '{0}'",
 			"pluginBrowseBack": "Tilbage",
 			"pluginGroupAriaLabel": "{0}, {1} elementer, {2}",
 			"pluginItemAriaLabel": "{0}. {1}",
 			"plugins": "Plugins",
+			"pluginsDisabledSettingLink": "Konfigurer i indstillinger.",
 			"pluginsListAriaLabel": "Plugins",
 			"remoteHostGroup": "Fjern",
 			"remotePluginDegraded": "Advarsel",
 			"remotePluginDisabled": "Deaktiveret",
 			"remotePluginError": "Fejl",
+			"remotePluginLoaded": "Indlæst",
 			"remotePluginLoading": "Indlæser",
 			"searchPluginsPlaceholder": "Skriv for at søge...",
 			"tryAgainLater": "Kontrollér forbindelsen, og prøv igen",
@@ -3773,7 +4283,8 @@
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/promptsServiceCustomizationItemProvider": {
 			"alwaysAdded": "altid tilføjet",
-			"hookUnset": "(ikke angivet)"
+			"hookUnset": "(ikke angivet)",
+			"uiIntegrationBadge": "Integration med brugerfladen"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/toolsListWidget": {
 			"clientToolSet.copilotCli.description": "Copilot CLI",
@@ -3793,6 +4304,7 @@
 		},
 		"vs/workbench/contrib/chat/browser/attachments/chatAttachmentWidgets": {
 			"chat.attachment.saveFileButton": "Gem som...",
+			"chat.elementHover.element": "ELEMENT",
 			"chat.terminalCommandHoverCommandTitle": "Kommando",
 			"chat.terminalCommandHoverOutputTitle": "Output:",
 			"instructions": "Instruktioner",
@@ -3804,7 +4316,11 @@
 			"screenshot": "Skærmbillede"
 		},
 		"vs/workbench/contrib/chat/browser/attachments/implicitContextAttachment": {
-			"file.lowercase": "fil"
+			"cell.lowercase": "celle",
+			"enable": "Aktivér den aktuelle {0}-kontekst",
+			"enableHint": "Aktivér den aktuelle {0}-kontekst",
+			"file.lowercase": "fil",
+			"implicitContextFallback": "kontekst"
 		},
 		"vs/workbench/contrib/chat/browser/chat.shared.contribution": {
 			"agentSandbox.allowedNetworkDomains.deprecated": "Brug {0} i stedet",
@@ -3813,10 +4329,16 @@
 			"agentSandbox.deniedNetworkDomains2.deprecated": "Brug {0} i stedet",
 			"chat": "Chat",
 			"chat.agentHost.modelCapabilityOverrides.family": "Opret et alias for modellens familie til dirigering af prompt/egenskaber (f.eks. `claude-opus-4-8`).",
+			"chat.agentLocations.invalidPath": "Stier skal være relative eller starte med '~/'. Absolutte stier og '\\'-separatorer understøttes ikke.",
+			"chat.agentSkillsLocations.invalidPath": "Stier skal være relative eller starte med '~/'. Absolutte stier og '\\'-separatorer understøttes ikke.",
 			"chat.artifacts.rules.byFilePath.groupName": "Visningsnavn for artefaktgruppen.",
+			"chat.artifacts.rules.byFilePath.onlyShowGroup": "Når værdien er sand, vises kun gruppeoverskriften i stedet for de enkelte elementer.",
 			"chat.artifacts.rules.byMemoryFilePath.groupName": "Visningsnavn for artefaktgruppen.",
+			"chat.artifacts.rules.byMemoryFilePath.onlyShowGroup": "Når værdien er sand, vises kun gruppeoverskriften i stedet for de enkelte elementer.",
 			"chat.artifacts.rules.groupName": "Visningsnavn for artefaktgruppen.",
+			"chat.artifacts.rules.onlyShowGroup": "Når værdien er sand, vises kun gruppeoverskriften i stedet for de enkelte elementer.",
 			"chat.byokUtilityModelDefault.none.label": "Ingen",
+			"chat.hookFilesLocations.invalidPath": "Stier skal være relative eller starte med '~/'. Absolutte stier og '\\'-separatorer understøttes ikke.",
 			"chat.permissions.default.autoApprove.label": "Omgå godkendelser",
 			"chat.permissions.default.autopilot.label": "Autopilot (forhåndsvisning)",
 			"chat.permissions.default.default.label": "Standardgodkendelser",
@@ -3825,50 +4347,79 @@
 			"mcp.list": "Vis servere"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/agentHostChatDebugProvider": {
+			"agentHost.debug.aborted": "Afbrudt",
+			"agentHost.debug.agentDiscovery": "Agentregistrering",
 			"agentHost.debug.customizationDisabled": "deaktiveret",
+			"agentHost.debug.customizationsResolved": "Løs tilpasninger",
 			"agentHost.debug.hookDiscovery": "Hook-registrering",
 			"agentHost.debug.hookError": "Der opstod en fejl",
 			"agentHost.debug.modelChangeFromTo": "{0} → {1}",
 			"agentHost.debug.permissionPendingValue": "afventer",
 			"agentHost.debug.reasoning": "Ræsonnement",
+			"agentHost.debug.ruleDiscovery": "Registrering af instruktioner",
+			"agentHost.debug.sessionCliVersion": "CLI {0}",
 			"agentHost.debug.sessionError": "Fejl",
-			"agentHost.debug.sessionWarning": "Advarsel"
+			"agentHost.debug.sessionRepoBranch": "{0}@{1}",
+			"agentHost.debug.sessionWarning": "Advarsel",
+			"agentHost.debug.skillDiscovery": "Registrering af færdigheder"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/agentHostLogSources": {
 			"agentHostLogs.wire": "AHP-log"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatCustomizationDiscoveryRenderer": {
+			"chatDebug.configureLocations": "Konfigurer placeringer",
 			"chatDebug.customization.skipped": "Sprang over ({0})",
+			"chatDebug.customizationTitle": "Resultater af løsning af tilpasninger",
+			"chatDebug.discoveryResults": "{0} registreringsresultater",
+			"chatDebug.duplicateOf": "dublet af {0}",
 			"chatDebug.loadedFiles": "Indlæst ({0})",
+			"chatDebug.openSettingsTooltip": "Konfigurer placeringer",
+			"chatDebug.plainText.customizationTitle": "Resultater af løsning af tilpasninger",
+			"chatDebug.plainText.discoveryResults": "{0} registreringsresultater",
+			"chatDebug.plainText.duplicateOf": "dublet af {0}",
 			"chatDebug.plainText.loaded": "Indlæst ({0})",
 			"chatDebug.plainText.skipped": "Sprang over ({0})",
 			"chatDebug.plainText.sourceFolders": "Kilder ({0})",
+			"chatDebug.plainText.totalFiles": "Filer i alt: {0}",
 			"chatDebug.plainText.unknown": "ukendt",
 			"chatDebug.skippedFiles": "Sprang over ({0})",
 			"chatDebug.sourceFolders": "Kilder ({0})",
+			"chatDebug.totalFiles": "Filer i alt: {0}",
 			"chatDebug.unknown": "ukendt"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugCacheExplorerView": {
 			"chatDebug.cache.agentItem": "{0} ({1})",
 			"chatDebug.cache.charsTotal": "{0} tegn",
+			"chatDebug.cache.chunkCol": "Segment",
+			"chatDebug.cache.chunkIdxCol": "#",
 			"chatDebug.cache.currCol": "Aktuel",
+			"chatDebug.cache.driftLegend": "drift",
+			"chatDebug.cache.endTime": "sluttid",
 			"chatDebug.cache.filterAgentsLabel": "Agent",
 			"chatDebug.cache.laneCurrent": "Aktuel",
 			"chatDebug.cache.lanePrevious": "Forrige",
 			"chatDebug.cache.model": "model",
 			"chatDebug.cache.modelTurn": "Modeltur",
+			"chatDebug.cache.msChip": "[{0} ms]",
 			"chatDebug.cache.optionsCurr": "Aktuel",
 			"chatDebug.cache.optionsKey": "Indstilling",
 			"chatDebug.cache.optionsPrev": "Forrige",
 			"chatDebug.cache.pctValue": "{0}%",
 			"chatDebug.cache.prevCol": "Forrige",
+			"chatDebug.cache.requestShape": "figur",
+			"chatDebug.cache.requestShape.continuation": "Fortsættelse af Responses API",
+			"chatDebug.cache.reuseLane": "Match",
 			"chatDebug.cache.segSizeChars": "{0} tegn",
+			"chatDebug.cache.systemComponent": "system",
+			"chatDebug.cache.tokCol": "≈ tokens",
+			"chatDebug.cache.totalRow": "I alt",
 			"chatDebug.cache.truncatedSideCurr": "Aktuel",
 			"chatDebug.cache.truncatedSidePrev": "Forrige",
 			"chatDebug.cacheExplorer": "Cachestifinder",
 			"chatDebug.title": "Agentens fejlfindingslogge"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugCacheInsights": {
+			"chatDebug.cache.insight.continuation.title": "Fortsættelse af Responses API",
 			"chatDebug.cache.insight.model.detail": "{0} → {1}"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugDetailPanel": {
@@ -3879,18 +4430,24 @@
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugEditorInput": {
 			"chatDebugInputName": "Agentens fejlfindingslogge"
 		},
+		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugEnablement": {
+			"chatDebug.openSetting": "Aktivér i Indstillinger"
+		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugEventDetailRenderer": {
 			"chatDebug.detail.agent": "Agent: {0}",
 			"chatDebug.detail.cachedTokens": "Cachelagrede tokens: {0}",
 			"chatDebug.detail.description": "Beskrivelse: {0}",
 			"chatDebug.detail.durationMs": "Varighed: {0} ms",
+			"chatDebug.detail.input": "Input:",
 			"chatDebug.detail.inputTokens": "Inputtokens: {0}",
 			"chatDebug.detail.modelTurn": "Modeltur",
+			"chatDebug.detail.modelTurnCount": "Modelture: {0}",
 			"chatDebug.detail.output": "Output:",
 			"chatDebug.detail.outputTokens": "Outputtokens: {0}",
 			"chatDebug.detail.result": "Resultat: {0}",
 			"chatDebug.detail.status": "Status: {0}",
 			"chatDebug.detail.tool": "Værktøj: {0}",
+			"chatDebug.detail.toolCallCount": "Værktøjskald: {0}",
 			"chatDebug.detail.totalTokens": "Tokens i alt: {0}"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugEventList": {
@@ -3901,9 +4458,11 @@
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugFilters": {
 			"chatDebug.filter.modelTurn": "Modelture",
+			"chatDebug.filter.promptDiscovery": "Chattilpasning",
 			"chatDebug.filter.toolCall": "Værktøjskald"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugFlowChartView": {
+			"chatDebug.flowChart": "Agentflowdiagram",
 			"chatDebug.flowChart.showMore": "Vis mere ({0})",
 			"chatDebug.title": "Agentens fejlfindingslogge"
 		},
@@ -3917,14 +4476,17 @@
 			"tooltipCachedTokens": "Cachelagrede tokens: {0}",
 			"tooltipInput": "Input: {0}",
 			"tooltipInputTokens": "Inputtokens: {0}",
+			"tooltipModelTurns": "Modelture: {0}",
 			"tooltipOutputTokens": "Outputtokens: {0}",
 			"tooltipResult": "Resultat: {0}",
 			"tooltipStatus": "Status: {0}",
+			"tooltipToolCalls": "Værktøjskald: {0}",
 			"userLabel": "Brugermeddelelse"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugHomeView": {
 			"chatDebug.active": "Aktiv",
 			"chatDebug.newSession": "Ny chat",
+			"chatDebug.openSetting": "Aktivér i Indstillinger",
 			"chatDebug.showMore": "Vis mere ({0})",
 			"chatDebug.title": "Agentens fejlfindingslogge"
 		},
@@ -3963,15 +4525,22 @@
 			"chatDebug.modelTurn.errorLabel": "Fejl: {0}",
 			"chatDebug.modelTurn.inputTokens": "Inputtokens: {0}",
 			"chatDebug.modelTurn.inputTokensLabel": "Inputtokens: {0}",
+			"chatDebug.modelTurn.maxInputTokens": "Maks. inputtokens: {0}",
+			"chatDebug.modelTurn.maxInputTokensLabel": "Maks. inputtokens: {0}",
+			"chatDebug.modelTurn.maxOutputTokens": "Maks. outputtokens: {0}",
+			"chatDebug.modelTurn.maxOutputTokensLabel": "Maks. outputtokens: {0}",
 			"chatDebug.modelTurn.modelLabel": "Model: {0}",
 			"chatDebug.modelTurn.outputTokens": "Outputtokens: {0}",
 			"chatDebug.modelTurn.outputTokensLabel": "Outputtokens: {0}",
 			"chatDebug.modelTurn.statusLabel": "Status: {0}",
 			"chatDebug.modelTurn.title": "Modeltur",
 			"chatDebug.modelTurn.totalTokens": "Tokens i alt: {0}",
-			"chatDebug.modelTurn.totalTokensLabel": "Tokens i alt: {0}"
+			"chatDebug.modelTurn.totalTokensLabel": "Tokens i alt: {0}",
+			"chatDebug.modelTurn.ttft": "Tid til første token: {0} ms",
+			"chatDebug.modelTurn.ttftLabel": "Tid til første token: {0} ms"
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugOverviewView": {
+			"chatDebug.agentFlowChart": "Agentflowdiagram",
 			"chatDebug.ahpLog": "AHP-log",
 			"chatDebug.cacheExplorer": "Cachestifinder",
 			"chatDebug.detail.created": "Oprettet",
@@ -3983,7 +4552,9 @@
 			"chatDebug.metric.errors": "Fejl",
 			"chatDebug.metric.modelTurns": "Modelture",
 			"chatDebug.metric.toolCalls": "Værktøjskald",
+			"chatDebug.sessionDetails": "Sessionsoplysninger",
 			"chatDebug.sessionType.local": "Lokal",
+			"chatDebug.status.idle": "Inaktiv",
 			"chatDebug.status.inProgress": "I gang",
 			"chatDebug.title": "Agentens fejlfindingslogge"
 		},
@@ -4001,10 +4572,17 @@
 		"vs/workbench/contrib/chat/browser/chatDebug/chatDebugWireLogView": {
 			"chatDebug.ahpLog": "AHP-log",
 			"chatDebug.title": "Agentens fejlfindingslogge",
+			"chatDebug.wireLog.badge.notification": "giv besked",
+			"chatDebug.wireLog.footerRemote": "fjern",
+			"chatDebug.wireLog.frameId": "id: {0}",
 			"chatDebug.wireLog.loading": "Indlæser…",
+			"chatDebug.wireLog.ms": "{0} ms",
 			"chatDebug.wireLog.refresh": "Opdater",
+			"chatDebug.wireLog.s": "{0} s",
 			"chatDebug.wireLog.section.error": "Fejl",
+			"chatDebug.wireLog.section.params": "Parametre",
 			"chatDebug.wireLog.section.result": "Resultat",
+			"chatDebug.wireLog.statusError": "fejl",
 			"chatDebug.wireLog.statusPending": "afventer"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditing/chatEditingActions": {
@@ -4015,15 +4593,22 @@
 			"chat.openFileUpdatedBySnapshot.label": "Åbn fil",
 			"chat.remove.confirmation.checkbox": "Spørg ikke igen",
 			"chat.remove.confirmation.primaryButton": "Ja",
+			"chat.remove.confirmation.title": "Vil du fortryde {0} redigeringer?",
+			"chat.removeLast.confirmation.title": "Vil du fortryde din seneste redigering?",
 			"discard": "Fortryd",
 			"discard.file": "Fortryd",
+			"discardAllEdits": "Fortryd alle redigeringer",
 			"explainButton": "Forklar"
+		},
+		"vs/workbench/contrib/chat/browser/chatEditing/chatEditingCodeEditorIntegration": {
+			"diff.generic": "{0} (ændringer fra chat)"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditing/chatEditingEditorActions": {
 			"accept2": "Behold",
 			"accept4": "Behold alle redigeringer",
 			"acceptHunkShort": "Behold",
 			"discard2": "Fortryd",
+			"discard4": "Fortryd alle redigeringer",
 			"explain": "Forklar",
 			"label": "Navigationsstatus",
 			"review": "Gennemgå",
@@ -4041,10 +4626,19 @@
 			"lineRange": "Linje {0}-{1}"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditing/chatEditingModifiedDocumentEntry": {
+			"chatEditing1": "Chatredigering: '{0}'",
 			"chatEditing2": "Chatredigering"
 		},
 		"vs/workbench/contrib/chat/browser/chatEditing/chatEditingModifiedNotebookEntry": {
+			"chatNotebookEdit1": "Chatredigering: '{0}'",
 			"chatNotebookEdit2": "Chatredigering"
+		},
+		"vs/workbench/contrib/chat/browser/chatEditing/notebook/chatEditingNotebookEditorIntegration": {
+			"diff.generic": "{0} (ændringer fra chat)"
+		},
+		"vs/workbench/contrib/chat/browser/chatManagement/chatManagement.contribution": {
+			"enableChatForByokReason": "Aktiverer AI-funktioner",
+			"openAiManagement": "Administrer sprogmodeller"
 		},
 		"vs/workbench/contrib/chat/browser/chatManagement/chatManagementEditorInput": {
 			"modelsManagementEditorInputName": "Sprogmodeller"
@@ -4056,6 +4650,7 @@
 			"capability.vision": "Vision",
 			"collapse": "Fold sammen",
 			"collapseAll": "Fold alle sammen",
+			"cost.input": "I: {0}",
 			"expand": "Fold ud",
 			"filter": "Filtrer",
 			"filterByCapability": "Filtrer efter {0}",
@@ -4067,6 +4662,14 @@
 			"models.contextSize": "Kontekststørrelse",
 			"models.deleteAction": "Slet",
 			"models.deprecation.link.label": "Migrer",
+			"models.inputCost.plural": "Inputpris: {0} kreditter pr. 1 mio. tokens",
+			"models.inputCost.singular": "Inputpris: {0} kredit pr. 1 mio. tokens",
+			"models.longContextInputCost.plural": "Inputpris: {0} kreditter pr. 1 mio. tokens",
+			"models.longContextInputCost.singular": "Inputpris: {0} kredit pr. 1 mio. tokens",
+			"models.longContextOutputCost.plural": "Outputpris: {0} kreditter pr. 1 mio. tokens",
+			"models.longContextOutputCost.singular": "Outputpris: {0} kredit pr. 1 mio. tokens",
+			"models.outputCost.plural": "Outputpris: {0} kreditter pr. 1 mio. tokens",
+			"models.outputCost.singular": "Outputpris: {0} kredit pr. 1 mio. tokens",
 			"models.pinModel": "Fastgør model",
 			"models.pricing": "Priser",
 			"models.toolCalling": "Værktøjer",
@@ -4083,6 +4686,8 @@
 		},
 		"vs/workbench/contrib/chat/browser/chatParticipant.contribution": {
 			"chat.viewContainer.label": "Chat",
+			"chatCommandDescription": "En beskrivelse af denne kommando.",
+			"miToggleChat": "&&Chat",
 			"participantCommands": "Kommandoer",
 			"participantDescription": "Beskrivelse",
 			"participantName": "Navn",
@@ -4095,13 +4700,19 @@
 			"manageBudget": "Administrer budget",
 			"manageBudget2": "Administrer budget",
 			"manageBudget3": "Administrer budget",
+			"quota.exhausted.title": "Kreditgrænsen er nået",
+			"quota.overage.title": "Kreditgrænsen er nået",
+			"quota.trajectory.learnMoreStandalone": "Få mere at vide om optimering af brug",
+			"quota.trajectory.learnMoreTooltip": "Få mere at vide om optimering af brug",
 			"signIn": "Log på",
 			"upgrade": "Opgrader",
 			"upgrade2": "Opgrader"
 		},
 		"vs/workbench/contrib/chat/browser/chatSessions/chatSessions.contribution": {
 			"chat": "Chat",
+			"chatCommandDescription": "En beskrivelse af denne kommando.",
 			"chatEditorContributionName": "{0}",
+			"chatSessionsExtPoint.when": "Betingelse, der skal være sand, for at elementet vises.",
 			"icon.dark": "Ikonsti, når der bruges et mørkt tema",
 			"icon.light": "Ikonsti, når der bruges et lyst tema",
 			"interactiveSession.openNewChatSessionExternal": "Ny {0}-session",
@@ -4116,12 +4727,15 @@
 			"forceSignIn": "Log på for at bruge GitHub Copilot",
 			"managePlan": "Opgrader til GitHub Copilot Pro",
 			"restartExtensionHost.reason.disable": "Deaktiverer AI-funktioner",
+			"restartExtensionHost.reason.enable": "Aktiverer AI-funktioner",
 			"retry": "Prøv igen",
 			"review": "Kodegennemgang",
 			"signInIndicatorTitleBarAction": "Log på"
 		},
 		"vs/workbench/contrib/chat/browser/chatSetup/chatSetupController": {
-			"retry": "Prøv igen"
+			"enterpriseInstance": "Hvad er din {0}-instans?",
+			"retry": "Prøv igen",
+			"willResolveTo": "Fortolkes som {0}"
 		},
 		"vs/workbench/contrib/chat/browser/chatSetup/chatSetupGrowthSession": {
 			"developer": "Udvikler"
@@ -4130,20 +4744,30 @@
 			"explain": "Forklar",
 			"fix": "Ret",
 			"generate": "Generér",
+			"installingChat": "Gør chatten klar",
+			"modify": "Rediger",
 			"retryChat": "Genstart",
-			"showCopilotChatDetails": "Vis detaljer"
+			"showCopilotChatDetails": "Vis detaljer",
+			"waitingChat": "Gør chatten klar"
 		},
 		"vs/workbench/contrib/chat/browser/chatSetup/chatSetupRunner": {
+			"chatWorkspaceTrust": "AI-funktioner understøttes i øjeblikket kun i arbejdsområder, der er tillid til.",
+			"enableMore": "Aktivér flere AI-funktioner",
 			"setupAIButton": "Brug AI-funktioner",
 			"signIn": "Log på for at bruge GitHub Copilot"
 		},
 		"vs/workbench/contrib/chat/browser/chatSlashCommands": {
+			"autoApprove": "Angiv tilladelser til at tilsidesætte godkendelser",
 			"disableAutoApprove": "Nulstil tilladelser til standard",
 			"disableYolo": "Nulstil tilladelser til standard",
 			"exitAutopilot": "Nulstil tilladelser til standard",
-			"rename": "Omdøb denne chat"
+			"models": "Åbn modelvælgeren",
+			"rename": "Omdøb denne chat",
+			"yolo": "Angiv tilladelser til at tilsidesætte godkendelser"
 		},
 		"vs/workbench/contrib/chat/browser/chatStatus/chatStatusDashboard": {
+			"activeDescriptionAnonymous": "Ved at fortsætte med {0} Copilot accepterer du {1}s [vilkår]({2}) og [erklæring om beskyttelse af personlige oplysninger]({3})",
+			"completions.plus5min": "+5 min.",
 			"completions.remainingTime": "tilbage",
 			"completionsLabel": "Indlejrede forslag",
 			"creditsLabel": "Krediteringer",
@@ -4163,6 +4787,7 @@
 			"quotaLabel": "Administrer Copilot-indstillinger",
 			"quotaLabelUsed": "{0} brugt",
 			"quotaTooltip": "Administrer Copilot-indstillinger",
+			"quotaUsed": "brugt",
 			"selectOption": "Vælg {0}",
 			"settings.snooze": "Udsæt",
 			"signInToUseAIFeatures": "Log på for at bruge GitHub Copilot",
@@ -4180,6 +4805,9 @@
 		"vs/workbench/contrib/chat/browser/claudePluginRecommendations": {
 			"showPlugins": "Vis plugins"
 		},
+		"vs/workbench/contrib/chat/browser/contextContrib/chatContext.contribution": {
+			"chatContextExtPoint.id": "Et entydigt id for dette element."
+		},
 		"vs/workbench/contrib/chat/browser/defaultModelContribution": {
 			"modelLabelWithVendor": "{0} ({1})"
 		},
@@ -4189,9 +4817,15 @@
 			"enable": "Aktivér",
 			"enableForWorkspace": "Aktivér (arbejdsområde)"
 		},
+		"vs/workbench/contrib/chat/browser/enablementStatusWidget": {
+			"mcpServerDisabled": "Denne MCP-server er deaktiveret."
+		},
 		"vs/workbench/contrib/chat/browser/planReviewFeedback/planReviewFeedbackEditorActions": {
 			"planReviewFeedback.clear": "Ryd",
-			"planReviewFeedback.navStatus.label": "Navigationsstatus"
+			"planReviewFeedback.clearAllTooltip": "Ryd al feedback",
+			"planReviewFeedback.navStatus.label": "Navigationsstatus",
+			"planReviewFeedback.next": "Gå til næste feedbackkommentar",
+			"planReviewFeedback.previous": "Gå til forrige feedbackkommentar"
 		},
 		"vs/workbench/contrib/chat/browser/planReviewFeedback/planReviewFeedbackEditorContribution": {
 			"planReviewFeedback.addFeedback": "Tilføj feedback",
@@ -4200,21 +4834,33 @@
 			"planReviewFeedback.navStatus.zero": "0/0"
 		},
 		"vs/workbench/contrib/chat/browser/pluginInstallService": {
-			"showOutput": "Vis output"
+			"cloningSource": "Kloner pluginkilden '{0}'...",
+			"showOutput": "Vis output",
+			"trustAndInstall": "&&Hav tillid"
 		},
 		"vs/workbench/contrib/chat/browser/pluginSources": {
+			"cloneFailed": "Pluginet '{0}' kunne ikke installeres: {1}",
+			"cloningPluginSource": "Kloner pluginkilden '{0}'...",
 			"confirmInstall": "&&Installer",
-			"install": "Installer"
+			"install": "Installer",
+			"pullPluginSourceFailed": "Pluginet '{0}' kunne ikke opdateres: {1}",
+			"terminalCommandExitCode": "Kommandoen afsluttede med koden {0}",
+			"updatingPluginSource": "Opdaterer pluginet '{0}'..."
 		},
 		"vs/workbench/contrib/chat/browser/pluginUrlHandler": {
 			"installButton": "&&Installer"
 		},
 		"vs/workbench/contrib/chat/browser/promptsDebugContribution": {
-			"promptsService.loadHooks": "Hook-registrering"
+			"customizationsResolved": "Løs tilpasninger",
+			"promptsService.loadAgents": "Agentregistrering",
+			"promptsService.loadHooks": "Hook-registrering",
+			"promptsService.loadInstructions": "Registrering af instruktioner",
+			"promptsService.loadSkills": "Registrering af færdigheder"
 		},
 		"vs/workbench/contrib/chat/browser/promptSyntax/chatModeActions": {
 			"configure-agents": "Konfigurer brugerdefinerede agenter...",
 			"configure-agents.short": "Brugerdefinerede agenter",
+			"managedByOrganization": "Administreret af din organisation",
 			"select-agent": "Konfigurer brugerdefinerede agenter..."
 		},
 		"vs/workbench/contrib/chat/browser/promptSyntax/hookActions": {
@@ -4239,7 +4885,8 @@
 			"separator.extensions": "Udvidelser",
 			"separator.plugins": "Plugins",
 			"separator.user": "Brugerdata",
-			"separator.workspace": "Arbejdsområde"
+			"separator.workspace": "Arbejdsområde",
+			"separator.workspace-agent-instructions": "Agentinstruktioner"
 		},
 		"vs/workbench/contrib/chat/browser/promptSyntax/promptToolsCodeLensProvider": {
 			"configure-tools.capitalized.ellipsis": "Konfigurer værktøjer...",
@@ -4266,14 +4913,19 @@
 		},
 		"vs/workbench/contrib/chat/browser/tools/languageModelToolsService": {
 			"autoApprove2.button.disable": "Deaktiver",
-			"autoApprove2.button.enable": "Aktivér"
+			"autoApprove2.button.enable": "Aktivér",
+			"hookRequiresConfirmation.message": "{0}-hook krævede bekræftelse",
+			"hookRequiresConfirmation.messageWithReason": "{0}-hook krævede bekræftelse: {1}",
+			"hookRequiresConfirmation.note": "{0}-hook krævede bekræftelse: {1}",
+			"hookRequiresConfirmation.noteNoReason": "{0}-hook krævede bekræftelse"
 		},
 		"vs/workbench/contrib/chat/browser/tools/renameTool": {
 			"tool.rename.displayName": "Omdøb symbol"
 		},
 		"vs/workbench/contrib/chat/browser/tools/toolSetsContribution": {
 			"bad_name1": "Ugyldigt filnavn",
-			"bad_name2": "'{0}' er ikke et gyldigt filnavn"
+			"bad_name2": "'{0}' er ikke et gyldigt filnavn",
+			"chat.configureToolSets": "Konfigurer værktøjssæt..."
 		},
 		"vs/workbench/contrib/chat/browser/utilityModelContribution": {
 			"chat.utilityModel.defaultEntry.label": "Standard"
@@ -4284,15 +4936,21 @@
 		"vs/workbench/contrib/chat/browser/widget/chatArtifactsWidget": {
 			"chat.artifacts.clearSource": "Ryd",
 			"chat.artifacts.source.agent": "Agent",
+			"chat.artifacts.source.rules": "Regler",
 			"chat.artifacts.source.subagent": "Underagent"
+		},
+		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatAnonymousRateLimitedPart": {
+			"enableMoreAIFeatures": "Aktivér flere AI-funktioner"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatAutoModeResolutionContentPart": {
 			"autoModeResolution.nonReasoning": "Uden ræsonnering",
 			"autoModeResolution.reasoning": "Ræsonnement"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatChangesSummaryPart": {
+			"chat.fileChanges.accessibleSummary": "{0}, {1} linjer tilføjet, {2} linjer slettet",
 			"chat.fileChanges.manyFiles": "{0} filer ændret",
-			"chat.fileChanges.oneFile": "1 fil ændret"
+			"chat.fileChanges.oneFile": "1 fil ændret",
+			"chat.viewFileChangesSummary": "Vis alle filændringer"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatConfirmationContentPart": {
 			"accept": "Acceptér",
@@ -4308,19 +4966,34 @@
 			"chat.codeblock.insertions": "{0} indsættelser",
 			"chat.codeblock.insertions.one": "1 indsættelse",
 			"chat.externalEdit.created": "Oprettet",
-			"chat.externalEdit.deleted": "Slettet"
+			"chat.externalEdit.deleted": "Slettet",
+			"summary": "Redigerede {0}, {1}, {2}"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatInlineAnchorWidget": {
 			"actions.attach.label": "Føj fil til chat",
 			"actions.copy.label": "Kopiér",
-			"actions.openToSide.label": "Åbn ved siden af"
+			"actions.goToDecl.label": "Gå til definition",
+			"actions.openToSide.label": "Åbn ved siden af",
+			"goToImplementations.label": "Gå til implementeringer",
+			"goToReferences.label": "Gå til referencer",
+			"miGotoDefinition": "Gå til &&definition",
+			"miGotoImplementations": "Gå til &&implementeringer",
+			"miGotoReference": "Gå til &&referencer"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatMarkdownContentPart": {
 			"chat.codeblock.deletions": "{0} sletninger",
 			"chat.codeblock.deletions.one": "1 sletning",
 			"chat.codeblock.edited": "Redigeret",
 			"chat.codeblock.insertions": "{0} indsættelser",
-			"chat.codeblock.insertions.one": "1 indsættelse"
+			"chat.codeblock.insertions.one": "1 indsættelse",
+			"summary": "Redigerede {0}, {1}, {2}"
+		},
+		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatMcpServersInteractionContentPart": {
+			"mcp.skip.link": "Spring over?",
+			"mcp.starting.servers": "Starter MCP-servere {0}..."
+		},
+		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatMcpServersStartingContentPart": {
+			"mcp.starting.servers": "Starter MCP-servere {0}..."
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatMultiDiffContentPart": {
 			"chatEditingSession.fileCounts": "{0} linjer tilføjet, {1} linjer fjernet",
@@ -4329,6 +5002,7 @@
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatPlanReviewPart": {
 			"chat.planReview.autopilot.cancel": "Annuller",
 			"chat.planReview.autopilot.confirm": "Aktivér",
+			"chat.planReview.autopilot.title": "Aktivér autopilot?",
 			"chat.planReview.cancelButtonLabel": "Annuller",
 			"chat.planReview.clearAll": "Ryd alle",
 			"chat.planReview.clearAllConfirmPrimary": "Ryd alle",
@@ -4341,13 +5015,27 @@
 			"chat.planReview.inlineCommentLocationLine": "Linje {0}",
 			"chat.planReview.openTooltip": "Åbn {0}",
 			"chat.planReview.reject": "Afvis",
-			"chat.planReview.submitFeedback": "Send feedback"
+			"chat.planReview.submitFeedback": "Send feedback",
+			"chat.planReview.submitFeedbackWithCount": "Send feedback ({0})"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatQuestionCarouselPart": {
 			"chat.questionCarousel.focusTerminalTitle": "Fokuser terminal",
 			"chat.questionCarousel.labelWithKeybinding": "{0} ({1})",
+			"chat.questionCarousel.listSeparator": ", ",
 			"chat.questionCarousel.skipped": "Sprunget over",
 			"chat.questionCarousel.stepIndicator": "{0}/{1}",
+			"chat.questionCarousel.summaryAnswer": "S: {0}",
+			"chat.questionCarousel.summaryQuestion": "Sp.: {0}",
+			"chat.questionCarousel.validation.date": "Angiv en gyldig dato (ÅÅÅÅ-MM-DD)",
+			"chat.questionCarousel.validation.dateTime": "Angiv en gyldig dato og et gyldigt klokkeslæt",
+			"chat.questionCarousel.validation.email": "Angiv en gyldig mailadresse",
+			"chat.questionCarousel.validation.integer": "Angiv et gyldigt heltal",
+			"chat.questionCarousel.validation.maximum": "Maksimumværdien er {0}",
+			"chat.questionCarousel.validation.maxLength": "Maksimumlængden er {0}",
+			"chat.questionCarousel.validation.minimum": "Minimumværdien er {0}",
+			"chat.questionCarousel.validation.minLength": "Minimumlængden er {0}",
+			"chat.questionCarousel.validation.number": "Angiv et gyldigt tal",
+			"chat.questionCarousel.validation.uri": "Angiv en gyldig URI",
 			"next": "Næste",
 			"previous": "Forrige",
 			"submit": "Send"
@@ -4373,10 +5061,12 @@
 			"chat.subagent.working.3": "Indlæser",
 			"chat.subagent.working.4": "Analyserer",
 			"chat.subagent.working.5": "Evaluerer",
-			"hook.subagent.blocked": "Blokerede {0}"
+			"hook.subagent.blocked": "Blokerede {0}",
+			"hook.subagent.blockedGeneric": "Blokeret af hook"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatSuggestNextWidget": {
-			"chat.suggestNext.item": "{0}"
+			"chat.suggestNext.item": "{0}",
+			"continueIn": "Fortsæt i {0}"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatTextEditContentPart": {
 			"editsSummary": "Foretog ændringer."
@@ -4395,6 +5085,7 @@
 			"chat.thinking.insertions": "{0} indsættelser",
 			"chat.thinking.insertions.one": "1 indsættelse",
 			"chat.thinking.label": "{0}: {1}",
+			"chat.thinking.shimmer": "{0}: ",
 			"chat.thinking.started": "Tænker",
 			"chat.thinking.terminal.1": "Udfører",
 			"chat.thinking.terminal.2": "Kører",
@@ -4413,19 +5104,24 @@
 			"chat.thinking.tool.5": "Evaluerer"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatTipContentPart": {
-			"chatTip.dismissButton": "Afvis tip"
+			"chatTip.dismissButton": "Afvis tip",
+			"chatTipRoleDescription": "tip"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatTodoListWidget": {
-			"chat.todoList.item": "{0}, {1}"
+			"chat.todoList.item": "{0}, {1}",
+			"chat.todoList.title": "Opgaver"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatToolInputOutputContentPart": {
 			"chat.input": "Input",
 			"chat.output": "Output"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatTurnPillsPart": {
+			"chat.turnChanges.accessibleSummary": "{0}, {1} linjer tilføjet, {2} linjer slettet",
 			"chat.turnChanges.manyFiles": "{0} filer ændret",
 			"chat.turnChanges.oneFile": "1 fil ændret",
-			"chat.turnChanges.preview": "Forhåndsvisning"
+			"chat.turnChanges.preview": "Forhåndsvisning",
+			"chat.turnPreview.tooltip": "Åbn eksempel: {0}",
+			"chat.viewTurnFileChangesSummary": "Vis alle filændringer"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/codeBlockPart": {
 			"chat.codeBlockLabel": "Kodeblok {0}",
@@ -4438,7 +5134,8 @@
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/toolInvocationParts/chatAgentFeedbackReviewConfirmationSubPart": {
 			"agentFeedback.cancel": "Annuller",
 			"agentFeedback.collapseComment": "Vis mindre",
-			"agentFeedback.expandComment": "Vis mere"
+			"agentFeedback.expandComment": "Vis mere",
+			"agentFeedback.reveal": "Vis markerede"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/toolInvocationParts/chatExtensionsInstallToolSubPart": {
 			"allow": "Tillad",
@@ -4452,14 +5149,18 @@
 			"manyFilesChanged": "{0} filer ændret",
 			"modifiedFilesAllChangesTitle": "Alle ændringer",
 			"modifiedFilesCounts": "{0} linjer tilføjet, {1} linjer fjernet",
-			"oneFileChanged": "1 fil ændret"
+			"modifiedFilesSummaryWithCounts": "{0}, {1} linjer tilføjet, {2} linjer fjernet",
+			"oneFileChanged": "1 fil ændret",
+			"viewAllChanges": "Vis alle ændringer"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/toolInvocationParts/chatSandboxPrerequisiteConfirmationSubPart": {
 			"missingDeps.install": "Installer",
+			"sandboxPrerequisite.applyFix": "Anvend rettelse, og prøv igen",
 			"sandboxPrerequisite.cancel": "Annuller"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/toolInvocationParts/chatTerminalToolConfirmationSubPart": {
 			"autoApprove.button.enable": "Aktivér",
+			"ruleTooltip": "Vis regel i indstillinger",
 			"sessionApproval.disable": "Deaktiver",
 			"tool.allow": "Tillad",
 			"tool.skip": "Spring over"
@@ -4490,6 +5191,7 @@
 			"showMore": "Vis mere"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/toolInvocationParts/chatToolPartUtilities": {
+			"chat.autoapprove.lmServicePerTool.session": "Automatisk godkendt i denne session",
 			"edit": "Rediger",
 			"openSettings.tooltip": "Åbn indstillinger"
 		},
@@ -4501,11 +5203,14 @@
 			"folder": "Mappe",
 			"image": "Billede",
 			"notebookOutput": "Output",
+			"scmHistoryItem": "Skift",
+			"symbol": "Symbol",
 			"url": "URL-adresse"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatListRenderer": {
 			"chat.planReview.feedbackInline": "{0}: {1}",
 			"hook.thinking.blocked": "Blokerede {0}",
+			"hook.thinking.blockedGeneric": "Blokeret af hook",
 			"queuedDivider": "I kø",
 			"steeringDivider": "Styring",
 			"working": "Arbejder"
@@ -4515,23 +5220,29 @@
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatTurnPills": {
 			"chatTurnPills.changes.tooltip": "Vis ændringer",
-			"chatTurnPills.preview.label": "Åbn eksempel"
+			"chatTurnPills.preview.label": "Åbn eksempel",
+			"chatTurnPills.preview.tooltipOne": "Åbn eksempel: {0}"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatWidget": {
 			"chat.pendingRequests.steeringQueued": "Styring"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/chatGoalBannerWidget": {
-			"chat.goalBanner.dismiss": "Afvis"
+			"chat.goalBanner.dismiss": "Afvis",
+			"chat.goalBanner.label": "Mål"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/chatInputPart": {
+			"chatEditingSession.ariaLabelWithCounts": "{0}, {1} linjer tilføjet, {2} linjer fjernet",
 			"chatEditingSession.manyFiles": "{0} filer ændret",
-			"chatEditingSession.oneFile": "1 fil ændret"
+			"chatEditingSession.oneFile": "1 fil ændret",
+			"chatInput.model": ", {0}. "
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/chatModelPicker": {
 			"chat.cacheBreak.learnMore": "Få mere at vide",
+			"chat.manageModels.tooltip": "Administrer sprogmodeller",
 			"chat.modelPicker.auto": "Automatisk",
 			"chat.modelPicker.copilotGroup": "Copilot",
 			"chat.modelPicker.modelsLabel": "Modeller",
+			"chat.modelPicker.noModels": "Ingen tilgængelige modeller",
 			"chat.modelPicker.pin": "Fastgør model",
 			"chat.modelPicker.pinned": "Fastgjort",
 			"chat.modelPicker.unpin": "Frigør model",
@@ -4550,9 +5261,12 @@
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/chatQueuePickerActionItem": {
 			"chat.queueMessage": "Føj til kø",
-			"chat.queuePicker.moreActions": "Flere handlinger..."
+			"chat.queuePicker.moreActions": "Flere handlinger...",
+			"chat.steerWithMessage": "Styr med meddelelse"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/delegationSessionPickerActionItem": {
+			"chat.newChatSession": "Ny chatsession",
+			"chat.newChatSession.category": "Ny chatsession",
 			"continueIn": "Fortsæt i"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/editor/chatInputCompletions": {
@@ -4562,6 +5276,7 @@
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/editor/chatPasteProviders": {
 			"pastedAttachment.multipleLines": "{0} linjer",
+			"pastedAttachment.oneLine": "1 linje",
 			"pastedImageName": "Indsat billede"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/modelPickerActionItem": {
@@ -4569,7 +5284,8 @@
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/modePickerActionItem": {
 			"built-in": "Indbygget",
-			"custom": "Brugerdefineret"
+			"custom": "Brugerdefineret",
+			"managedByOrganization": "Administreret af din organisation"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/permissionPickerActionItem": {
 			"permissions.autoApprove": "Omgå godkendelser",
@@ -4593,6 +5309,9 @@
 			"openFolderTooltip": "Åbn mappe...",
 			"selectWorkspace": "Arbejdsområde"
 		},
+		"vs/workbench/contrib/chat/browser/widgetHosts/chatQuick": {
+			"termsDisclaimer": "Ved at fortsætte med {0} Copilot accepterer du {1}s [vilkår]({2}) og [erklæring om beskyttelse af personlige oplysninger]({3})"
+		},
 		"vs/workbench/contrib/chat/browser/widgetHosts/editor/chatEditor": {
 			"chatEditor.loadingSession": "Indlæser..."
 		},
@@ -4606,8 +5325,11 @@
 			"sessionCostCredits": "{0} kreditter"
 		},
 		"vs/workbench/contrib/chat/browser/widgetHosts/viewPane/chatViewPane": {
+			"chat.loadSessionFailed": "Chatsessionen kunne ikke åbnes: {0}",
 			"newSession": "Ny session",
-			"sessions": "Sessioner"
+			"sessions": "Sessioner",
+			"voiceMode.clickMicHint": "Klik på stemmetilstand for at tale",
+			"voiceMode.pttHint": "Tryk på {0} for at tale"
 		},
 		"vs/workbench/contrib/chat/browser/widgetHosts/viewPane/chatViewTitleControl": {
 			"chat": "Chat"
@@ -4627,15 +5349,19 @@
 		"vs/workbench/contrib/chat/common/chatErrorMessages": {
 			"chatError.duration.hours": "{0} timer",
 			"chatError.duration.minutes": "{0} minutter",
-			"chatError.duration.seconds": "{0} sekunder"
+			"chatError.duration.seconds": "{0} sekunder",
+			"chatError.extensionBlocked": "Beklager, der opstod en fejl.",
+			"chatError.somethingWrong": "Beklager, der opstod en fejl."
 		},
 		"vs/workbench/contrib/chat/common/chatImageExtraction": {
+			"chatImageExtraction.defaultTitle": "Billeder",
 			"chatImageExtraction.inlineReference": "Fil",
 			"chatImageExtraction.toolSource": "Værktøj: {0}"
 		},
 		"vs/workbench/contrib/chat/common/chatPermissionWarnings": {
 			"permissions.autoApprove.warning.confirm": "Aktivér",
 			"permissions.autopilot.warning.confirm": "Aktivér",
+			"permissions.autopilot.warning.title": "Aktivér autopilot?",
 			"permissions.warning.cancel": "Annuller",
 			"permissions.warning.dontShowAgain": "Vis ikke igen"
 		},
@@ -4650,6 +5376,7 @@
 			"models.enumDefault": "{0} (standard)"
 		},
 		"vs/workbench/contrib/chat/common/languageModelStats": {
+			"chat": "chat",
 			"Language Models": "Copilot"
 		},
 		"vs/workbench/contrib/chat/common/model/chatModel": {
@@ -4676,21 +5403,69 @@
 			"hookType.errorOccurred.label": "Der opstod en fejl",
 			"hookType.stop.label": "Stop"
 		},
+		"vs/workbench/contrib/chat/common/promptSyntax/languageProviders/promptCodeActions": {
+			"searchExtensionMarketplace": "Søg efter udvidelsen '{0}' på Marketplace",
+			"searchExtensionMarketplaceGeneric": "Søg efter udvidelsen '{0}' på Marketplace",
+			"searchMcpServerMarketplace": "Søg efter MCP-serveren '{0}' på Marketplace",
+			"searchMcpServerMarketplaceGeneric": "Søg efter MCP-serveren '{0}' på Marketplace"
+		},
 		"vs/workbench/contrib/chat/common/promptSyntax/languageProviders/promptFileAttributes": {
+			"attribute.hooks": "Livscyklus-hooks med omfang i denne underagent.",
+			"attribute.mcpServers": "MCP-servere, som er tilgængelige for denne underagent.",
+			"claude.askUserQuestion": "Stil spørgsmål med flere svarmuligheder",
+			"claude.bash": "Udfør shellkommandoer",
+			"claude.edit": "Foretag målrettede filredigeringer",
+			"claude.glob": "Find filer efter mønster",
+			"claude.grep": "Søg i filindhold med regulære udtryk",
+			"claude.lsp": "Kodeintelligens (kræver plugin)",
+			"claude.memory.user": "Husk erfaringer på tværs af alle projekter.",
+			"claude.notebookEdit": "Rediger Jupyter-notebooks",
+			"claude.opus": "Seneste Claude Opus",
+			"claude.read": "Læs filindhold",
 			"claude.skill": "Udfør færdigheder",
+			"claude.sonnet": "Seneste Claude Sonnet",
+			"claude.task": "Kør underagenter til komplekse opgaver",
+			"claude.webFetch": "Hent indhold fra URL-adresse",
+			"claude.webSearch": "Udfør websøgninger",
+			"claude.write": "Opret/overskriv filer",
 			"githubCopilot.agent": "Brug underagenter",
 			"githubCopilot.edit": "Rediger filer",
 			"githubCopilot.execute": "Udfør kommandoer",
 			"githubCopilot.read": "Læs filer",
-			"githubCopilot.search": "Søg i filer"
+			"githubCopilot.search": "Søg i filer",
+			"promptHeader.agent.infer": "Styrer agentens synlighed.",
+			"promptHeader.prompt.tools": "De værktøjer, der skal bruges i denne prompt.",
+			"promptHeader.skill.name": "Færdighedens navn."
 		},
 		"vs/workbench/contrib/chat/common/promptSyntax/languageProviders/promptValidator": {
+			"attribute.hooks": "Livscyklus-hooks med omfang i denne underagent.",
+			"attribute.mcpServers": "MCP-servere, som er tilgængelige for denne underagent.",
+			"claude.askUserQuestion": "Stil spørgsmål med flere svarmuligheder",
+			"claude.bash": "Udfør shellkommandoer",
+			"claude.edit": "Foretag målrettede filredigeringer",
+			"claude.glob": "Find filer efter mønster",
+			"claude.grep": "Søg i filindhold med regulære udtryk",
+			"claude.lsp": "Kodeintelligens (kræver plugin)",
+			"claude.memory.user": "Husk erfaringer på tværs af alle projekter.",
+			"claude.notebookEdit": "Rediger Jupyter-notebooks",
+			"claude.opus": "Seneste Claude Opus",
+			"claude.read": "Læs filindhold",
 			"claude.skill": "Udfør færdigheder",
+			"claude.sonnet": "Seneste Claude Sonnet",
+			"claude.task": "Kør underagenter til komplekse opgaver",
+			"claude.webFetch": "Hent indhold fra URL-adresse",
+			"claude.webSearch": "Udfør websøgninger",
+			"claude.write": "Opret/overskriv filer",
 			"githubCopilot.agent": "Brug underagenter",
 			"githubCopilot.edit": "Rediger filer",
 			"githubCopilot.execute": "Udfør kommandoer",
 			"githubCopilot.read": "Læs filer",
-			"githubCopilot.search": "Søg i filer"
+			"githubCopilot.search": "Søg i filer",
+			"promptHeader.agent.infer": "Styrer agentens synlighed.",
+			"promptHeader.prompt.tools": "De værktøjer, der skal bruges i denne prompt.",
+			"promptHeader.skill.name": "Færdighedens navn.",
+			"promptValidator.attributeMustBeString": "Attributten '{0}' skal være en streng.",
+			"promptValidator.claude.attributeMustBeString": "Attributten '{0}' skal være en streng."
 		},
 		"vs/workbench/contrib/chat/common/promptSyntax/promptTypes": {
 			"source.agentsPersonal": "Global",
@@ -4721,6 +5496,10 @@
 		"vs/workbench/contrib/chat/common/tools/builtinTools/reviewPlanTool": {
 			"tool.reviewPlan.displayName": "Gennemgå plan"
 		},
+		"vs/workbench/contrib/chat/common/tools/builtinTools/setArtifactRulesTool": {
+			"tool.setArtifactRules.pastTense": "Opdaterede artefaktregler",
+			"tool.setArtifactRules.success": "Opdaterede artefaktregler"
+		},
 		"vs/workbench/contrib/chat/common/tools/languageModelToolsContribution": {
 			"descriptions": "Beskrivelse",
 			"icon.dark": "Ikonsti, når der bruges et mørkt tema",
@@ -4737,6 +5516,10 @@
 			"profileAgentHost.statusTooltip": "Klik for at stoppe profileringen.",
 			"profileAgentHost.stop": "Stop"
 		},
+		"vs/workbench/contrib/chat/electron-browser/actions/voiceChatActions": {
+			"workbench.action.chat.stopReadChatItemAloud": "Stop højtlæsning",
+			"workbench.action.speech.stopReadAloud": "Stop højtlæsning"
+		},
 		"vs/workbench/contrib/chat/electron-browser/agentSessions/agentSessionsActions": {
 			"chat.agentsHandoff.tip.action": "Åbn i agentvindue",
 			"chat.agentsHandoff.tip.mute": "Vis ikke igen",
@@ -4748,10 +5531,14 @@
 			"fetchWebPage.invocationMessage.singular": "Henter {0}",
 			"fetchWebPage.pastTenseMessageResult.singular": "Hentede {0}"
 		},
+		"vs/workbench/contrib/chat/electron-browser/chat.contribution": {
+			"copilotWorkspaceTrust": "AI-funktioner understøttes i øjeblikket kun i arbejdsområder, der er tillid til."
+		},
 		"vs/workbench/contrib/chat/electron-browser/toggleRemoteConnectionsActionViewItem": {
 			"tunnelHost.hover.showOutput": "Vis output"
 		},
 		"vs/workbench/contrib/chat/electron-browser/tunnelHost.contribution": {
+			"toggleSharing": "Tillad fjernforbindelser",
 			"tunnelHost.category": "Fjernforbindelser"
 		},
 		"vs/workbench/contrib/chat/electron-browser/tunnelHostService": {
@@ -5086,10 +5873,15 @@
 		"vs/workbench/contrib/codeEditor/electron-browser/startDebugTextMate": {
 			"startDebugTextMate": "Start logføring af TextMate-syntaksgrammatik"
 		},
+		"vs/workbench/contrib/comments/browser/commentNode": {
+			"commentAddReactionDefaultError": "Sletning af kommentarreaktionen mislykkedes",
+			"commentDeleteReactionDefaultError": "Sletning af kommentarreaktionen mislykkedes"
+		},
 		"vs/workbench/contrib/comments/browser/comments.contribution": {
 			"collapseAll": "Fold alle sammen",
 			"commentsConfigurationTitle": "Kommentarer",
-			"expandAll": "Fold alle ud"
+			"expandAll": "Fold alle ud",
+			"reply": "Svar"
 		},
 		"vs/workbench/contrib/comments/browser/commentsController": {
 			"commentRange": "Linje {0}"
@@ -5100,6 +5892,7 @@
 		"vs/workbench/contrib/comments/browser/commentsTreeViewer": {
 			"commentCount": "1 kommentar",
 			"comments.view.title": "Kommentarer",
+			"commentsCountReply": "1 svar",
 			"image": "Billede"
 		},
 		"vs/workbench/contrib/comments/browser/commentsView": {
@@ -5111,14 +5904,19 @@
 			"comment sorts": "Sortér efter",
 			"comments": "Kommentarer",
 			"resolved": "Vis løste",
+			"sorting by position in file": "Placering i fil",
 			"sorting by updated at": "Opdateringstidspunkt",
 			"toggle resolved": "Vis løste",
-			"toggle sorting by updated at": "Opdateringstidspunkt"
+			"toggle sorting by resource": "Placering i fil",
+			"toggle sorting by updated at": "Opdateringstidspunkt",
+			"toggle unresolved": "Vis uløste",
+			"unresolved": "Vis uløste"
 		},
 		"vs/workbench/contrib/comments/browser/commentThreadHeader": {
 			"label.collapse": "Fold sammen"
 		},
 		"vs/workbench/contrib/comments/browser/commentThreadWidget": {
+			"commentLabel": "Kommentar",
 			"commentLabelWithKeybinding": "{0}, brug ({1}) for hjælp til tilgængelighed",
 			"commentLabelWithKeybindingNoKeybinding": "{0}, kør kommandoen Åbn hjælp til tilgængelighed, som i øjeblikket ikke kan udløses med en tastebinding."
 		},
@@ -6036,9 +6834,13 @@
 			"unableToLaunchDebugAdapterNoArgs": "Fejlfindingsadapteren kan ikke startes."
 		},
 		"vs/workbench/contrib/editSessions/browser/editSessions.contribution": {
+			"continueEditSessionExtPoint.when": "Betingelse, der skal være sand, for at elementet vises.",
 			"continueEditSessionItem.builtin": "Indbygget",
 			"learnMoreTooltip": "Få mere at vide",
-			"show log": "Vis log"
+			"resume": "Fortsæt",
+			"show log": "Vis log",
+			"store working changes": "Gemmer arbejdsændringer...",
+			"storing working changes": "Gemmer arbejdsændringer..."
 		},
 		"vs/workbench/contrib/editSessions/browser/editSessionsStorageService": {
 			"others": "Andre",
@@ -6047,7 +6849,12 @@
 		},
 		"vs/workbench/contrib/editSessions/browser/editSessionsViews": {
 			"cloud changes": "Cloudændringer",
-			"open file": "Åbn fil"
+			"compare changes": "Sammenlign ændringer",
+			"confirm delete all detail": " Du kan ikke fortryde denne handling.",
+			"confirm delete detail.v2": " Du kan ikke fortryde denne handling.",
+			"open file": "Åbn fil",
+			"storeWorkingChangesTitle": "Gem arbejdsændringer",
+			"workbench.editSessions.actions.store.v2": "Gem arbejdsændringer"
 		},
 		"vs/workbench/contrib/editSessions/common/editSessions": {
 			"cloud changes": "Cloudændringer"
@@ -6058,6 +6865,7 @@
 		"vs/workbench/contrib/editTelemetry/browser/editStats/aiStatsStatusBar": {
 			"aiStats.statusBar.configure": "Konfigurer",
 			"inlineSuggestions": "Indlejrede forslag",
+			"viewByDays": "Dage",
 			"viewBySessions": "Sessioner"
 		},
 		"vs/workbench/contrib/extensions/browser/abstractRuntimeExtensionsEditor": {
@@ -6809,6 +7617,9 @@
 			"scopedConsoleAction.external": "Åbn i ekstern terminal",
 			"scopedConsoleAction.Integrated": "Åbn i integreret terminal"
 		},
+		"vs/workbench/contrib/externalTerminal/electron-browser/externalTerminal.contribution": {
+			"selectWorkspace": "Vælg arbejdsområdemappe"
+		},
 		"vs/workbench/contrib/files/browser/editors/binaryFileEditor": {
 			"binaryFileEditor": "Fremviser til binære filer"
 		},
@@ -7273,12 +8084,17 @@
 			"imageCarousel.explorerTitle": "Forhåndsvisning af billeder",
 			"imageCarousel.title": "Forhåndsvisning af billeder",
 			"imageCarouselConfigurationTitle": "Forhåndsvisning af billeder",
-			"imageCarouselEditor": "Forhåndsvisning af billeder"
+			"imageCarouselEditor": "Forhåndsvisning af billeder",
+			"openImageInCarousel": "Åbn i billedeksempel",
+			"openImagesInCarousel": "Åbn i billedeksempel"
 		},
 		"vs/workbench/contrib/imageCarousel/browser/imageCarouselEditor": {
 			"imageCarousel.ariaLabel": "Forhåndsvisning af billeder",
 			"imageCarousel.counter": "{0} / {1}",
-			"imageCarousel.kindImage": "Billede"
+			"imageCarousel.kindImage": "Billede",
+			"imageCarousel.kindVideo": "Video",
+			"imageCarousel.statusWithCaption": "{0} {1} af {2}: {3}",
+			"imageCarousel.statusWithName": "{0} {1} af {2}: {3}"
 		},
 		"vs/workbench/contrib/inlineChat/browser/inlineChatActions": {
 			"askInChat": "Spørg i chat",
@@ -7290,6 +8106,7 @@
 			"editCodeShort": "Bed om redigeringer",
 			"fix": "Ret",
 			"Keep": "Behold",
+			"run": "Åbn indlejret chat",
 			"runShort": "Indlejret chat"
 		},
 		"vs/workbench/contrib/inlineChat/browser/inlineChatController": {
@@ -7301,31 +8118,50 @@
 		"vs/workbench/contrib/inlineChat/browser/inlineChatSessionServiceImpl": {
 			"tool.cancel": "Annuller"
 		},
+		"vs/workbench/contrib/inlineChat/browser/inlineChatWidget": {
+			"termsDisclaimer": "Ved at fortsætte med {0} Copilot accepterer du {1}s [vilkår]({2}) og [erklæring om beskyttelse af personlige oplysninger]({3})"
+		},
 		"vs/workbench/contrib/inlineCompletions/browser/inlineCompletionLanguageStatusBarContribution": {
 			"inlineSuggestionLoading": "Indlæser...",
 			"inlineSuggestions": "Indlejrede forslag"
 		},
 		"vs/workbench/contrib/interactive/browser/interactive.contribution": {
+			"interactive.input.focus": "Fokuser inputeditor",
 			"interactiveScrollToBottom": "Rul til bunden",
-			"interactiveScrollToTop": "Rul til toppen"
+			"interactiveScrollToTop": "Rul til toppen",
+			"interactiveWindow": "Interaktivt vindue"
 		},
 		"vs/workbench/contrib/interactive/browser/replInputHintContentWidget": {
 			"disableHint": " Slå {0} til eller fra i indstillingerne for at deaktivere dette tip."
 		},
 		"vs/workbench/contrib/issue/browser/baseIssueReporterService": {
 			"closed": "Lukket",
+			"create": "Opret på GitHub",
+			"createInternally": "Opret internt",
+			"createOnGitHub": "Opret på GitHub",
 			"description": "Beskrivelse",
+			"extension": "En VS Code-udvidelse",
+			"featureRequest": "Funktionsanmodning",
+			"hide": "skjul",
+			"marketplace": "Marketplace for udvidelser",
 			"open": "Åbn",
+			"openIssueReporter": "Åbn ekstern problemrapportering",
+			"pasteData": "De nødvendige data er skrevet til din udklipsholder, fordi de var for store til at sende. Indsæt dem.",
 			"preview": "Vis eksempel på GitHub",
 			"previewOnGitHub": "Vis eksempel på GitHub",
+			"privateCreate": "Opret internt",
+			"saveExtensionData": "Gem udvidelsesdata",
+			"selectExtension": "Vælg udvidelse",
 			"show": "vis",
 			"undefinedPlaceholder": "Angiv en titel",
-			"unknown": "Ved ikke"
+			"unknown": "Ved ikke",
+			"vscode": "Visual Studio Code"
 		},
 		"vs/workbench/contrib/issue/browser/issueFormService": {
 			"cancel": "Annuller",
 			"issueReporter.attachmentsHeading": "Vedhæftede filer",
 			"ok": "&&OK",
+			"pasteData": "De nødvendige data er skrevet til din udklipsholder, fordi de var for store til at sende. Indsæt dem.",
 			"yes": "&&Ja"
 		},
 		"vs/workbench/contrib/issue/browser/issueQuickAccess": {
@@ -7338,26 +8174,38 @@
 		"vs/workbench/contrib/issue/browser/issueReporterOverlay": {
 			"agentsWindow": "Agentvindue",
 			"back": "Tilbage",
+			"bug": "Fejl",
 			"category": "Kategori",
 			"closeTab": "Luk",
 			"description": "Beskrivelse",
 			"extension": "Udvidelse",
+			"extensions": "Udvidelser ({0})",
+			"extensionSource": "En VS Code-udvidelse",
+			"featureRequest": "Funktionsanmodning",
 			"feedbackCategory": "Kategori",
 			"issueTitle": "Titel",
+			"marketplace": "Marketplace for udvidelser",
 			"next": "Næste",
+			"openExternalIssueReporter": "Åbn ekstern problemrapportering",
+			"or": "eller",
 			"performanceIssue": "Ydelsesproblem",
 			"previewOnGitHub": "Vis eksempel på GitHub",
 			"refresh": "Opdater",
 			"reportIssue": "Rapportér problem",
 			"screenshot": "Skærmbillede",
 			"screenshots": "Vedhæftede filer",
+			"selectExtension": "Vælg udvidelse",
 			"skip": "Spring over",
 			"submit": "Gennemgå",
+			"target": "Mål",
 			"unknown": "Ukendt",
-			"unknownSource": "Ved ikke"
+			"unknownSource": "Ved ikke",
+			"updateAvailable": "En ny version af {0} er tilgængelig.",
+			"vscode": "Visual Studio Code"
 		},
 		"vs/workbench/contrib/issue/browser/issueReporterPage": {
 			"chooseExtension": "Udvidelse",
+			"issueSourceLabel": "For",
 			"issueTitleLabel": "Titel",
 			"show": "vis"
 		},
@@ -7365,14 +8213,23 @@
 			"undefinedPlaceholder": "Angiv en titel"
 		},
 		"vs/workbench/contrib/issue/browser/issueTroubleshoot": {
+			"bad": "Jeg kan genskabe problemet",
+			"good": "Jeg kan ikke genskabe problemet",
 			"stop": "Stop",
-			"Stop": "Stop"
+			"Stop": "Stop",
+			"troubleshoot issue": "Foretag fejlfinding af problem"
 		},
 		"vs/workbench/contrib/issue/browser/screenshotAnnotation": {
 			"apply": "Anvend",
+			"arrow": "Pil",
 			"cancel": "Annuller",
 			"colorValue": "{0}: {1}",
+			"crop": "Beskær",
 			"discard": "Kassér",
+			"ellipse": "Ellipse",
+			"eraser": "Viskelæder",
+			"freehand": "Tegn",
+			"pan": "Panorér",
 			"redo": "Annuller fortrydelse",
 			"save": "Gem",
 			"text": "Tekst",
@@ -7382,8 +8239,15 @@
 			"issueReporterConfigurationTitle": "Problemrapportering",
 			"issueReporterEditorPaneTitle": "Problemrapportering"
 		},
+		"vs/workbench/contrib/issue/electron-browser/issueReporterEditorPane": {
+			"noExperiments": "Ingen aktuelle eksperimenter."
+		},
 		"vs/workbench/contrib/issue/electron-browser/issueReporterService": {
-			"undefinedPlaceholder": "Angiv en titel"
+			"noCurrentExperiments": "Ingen aktuelle eksperimenter.",
+			"pasteData": "De nødvendige data er skrevet til din udklipsholder, fordi de var for store til at sende. Indsæt dem.",
+			"saveExtensionData": "Gem udvidelsesdata",
+			"undefinedPlaceholder": "Angiv en titel",
+			"updateAvailable": "En ny version af {0} er tilgængelig."
 		},
 		"vs/workbench/contrib/keybindings/browser/keybindings.contribution": {
 			"toggleKeybindingsLog": "Slå fejlfinding af tastaturgenveje til/fra"
@@ -7392,12 +8256,19 @@
 			"systemWideKeybindings.registrationFailed": "Nogle systemdækkende tastebindinger kunne ikke registreres ({0}); tastekombinationen bruges muligvis allerede af operativsystemet eller et andet program.",
 			"systemWideKeybindings.whenIgnored": "\"when\"-betingelsen ignoreres for systemdækkende tastebindinger ({0}); de er altid aktive, mens {1} kører."
 		},
+		"vs/workbench/contrib/languageDetection/browser/languageDetection.contribution": {
+			"status.autoDetectLanguage": "Acceptér registreret sprog: {0}"
+		},
 		"vs/workbench/contrib/languageStatus/browser/languageStatus": {
 			"aria.1": "{0}, {1}",
 			"aria.2": "{0}"
 		},
 		"vs/workbench/contrib/limitIndicator/browser/limitIndicator.contribution": {
+			"foldingRangesStatusItem.source": "Sammenfoldning",
 			"status.button.configure": "Konfigurer"
+		},
+		"vs/workbench/contrib/list/browser/listResizeColumnAction": {
+			"list": "Liste"
 		},
 		"vs/workbench/contrib/localHistory/browser/localHistory": {
 			"localHistoryIcon": "Ikon for en lokal historikpost i tidslinjevisningen.",
@@ -7635,20 +8506,29 @@
 			"mcp.addServer": "Tilføj server",
 			"mcp.agentHost.disable": "Deaktiver server",
 			"mcp.agentHost.enable": "Aktivér server",
+			"mcp.agentHost.status.authRequired": "Godkendelse påkrævet",
 			"mcp.agentHost.status.error": "Fejl",
 			"mcp.agentHost.status.ready": "Kører",
 			"mcp.agentHost.status.starting": "Starter",
 			"mcp.agentHost.status.stopped": "Stoppet",
 			"mcp.command.browse": "MCP-servere",
+			"mcp.command.browse.mcp": "Gennemse MCP-servere",
+			"mcp.command.browse.tooltip": "Gennemse MCP-servere",
 			"mcp.command.restartServer": "Genstart server",
 			"mcp.command.showConfiguration": "Vis konfiguration",
 			"mcp.command.showOutput": "Vis output",
 			"mcp.command.startServer": "Start server",
 			"mcp.command.stopServer": "Stop server",
 			"mcp.config": "Vis konfiguration",
+			"mcp.configAccess": "Konfigurer modeladgang",
 			"mcp.disabled": "Deaktiveret",
+			"mcp.disconnect": "Afbryd konto",
 			"mcp.list": "Vis servere",
+			"mcp.options": "Serverindstillinger",
+			"mcp.resources": "Gennemse ressourcer",
 			"mcp.restart": "Genstart server",
+			"mcp.samplingLog": "Vis samplinganmodninger",
+			"mcp.samplingLog.title": "MCP-sampling: {0}",
 			"mcp.servers": "MCP-servere",
 			"mcp.showOutput": "Vis output",
 			"mcp.signOut": "Log af",
@@ -7660,6 +8540,10 @@
 			"cancel": "Annuller",
 			"install.show": "Vis konfiguration",
 			"mcp.installFromManifest.openLabel": "&&Installer",
+			"mcp.installFromManifest.serverId.placeholder": "Entydigt id for denne server",
+			"mcp.installFromManifest.serverId.title": "Angiv server-id",
+			"mcp.serverId.placeholder": "Entydigt id for denne server",
+			"mcp.serverId.title": "Angiv server-id",
 			"mcp.target.remote": "Fjern",
 			"mcp.target.user": "Global",
 			"mcp.target.workspace": "Arbejdsområde"
@@ -7667,10 +8551,25 @@
 		"vs/workbench/contrib/mcp/browser/mcpElicitationService": {
 			"mcp.elicit.cancel": "Annuller",
 			"mcp.elicit.enum.none": "Ingen",
+			"mcp.elicit.false": "Falsk",
 			"mcp.elicit.reject": "Annuller",
+			"mcp.elicit.true": "Sand",
+			"mcp.elicit.url.instruction": "Åbn denne URL-adresse?",
 			"mcp.elicit.url.open": "Åbn {0}",
 			"mcp.elicit.url.open2": "Åbn URL-adresse",
+			"mcp.elicit.url.title": "Godkendelse påkrævet",
 			"mcp.elicit.useDefault": "Standardværdi",
+			"mcp.elicit.validation.date": "Angiv en gyldig dato (ÅÅÅÅ-MM-DD)",
+			"mcp.elicit.validation.dateTime": "Angiv en gyldig dato og et gyldigt klokkeslæt",
+			"mcp.elicit.validation.email": "Angiv en gyldig mailadresse",
+			"mcp.elicit.validation.integer": "Angiv et gyldigt heltal",
+			"mcp.elicit.validation.maximum": "Maksimumværdien er {0}",
+			"mcp.elicit.validation.maxLength": "Maksimumlængden er {0}",
+			"mcp.elicit.validation.minimum": "Minimumværdien er {0}",
+			"mcp.elicit.validation.minLength": "Minimumlængden er {0}",
+			"mcp.elicit.validation.number": "Angiv et gyldigt tal",
+			"mcp.elicit.validation.uri": "Angiv en gyldig URI",
+			"msg.subtitle": "{0} (MCP-server)",
 			"optional": "Valgfri"
 		},
 		"vs/workbench/contrib/mcp/browser/mcpLanguageFeatures": {
@@ -7705,6 +8604,7 @@
 		},
 		"vs/workbench/contrib/mcp/browser/mcpResourceQuickAccess": {
 			"goBack": "Gå tilbage ↩",
+			"mcp.resource.template.empty": "<Tom>",
 			"mcp.resource.template.optional": "Valgfri"
 		},
 		"vs/workbench/contrib/mcp/browser/mcpServerActions": {
@@ -7714,9 +8614,15 @@
 			"enableForWorkspace": "Aktivér (arbejdsområde)",
 			"enableGlobally": "Aktivér",
 			"install": "Installer",
+			"install in workspace folder": "Arbejdsområdemappe",
 			"installing": "Installerer",
 			"installInRemoteLabel": "Installer i {0}",
 			"manage": "Administrer",
+			"mcp.configAccess": "Konfigurer modeladgang",
+			"mcp.disconnect": "Afbryd konto",
+			"mcp.resources": "Gennemse ressourcer",
+			"mcp.samplingLog": "Vis samplinganmodninger",
+			"mcp.samplingLog.title": "MCP-sampling: {0}",
 			"mcp.signOut": "Log af",
 			"mcp.target.workspace": "Arbejdsområde",
 			"output": "Vis output",
@@ -7739,6 +8645,8 @@
 			"remotes": "Fjern",
 			"repository": "Lager",
 			"resources": "Ressourcer",
+			"serverName": "Navn:",
+			"serverType": "Type:",
 			"tags": "Mærker",
 			"url": "URL-adresse:",
 			"Version": "Version"
@@ -7755,13 +8663,20 @@
 			"publisher": "Udgiver ({0})",
 			"verified publisher": "Denne udgiver har bekræftet ejerskabet af {0}"
 		},
+		"vs/workbench/contrib/mcp/browser/mcpWorkbenchService": {
+			"disabled globally": "Denne MCP-server er deaktiveret."
+		},
+		"vs/workbench/contrib/mcp/common/discovery/nativeMcpDiscoveryAbstract": {
+			"onRemoteLabel": " på {0}"
+		},
 		"vs/workbench/contrib/mcp/common/mcpConfiguration": {
 			"id": "Id",
 			"mcpServerDefinitionProviders": "MCP-servere",
 			"name": "Navn"
 		},
 		"vs/workbench/contrib/mcp/common/mcpLanguageModelToolContribution": {
-			"msg.run": "Kører {0}"
+			"msg.run": "Kører {0}",
+			"msg.subtitle": "{0} (MCP-server)"
 		},
 		"vs/workbench/contrib/mcp/common/mcpRegistry": {
 			"mcp.trust.yes": "Hav tillid"
@@ -7787,13 +8702,17 @@
 		"vs/workbench/contrib/mergeEditor/browser/commands/commands": {
 			"mergeEditor": "Fletningseditor",
 			"mergeEditor.acceptMerge": "Fuldfør fletning",
+			"mergeEditor.acceptMerge.unhandledConflicts.detail": "Filen indeholder uhåndterede konflikter.",
 			"mergeEditor.resetResultToBaseAndAutoMerge.short": "Nulstil",
 			"openfile": "Åbn fil"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/commands/devCommands": {
+			"mergeEditor": "Fletningseditor (udvikling)",
 			"mergeEditor.name": "Fletningseditor"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/mergeEditor.contribution": {
+			"diffAlgorithm.advanced": "Bruger den avancerede forskelsalgoritme.",
+			"diffAlgorithm.legacy": "Bruger den ældre forskelsalgoritme.",
 			"name": "Fletningseditor"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/mergeEditorInputModel": {
@@ -7802,6 +8721,7 @@
 			"save": "&&Gem",
 			"workspace.close": "&&Luk",
 			"workspace.detail1.handled": "Dine ændringer går tabt, hvis du ikke gemmer dem.",
+			"workspace.detail1.unhandled.nonDirty": "Filen indeholder uhåndterede konflikter.",
 			"workspace.detailN.handled": "Dine ændringer går tabt, hvis du ikke gemmer dem.",
 			"workspace.doNotSave": "Gem &&ikke",
 			"workspace.message1": "Vil du gemme de ændringer, du har foretaget i {0}?",
@@ -7809,16 +8729,27 @@
 		},
 		"vs/workbench/contrib/mergeEditor/browser/view/conflictActions": {
 			"accept": "Acceptér {0}",
+			"acceptBoth": "Acceptér kombination",
+			"combine": "Acceptér kombination",
 			"ignore": "Ignorer",
 			"remove": "Fjern {0}"
 		},
+		"vs/workbench/contrib/mergeEditor/browser/view/editors/baseCodeEditorView": {
+			"base": "Basis"
+		},
 		"vs/workbench/contrib/mergeEditor/browser/view/editors/inputCodeEditorView": {
 			"accept.excluded": "Acceptér",
+			"input1": "Input 1",
+			"input2": "Input 2",
 			"mergeEditor.accept": "Acceptér {0}",
-			"mergeEditor.acceptBoth": "Acceptér begge"
+			"mergeEditor.acceptBoth": "Acceptér begge",
+			"mergeEditor.swap": "Ombyt"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/view/editors/resultCodeEditorView": {
 			"result": "Resultat"
+		},
+		"vs/workbench/contrib/mergeEditor/electron-browser/devCommands": {
+			"mergeEditor": "Fletningseditor (udvikling)"
 		},
 		"vs/workbench/contrib/meteredConnection/browser/meteredConnection.contribution": {
 			"meteredConnection.auto": "Automatisk",
@@ -7829,9 +8760,17 @@
 			"status.meteredConnection.configure": "Konfigurer"
 		},
 		"vs/workbench/contrib/multiDiffEditor/browser/actions": {
+			"collapseAllDiffs": "Fold alle forskelle sammen",
+			"ExpandAllDiffs": "Fold alle forskelle ud",
 			"goToFile": "Åbn fil",
 			"goToNextChange": "Gå til næste ændring",
 			"goToPreviousChange": "Gå til forrige ændring"
+		},
+		"vs/workbench/contrib/multiDiffEditor/browser/multiDiffEditor.contribution": {
+			"name": "Editor til flere forskelle"
+		},
+		"vs/workbench/contrib/multiDiffEditor/browser/multiDiffEditorInput": {
+			"name": "Editor til flere forskelle"
 		},
 		"vs/workbench/contrib/multiDiffEditor/browser/scmMultiDiffSourceResolver": {
 			"openChanges": "Åbn ændringer"
@@ -7844,6 +8783,12 @@
 			"notebook.cell.status.failed": "Mislykket",
 			"notebook.cell.status.pending": "Afventer",
 			"notebook.cell.status.success": "Lykkedes"
+		},
+		"vs/workbench/contrib/notebook/browser/contrib/cellStatusBar/statusBarProviders": {
+			"notebook.cell.status.autoDetectLanguage": "Acceptér registreret sprog: {0}"
+		},
+		"vs/workbench/contrib/notebook/browser/contrib/chat/notebookChatUtils": {
+			"notebookOutputCellLabel": "{0} • Celle {1} • Output {2}"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/clipboard/notebookClipboard": {
 			"notebook.cell.output.selectAll": "Markér alt"
@@ -7865,6 +8810,7 @@
 			"label.replaceAllButton": "Erstat alle",
 			"label.replaceButton": "Erstat",
 			"label.toggleReplaceButton": "Vis/skjul Erstat",
+			"label.toggleSelectionFind": "Find i markering",
 			"placeholder.find": "Find",
 			"placeholder.replace": "Erstat"
 		},
@@ -7877,20 +8823,43 @@
 			"format.title": "Formatér notebook",
 			"label": "Formatér notebook"
 		},
+		"vs/workbench/contrib/notebook/browser/contrib/layout/layoutActions": {
+			"notebook.toggleCellToolbarPosition": "Slå placering af celleværktøjslinje til/fra"
+		},
+		"vs/workbench/contrib/notebook/browser/contrib/multicursor/notebookMulticursor": {
+			"addFindMatchToSelection": "Føj markering til næste søgeresultat",
+			"selectAllFindMatches": "Markér alle forekomster af søgeresultatet"
+		},
 		"vs/workbench/contrib/notebook/browser/contrib/notebookVariables/notebookVariableCommands": {
 			"copyWorkspaceVariableValue": "Kopiér værdi"
 		},
+		"vs/workbench/contrib/notebook/browser/contrib/notebookVariables/notebookVariables": {
+			"notebookVariables": "Notebookvariabler"
+		},
 		"vs/workbench/contrib/notebook/browser/contrib/notebookVariables/notebookVariablesTree": {
+			"notebook.notebookVariables": "Notebookvariabler",
 			"notebookVariableAriaLabel": "Variabel {0}, værdi {1}"
 		},
 		"vs/workbench/contrib/notebook/browser/contrib/saveParticipants/saveParticipants": {
 			"codeAction.apply": "Anvender kodehandlingen '{0}'.",
 			"formatNotebook": "Formatér notebook",
+			"insertFinalNewLine": "Indsæt afsluttende ny linje",
 			"notebookFormatSave.formatting": "Formatering"
+		},
+		"vs/workbench/contrib/notebook/browser/controller/cellOutputActions": {
+			"notebookActions.copyOutput": "Kopiér celleoutput",
+			"notebookActions.openOutputInEditor": "Åbn celleoutput i teksteditor"
 		},
 		"vs/workbench/contrib/notebook/browser/controller/chat/cellChatActions": {
 			"notebookActions.menu.insertCode.ontoolbar": "Generér",
-			"notebookActions.menu.insertCodeCellWithChat": "Generér"
+			"notebookActions.menu.insertCode.tooltip": "Start chat for at generere kode",
+			"notebookActions.menu.insertCodeCellWithChat": "Generér",
+			"notebookActions.menu.insertCodeCellWithChat.tooltip": "Start chat for at generere kode"
+		},
+		"vs/workbench/contrib/notebook/browser/controller/chat/notebook.chat.contribution": {
+			"chatContext.notebook.kernelVariable.placeholder": "Vælg en kernevariabel",
+			"notebookActions.addOutputToChat": "Føj celleoutput til chat",
+			"selectKernelVariablePlaceholder": "Vælg en kernevariabel"
 		},
 		"vs/workbench/contrib/notebook/browser/controller/coreActions": {
 			"miShare": "Del",
@@ -7908,6 +8877,11 @@
 			"pickLanguageToConfigure": "Vælg sprogtilstand",
 			"selectNotebookIndentation": "Vælg indrykning"
 		},
+		"vs/workbench/contrib/notebook/browser/controller/executeActions": {
+			"revealLastFailedCell": "Gå til senest mislykkede celle",
+			"revealLastFailedCellShort": "Gå til senest mislykkede celle",
+			"revealRunningCellShort": "Gå til"
+		},
 		"vs/workbench/contrib/notebook/browser/controller/insertCellActions": {
 			"notebookActions.menu.insertCode": "Kode",
 			"notebookActions.menu.insertCode.minimaltoolbar": "Tilføj kode",
@@ -7920,22 +8894,45 @@
 			"cmd.toggle2": "Brødkrummer",
 			"mitoggleNotebookStickyScroll": "&&Fast rulning",
 			"notebook.showLineNumbers": "Linjenumre",
+			"notebook.toggleBreadcrumb": "Slå brødkrummer til/fra",
 			"notebook.toggleBreadcrumb.short": "Brødkrummer",
+			"notebook.toggleCellToolbarPosition": "Slå placering af celleværktøjslinje til/fra",
+			"notebook.toggleLineNumbers": "Slå linjenumre i notebook til/fra",
 			"notebook.toggleLineNumbers.short": "Linjenumre",
 			"notebookStickyScroll": "Fast rulning",
 			"saveTarget.machine": "Brugerindstillinger",
+			"saveTarget.workspace": "Arbejdsområdeindstillinger",
 			"toggleStickyScroll.short": "Fast rulning"
+		},
+		"vs/workbench/contrib/notebook/browser/controller/notebookIndentationActions": {
+			"changeTabDisplaySize": "Skift tabulatorvisningsstørrelse",
+			"convertIndentationToSpaces": "Konvertér indrykning til mellemrum",
+			"convertIndentationToTabs": "Konvertér indrykning til tabulatorer",
+			"indentUsingSpaces": "Indryk med mellemrum",
+			"indentUsingTabs": "Indryk med tabulatorer",
+			"selectTabWidth": "Vælg tabulatorstørrelse for den aktuelle fil"
 		},
 		"vs/workbench/contrib/notebook/browser/controller/variablesActions": {
 			"notebookActions.openVariablesView": "Variabler"
 		},
+		"vs/workbench/contrib/notebook/browser/diff/diffComponents": {
+			"hideUnchangedCells": "Skjul uændrede celler",
+			"showUnchangedCells": "Vis uændrede celler"
+		},
 		"vs/workbench/contrib/notebook/browser/diff/diffElementOutputs": {
-			"empty": "Cellen har intet output"
+			"curruentActiveMimeType": "Aktiv i øjeblikket",
+			"empty": "Cellen har intet output",
+			"noRenderer.2": "Der blev ikke fundet en gengivelse til outputtet. Det har følgende MIME-typer: {0}",
+			"promptChooseMimeType.placeHolder": "Vælg MIME-type til gengivelse af det aktuelle output"
 		},
 		"vs/workbench/contrib/notebook/browser/diff/notebookDiffActions": {
+			"hideUnchangedCells": "Skjul uændrede celler",
 			"notebook.diff.action.next.title": "Vis næste ændring",
 			"notebook.diff.action.previous.title": "Vis forrige ændring",
-			"notebook.diff.openFile": "Åbn fil"
+			"notebook.diff.cell.toggleCollapseUnchangedRegions": "Slå sammenfoldning af uændrede områder til/fra",
+			"notebook.diff.inline.toggle.title": "Slå indlejret visning til/fra",
+			"notebook.diff.openFile": "Åbn fil",
+			"showUnchangedCells": "Vis uændrede celler"
 		},
 		"vs/workbench/contrib/notebook/browser/diff/notebookMultiDiffEditor": {
 			"notebookCellOutputLabel": "Output"
@@ -7946,7 +8943,14 @@
 		"vs/workbench/contrib/notebook/browser/notebookAccessibilityProvider": {
 			"notebookTreeAriaLabel": "Notesbog"
 		},
+		"vs/workbench/contrib/notebook/browser/notebookEditor": {
+			"notebookOpenInstallMissingViewType": "Installer udvidelse til '{0}'"
+		},
 		"vs/workbench/contrib/notebook/browser/notebookExtensionPoint": {
+			"contributes.notebook.provider.selector": "Det sæt glob-mønstre, som notebooken gælder for.",
+			"contributes.notebook.provider.viewType": "Notebookens type.",
+			"contributes.notebook.selector": "Det sæt glob-mønstre, som notebooken gælder for.",
+			"contributes.preload.provider.viewType": "Notebookens type.",
 			"contributes.priority.default": "Editoren bruges automatisk, når brugeren åbner en ressource, forudsat at der ikke er registreret andre brugerdefinerede standardeditorer til ressourcen.",
 			"contributes.priority.option": "Editoren bruges ikke automatisk, når brugeren åbner en ressource, men brugeren kan skifte til editoren med kommandoen `Åbn igen med`.",
 			"Notebook id": "Id",
@@ -7958,7 +8962,8 @@
 			"variablesViewIcon": "Visningsikon for variabelvisningen."
 		},
 		"vs/workbench/contrib/notebook/browser/outputEditor/notebookOutputEditor": {
-			"empty": "Cellen har intet output"
+			"empty": "Cellen har intet output",
+			"noRenderer.2": "Der blev ikke fundet en gengivelse til outputtet. Det har følgende MIME-typer: {0}"
 		},
 		"vs/workbench/contrib/notebook/browser/services/notebookKeymapServiceImpl": {
 			"disableOtherKeymapsConfirmation": "Vil du deaktivere andre tastetilknytninger ({0}) for at undgå konflikter mellem tastaturgenveje?",
@@ -7968,20 +8973,37 @@
 		"vs/workbench/contrib/notebook/browser/services/notebookLoggingServiceImpl": {
 			"renderChannelName": "Notesbog"
 		},
+		"vs/workbench/contrib/notebook/browser/services/notebookServiceImpl": {
+			"notebookOpenInstallMissingViewType": "Installer udvidelse til '{0}'"
+		},
 		"vs/workbench/contrib/notebook/browser/view/cellParts/cellEditorOptions": {
 			"notebook.showLineNumbers": "Linjenumre",
+			"notebook.toggleLineNumbers": "Slå linjenumre i notebook til/fra",
 			"notebook.toggleLineNumbers.short": "Linjenumre"
 		},
 		"vs/workbench/contrib/notebook/browser/view/cellParts/cellOutput": {
-			"empty": "Cellen har intet output"
+			"curruentActiveMimeType": "Aktiv i øjeblikket",
+			"empty": "Cellen har intet output",
+			"noRenderer.2": "Der blev ikke fundet en gengivelse til outputtet. Det har følgende MIME-typer: {0}",
+			"promptChooseMimeType.placeHolder": "Vælg MIME-type til gengivelse af det aktuelle output",
+			"promptChooseMimeTypeInSecure.placeHolder": "Vælg MIME-type til gengivelse af det aktuelle output"
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/codeCell": {
+			"cellExpandInputButtonLabel": "Fold celleinput ud ({0})",
+			"cellExpandInputButtonLabelWithDoubleClick": "Dobbeltklik for at folde celleinput ud ({0})"
 		},
 		"vs/workbench/contrib/notebook/browser/view/cellParts/codeCellExecutionIcon": {
 			"notebook.cell.status.executing": "Udfører",
+			"notebook.cell.status.failure": "Fejl",
 			"notebook.cell.status.pending": "Afventer",
 			"notebook.cell.status.success": "Lykkedes"
 		},
 		"vs/workbench/contrib/notebook/browser/view/cellParts/codeCellRunToolbar": {
 			"notebook.moreRunActionsLabel": "Mere..."
+		},
+		"vs/workbench/contrib/notebook/browser/view/cellParts/markupCell": {
+			"cellExpandInputButtonLabel": "Fold celleinput ud ({0})",
+			"cellExpandInputButtonLabelWithDoubleClick": "Dobbeltklik for at folde celleinput ud ({0})"
 		},
 		"vs/workbench/contrib/notebook/browser/viewParts/notebookKernelQuickPickStrategy": {
 			"learnMoreTooltip": "Få mere at vide",
@@ -8120,6 +9142,12 @@
 			"output model title": "{0} - Output",
 			"outputView.filter.placeholder": "Filter (f.eks. text, !excludeText, text1,text2)",
 			"outputViewAriaLabel": "Outputpanel"
+		},
+		"vs/workbench/contrib/performance/browser/performance.contribution": {
+			"show.label": "Ydeevne ved opstart"
+		},
+		"vs/workbench/contrib/performance/browser/perfviewEditor": {
+			"name": "Ydeevne ved opstart"
 		},
 		"vs/workbench/contrib/performance/electron-browser/startupProfiler": {
 			"prof.restart": "Genstart",
@@ -8515,7 +9543,9 @@
 			"copy": "Kopiér",
 			"copyAll": "Kopiér alle",
 			"debug": "Fejlfind",
-			"processExplorer": "Procesoversigt"
+			"processCpu": "CPU (%)",
+			"processExplorer": "Procesoversigt",
+			"processPid": "PID"
 		},
 		"vs/workbench/contrib/processExplorer/browser/processExplorerEditorInput": {
 			"processExplorerInputName": "Procesoversigt"
@@ -8579,12 +9609,15 @@
 		},
 		"vs/workbench/contrib/remote/browser/remoteExplorer": {
 			"ports": "Porte",
-			"remote.autoForwardPortsSource.fallback.switchBack": "Fortryd"
+			"remote.autoForwardPortsSource.fallback.switchBack": "Fortryd",
+			"remote.tunnelsView.elevationButton": "Brug port {0} som sudo..."
 		},
 		"vs/workbench/contrib/remote/browser/remoteIndicator": {
+			"closeRemoteConnection.title": "Luk fjernforbindelse",
 			"host.tooltip": "Redigerer på {0}",
 			"reloadWindow": "Genindlæs vindue",
 			"remote.category": "Fjern",
+			"remote.close": "Luk fjernforbindelse",
 			"remote.startActions.help": "Få mere at vide",
 			"remote.startActions.install": "Installer",
 			"retry": "Prøv igen",
@@ -8601,6 +9634,9 @@
 			"portsLink.followLinkCtrl": "Ctrl + klik",
 			"remote.tunnel": "Porte",
 			"remote.tunnel.protocolHttp": "HTTP",
+			"remote.tunnel.protocolHttps": "HTTPS",
+			"tunnel.originColumn.label": "Oprindelse",
+			"tunnel.portColumn.label": "Port",
 			"tunnel.privacyColumn.label": "Synlighed",
 			"tunnelPrivacy.private": "Privat",
 			"tunnelPrivacy.unknown": "Ukendt"
@@ -8613,6 +9649,10 @@
 			"remote": "Fjern",
 			"remote.category": "Fjern"
 		},
+		"vs/workbench/contrib/remoteCodingAgents/browser/remoteCodingAgents.contribution": {
+			"remoteCodingAgentsExtPoint.id": "Et entydigt id for dette element.",
+			"remoteCodingAgentsExtPoint.when": "Betingelse, der skal være sand, for at elementet vises."
+		},
 		"vs/workbench/contrib/remoteTunnel/electron-browser/remoteTunnel.contribution": {
 			"action.doNotShowAgain": "Vis ikke igen",
 			"action.showExtension": "Vis udvidelse",
@@ -8621,6 +9661,9 @@
 			"others": "Andre",
 			"sign in using account": "Log på med {0}",
 			"signed in": "Logget på"
+		},
+		"vs/workbench/contrib/replNotebook/browser/repl.contribution": {
+			"repl.input.focus": "Fokuser inputeditor"
 		},
 		"vs/workbench/contrib/scm/browser/activity": {
 			"scmActiveResourceHasChanges": "Om den aktive ressource har ændringer",
@@ -8888,6 +9931,10 @@
 			"overviewRulerAddedForeground": "Markørfarve på oversigtslinealen for tilføjet indhold.",
 			"overviewRulerDeletedForeground": "Markørfarve på oversigtslinealen for slettet indhold.",
 			"overviewRulerModifiedForeground": "Markørfarve på oversigtslinealen for ændret indhold."
+		},
+		"vs/workbench/contrib/scrollLocking/browser/scrollLocking": {
+			"miHoldLockedScrolling": "Låst rulning",
+			"miToggleLockedScrolling": "Låst rulning"
 		},
 		"vs/workbench/contrib/search/browser/anythingQuickAccess": {
 			"chat": "Åbn Hurtig chat",
@@ -9390,16 +10437,27 @@
 			"vscode.extension.contributes.snippets-path": "Stien til kodestykkefilen. Stien er relativ til udvidelsesmappen og begynder typisk med './snippets/'."
 		},
 		"vs/workbench/contrib/surveys/browser/languageSurveys.contribution": {
-			"neverAgain": "Vis ikke igen"
+			"neverAgain": "Vis ikke igen",
+			"remindLater": "Påmind mig senere"
 		},
 		"vs/workbench/contrib/surveys/browser/nps.contribution": {
-			"neverAgain": "Vis ikke igen"
+			"neverAgain": "Vis ikke igen",
+			"remindLater": "Påmind mig senere"
 		},
 		"vs/workbench/contrib/surveys/browser/survey.contribution": {
 			"surveyEditorPaneTitle": "Undersøgelse"
 		},
 		"vs/workbench/contrib/surveys/browser/surveyEditorPane": {
 			"survey.pane.ariaLabel": "Undersøgelse"
+		},
+		"vs/workbench/contrib/surveys/browser/surveyQuestions": {
+			"survey.copilotPmf.q1.very": "Meget",
+			"survey.copilotPmf.q2.other": "Ingen af ovenstående",
+			"survey.copilotPmf.q3.other": "Ingen af ovenstående",
+			"survey.copilotPmf.q4.20plus": "20+ år",
+			"survey.copilotPmf.q4.3to5": "3-5 år",
+			"survey.copilotPmf.q4.6to9": "6-9 år",
+			"survey.copilotPmf.q4.lessThan3": "<3 år"
 		},
 		"vs/workbench/contrib/tasks/browser/abstractTaskService": {
 			"configured": "konfigurerede opgaver",
@@ -10394,11 +11452,14 @@
 			"closeChat": "Luk",
 			"insert": "Indsæt",
 			"run": "Kør",
+			"startChat": "Åbn indlejret chat",
 			"terminalCategory": "Terminal",
 			"terminalCategory2": "Terminal"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/commandLineAnalyzer/commandLineAutoApproveAnalyzer": {
-			"autoApprove.session.disable": "Deaktiver"
+			"autoApprove.session": "Automatisk godkendt i denne session",
+			"autoApprove.session.disable": "Deaktiver",
+			"ruleTooltip": "Vis regel i indstillinger"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/killTerminalTool": {
 			"killTerminalTool.displayName": "Luk terminal"
@@ -10415,6 +11476,7 @@
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/runInTerminalTool": {
 			"allow": "Tillad",
 			"runInTerminal.allowNetwork.autoRetry.confirmationMessage": "`{0}`",
+			"runInTerminal.bubblewrap.applyFix": "Anvend rettelse, og prøv igen",
 			"runInTerminal.bubblewrap.cancel": "Annuller",
 			"runInTerminal.invocation": "Kører `{0}`",
 			"runInTerminal.missingDeps.cancel": "Annuller",
@@ -10426,16 +11488,24 @@
 			"skip": "Spring over"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/sendToTerminalTool": {
-			"focusTerminal": "Fokuser terminal"
+			"focusTerminal": "Fokuser terminal",
+			"send.confirm.title": "Send til terminal",
+			"sendToTerminalTool.displayName": "Send til terminal"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/createAndRunTaskTool": {
-			"copilotChat.taskNotFound": "Opgaven blev ikke fundet: `{0}`"
+			"copilotChat.taskNotFound": "Opgaven blev ikke fundet: `{0}`",
+			"createdTask": "Oprettede opgaven `{0}`",
+			"createdTaskPast": "Oprettede opgaven `{0}`",
+			"taskExists": "Opgaven `{0}` findes allerede.",
+			"taskExistsPast": "Opgaven `{0}` findes allerede."
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/getTaskOutputTool": {
+			"copilotChat.taskAlreadyRunning": "Opgaven `{0}` kører allerede.",
 			"copilotChat.taskNotFound": "Opgaven blev ikke fundet: `{0}`"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/runTaskTool": {
 			"chat.runningTask": "Kører `{0}`",
+			"chat.taskAlreadyRunning": "Opgaven `{0}` kører allerede.",
 			"chat.taskNotFound": "Opgaven blev ikke fundet: `{0}`",
 			"runInTerminalTool.displayName": "Kør opgave"
 		},
@@ -10445,8 +11515,11 @@
 			"agentSandbox.fileSystemMac.deprecated": "Brug {0} i stedet",
 			"autoApprove.deprecated": "Brug {0} i stedet",
 			"autoApprove.description.examples.description": "Beskrivelse",
+			"autoApprove.description.examples.mkdir": "Tillad alle kommandoer, der starter med {0}",
+			"autoApprove.description.examples.npmRunBuild": "Tillad alle kommandoer, der starter med {0}",
 			"autoApprove.description.examples.value": "Værdi",
-			"shellIntegrationTimeout.deprecated": "Brug {0} i stedet"
+			"shellIntegrationTimeout.deprecated": "Brug {0} i stedet",
+			"terminalChatAgentProfile.path": "En sti til en eksekverbar shellfil."
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/common/terminalSandboxService": {
 			"runInTerminal.missingDeps.focusTerminal": "Fokuser terminal"
@@ -10491,6 +11564,7 @@
 		},
 		"vs/workbench/contrib/terminalContrib/links/browser/terminalLinkManager": {
 			"followLink": "Følg link",
+			"followLinkUrl": "Link",
 			"terminalLinkHandler.followLinkAlt": "Alt + klik",
 			"terminalLinkHandler.followLinkAlt.mac": "Option + klik",
 			"terminalLinkHandler.followLinkCmd": "Cmd + klik",
@@ -10498,7 +11572,8 @@
 		},
 		"vs/workbench/contrib/terminalContrib/links/browser/terminalLinkQuickpick": {
 			"terminal.integrated.localFileLinks": "Fil",
-			"terminal.integrated.localFolderLinks": "Mappe"
+			"terminal.integrated.localFolderLinks": "Mappe",
+			"terminal.integrated.urlLinks": "URL-adresse"
 		},
 		"vs/workbench/contrib/terminalContrib/notification/browser/terminalNotificationHandler": {
 			"terminalNotificationDismiss": "Afvis",
@@ -10511,6 +11586,9 @@
 			"codeAction.widget.id.quickfix": "Hurtig rettelse",
 			"quickFix.command": "Kør: {0}"
 		},
+		"vs/workbench/contrib/terminalContrib/sendSignal/browser/terminal.sendSignal.contribution": {
+			"SIGHUP": "Læg på"
+		},
 		"vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminal.stickyScroll.contribution": {
 			"miStickyScroll": "&&Fast rulning",
 			"stickyScroll": "Fast rulning"
@@ -10521,20 +11599,25 @@
 		"vs/workbench/contrib/terminalContrib/suggest/browser/terminal.suggest.contribution": {
 			"workbench.action.terminal.acceptSelectedSuggestion": "Indsæt",
 			"workbench.action.terminal.configureSuggestSettings": "Konfigurer",
-			"workbench.action.terminal.learnMore": "Få mere at vide"
+			"workbench.action.terminal.learnMore": "Få mere at vide",
+			"workbench.action.terminal.resetSuggestWidgetSize": "Nulstil størrelsen på forslagswidgetten",
+			"workbench.action.terminal.triggerSuggest": "Udløs forslag"
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/browser/terminalSuggestAddon": {
+			"alias": "Alias",
 			"argument": "Argument",
 			"branch": "Gren",
 			"commit": "Commit",
 			"file": "Fil",
+			"flag": "Flag",
 			"folder": "Mappe",
 			"inlineSuggestion": "Indlejret forslag",
 			"inlineSuggestionAlwaysOnTop": "Indlejret forslag",
 			"method": "Metode",
 			"option": "Indstilling",
 			"remote": "Fjern",
-			"stash": "Stash"
+			"stash": "Stash",
+			"tag": "Tag"
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/common/terminalSuggestConfiguration": {
 			"suggest.cdPath.off": "Deaktiver funktionen.",
@@ -10987,8 +12070,12 @@
 			"installExtension.button.ok": "OK",
 			"manage extension": "Administrer udvidelse",
 			"noIconThemeLabel": "Ingen",
+			"selectIconTheme.label": "Filikontema",
+			"selectProductIconTheme.label": "Produktikontema",
 			"selectTheme.label": "Farvetema",
-			"themes": "Temaer"
+			"themes": "Temaer",
+			"themes.selectIconTheme.label": "Filikontema",
+			"themes.selectProductIconTheme.label": "Produktikontema"
 		},
 		"vs/workbench/contrib/timeline/browser/timeline.contribution": {
 			"files.openTimeline": "Åbn tidslinje",
@@ -11022,7 +12109,8 @@
 		"vs/workbench/contrib/typeHierarchy/browser/typeHierarchy.contribution": {
 			"close": "Luk",
 			"no.item": "Ingen resultater",
-			"title.subtypes": "Vis undertyper"
+			"title.subtypes": "Vis undertyper",
+			"title.supertypes": "Vis supertyper"
 		},
 		"vs/workbench/contrib/typeHierarchy/browser/typeHierarchyPeek": {
 			"title.loading": "Indlæser..."
@@ -11032,10 +12120,13 @@
 			"postUpdate.releaseNotes": "Produktbemærkninger"
 		},
 		"vs/workbench/contrib/update/browser/update": {
+			"checkForUpdates": "Søg efter opdateringer...",
 			"releaseNotes": "Produktbemærkninger",
-			"reload": "&&Genindlæs"
+			"reload": "&&Genindlæs",
+			"updating": "Opdaterer {0}..."
 		},
 		"vs/workbench/contrib/update/browser/update.contribution": {
+			"checkForUpdates": "Søg efter opdateringer...",
 			"developerCategory": "Udvikler",
 			"openDownloadPage": "Download {0}",
 			"restartToUpdate": "Genstart for at opdatere"
@@ -11048,6 +12139,7 @@
 		"vs/workbench/contrib/update/browser/updateTooltip": {
 			"updateTooltip.copyVersion": "Kopiér",
 			"updateTooltip.downloadButton": "Hent",
+			"updateTooltip.downloadSpeed": "{0}/s",
 			"updateTooltip.installButton": "Installer",
 			"updateTooltip.restartButton": "Genstart",
 			"updateTooltip.restartToUpdateTitle": "Genstart for at opdatere",
@@ -11055,11 +12147,18 @@
 			"updateTooltip.viewReleaseNotes": "Produktbemærkninger"
 		},
 		"vs/workbench/contrib/update/common/updateUtils": {
+			"update.bytes": "{0} B",
+			"update.gigabytes": "{0} GB",
+			"update.kilobytes": "{0} KB",
 			"update.megabytes": "{0} MB",
 			"update.timeRemainingHour": "{0} time",
 			"update.timeRemainingHours": "{0} timer",
 			"update.timeRemainingMinutes": "{0} min.",
 			"update.timeRemainingSeconds": "{0} s"
+		},
+		"vs/workbench/contrib/url/browser/trustedDomains": {
+			"trustedDomain.manageTrustedDomain": "Administrer domæner, der er tillid til",
+			"trustedDomain.manageTrustedDomains": "Administrer domæner, der er tillid til"
 		},
 		"vs/workbench/contrib/url/browser/trustedDomainsValidator": {
 			"copy": "&&Kopiér",
@@ -11070,7 +12169,11 @@
 		},
 		"vs/workbench/contrib/userDataProfile/browser/userDataProfile": {
 			"current": "Aktuel",
+			"delete profile": "Slet profil...",
+			"delete specific profile": "Slet profil...",
 			"manage profiles": "Profiler",
+			"New Profile Window": "Nyt vindue med profil",
+			"new window with profile": "Nyt vindue med profil",
 			"openShort": "{0}",
 			"pick profile": "Vælg profil",
 			"selectProfile": "Vælg profil"
@@ -11087,6 +12190,7 @@
 			"empty profile": "Ingen",
 			"extensions": "Udvidelser",
 			"hostColumnLabel": "Vært",
+			"icon-label": "Ikon",
 			"keybindings": "Tastaturgenveje",
 			"localAuthority": "Lokal",
 			"mcp": "MCP-servere",
@@ -11095,6 +12199,7 @@
 			"open": "Åbn i nyt vindue",
 			"options": "Kilde",
 			"pathColumnLabel": "Sti",
+			"profileExists": "Der findes allerede en profil med navnet {0}.",
 			"profiles": "Profiler",
 			"settings": "Indstillinger",
 			"snippets": "Kodestykker",
@@ -11112,6 +12217,7 @@
 			"delete": "Slet",
 			"open": "Åbn ved siden af",
 			"preview": "Forhåndsvisning",
+			"profileExists": "Der findes allerede en profil med navnet {0}.",
 			"replace": "Erstat"
 		},
 		"vs/workbench/contrib/userDataSync/browser/userDataSync": {
@@ -11120,20 +12226,34 @@
 			"configure": "Konfigurer...",
 			"configure sync": "Konfigurer...",
 			"default": "Standard",
+			"operationId": "Handlings-id: {0}",
 			"report issue": "Rapportér problem",
+			"reset": "Ryd data i cloudmiljøet...",
+			"show conflicts": "Vis konflikter",
 			"show sync log toolrip": "Vis log",
 			"show sync logs": "Vis log",
+			"show synced data": "Vis synkroniserede data",
+			"show synced data action": "Vis synkroniserede data",
+			"sign in global": "Log på for at synkronisere indstillinger",
+			"sign in to sync": "Log på for at synkronisere indstillinger",
 			"stable": "Stabil",
-			"turn off": "&&Slå fra"
+			"turn off": "&&Slå fra",
+			"turning on sync": "Slår synkronisering af indstillinger til...",
+			"turning on syncing": "Slår synkronisering af indstillinger til...",
+			"workbench.actions.syncData.reset": "Ryd data i cloudmiljøet..."
 		},
 		"vs/workbench/contrib/userDataSync/browser/userDataSync.contribution": {
+			"operationId": "Handlings-id: {0}",
 			"reload": "Genindlæs",
 			"restart": "Genstart",
 			"show sync logs": "Vis log"
 		},
 		"vs/workbench/contrib/userDataSync/browser/userDataSyncConflictsView": {
 			"localResourceName": "{0} (lokal)",
-			"remoteResourceName": "{0} (fjern)"
+			"remoteResourceName": "{0} (fjern)",
+			"Theirs": "Deres",
+			"workbench.actions.sync.openConflicts": "Vis konflikter",
+			"Yours": "Dine"
 		},
 		"vs/workbench/contrib/userDataSync/browser/userDataSyncViews": {
 			"current": "Aktuel",
@@ -11169,11 +12289,17 @@
 			"webview.statusHeader": "Aktuel søgestatus:"
 		},
 		"vs/workbench/contrib/welcomeAgentSessions/browser/agentSessionsWelcome": {
+			"cloneRepo": "Klon Git-lager...",
 			"dismissPrivacyNotice": "Afvis",
 			"nextWalkthrough": "Næste",
 			"openFolder": "Åbn mappe...",
 			"openRecent": "Åbn seneste...",
-			"previousWalkthrough": "Forrige"
+			"previousWalkthrough": "Forrige",
+			"showOnStartup": "Vis velkomstside ved opstart"
+		},
+		"vs/workbench/contrib/welcomeAgentSessions/browser/agentSessionsWelcome.contribution": {
+			"agentSessionsWelcome": "Velkomst til agentsessioner",
+			"agentSessionsWelcome.displayName": "Velkomst til agentsessioner"
 		},
 		"vs/workbench/contrib/welcomeAgentSessions/browser/agentSessionsWelcomeInput": {
 			"agentSessionsWelcome": "Velkommen"
@@ -11184,19 +12310,23 @@
 			"goBack": "Gå tilbage",
 			"new": "Ny",
 			"newItems": "Opdateret",
+			"pickWalkthroughs": "Åbn introduktion...",
 			"recent": "Seneste",
 			"showAll": "Mere...",
 			"start": "Start",
 			"welcome": "Velkommen",
-			"welcomePage.removeRecent": "Fjern fra Senest åbnet"
+			"welcomePage.removeRecent": "Fjern fra Senest åbnet",
+			"welcomePage.showOnStartup": "Vis velkomstside ved opstart"
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution": {
 			"miWelcome": "Velkommen",
 			"welcome": "Velkommen",
-			"welcome.goBack": "Gå tilbage"
+			"welcome.goBack": "Gå tilbage",
+			"welcome.showAllWalkthroughs": "Åbn introduktion..."
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedAccessibleView": {
-			"gettingStarted.description": "Beskrivelse: {0}"
+			"gettingStarted.description": "Beskrivelse: {0}",
+			"gettingStarted.step": "{0}\n{1}"
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedExtensionPoint": {
 			"title": "Titel"
@@ -11213,26 +12343,34 @@
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/common/gettingStartedContent": {
 			"enableSync": "Sikkerhedskopiér og synkroniser indstillinger",
+			"gettingStarted.copilotSetup.terms": "Ved at fortsætte med {0} Copilot accepterer du {1}s [vilkår]({2}) og [erklæring om beskyttelse af personlige oplysninger]({3})",
 			"gettingStarted.installGit.title": "Installer Git",
 			"gettingStarted.newFile.title": "Ny fil...",
 			"gettingStarted.notebook.walkthroughPageTitle": "Notebooks",
 			"gettingStarted.openFile.title": "Åbn fil...",
 			"gettingStarted.openFolder.title": "Åbn mappe...",
 			"gettingStarted.setupAccessibility.title": "Kom i gang med tilgængelighedsfunktioner",
+			"gettingStarted.topLevelGitClone.title": "Klon Git-lager...",
 			"installGit": "Installer Git",
 			"keyboardShortcuts": "Tastaturgenveje",
+			"openAccessibilityHelp": "Åbn hjælp til tilgængelighed",
 			"openAccessibilitySettings": "Åbn tilgængelighedsindstillinger",
+			"openAccessibleView": "Åbn tilgængelighedsvisning",
 			"openFolder": "Åbn mappe",
 			"openRepository": "Åbn lager",
 			"openVerbositySettings": "Åbn tilgængelighedsindstillinger",
 			"setupCopilotButton.setup": "Brug AI-funktioner",
+			"showOrFocusHover": "Vis eller fokuser hover",
 			"showTerminal": "Åbn terminal",
 			"toggleFold": "Slå sammenfoldning til/fra",
+			"toggleFoldRecursively": "Slå rekursiv sammenfoldning til/fra",
 			"toggleMenuBar": "Vis/skjul menulinje",
+			"triggerInlineSuggestion": "Udløs indlejret forslag",
 			"tweakSettings": "Åbn indstillinger",
 			"workspaceTrust": "Tillid til arbejdsområde"
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/common/media/notebookProfile": {
+			"colab": "Colab",
 			"default": "Standard"
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/common/media/theme_picker": {
@@ -11255,13 +12393,21 @@
 			"onboarding.next": "Fortsæt",
 			"onboarding.personalize.theme": "Farvetema",
 			"onboarding.personalize.tip.modifier": "{0}",
+			"onboarding.personalize.tip.p": "P",
+			"onboarding.personalize.tip.shift": "Skift",
 			"onboarding.sessions.agentMode": "Agent",
 			"onboarding.sessions.planMode": "Plan",
 			"onboarding.sessions.signInNudge": "Log på for at bruge GitHub Copilot",
 			"onboarding.signIn.disclaimer.middle": " og ",
 			"onboarding.signIn.disclaimer.privacy": "Erklæring om beskyttelse af personlige oplysninger",
 			"onboarding.signIn.disclaimer.settings": "indstillinger",
+			"onboarding.signIn.disclaimer.terms": "Vilkår",
 			"onboarding.signIn.enterprise.continue": "Fortsæt",
+			"onboarding.signIn.enterprise.prompt": "Hvad er din {0}-instans?",
+			"onboarding.signIn.enterprise.resolve": "Fortolkes som {0}",
+			"onboarding.signIn.ghe": "GHE",
+			"onboarding.signIn.github": "Fortsæt med GitHub",
+			"onboarding.signIn.github.aria": "Fortsæt med GitHub",
 			"onboarding.stepOf": "{0} af {1}"
 		},
 		"vs/workbench/contrib/welcomeOnboarding/common/onboardingTypes": {
@@ -11445,8 +12591,12 @@
 		},
 		"vs/workbench/electron-browser/desktop.contribution": {
 			"keyboardConfigurationTitle": "Tastatur",
+			"miExit": "A&&fslut",
 			"telemetryConfigurationTitle": "Telemetri",
 			"windowConfigurationTitle": "Vindue"
+		},
+		"vs/workbench/electron-browser/desktop.main": {
+			"join.closeStorage": "Gemmer brugerfladetilstand"
 		},
 		"vs/workbench/electron-browser/parts/dialogs/dialogHandler": {
 			"copy": "&&Kopiér",
@@ -11485,12 +12635,20 @@
 			"vscode.extension.contributes.submenu.icon.light": "Ikonsti, når der bruges et lyst tema"
 		},
 		"vs/workbench/services/authentication/browser/authenticationExtensionsService": {
+			"accessRequest": "Giv {0} adgang til {1}... (1)",
 			"allow": "&&Tillad",
-			"deny": "&&Afvis"
+			"deny": "&&Afvis",
+			"sign in": "Anmodning om logon",
+			"signInRequest": "Log på med {0} for at bruge {1} (1)",
+			"useOtherAccount": "Log på en anden konto"
 		},
 		"vs/workbench/services/authentication/browser/authenticationMcpService": {
+			"accessRequest": "Giv {0} adgang til {1}... (1)",
 			"allow": "&&Tillad",
-			"deny": "&&Afvis"
+			"deny": "&&Afvis",
+			"sign in": "Anmodning om logon",
+			"signInRequest": "Log på med {0} for at bruge {1} (1)",
+			"useOtherAccount": "Log på en anden konto"
 		},
 		"vs/workbench/services/auxiliaryWindow/browser/auxiliaryWindowService": {
 			"retry": "&&Prøv igen"
@@ -11505,7 +12663,8 @@
 		},
 		"vs/workbench/services/configuration/common/configurationEditing": {
 			"open": "Åbn indstillinger",
-			"userTarget": "Brugerindstillinger"
+			"userTarget": "Brugerindstillinger",
+			"workspaceTarget": "Arbejdsområdeindstillinger"
 		},
 		"vs/workbench/services/dialogs/browser/abstractFileDialogService": {
 			"allFiles": "Alle filer",
@@ -11570,8 +12729,11 @@
 		"vs/workbench/services/extensionManagement/browser/extensionBisect": {
 			"continue": "Fortsæt",
 			"done.msg": "Halveringssøgning i udvidelser",
+			"I cannot reproduce": "Jeg kan ikke genskabe problemet",
 			"msg.next": "Halveringssøgning i udvidelser",
-			"msg.start": "Halveringssøgning i udvidelser"
+			"msg.start": "Halveringssøgning i udvidelser",
+			"This is Bad": "Jeg kan genskabe problemet",
+			"title.start": "Start halveringssøgning i udvidelser"
 		},
 		"vs/workbench/services/extensionManagement/common/extensionFeaturesManagemetService": {
 			"allow": "Tillad"
@@ -11595,7 +12757,8 @@
 			"remote": "Fjern"
 		},
 		"vs/workbench/services/extensionRecommendations/common/workspaceExtensionsConfig": {
-			"workspace": "Arbejdsområde"
+			"workspace": "Arbejdsområde",
+			"workspace folder": "Arbejdsområdemappe"
 		},
 		"vs/workbench/services/extensions/browser/extensionUrlHandler": {
 			"extensions": "Udvidelser",
@@ -11608,10 +12771,18 @@
 			"reloadWindow": "Genindlæs vindue"
 		},
 		"vs/workbench/services/extensions/electron-browser/nativeExtensionService": {
-			"learnMore": "Få mere at vide"
+			"devTools": "Åbn udviklerværktøjer",
+			"enable": "Aktivér og genindlæs",
+			"install": "Installer og genindlæs",
+			"learnMore": "Få mere at vide",
+			"remoteConnectionConfirmButton": "Opret forbindelse",
+			"restart": "Genstart udvidelsesvært",
+			"restartExtensionHost": "Genstart udvidelsesvært",
+			"startBisect": "Start halveringssøgning i udvidelser"
 		},
 		"vs/workbench/services/integrity/electron-browser/integrityService": {
-			"integrity.dontShowAgain": "Vis ikke igen"
+			"integrity.dontShowAgain": "Vis ikke igen",
+			"integrity.moreInformation": "Flere oplysninger"
 		},
 		"vs/workbench/services/keybinding/browser/keybindingService": {
 			"invalid.keybindings": "Ugyldig `contributes.{0}`: {1}",
@@ -11644,13 +12815,19 @@
 		},
 		"vs/workbench/services/label/common/labelService": {
 			"temporaryWorkspace": "Arbejdsområde",
+			"untitledWorkspace": "Unavngivet (arbejdsområde)",
 			"workspaceName": "{0} (arbejdsområde)",
 			"workspaceNameVerbose": "{0} (arbejdsområde)"
 		},
 		"vs/workbench/services/language/common/languageService": {
+			"grammar": "Grammatik",
 			"language id": "Id",
 			"language name": "Navn",
 			"languages": "Programmeringssprog",
+			"opt.aliases": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
+			"opt.extensions": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
+			"opt.filenames": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
+			"opt.mimetypes": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
 			"require.id": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
 			"snippets": "Kodestykker",
 			"vscode.extension.contributes.languages.icon.dark": "Ikonsti, når der bruges et mørkt tema",
@@ -11737,6 +12914,10 @@
 		"vs/workbench/services/remote/common/remoteExplorerService": {
 			"RemoteHelpInformationExtPoint.feedback.deprecated": "Brug {0} i stedet"
 		},
+		"vs/workbench/services/remote/electron-browser/remoteAgentService": {
+			"devTools": "Åbn udviklerværktøjer",
+			"directUrl": "Åbn i browser"
+		},
 		"vs/workbench/services/request/electron-browser/requestService": {
 			"network": "Netværk"
 		},
@@ -11744,7 +12925,8 @@
 			"ariaCurrenttSuggestionReadDetails": "{0}, dokumentation: {1}",
 			"label": "{0}, {1}",
 			"suggest": "Foreslå",
-			"suggestWidget.loading": "Indlæser..."
+			"suggestWidget.loading": "Indlæser...",
+			"suggestWidget.noSuggestions": "Ingen forslag."
 		},
 		"vs/workbench/services/suggest/browser/simpleSuggestWidgetDetails": {
 			"details.close": "Luk",
@@ -11784,16 +12966,30 @@
 			"defaultTheme": "Standard"
 		},
 		"vs/workbench/services/themes/common/colorExtensionPoint": {
+			"colors": "Farver",
 			"description": "Beskrivelse",
 			"id": "Id"
+		},
+		"vs/workbench/services/themes/common/colorThemeSchema": {
+			"schema.token.fontStyle.none": "Ingen (ryd nedarvet stil)",
+			"schema.token.foreground": "Forgrundsfarve for tokenet.",
+			"schema.token.settings": "Farver og typografier for tokenet."
 		},
 		"vs/workbench/services/themes/common/fileIconThemeSchema": {
 			"schema.fileExtension": "Id'et for den ikondefinition, der bruges til tilknytningen.",
 			"schema.fileName": "Id'et for den ikondefinition, der bruges til tilknytningen.",
 			"schema.folderName": "Id'et for den ikondefinition, der bruges til tilknytningen.",
 			"schema.folderNameExpanded": "Id'et for den ikondefinition, der bruges til tilknytningen.",
+			"schema.font-format": "Skrifttypens format.",
+			"schema.id": "Skrifttypens id.",
 			"schema.languageId": "Id'et for den ikondefinition, der bruges til tilknytningen.",
-			"schema.rootFolderNameExpanded": "Id'et for den ikondefinition, der bruges til tilknytningen."
+			"schema.rootFolderNameExpanded": "Id'et for den ikondefinition, der bruges til tilknytningen.",
+			"schema.src": "Skrifttypens placering."
+		},
+		"vs/workbench/services/themes/common/productIconThemeSchema": {
+			"schema.font-format": "Skrifttypens format.",
+			"schema.id": "Skrifttypens id.",
+			"schema.src": "Skrifttypens placering."
 		},
 		"vs/workbench/services/themes/common/themeConfiguration": {
 			"defaultProductIconThemeDesc": "Standard",
@@ -11834,7 +13030,8 @@
 			"local": "Lokal",
 			"overwrite": "&&Erstat",
 			"select": "Vælg {0}",
-			"select profile": "Vælg profil"
+			"select profile": "Vælg profil",
+			"troubleshoot issue": "Foretag fejlfinding af problem"
 		},
 		"vs/workbench/services/userDataProfile/browser/userDataProfileManagement": {
 			"reload button": "&&Genindlæs"
@@ -11849,6 +13046,7 @@
 			"no": "Nej",
 			"others": "Andre",
 			"reset title": "Ryd",
+			"resetButton": "&&Nulstil",
 			"settings sync": "Synkronisering af indstillinger",
 			"sign in using account": "Log på med {0}",
 			"syncing...": "Slår til...",
@@ -11949,7 +13147,8 @@
 		},
 		"vs/workbench/services/workspaces/electron-browser/workspaceEditingService": {
 			"doNotSave": "Gem &&ikke",
-			"save": "&&Gem"
+			"save": "&&Gem",
+			"workspaceOpenedMessage": "Arbejdsområdet '{0}' kunne ikke gemmes"
 		}
 	}
 }

@@ -20,7 +20,10 @@
 			"cmd.references-view.removeCallItem": "Afvis",
 			"cmd.references-view.removeReferenceItem": "Afvis",
 			"cmd.references-view.removeTypeItem": "Afvis",
+			"cmd.references-view.showIncomingCalls": "Vis indgående kald",
+			"cmd.references-view.showOutgoingCalls": "Vis udgående kald",
 			"cmd.references-view.showSubtypes": "Vis undertyper",
+			"cmd.references-view.showSupertypes": "Vis supertyper",
 			"container.title": "Referencer"
 		}
 	}

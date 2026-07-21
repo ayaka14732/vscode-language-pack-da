@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"addCellOutputToChat.title": "Føj celleoutput til chat",
+			"copyCellOutput.title": "Kopiér celleoutput",
+			"openCellOutput.title": "Åbn celleoutput i teksteditor"
+		}
+	}
+}

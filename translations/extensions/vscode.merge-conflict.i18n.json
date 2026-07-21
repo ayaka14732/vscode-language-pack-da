@@ -1,6 +1,9 @@
 {
 	"version": "1.0.0",
 	"contents": {
+		"bundle": {
+			"++CODE++3910559471149316e3794fed81dd0027e3daa2594db8e35f1a003f1018dd49ad": "Sammenlign ændringer"
+		},
 		"package": {
 			"command.accept.both": "Acceptér begge",
 			"command.category": "Fletningskonflikt",

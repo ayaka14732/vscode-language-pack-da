@@ -2,6 +2,7 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
+			"++CODE++62a2dc1bd5977c0304574b84ea7a998728daf2dee66e56a12d5ed4936d20fee5": "Åbn i browser",
 			"++CODE++76900f1bfd16c8d4dd3d25e6f46638d7165aee23883ccea6bfe071c514421769": "Tilbage",
 			"++CODE++bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6": "Genindlæs",
 			"++CODE++c8d224c0c8da5c595bfc40f72c5f7fa83c222926641d75f7de96d77edf8da764": "Enkel browser",

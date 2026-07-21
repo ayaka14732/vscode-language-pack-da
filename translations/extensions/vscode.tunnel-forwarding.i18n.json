@@ -2,12 +2,14 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
+			"++CODE++2f9a490ce300e05899fa1572a963367fc79ea3e835eddee9164936644d2cdb52": "Videresendelse af porte",
 			"++CODE++31fbef162594de01bab0cd525c51f74de7bcb15063029fa1a54b2cf5944c80d8": "Fortsæt",
 			"++CODE++4e5374759acb5346cc22cfbece70ad33d2d775b391fe2d7655bdceebf3bb4a44": "Vis ikke igen",
 			"++CODE++591935b15b1c88e2d5f6be0a054604fcf36f0585a6f51098fa3803826fff278c": "Offentlig",
 			"++CODE++c63eb6720c6e88493897548d3620d45e539d18574465f7b26fdddcbade044ee2": "Privat"
 		},
 		"package": {
+			"category": "Videresendelse af porte",
 			"command.showLog": "Vis log"
 		}
 	}

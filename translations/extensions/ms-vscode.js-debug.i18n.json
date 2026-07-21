@@ -3,8 +3,13 @@
 	"contents": {
 		"package": {
 			"debugLink.label": "Åbn link",
+			"extensionHost.label": "Udvikling af VS Code-udvidelser",
+			"extensionHost.snippet.launch.label": "Udvikling af VS Code-udvidelser",
 			"longPredictionWarning.disable": "Vis ikke igen",
-			"node.launch.config.name": "Start"
+			"node.attach.config.name": "Vedhæft",
+			"node.launch.config.name": "Start",
+			"start.with.stop.on.entry": "Start fejlfinding, og stop ved startpunkt",
+			"startWithStopOnEntry.label": "Start fejlfinding, og stop ved startpunkt"
 		}
 	}
 }

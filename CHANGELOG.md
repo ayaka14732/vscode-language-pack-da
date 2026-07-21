@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.1
+
+- Expand the pack by 1,294 messages to 11,920 Danish translations (47.56% of the pinned catalog).
+- Expand agent sessions, editor navigation, accessibility, notebooks, MCP, authentication, themes,
+  CSS/Sass diagnostics, repeated controls, and status labels.
+- Add translations for the `vscode.ipynb`, `vscode.log`, `vscode.theme-abyss`, and
+  `vscode.theme-red` built-in extension resources, bringing the pack to 29 built-in resources.
+
 ## 0.4.0
 
 - Expand the pack by 2,135 messages to 10,626 Danish translations (42.40% of the pinned catalog).

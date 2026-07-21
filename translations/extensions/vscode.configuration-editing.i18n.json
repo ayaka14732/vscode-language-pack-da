@@ -2,6 +2,7 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
+			"++CODE++b1c76e6a52867105fa6ccedd16e86de8c13ac300ca2e54a4ab192df4a5755f9a": "gist",
 			"++CODE++d029f87e3d80f8fd9b1be67c7426b4cc1ff47b4a9d0a8461c826a59d8c5eb6cd": "Eksempel",
 			"++CODE++f911e414cf6bdfc595532ab166b5ba0f63d73c021452fcdacbda363dda6ad8fb": "GitHub"
 		}

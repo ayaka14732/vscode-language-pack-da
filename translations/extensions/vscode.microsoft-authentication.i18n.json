@@ -3,6 +3,8 @@
 	"contents": {
 		"bundle": {
 			"++CODE++1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d": "Nej",
+			"++CODE++24d0a8cae43900b8ff761c8be7d45e038921609c10f6e8462839333b89abc873": "Åbn [{0}]({0}) i en ny fane, og indsæt din engangskode: {1}",
+			"++CODE++5cd54bf182ab05afda0e219c101add4b96941dd2f851acc6d7e211136f05e26b": "Din kode: {0}",
 			"++CODE++85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e": "Ja",
 			"++CODE++bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6": "Genindlæs",
 			"++CODE++ca381c1e76e681b6c18fa984a2e2fda6ed4a9f28e914f539db34a6dcb3737149": "Åbn indstillinger"

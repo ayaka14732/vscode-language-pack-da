@@ -4,6 +4,8 @@
 		"bundle": {
 			"++CODE++1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d": "Nej",
 			"++CODE++423e44de44431caef68c0c61968777e088fd50d2577feea60b9ba4a14b28a827": "Genindlæs vindue",
+			"++CODE++54b9687194ef1807b08b011cd34280e34844af4f912562c2c9513ab8dc65695c": "Åbn [{0}]({0}) i en ny fane, og indsæt din engangskode: {1}",
+			"++CODE++5cd54bf182ab05afda0e219c101add4b96941dd2f851acc6d7e211136f05e26b": "Din kode: {0}",
 			"++CODE++85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e": "Ja"
 		}
 	}

@@ -2,7 +2,7 @@
 	"name": "vscode-language-pack-da",
 	"displayName": "Danish Language Pack for Visual Studio Code",
 	"description": "Danish (Dansk) user-interface localization for Visual Studio Code.",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"publisher": "katrine-jensen",
 	"author": "Katrine Jensen",
 	"license": "MIT",
@@ -79,12 +79,20 @@
 						"path": "./translations/extensions/vscode.html-language-features.i18n.json"
 					},
 					{
+						"id": "vscode.ipynb",
+						"path": "./translations/extensions/vscode.ipynb.i18n.json"
+					},
+					{
 						"id": "vscode.jake",
 						"path": "./translations/extensions/vscode.jake.i18n.json"
 					},
 					{
 						"id": "vscode.json-language-features",
 						"path": "./translations/extensions/vscode.json-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.log",
+						"path": "./translations/extensions/vscode.log.i18n.json"
 					},
 					{
 						"id": "vscode.markdown-language-features",
@@ -123,8 +131,16 @@
 						"path": "./translations/extensions/vscode.simple-browser.i18n.json"
 					},
 					{
+						"id": "vscode.theme-abyss",
+						"path": "./translations/extensions/vscode.theme-abyss.i18n.json"
+					},
+					{
 						"id": "vscode.theme-defaults",
 						"path": "./translations/extensions/vscode.theme-defaults.i18n.json"
+					},
+					{
+						"id": "vscode.theme-red",
+						"path": "./translations/extensions/vscode.theme-red.i18n.json"
 					},
 					{
 						"id": "vscode.tunnel-forwarding",

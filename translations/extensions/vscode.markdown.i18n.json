@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer kodestykker og syntaksfremhævning til Markdown.",
+			"displayName": "Grundlæggende funktioner til Markdown"
+		}
+	}
+}

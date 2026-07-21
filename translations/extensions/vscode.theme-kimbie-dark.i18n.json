@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Mørkt Kimbie-tema til Visual Studio Code",
+			"displayName": "Kimbie Dark-tema",
+			"themeLabel": "Kimbie Dark"
+		}
+	}
+}

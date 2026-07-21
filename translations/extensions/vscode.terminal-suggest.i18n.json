@@ -1,0 +1,11 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Udvidelse, der tilføjer terminalfuldførelser til zsh-, bash- og fish-terminaler.",
+			"displayName": "Terminalforslag til VS Code",
+			"terminal.integrated.suggest.clearCachedGlobals": "Ryd cachelagrede globale forslag",
+			"view.name": "Terminalforslag"
+		}
+	}
+}

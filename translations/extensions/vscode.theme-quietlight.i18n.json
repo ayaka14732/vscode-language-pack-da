@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Lyst Quiet Light-tema til Visual Studio Code",
+			"displayName": "Quiet Light-tema",
+			"themeLabel": "Quiet Light"
+		}
+	}
+}

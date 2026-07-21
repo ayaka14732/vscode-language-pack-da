@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer syntaksfremhævning i reStructuredText-filer.",
+			"displayName": "Grundlæggende funktioner til reStructuredText"
+		}
+	}
+}

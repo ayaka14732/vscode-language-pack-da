@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer syntaksfremhævning og parentesmatchning i HLSL-filer.",
+			"displayName": "Grundlæggende funktioner til HLSL"
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Monokai-tema til Visual Studio Code",
+			"displayName": "Monokai-tema",
+			"themeLabel": "Monokai"
+		}
+	}
+}

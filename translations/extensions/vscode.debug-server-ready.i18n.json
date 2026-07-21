@@ -1,0 +1,25 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"bundle": {
+			"++CODE++504c07cf2208f8907b6a1d7673c2dfe1bd946277461131afb3064b9e93c6af3f": "URI-formatet ('{0}') skal indeholde nøjagtigt én erstatningspladsholder.",
+			"++CODE++e4bdbedd7a7ce59b10b2285112be6dc791c5859e857f3924f9bedb92bd3aa424": "URI-formatet ('{0}') bruger en erstatningspladsholder, men mønsteret registrerede ikke noget."
+		},
+		"package": {
+			"debug.server.ready.action.debugWithChrome.description": "Start fejlfinding med 'Debugger for Chrome'.",
+			"debug.server.ready.action.description": "Hvad der skal ske med URI'en, når serveren er klar.",
+			"debug.server.ready.action.openExternally.description": "Åbn URI'en eksternt med standardprogrammet.",
+			"debug.server.ready.action.openIntegratedBrowser.description": "Åbn URI'en i den integrerede browser.",
+			"debug.server.ready.action.startDebugging.description": "Kør en anden startkonfiguration.",
+			"debug.server.ready.debugConfig.description": "Den fejlfindingskonfiguration, der skal køres.",
+			"debug.server.ready.debugConfigName.description": "Navnet på den startkonfiguration, der skal køres.",
+			"debug.server.ready.killOnServerStop.description": "Stop den underordnede session, når den overordnede session stopper.",
+			"debug.server.ready.pattern.description": "Serveren er klar, hvis dette mønster vises i fejlfindingskonsollen. Den første registreringsgruppe skal indeholde en URI eller et portnummer.",
+			"debug.server.ready.serverReadyAction.description": "Udfør en handling på en URI, når et serverprogram under fejlfinding er klar (angivet ved at sende output i formatet 'listening on port 3000' eller 'Now listening on: https://localhost:5001' til fejlfindingskonsollen).",
+			"debug.server.ready.uriFormat.description": "En formatstreng, der bruges til at oprette URI'en ud fra et portnummer. Den første '%s' erstattes med portnummeret.",
+			"debug.server.ready.webRoot.description": "Værdi, der overføres til fejlfindingskonfigurationen for 'Debugger for Chrome'.",
+			"description": "Åbn URI'en i browseren, når serveren under fejlfinding er klar.",
+			"displayName": "Handling, når serveren er klar"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer kodestykker, syntaksfremhævning, parentesmatchning og foldning i CoffeeScript-filer.",
+			"displayName": "Grundlæggende funktioner til CoffeeScript"
+		}
+	}
+}

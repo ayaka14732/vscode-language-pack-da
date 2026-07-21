@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer kodestykker, syntaksfremhævning, parentesmatchning og foldning i Windows-batchfiler.",
+			"displayName": "Grundlæggende funktioner til Windows-batchsprog"
+		}
+	}
+}

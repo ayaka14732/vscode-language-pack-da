@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Syntaksfremhævning til prompt- og instruktionsdokumenter.",
+			"displayName": "Grundlæggende funktioner til promptdokumenter"
+		}
+	}
+}

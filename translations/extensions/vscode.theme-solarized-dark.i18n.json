@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Mørkt Solarized-tema til Visual Studio Code",
+			"displayName": "Solarized Dark-tema",
+			"themeLabel": "Solarized Dark"
+		}
+	}
+}

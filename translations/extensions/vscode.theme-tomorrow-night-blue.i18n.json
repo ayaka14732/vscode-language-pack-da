@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Tomorrow Night Blue-tema til Visual Studio Code",
+			"displayName": "Tomorrow Night Blue-tema",
+			"themeLabel": "Tomorrow Night Blue"
+		}
+	}
+}

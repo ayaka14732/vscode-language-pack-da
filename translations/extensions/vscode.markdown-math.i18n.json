@@ -1,0 +1,11 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"config.markdown.math.enabled": "Aktivér/deaktivér gengivelse af matematik i den indbyggede Markdown-forhåndsvisning.",
+			"config.markdown.math.macros": "En samling brugerdefinerede makroer. Hver makro er et nøgle/værdi-par, hvor nøglen er et nyt kommandonavn, og værdien er makroens udvidelse.",
+			"description": "Føjer understøttelse af matematik til Markdown i notesbøger.",
+			"displayName": "Markdown-matematik"
+		}
+	}
+}

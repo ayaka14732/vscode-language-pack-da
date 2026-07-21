@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer syntaksfremhævning, parentesmatchning og foldning i SCSS-filer.",
+			"displayName": "Grundlæggende funktioner til SCSS"
+		}
+	}
+}

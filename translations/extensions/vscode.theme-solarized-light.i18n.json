@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Lyst Solarized-tema til Visual Studio Code",
+			"displayName": "Solarized Light-tema",
+			"themeLabel": "Solarized Light"
+		}
+	}
+}

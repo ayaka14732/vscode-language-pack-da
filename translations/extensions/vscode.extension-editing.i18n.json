@@ -1,0 +1,26 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"bundle": {
+			"++CODE++0fa833a88194bcfadc259c8984281d04ff958344176e524772f6c00eda2fc0e5": "Fejl under fortolkning af when-betingelsen:",
+			"++CODE++173ea39e519ed16c38b7564ff0a625a925e46ecf947f7bd6c6a5d86e6ca12eea": "Relative emblem-URL'er kræver, at der er angivet et lager med HTTPS-protokol i denne package.json.",
+			"++CODE++25833487700404b7bd292a8f0805cdb3c1b2f16a2b92da48431ea7619cddca94": "Denne aktiveringshændelse kan ikke angives udtrykkeligt af din udvidelse.",
+			"++CODE++4b90f828b67aedaca983fdc584fc250e1e5870839ae46bd777781b7577e435d7": "Integrerede SVG'er er ikke en gyldig billedkilde.",
+			"++CODE++4bcc414846f4c4c9380d340f21e5adef14a25a223e4356a1947feae038ae2137": "Tilsidesæt editorindstillinger for sprog",
+			"++CODE++5c1fc8b9807ecfc80b2c14831b7c5ff78403bb7a467791ea0b60ff30e0d0955f": "SVG'er er ikke en gyldig billedkilde.",
+			"++CODE++7b2384bc0184e0d3b2f62fd3454c281a47d4099f625a04f0b37916d9db35e7a4": "Billeder skal bruge HTTPS-protokollen.",
+			"++CODE++8f109beabd5459c13504b93816b39f95fcc77442bed89c19cb2a80ab38fc30b1": "Fjern aktiveringshændelse",
+			"++CODE++ae69770185bc8ecf5462b957f0ac6b5900b863369aa9adb5bdfb393747945cd9": "Denne aktiveringshændelse kan fjernes, da VS Code automatisk genererer dem ud fra bidragserklæringerne i din package.json.",
+			"++CODE++ca4969c58a3a1664b4ea86a5f5e305af4f8267aa2ed19fd3256718ea3016b3b5": "Dette forslag kan ikke bruges, fordi produktet definerer et fast sæt API-forslag for denne udvidelse. Du kan teste din udvidelse, men før udgivelse SKAL du kontakte VS Code-teamet.",
+			"++CODE++cba82e900f4d943642c709c38435b64820038c17789071a71ab5033a12e87417": "Relative billed-URL'er kræver, at der er angivet et lager med HTTPS-protokol i package.json.",
+			"++CODE++e27ff66d5d7992d3fc9f5043b5d46d04b2ffe712502ad1c4608fedc020cbe678": "Data-URL'er er ikke en gyldig billedkilde.",
+			"++CODE++f1b72a86f0dca72dcb1eb348efe9411c2fc02b38b0522f46396415a961698e01": "Sprogspecifikke editorindstillinger",
+			"++CODE++f3596ed8068dedb32662fea40c192d4d1c121aaeaccff9da30a7dcb8707c242b": "Det er som regel en dårlig idé at bruge '*'-aktivering, da det påvirker ydeevnen.",
+			"++CODE++ff3bd47d0cd40abd535b2d8e172376ef49fa7e4acb007473aae040598c76cbab": "Versioner af API-forslag understøttes ikke længere. Fjern suffikset '@<version>'."
+		},
+		"package": {
+			"description": "Leverer lintingfunktioner til udvikling af udvidelser.",
+			"displayName": "Udvikling af udvidelser"
+		}
+	}
+}

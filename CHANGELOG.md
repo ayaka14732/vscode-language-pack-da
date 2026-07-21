@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.2
+
+- Expand the pack by 656 messages to 12,576 Danish translations (50.18% of the pinned catalog).
+- Complete the current core editor behavior settings, including suggestions, accessibility,
+  cursor behavior, find, folding, fonts, inline completions, minimap, scrolling, and word wrapping.
+- Add 62 built-in extension resources, including Emmet, extension authoring, server-ready
+  debugging, terminal suggestions, Markdown math, syntax packs, and bundled themes, bringing the
+  pack to 91 built-in resources.
+
 ## 0.4.1
 
 - Expand the pack by 1,294 messages to 11,920 Danish translations (47.56% of the pinned catalog).

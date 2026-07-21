@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer syntaksfremhævning og parentesmatchning i R-filer.",
+			"displayName": "Grundlæggende funktioner til R"
+		}
+	}
+}

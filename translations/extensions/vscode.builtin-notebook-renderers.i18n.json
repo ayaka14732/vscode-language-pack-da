@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer grundlæggende outputgengivelser til notesbøger",
+			"displayName": "Indbyggede outputgengivelser til notesbøger"
+		}
+	}
+}

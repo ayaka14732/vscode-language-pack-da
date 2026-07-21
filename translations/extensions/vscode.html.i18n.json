@@ -1,0 +1,9 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Leverer syntaksfremhævning, parentesmatchning og kodestykker i HTML-filer.",
+			"displayName": "Grundlæggende funktioner til HTML"
+		}
+	}
+}

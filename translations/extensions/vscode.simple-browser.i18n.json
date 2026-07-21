@@ -3,7 +3,12 @@
 	"contents": {
 		"bundle": {
 			"++CODE++76900f1bfd16c8d4dd3d25e6f46638d7165aee23883ccea6bfe071c514421769": "Tilbage",
-			"++CODE++bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6": "Genindlæs"
+			"++CODE++bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6": "Genindlæs",
+			"++CODE++c8d224c0c8da5c595bfc40f72c5f7fa83c222926641d75f7de96d77edf8da764": "Enkel browser",
+			"++CODE++f1c65e14817efef2b77973a4f63446a7d462cd2636bbe721207107b7d126a001": "Fremad"
+		},
+		"package": {
+			"displayName": "Enkel browser"
 		}
 	}
 }

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0
+
+- Expand the pack by 2,135 messages to 10,626 Danish translations (42.40% of the pinned catalog).
+- Complete the built-in Git extension resource, including branches, worktrees, commits, staging,
+  stashes, conflict dialogs, safety prompts, and settings.
+- Expand agent, Codex, chat, approval, sandbox, accessibility, and frequently reused UI text.
+- Add translations for the `vscode.grunt`, `vscode.gulp`, `vscode.jake`, `vscode.merge-conflict`, and
+  `vscode.theme-defaults` built-in extension resources, bringing the pack to 25 built-in resources.
+
 ## 0.3.0
 
 - Expand the pack by 2,081 messages to 8,491 Danish translations (33.88% of the pinned catalog).

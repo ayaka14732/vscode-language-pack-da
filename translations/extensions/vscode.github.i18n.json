@@ -3,11 +3,17 @@
 	"contents": {
 		"bundle": {
 			"++CODE++03f69885814b5b7aa5e4758e46733da443a237e2ec63488bddd230f501ff166a": "Åbn på GitHub",
+			"++CODE++04c24026b2f00d817b610318ab2e984393c65576e67b591fb8fb0467f5aef0cb": "Åbn PR",
 			"++CODE++1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d": "Nej",
+			"++CODE++3f86d646f909535716e9c7d67e2ec317acd999d263427edf7bc47371f352ab3e": "Opret PR",
+			"++CODE++749e00cf6618bc6ef3d0fbe34d822881466a634f5c7b85d166df2fb1460f0056": "Commit ændringer",
 			"++CODE++8d8cd546b58d91c300d3149ef40b8d98d3061dc38f15ea937d2ed785a3f25771": "Få mere at vide"
 		},
 		"package": {
-			"command.openOnGitHub": "Åbn på GitHub"
+			"command.createPullRequest": "Opret PR",
+			"command.openOnGitHub": "Åbn på GitHub",
+			"command.openPullRequest": "Åbn PR",
+			"displayName": "GitHub"
 		}
 	}
 }

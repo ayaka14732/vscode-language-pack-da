@@ -2,7 +2,7 @@
 	"name": "vscode-language-pack-da",
 	"displayName": "Danish Language Pack for Visual Studio Code",
 	"description": "Danish (Dansk) user-interface localization for Visual Studio Code.",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"publisher": "katrine-jensen",
 	"author": "Katrine Jensen",
 	"license": "MIT",
@@ -67,8 +67,20 @@
 						"path": "./translations/extensions/vscode.github-authentication.i18n.json"
 					},
 					{
+						"id": "vscode.grunt",
+						"path": "./translations/extensions/vscode.grunt.i18n.json"
+					},
+					{
+						"id": "vscode.gulp",
+						"path": "./translations/extensions/vscode.gulp.i18n.json"
+					},
+					{
 						"id": "vscode.html-language-features",
 						"path": "./translations/extensions/vscode.html-language-features.i18n.json"
+					},
+					{
+						"id": "vscode.jake",
+						"path": "./translations/extensions/vscode.jake.i18n.json"
 					},
 					{
 						"id": "vscode.json-language-features",
@@ -81,6 +93,10 @@
 					{
 						"id": "vscode.media-preview",
 						"path": "./translations/extensions/vscode.media-preview.i18n.json"
+					},
+					{
+						"id": "vscode.merge-conflict",
+						"path": "./translations/extensions/vscode.merge-conflict.i18n.json"
 					},
 					{
 						"id": "vscode.mermaid-markdown-features",
@@ -105,6 +121,10 @@
 					{
 						"id": "vscode.simple-browser",
 						"path": "./translations/extensions/vscode.simple-browser.i18n.json"
+					},
+					{
+						"id": "vscode.theme-defaults",
+						"path": "./translations/extensions/vscode.theme-defaults.i18n.json"
 					},
 					{
 						"id": "vscode.tunnel-forwarding",

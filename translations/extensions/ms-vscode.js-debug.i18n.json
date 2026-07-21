@@ -2,6 +2,7 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
+			"debugLink.label": "Åbn link",
 			"longPredictionWarning.disable": "Vis ikke igen",
 			"node.launch.config.name": "Start"
 		}

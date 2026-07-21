@@ -20,6 +20,7 @@
 			"cmd.references-view.removeCallItem": "Afvis",
 			"cmd.references-view.removeReferenceItem": "Afvis",
 			"cmd.references-view.removeTypeItem": "Afvis",
+			"cmd.references-view.showSubtypes": "Vis undertyper",
 			"container.title": "Referencer"
 		}
 	}

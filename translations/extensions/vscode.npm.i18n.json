@@ -6,6 +6,7 @@
 			"++CODE++04b807500b72751d8ecf07d5240c5be8521a4fb10146b49c88e65871ddedb639": "for {0} md. siden",
 			"++CODE++053940c0cc955c65c9e1f05b3d7f9023a77d98950fe9e5cc252cd432e718e404": "for {0} sek. siden",
 			"++CODE++1445799c033a2d17e2bad5d8610879e71ff0d73a8a3c2b932b43ad0449dac3a1": "Få mere at vide",
+			"++CODE++183c7081100618aebb39219dd011d8d9961649aad278be8fe49c0d1a8874684f": "Vis ikke igen",
 			"++CODE++1a03bd2fd107c453f3183e30b9716f82200671e8270fbbefbe602f5a48705527": "Fejlfind",
 			"++CODE++1d888811236b0e7981a424415e023fe2465c8c214292e68686168dc376f3da96": "for {0} min. siden",
 			"++CODE++25e4773a530945af1d489ddcb2269dfe8a3758f1ed9f979539af80d9ece9403c": "{0} t.",
@@ -31,6 +32,7 @@
 			"++CODE++912509dcc5c8fb64ce0c630d1051f784d77fe16f87f6d8c3b606a7850117ca45": "for {0} år siden",
 			"++CODE++9685e9b68282af704b8ed36b2b9bc007461f0b31f6037276ebc6bf2e6851579f": "{0} sek.",
 			"++CODE++96d15cf84b61a585c303169c0cf02914bf046268787391b33df3ff8855f28e12": "{0} min.",
+			"++CODE++98daf31587e9ee8270a012d4ff1d6b8b24b131ff9bccb41e6863360d7f686869": "Kør script",
 			"++CODE++a05c87789ba69a2fc300445b75e5222311c255d9bf2c0ed75914dfa020ac443f": "for {0} uge siden",
 			"++CODE++a141558f162aa73732c8423e2ccc3b348168d8847d7b6759eb4c15b788892245": "{0} sek.",
 			"++CODE++ab4fc08fa470f6fcb8e90da7281a4c9b021514b17207999ac19c018e4d142ba0": "{0} md.",
@@ -63,7 +65,8 @@
 			"command.debug": "Fejlfind",
 			"command.openScript": "Åbn",
 			"command.refresh": "Opdater",
-			"command.run": "Kør"
+			"command.run": "Kør",
+			"command.runSelectedScript": "Kør script"
 		}
 	}
 }

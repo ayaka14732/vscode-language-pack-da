@@ -1,0 +1,11 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"darkModernThemeLabel": "Mørk moderne",
+			"hcColorThemeLabel": "Mørk høj kontrast",
+			"lightHcColorThemeLabel": "Lys høj kontrast",
+			"lightModernThemeLabel": "Lys moderne"
+		}
+	}
+}

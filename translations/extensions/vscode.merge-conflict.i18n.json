@@ -1,0 +1,11 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"command.accept.both": "Acceptér begge",
+			"command.category": "Fletningskonflikt",
+			"config.title": "Fletningskonflikt",
+			"displayName": "Fletningskonflikt"
+		}
+	}
+}

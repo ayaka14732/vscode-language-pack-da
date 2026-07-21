@@ -15,7 +15,16 @@
 		},
 		"package": {
 			"configuration.advanced": "Avanceret",
-			"configuration.preview": "Forhåndsvisning"
+			"configuration.markdown.editor.drop.enabled.always": "Indsæt altid Markdown-links.",
+			"configuration.markdown.editor.drop.enabled.never": "Opret aldrig Markdown-links.",
+			"configuration.markdown.editor.filePaste.enabled.always": "Indsæt altid Markdown-links.",
+			"configuration.markdown.editor.filePaste.enabled.never": "Opret aldrig Markdown-links.",
+			"configuration.pasteUrlAsFormattedLink.always": "Indsæt altid Markdown-links.",
+			"configuration.pasteUrlAsFormattedLink.never": "Opret aldrig Markdown-links.",
+			"configuration.preview": "Forhåndsvisning",
+			"configuration.validation": "Validering",
+			"markdown.copyImage.title": "Kopiér billede",
+			"markdown.preview.title": "Åbn eksempel"
 		}
 	}
 }

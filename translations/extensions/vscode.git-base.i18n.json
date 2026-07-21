@@ -2,7 +2,12 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
-			"++CODE++968d1f3bdf727d26b2658b599484235429cded615ee52a054392cf8d3b3d7fac": "senest åbnet"
+			"++CODE++06f6bb7108ffdb5caf844b4538b5ec8f44cc1b3bc6b577624d32fc57eff9fe3f": "Grennavn",
+			"++CODE++968d1f3bdf727d26b2658b599484235429cded615ee52a054392cf8d3b3d7fac": "senest åbnet",
+			"++CODE++e7a241debad56609ee660a5d2ef258a1aceb7357ff210ac66d7280b3add02a9a": "URL-adresse"
+		},
+		"package": {
+			"command.api.getRemoteSources": "Hent fjernkilder"
 		}
 	}
 }

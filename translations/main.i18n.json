@@ -735,6 +735,9 @@
 		"vs/editor/common/viewLayout/viewLineRenderer": {
 			"overflow.chars": "{0} tegn"
 		},
+		"vs/editor/contrib/bracketMatching/browser/bracketMatching": {
+			"miGoToBracket": "Gå til &&parentes"
+		},
 		"vs/editor/contrib/clipboard/browser/clipboard": {
 			"actions.clipboard.copyLabel": "Kopiér",
 			"actions.clipboard.cutLabel": "Klip",
@@ -762,6 +765,14 @@
 		"vs/editor/contrib/codeAction/browser/lightBulbWidget": {
 			"codeActionAutoRun": "Kør: {0}"
 		},
+		"vs/editor/contrib/comment/browser/comment": {
+			"comment.block": "Slå blokkommentar til/fra",
+			"comment.line": "Slå linjekommentar til/fra",
+			"comment.line.add": "Tilføj linjekommentar",
+			"comment.line.remove": "Fjern linjekommentar",
+			"miToggleBlockComment": "Slå &&blokkommentar til/fra",
+			"miToggleLineComment": "Slå &&linjekommentar til/fra"
+		},
 		"vs/editor/contrib/contextmenu/browser/contextmenu": {
 			"context.minimap.minimap": "Minikort",
 			"context.minimap.side": "Side",
@@ -781,6 +792,7 @@
 			"findPreviousMatchAction": "Find forrige",
 			"miFind": "&&Find",
 			"miReplace": "&&Erstat",
+			"previousSelectionMatchFindAction": "Find forrige markering",
 			"startFindAction": "Find",
 			"startReplace": "Erstat"
 		},
@@ -814,6 +826,13 @@
 		"vs/editor/contrib/format/browser/formatActions": {
 			"formatDocument.label": "Formatér dokument"
 		},
+		"vs/editor/contrib/gotoError/browser/gotoError": {
+			"markerAction.nextInFiles.label": "Gå til næste problem i filer (fejl, advarsel, oplysning)",
+			"markerAction.previous.label": "Gå til forrige problem (fejl, advarsel, oplysning)",
+			"markerAction.previousInFiles.label": "Gå til forrige problem i filer (fejl, advarsel, oplysning)",
+			"miGotoNextProblem": "Næste &&problem",
+			"miGotoPreviousProblem": "Forrige &&problem"
+		},
 		"vs/editor/contrib/gotoError/browser/gotoErrorWidget": {
 			"Error": "Fejl",
 			"Hint": "Forslag",
@@ -822,13 +841,29 @@
 		},
 		"vs/editor/contrib/gotoSymbol/browser/goToCommands": {
 			"actions.goToDecl.label": "Gå til definition",
+			"actions.goToDeclaration.label": "Gå til erklæring",
+			"actions.goToDeclToSide.label": "Åbn definition ved siden af",
 			"actions.goToImplementation.label": "Gå til implementeringer",
+			"actions.goToTypeDefinition.label": "Gå til typedefinition",
+			"actions.peekDecl.label": "Kig på erklæring",
+			"actions.peekImplementation.label": "Kig på implementeringer",
+			"actions.peekTypeDefinition.label": "Kig på typedefinition",
+			"decl.generic.noResults": "Der blev ikke fundet nogen erklæring",
+			"decl.noResultWord": "Der blev ikke fundet nogen erklæring for '{0}'",
+			"goToImplementation.generic.noResults": "Der blev ikke fundet nogen implementering",
+			"goToImplementation.noResultWord": "Der blev ikke fundet nogen implementering for '{0}'",
 			"goToReferences.label": "Gå til referencer",
+			"goToTypeDefinition.generic.noResults": "Der blev ikke fundet nogen typedefinition",
+			"goToTypeDefinition.noResultWord": "Der blev ikke fundet nogen typedefinition for '{0}'",
+			"miGotoDeclaration": "Gå til &&erklæring",
 			"miGotoDefinition": "Gå til &&definition",
 			"miGotoImplementation": "Gå til &&implementeringer",
 			"miGotoReference": "Gå til &&referencer",
+			"miGotoTypeDefinition": "Gå til &&typedefinition",
 			"peek.submenu": "Kig",
-			"ref.title": "Referencer"
+			"ref.title": "Referencer",
+			"references.action.label": "Kig på referencer",
+			"references.noGeneric": "Der blev ikke fundet nogen referencer"
 		},
 		"vs/editor/contrib/gotoSymbol/browser/peek/referencesController": {
 			"labelLoading": "Indlæser...",
@@ -895,6 +930,39 @@
 		"vs/editor/contrib/insertFinalNewLine/browser/insertFinalNewLine": {
 			"insertFinalNewLine": "Indsæt afsluttende ny linje"
 		},
+		"vs/editor/contrib/linesOperations/browser/linesOperations": {
+			"duplicateSelection": "Dupliker markering",
+			"editor.transformToCamelcase": "Omdan til camelCase",
+			"editor.transformToKebabcase": "Omdan til kebab-case",
+			"editor.transformToLowercase": "Omdan til små bogstaver",
+			"editor.transformToPascalcase": "Omdan til PascalCase",
+			"editor.transformToSnakecase": "Omdan til snake_case",
+			"editor.transformToTitlecase": "Omdan til stort begyndelsesbogstav i hvert ord",
+			"editor.transformToUppercase": "Omdan til store bogstaver",
+			"editor.transpose": "Byt om på tegn omkring markøren",
+			"lines.copyDown": "Kopiér linje nedad",
+			"lines.copyUp": "Kopiér linje opad",
+			"lines.delete": "Slet linje",
+			"lines.deleteAllLeft": "Slet alt til venstre",
+			"lines.deleteAllRight": "Slet alt til højre",
+			"lines.deleteDuplicates": "Slet dublerede linjer",
+			"lines.indent": "Ryk linje ind",
+			"lines.insertAfter": "Indsæt linje nedenunder",
+			"lines.insertBefore": "Indsæt linje ovenover",
+			"lines.joinLines": "Flet linjer",
+			"lines.moveDown": "Flyt linje nedad",
+			"lines.moveUp": "Flyt linje opad",
+			"lines.outdent": "Ryk linje ud",
+			"lines.reverseLines": "Vend rækkefølgen af linjer",
+			"lines.sortAscending": "Sortér linjer stigende",
+			"lines.sortDescending": "Sortér linjer faldende",
+			"lines.trimTrailingWhitespace": "Fjern afsluttende blanktegn",
+			"miCopyLinesDown": "Kopiér linje &&nedad",
+			"miCopyLinesUp": "&&Kopiér linje opad",
+			"miDuplicateSelection": "&&Dupliker markering",
+			"miMoveLinesDown": "Flyt &&linje nedad",
+			"miMoveLinesUp": "Flyt linje &&opad"
+		},
 		"vs/editor/contrib/links/browser/links": {
 			"label": "Åbn link",
 			"links.navigate.follow": "Følg link",
@@ -905,6 +973,27 @@
 		},
 		"vs/editor/contrib/multicursor/browser/multicursor": {
 			"addSelectionToNextFindMatch": "Føj markering til næste søgeresultat",
+			"addSelectionToPreviousFindMatch": "Føj markering til forrige søgeresultat",
+			"changeAll.label": "Rediger alle forekomster",
+			"cursorAdded": "Markør tilføjet: {0}",
+			"cursorsAdded": "Markører tilføjet: {0}",
+			"miAddSelectionToNextFindMatch": "Tilføj &&næste forekomst",
+			"miAddSelectionToPreviousFindMatch": "Tilføj &&forrige forekomst",
+			"miInsertCursorAbove": "&&Tilføj markør ovenfor",
+			"miInsertCursorAtEndOfEachLineSelected": "Tilføj &&markører ved linjeslutninger",
+			"miInsertCursorBelow": "Tilføj markør &&nedenfor",
+			"miSelectHighlights": "Markér alle &&forekomster",
+			"moveSelectionToNextFindMatch": "Flyt den seneste markering til næste søgeresultat",
+			"moveSelectionToPreviousFindMatch": "Flyt den seneste markering til forrige søgeresultat",
+			"mutlicursor.addCursorsToBottom": "Tilføj markører til bunden",
+			"mutlicursor.addCursorsToTop": "Tilføj markører til toppen",
+			"mutlicursor.focusNextCursor": "Fokuser næste markør",
+			"mutlicursor.focusNextCursor.description": "Fokuserer den næste markør",
+			"mutlicursor.focusPreviousCursor": "Fokuser forrige markør",
+			"mutlicursor.focusPreviousCursor.description": "Fokuserer den forrige markør",
+			"mutlicursor.insertAbove": "Tilføj markør ovenfor",
+			"mutlicursor.insertAtEndOfEachLineSelected": "Tilføj markører ved linjeslutninger",
+			"mutlicursor.insertBelow": "Tilføj markør nedenfor",
 			"selectAllOccurrencesOfFindMatch": "Markér alle forekomster af søgeresultatet"
 		},
 		"vs/editor/contrib/parameterHints/browser/parameterHintsWidget": {
@@ -925,6 +1014,12 @@
 		},
 		"vs/editor/contrib/rename/browser/renameWidget": {
 			"cancelRenameSuggestionsButton": "Annuller"
+		},
+		"vs/editor/contrib/smartSelect/browser/smartSelect": {
+			"miSmartSelectGrow": "&&Udvid markering",
+			"miSmartSelectShrink": "&&Formindsk markering",
+			"smartSelect.expand": "Udvid markering",
+			"smartSelect.shrink": "Formindsk markering"
 		},
 		"vs/editor/contrib/snippet/browser/snippetVariables": {
 			"April": "April",
@@ -961,8 +1056,12 @@
 			"WednesdayShort": "Ons"
 		},
 		"vs/editor/contrib/stickyScroll/browser/stickyScrollActions": {
+			"focusStickyScroll": "Fokuser editorens faste rulning",
 			"miStickyScroll": "&&Fast rulning",
-			"stickyScroll": "Fast rulning"
+			"mitoggleStickyScroll": "Slå &&fast rulning i editoren til/fra",
+			"stickyScroll": "Fast rulning",
+			"toggleEditorStickyScroll": "Slå fast rulning i editoren til/fra",
+			"toggleEditorStickyScroll.description": "Slå editorens faste rulning til/fra, som viser de indlejrede områder øverst i visningsområdet"
 		},
 		"vs/editor/contrib/suggest/browser/suggestController": {
 			"accept.insert": "Indsæt",
@@ -2055,6 +2154,7 @@
 		},
 		"vs/sessions/contrib/changes/browser/changes.contribution": {
 			"changes": "Ændringer",
+			"miChanges": "Æn&&dringer",
 			"sessionChangesEditor.label": "Ændringer"
 		},
 		"vs/sessions/contrib/changes/browser/changesActions": {
@@ -2491,7 +2591,8 @@
 			"agentSessions.filesChanged": "{0} filer ændret"
 		},
 		"vs/sessions/contrib/sessions/browser/sessions.contribution": {
-			"agentSessions.view.label": "Sessioner"
+			"agentSessions.view.label": "Sessioner",
+			"miSessions": "&&Sessioner"
 		},
 		"vs/sessions/contrib/sessions/browser/sessionsActions": {
 			"chatCompositeBar.addChat": "Ny chat",
@@ -3007,7 +3108,8 @@
 		"vs/workbench/browser/parts/editor/breadcrumbsControl": {
 			"cmd.toggle": "Slå brødkrummer til/fra",
 			"cmd.toggle.short": "Brødkrummer",
-			"cmd.toggle2": "Brødkrummer"
+			"cmd.toggle2": "Brødkrummer",
+			"miBreadcrumbs2": "&&Brødkrummer"
 		},
 		"vs/workbench/browser/parts/editor/breadcrumbsPicker": {
 			"breadcrumbs": "Brødkrummer"
@@ -3023,8 +3125,14 @@
 			"closeAll": "Luk alle",
 			"closeAllSaved": "Luk gemte",
 			"closeEditor": "Luk editor",
+			"closeEditorGroup": "Luk editorgruppe",
+			"closeEditorsInGroup": "Luk alle editorer i gruppen",
 			"closeGroupAction": "Luk gruppe",
+			"closeOtherEditors": "Luk andre editorer i gruppen",
 			"closeOthers": "Luk andre",
+			"closePinnedEditor": "Luk fastgjort editor",
+			"closeRightEditors": "Luk editorer til højre i gruppen",
+			"closeSavedEditors": "Luk gemte editorer i gruppen",
 			"configureEditors": "Konfigurer editorer",
 			"configureTabs": "Konfigurer faner",
 			"copyEditorGroupToNewWindow": "Kopiér til nyt vindue",
@@ -3033,25 +3141,77 @@
 			"editorActionsPosition": "Placering af editorhandlinger",
 			"hidden": "Skjult",
 			"hideTabs": "Skjult",
+			"ignoreTrimWhitespace.label": "Vis forskelle i indledende/afsluttende blanktegn",
 			"joinInGroup": "Deltag i gruppe",
+			"keepEditor": "Behold editor",
 			"lockEditorGroup": "Lås gruppe",
 			"lockGroup": "Lås gruppe",
 			"lockGroupAction": "Lås gruppe",
+			"miClearRecentOpen": "&&Ryd senest åbnede...",
 			"miCopyEditorToNewWindow": "&&Kopiér editor til nyt vindue",
+			"miEditorLayout": "Editor&&layout",
+			"miFirstSideEditor": "&&Første side i editor",
+			"miFocusAboveGroup": "Gruppen &&ovenover",
+			"miFocusBelowGroup": "Gruppen &&nedenunder",
+			"miFocusFifthGroup": "Gruppe &&5",
+			"miFocusFirstGroup": "Gruppe &&1",
+			"miFocusFourthGroup": "Gruppe &&4",
+			"miFocusLeftGroup": "Gruppen til &&venstre",
+			"miFocusRightGroup": "Gruppen til &&højre",
+			"miFocusSecondGroup": "Gruppe &&2",
+			"miFocusThirdGroup": "Gruppe &&3",
+			"miJoinEditorInGroup": "Saml i &&gruppe",
 			"miJoinEditorInGroupWithoutMnemonic": "Deltag i gruppe",
+			"miLastEditLocation": "&&Seneste redigeringsplacering",
 			"miMoveEditorToNewWindow": "&&Flyt editor til nyt vindue",
+			"miNextEditor": "&&Næste editor",
+			"miNextEditorInGroup": "&&Næste editor i gruppen",
+			"miNextGroup": "&&Næste gruppe",
+			"miNextRecentlyUsedEditor": "&&Næste senest anvendte editor",
+			"miNextUsedEditorInGroup": "&&Næste senest anvendte editor i gruppen",
+			"miPreviousEditor": "&&Forrige editor",
+			"miPreviousEditorInGroup": "&&Forrige editor i gruppen",
+			"miPreviousGroup": "&&Forrige gruppe",
+			"miPreviousRecentlyUsedEditor": "&&Forrige senest anvendte editor",
+			"miPreviousUsedEditorInGroup": "&&Forrige senest anvendte editor i gruppen",
+			"miReopenClosedEditor": "&&Genåbn lukket editor",
+			"miSecondSideEditor": "&&Anden side i editor",
 			"miShare": "Del",
+			"miSingleColumnEditorLayout": "&&Enkelt",
 			"miSingleColumnEditorLayoutWithoutMnemonic": "Enkelt",
+			"miSplitEditorDown": "Opdel &&nedad",
 			"miSplitEditorDownWithoutMnemonic": "Opdel nedad",
+			"miSplitEditorInGroup": "Opdel i &&gruppe",
 			"miSplitEditorInGroupWithoutMnemonic": "Opdel i gruppe",
+			"miSplitEditorLeft": "Opdel mod &&venstre",
 			"miSplitEditorLeftWithoutMnemonic": "Opdel mod venstre",
+			"miSplitEditorRight": "Opdel mod &&højre",
 			"miSplitEditorRightWithoutMnemonic": "Opdel mod højre",
+			"miSplitEditorUp": "Opdel &&opad",
 			"miSplitEditorUpWithoutMnemonic": "Opdel opad",
+			"miSwitchEditor": "Skift &&editor",
+			"miSwitchGroup": "Skift &&gruppe",
+			"miThreeColumnsEditorLayout": "&&Tre kolonner",
+			"miThreeColumnsEditorLayoutWithoutMnemonic": "Tre kolonner",
+			"miThreeRowsEditorLayout": "Tre &&rækker",
+			"miThreeRowsEditorLayoutWithoutMnemonic": "Tre rækker",
+			"miTwoByTwoGridEditorLayout": "&&Gitter (2x2)",
+			"miTwoByTwoGridEditorLayoutWithoutMnemonic": "Gitter (2x2)",
+			"miTwoColumnsBottomEditorLayout": "To &&kolonner nederst",
+			"miTwoColumnsBottomEditorLayoutWithoutMnemonic": "To kolonner nederst",
+			"miTwoColumnsEditorLayout": "&&To kolonner",
+			"miTwoColumnsEditorLayoutWithoutMnemonic": "To kolonner",
+			"miTwoRowsEditorLayout": "To &&rækker",
+			"miTwoRowsEditorLayoutWithoutMnemonic": "To rækker",
+			"miTwoRowsRightEditorLayout": "To rækker til &&højre",
+			"miTwoRowsRightEditorLayoutWithoutMnemonic": "To rækker til højre",
 			"moveEditorGroupToNewWindow": "Flyt til nyt vindue",
 			"moveEditorToNewWindow": "Flyt editor til nyt vindue",
 			"moveToNewWindow": "Flyt til nyt vindue",
 			"newWindow": "Nyt vindue",
 			"pin": "Fastgør",
+			"pinEditor": "Fastgør editor",
+			"reopenAsText": "Genåbn som tekst",
 			"reopenWith": "Åbn editor igen med...",
 			"share": "Del",
 			"sideBySideEditor": "Editor side om side",
@@ -3503,6 +3663,7 @@
 			"hideCustomTitleBarInFullScreen": "Skjul brugerdefineret titellinje i fuld skærm",
 			"manage": "Administrer",
 			"toggle.commandCenter": "Kommandocenter",
+			"toggle.customTitleBar": "Brugerdefineret titellinje",
 			"toggle.hideCustomTitleBar": "Skjul brugerdefineret titellinje",
 			"toggle.hideCustomTitleBarInFullScreen": "Skjul brugerdefineret titellinje i fuld skærm",
 			"toggle.notifications": "Meddelelser"
@@ -3549,6 +3710,7 @@
 		"vs/workbench/browser/workbench.zenMode.contribution": {
 			"miToggleZenMode": "Zen-tilstand",
 			"tabBar": "Fanelinje",
+			"toggleZenMode": "Slå Zen-tilstand til/fra",
 			"zenMode.showTabs.none": "Editorens titelområde vises ikke.",
 			"zenModeConfigurationTitle": "Zen-tilstand"
 		},
@@ -5402,7 +5564,8 @@
 			"goToReferences.label": "Gå til referencer",
 			"miGotoDefinition": "Gå til &&definition",
 			"miGotoImplementations": "Gå til &&implementeringer",
-			"miGotoReference": "Gå til &&referencer"
+			"miGotoReference": "Gå til &&referencer",
+			"miGotoTypeDefinition": "Gå til &&typedefinitioner"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatMarkdownContentPart": {
 			"chat.codeblock.deletions": "{0} sletninger",
@@ -7292,6 +7455,10 @@
 			"viewByDays": "Dage",
 			"viewBySessions": "Sessioner"
 		},
+		"vs/workbench/contrib/emmet/browser/actions/expandAbbreviation": {
+			"expandAbbreviationAction": "Emmet: Udvid forkortelse",
+			"miEmmetExpandAbbreviation": "Emmet: &&Udvid forkortelse"
+		},
 		"vs/workbench/contrib/extensions/browser/abstractRuntimeExtensionsEditor": {
 			"copy id": "Kopiér id ({0})",
 			"disable": "Deaktiver",
@@ -8659,6 +8826,10 @@
 			"text": "Tekst",
 			"undo": "Fortryd"
 		},
+		"vs/workbench/contrib/issue/common/issue.contribution": {
+			"miReportIssue": "Rapportér &&problem",
+			"reportIssueInEnglish": "Rapportér problem..."
+		},
 		"vs/workbench/contrib/issue/electron-browser/issue.contribution": {
 			"issueReporterConfigurationTitle": "Problemrapportering",
 			"issueReporterEditorPaneTitle": "Problemrapportering"
@@ -9351,6 +9522,7 @@
 		},
 		"vs/workbench/contrib/notebook/browser/diff/notebookDiffActions": {
 			"hideUnchangedCells": "Skjul uændrede celler",
+			"ignoreTrimWhitespace.label": "Vis forskelle i indledende/afsluttende blanktegn",
 			"notebook.diff.action.next.title": "Vis næste ændring",
 			"notebook.diff.action.previous.title": "Vis forrige ændring",
 			"notebook.diff.cell.toggleCollapseUnchangedRegions": "Slå sammenfoldning af uændrede områder til/fra",
@@ -9962,6 +10134,7 @@
 			"textInputBoxForeground": "Forgrund for tekstinputfeltet i Indstillingseditoren."
 		},
 		"vs/workbench/contrib/processExplorer/browser/processExplorer.contribution": {
+			"miOpenProcessExplorerer": "Åbn &&procesoversigt",
 			"promptOpenWith.processExplorer.displayName": "Procesoversigt"
 		},
 		"vs/workbench/contrib/processExplorer/browser/processExplorerControl": {
@@ -10040,9 +10213,12 @@
 		"vs/workbench/contrib/remote/browser/remoteIndicator": {
 			"closeRemoteConnection.title": "Luk fjernforbindelse",
 			"host.tooltip": "Redigerer på {0}",
+			"miCloseRemote": "Luk &&fjernforbindelse",
 			"reloadWindow": "Genindlæs vindue",
 			"remote.category": "Fjern",
 			"remote.close": "Luk fjernforbindelse",
+			"remote.install": "Installer udvidelser til fjernudvikling",
+			"remote.showMenu": "Vis fjernmenu",
 			"remote.startActions.help": "Få mere at vide",
 			"remote.startActions.install": "Installer",
 			"retry": "Prøv igen",
@@ -12023,9 +12199,17 @@
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/browser/terminal.suggest.contribution": {
 			"workbench.action.terminal.acceptSelectedSuggestion": "Indsæt",
+			"workbench.action.terminal.changeSelectionMode.always": "Markeringstilstand: Altid (Tab eller Enter)",
+			"workbench.action.terminal.changeSelectionMode.always.tooltip": "Vælg altid det øverste forslag. Tab eller Enter accepterer et forslag, når det er synligt. Aktivér for at ændre.",
+			"workbench.action.terminal.changeSelectionMode.never": "Markeringstilstand: Ingen",
+			"workbench.action.terminal.changeSelectionMode.never.tooltip": "Vælg ikke det øverste forslag, før der trykkes på pil ned. Derefter accepterer Tab eller Enter forslaget. Aktivér for at ændre.",
+			"workbench.action.terminal.changeSelectionMode.partial": "Markeringstilstand: Delvis (Tab)",
+			"workbench.action.terminal.changeSelectionMode.partial.tooltip": "Markér det øverste forslag delvist. Tab accepterer et forslag, når det er synligt. Aktivér for at ændre.",
 			"workbench.action.terminal.configureSuggestSettings": "Konfigurer",
+			"workbench.action.terminal.doNotShowSuggestOnType": "Vis ikke IntelliSense, medmindre det udløses udtrykkeligt. Dette deaktiverer indstillingerne for hurtige forslag og forslag ved udløsertegn.",
 			"workbench.action.terminal.learnMore": "Få mere at vide",
 			"workbench.action.terminal.resetSuggestWidgetSize": "Nulstil størrelsen på forslagswidgetten",
+			"workbench.action.terminal.showSuggestOnType": "Vis IntelliSense under indtastning. Dette aktiverer hurtige forslag til kommandoer og argumenter samt indstillingen for forslag ved udløsertegn.",
 			"workbench.action.terminal.triggerSuggest": "Udløs forslag"
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/browser/terminalSuggestAddon": {
@@ -12495,6 +12679,7 @@
 			"goToSetting": "Åbn indstillinger",
 			"installExtension.button.ok": "OK",
 			"manage extension": "Administrer udvidelse",
+			"miSelectTheme": "&&Temaer",
 			"noIconThemeLabel": "Ingen",
 			"selectIconTheme.label": "Filikontema",
 			"selectProductIconTheme.label": "Produktikontema",
@@ -12549,13 +12734,17 @@
 			"checkForUpdates": "Søg efter opdateringer...",
 			"releaseNotes": "Produktbemærkninger",
 			"reload": "&&Genindlæs",
+			"update.noReleaseNotesOnline": "Denne version af {0} har ingen produktbemærkninger online",
 			"updating": "Opdaterer {0}..."
 		},
 		"vs/workbench/contrib/update/browser/update.contribution": {
 			"checkForUpdates": "Søg efter opdateringer...",
 			"developerCategory": "Udvikler",
+			"mshowReleaseNotes": "Vis &&produktbemærkninger",
 			"openDownloadPage": "Download {0}",
-			"restartToUpdate": "Genstart for at opdatere"
+			"restartToUpdate": "Genstart for at opdatere",
+			"showReleaseNotes": "Vis produktbemærkninger",
+			"update.noReleaseNotesOnline": "Denne version af {0} har ingen produktbemærkninger online"
 		},
 		"vs/workbench/contrib/update/browser/updateTitleBarEntry": {
 			"updateIndicator.installing": "Installerer...",
@@ -12597,11 +12786,17 @@
 			"current": "Aktuel",
 			"delete profile": "Slet profil...",
 			"delete specific profile": "Slet profil...",
+			"export profile": "Eksportér profil...",
+			"export profile in share": "Eksportér profil ({0})...",
 			"manage profiles": "Profiler",
+			"miOpenProfiles": "&&Profiler",
 			"New Profile Window": "Nyt vindue med profil",
 			"new window with profile": "Nyt vindue med profil",
+			"open profiles": "Åbn profiler (brugergrænseflade)",
 			"openShort": "{0}",
 			"pick profile": "Vælg profil",
+			"profiles": "Profil ({0})",
+			"save profile as": "Gem den aktuelle profil som...",
 			"selectProfile": "Vælg profil"
 		},
 		"vs/workbench/contrib/userDataProfile/browser/userDataProfilesEditor": {
@@ -12652,17 +12847,21 @@
 			"configure": "Konfigurer...",
 			"configure sync": "Konfigurer...",
 			"default": "Standard",
+			"global activity turn on sync": "Sikkerhedskopiér og synkroniser indstillinger...",
 			"operationId": "Handlings-id: {0}",
 			"report issue": "Rapportér problem",
 			"reset": "Ryd data i cloudmiljøet...",
+			"resolveConflicts_global": "Vis konflikter ({0})",
 			"show conflicts": "Vis konflikter",
 			"show sync log toolrip": "Vis log",
 			"show sync logs": "Vis log",
 			"show synced data": "Vis synkroniserede data",
 			"show synced data action": "Vis synkroniserede data",
+			"sign in accounts": "Log på for at synkronisere indstillinger (1)",
 			"sign in global": "Log på for at synkronisere indstillinger",
 			"sign in to sync": "Log på for at synkronisere indstillinger",
 			"stable": "Stabil",
+			"sync is on": "Synkronisering af indstillinger er slået til",
 			"turn off": "&&Slå fra",
 			"turning on sync": "Slår synkronisering af indstillinger til...",
 			"turning on syncing": "Slår synkronisering af indstillinger til...",
@@ -12745,9 +12944,12 @@
 			"welcomePage.showOnStartup": "Vis velkomstside ved opstart"
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution": {
+			"minWelcomeDescription": "Åbner en introduktion, der hjælper dig i gang med VS Code.",
 			"miWelcome": "Velkommen",
 			"welcome": "Velkommen",
 			"welcome.goBack": "Gå tilbage",
+			"welcome.markStepComplete": "Markér trin som fuldført",
+			"welcome.markStepInomplete": "Markér trin som ikke fuldført",
 			"welcome.showAllWalkthroughs": "Åbn introduktion..."
 		},
 		"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStartedAccessibleView": {
@@ -12845,9 +13047,15 @@
 			"change keybinding": "Konfigurer tastebinding",
 			"Create": "Opret",
 			"file": "Fil",
+			"miNewFile2": "Tekstfil",
+			"miNewFileWithName": "Opret ny fil ({0})",
 			"newFileTitle": "Ny fil...",
 			"notebook": "Notesbog",
 			"welcome.newFile": "Ny fil..."
+		},
+		"vs/workbench/contrib/welcomeWalkthrough/browser/walkThrough.contribution": {
+			"miPlayground": "Editorlege&&plads",
+			"walkThrough.editor.label": "Legeplads"
 		},
 		"vs/workbench/contrib/workspace/browser/workspace.contribution": {
 			"addWorkspaceFolderDetail": "Du føjer filer, der ikke er tillid til i øjeblikket, til et arbejdsområde, der er tillid til. Har du tillid til forfatterne af de nye filer?",
@@ -12991,6 +13199,10 @@
 			"selectToOpen": "Vælg et arbejdsområde, der skal åbnes",
 			"selectWorkspace": "Vælg arbejdsområde"
 		},
+		"vs/workbench/electron-browser/actions/developerActions": {
+			"configureRuntimeArguments": "Konfigurer kørselsargumenter",
+			"toggleDevTools": "Slå udviklerværktøjer til/fra"
+		},
 		"vs/workbench/electron-browser/actions/windowActions": {
 			"close": "Luk vindue",
 			"closeActive": "Luk aktivt vindue",
@@ -13017,8 +13229,14 @@
 		},
 		"vs/workbench/electron-browser/desktop.contribution": {
 			"keyboardConfigurationTitle": "Tastatur",
+			"mergeAllWindowTabs": "Flet alle vinduer",
 			"miExit": "A&&fslut",
+			"moveWindowTabToNewWindow": "Flyt vinduesfane til nyt vindue",
+			"newTab": "Ny vinduesfane",
+			"showNextWindowTab": "Vis næste vinduesfane",
+			"showPreviousTab": "Vis forrige vinduesfane",
 			"telemetryConfigurationTitle": "Telemetri",
+			"toggleWindowTabsBar": "Slå vinduesfanelinjen til/fra",
 			"windowConfigurationTitle": "Vindue"
 		},
 		"vs/workbench/electron-browser/desktop.main": {
@@ -13496,6 +13714,8 @@
 		},
 		"vs/workbench/services/views/browser/viewsService": {
 			"editor": "Teksteditor",
+			"focus view": "Fokuser på visningen {0}",
+			"preserveFocus": "Om det eksisterende fokus skal bevares, når visningen åbnes.",
 			"resetViewLocation": "Nulstil placering",
 			"toggle view": "Slå {0} til/fra"
 		},

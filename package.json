@@ -2,7 +2,7 @@
 	"name": "vscode-language-pack-da",
 	"displayName": "Danish Language Pack for Visual Studio Code",
 	"description": "Danish (Dansk) user-interface localization for Visual Studio Code.",
-	"version": "0.4.2",
+	"version": "0.4.3",
 	"publisher": "katrine-jensen",
 	"author": "Katrine Jensen",
 	"license": "MIT",

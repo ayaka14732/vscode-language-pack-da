@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.3
+
+- Expand the pack by 202 messages to 12,778 Danish translations (50.99% of the pinned catalog).
+- Complete the Selection menu, including expanding and shrinking selections, copying, moving and
+  duplicating lines, and adding cursors or occurrences.
+- Expand visible commands across the File, Edit, View, Go, and Help menus, together with their
+  Recent, Preferences, Share, editor-switching, group-switching, appearance, and layout submenus.
+- Expand related Command Palette actions for line transformation, deletion, sorting, whitespace,
+  navigation, profiles, themes, and editor layouts.
+
 ## 0.4.2
 
 - Expand the pack by 656 messages to 12,576 Danish translations (50.18% of the pinned catalog).

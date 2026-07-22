@@ -9,7 +9,7 @@ the live report.
 ## Installation
 
 1. Run **Extensions: Install from VSIX...** from the Command Palette.
-2. Select `vscode-language-pack-da-0.4.3.vsix`.
+2. Select `vscode-language-pack-da-0.4.4.vsix`.
 3. Run **Configure Display Language**, select **Dansk**, and restart VS Code.
 
 ## Development

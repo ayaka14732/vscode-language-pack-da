@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.4
+
+- Add the standard Visual Studio Code language-pack icon to the extension and packaged VSIX.
+
 ## 0.4.3
 
 - Expand the pack by 202 messages to 12,778 Danish translations (50.99% of the pinned catalog).

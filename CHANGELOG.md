@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.6
+
+- Expand the pack by 1,043 messages to 14,855 Danish translations (59.28% of the pinned catalog).
+- Complete editor theme-color descriptions for selections, search matches, diff and merge views,
+  diagnostics, snippets, brackets, indentation guides, cursors, and overview rulers.
+- Complete workbench theme colors and visible behavior settings for editor tabs, labels, layouts,
+  windows, menus, panels, side bars, history, navigation, notifications, and accessibility effects.
+- Complete TypeScript package commands and settings, configuration-editing variables and glob
+  examples, GitHub publishing and link-copying flows, and theme colors for input and list controls.
+- Change the extension description to `Language pack extension for Danish`.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 0.4.5
 
 - Expand the pack by 1,034 messages to 13,812 Danish translations (55.11% of the pinned catalog).

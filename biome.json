@@ -6,7 +6,8 @@
 		"useIgnoreFile": true
 	},
 	"files": {
-		"includes": ["**", "!translations", "!xliff", "!reports"]
+		"includes": ["**", "!translations", "!xliff", "!reports"],
+		"maxSize": 2097152
 	},
 	"formatter": {
 		"enabled": true,

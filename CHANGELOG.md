@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.5
+
+- Expand the pack by 1,034 messages to 13,812 Danish translations (55.11% of the pinned catalog).
+- Complete the current breadcrumb navigation, editor switching and diff commands, accessible view
+  guidance, symbol navigation and IntelliSense labels, code actions, and file-operation errors.
+- Complete desktop and window settings, accessibility signals, chat accessibility help, notebook
+  settings, issue reporting, Getting Started, and shared chat and agent settings.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 0.4.4
 
 - Add the standard Visual Studio Code language-pack icon to the extension and packaged VSIX.

@@ -419,7 +419,7 @@
 		"vscode:prepublish": "pnpm check"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.4",
+		"@biomejs/biome": "2.5.5",
 		"@types/node": "26.1.1",
 		"@vscode/l10n-dev": "0.0.35",
 		"@vscode/vsce": "3.9.2",

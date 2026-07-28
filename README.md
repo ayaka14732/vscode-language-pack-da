@@ -1,14 +1,21 @@
 # Danish Language Pack for Visual Studio Code
 
-Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 16,336 Danish translations
-(65.18% coverage) across the core UI and 91 built-in extension resources. Run `pnpm coverage` for
+Use Visual Studio Code in Danish with translations for the core interface and built-in extensions.
+
+Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 17,750 Danish translations
+(70.83% coverage) across the core UI and 91 built-in extension resources. Run `pnpm coverage` for
 the live report.
 
 ## Installation
 
-1. Run **Extensions: Install from VSIX...** from the Command Palette.
-2. Select `vscode-language-pack-da-1.0.0.vsix`.
-3. Run **Configure Display Language**, select **Dansk**, and restart VS Code.
+The extension is available from the
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=katrine-jensen.vscode-language-pack-da).
+
+1. Open the Extensions view in VS Code and search for
+   **Danish Language Pack by Katrine Jensen for Visual Studio Code**.
+2. Select **Install**.
+3. Run **Configure Display Language** from the Command Palette, select **Dansk**, and restart VS
+   Code.
 
 ## Development
 
@@ -23,11 +30,17 @@ The project uses Node.js 26, pnpm 11, TypeScript 7, Biome 2, Vitest 4, the offic
 localization parser, and `@vscode/vsce`. The complete translation workflow is documented in the
 included `CONTRIBUTING.md` file.
 
+To test a local build before publishing it:
+
+1. Run `pnpm package`.
+2. Run **Extensions: Install from VSIX...** from the Command Palette.
+3. Select the generated `vscode-language-pack-da-<version>.vsix` file.
+4. Run **Configure Display Language**, select **Dansk**, and restart VS Code.
+
 ## Publishing
 
 1. Update the `version` in `package.json` and add the release notes to `CHANGELOG.md`.
-2. Update the VSIX filename in the installation instructions above to match the new version.
-3. Run the complete release validation from the repository root:
+2. Run the complete release validation from the repository root:
 
    ```bash
    pnpm translate:memory
@@ -37,8 +50,8 @@ included `CONTRIBUTING.md` file.
    git diff --check
    ```
 
-4. Confirm that the generated VSIX contains the core translation and all built-in extension packs.
-5. Sign in to the [Visual Studio Marketplace publisher portal](https://marketplace.visualstudio.com/manage/publishers/),
+3. Confirm that the generated VSIX contains the core translation and all built-in extension packs.
+4. Sign in to the [Visual Studio Marketplace publisher portal](https://marketplace.visualstudio.com/manage/publishers/),
    select the `katrine-jensen` publisher, and upload the generated VSIX.
 
 ## License

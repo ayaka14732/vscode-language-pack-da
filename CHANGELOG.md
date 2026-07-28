@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.1
+
+- Expand the pack by 1,414 messages to 17,750 Danish translations (70.83% of the pinned catalog).
+- Complete current prompt validation diagnostics, menu contribution metadata, extension manifest
+  validation, and workbench context descriptions.
+- Complete current configuration contribution metadata, port forwarding, Settings Sync, and
+  command-line interface messages.
+- Complete JavaScript debugging configuration, chat cache analysis, editor and session context,
+  chat attachments and model selection, edit sessions, and user profile management.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 1.0.0
 
 - Expand the pack by 756 messages to 16,336 Danish translations (65.18% of the pinned catalog).

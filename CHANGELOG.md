@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.7
+
+- Expand the pack by 725 messages to 15,580 Danish translations (62.17% of the pinned catalog).
+- Complete the built-in HTML, CSS/LESS/SCSS, TypeScript, and Markdown language-feature resources,
+  including formatter settings, diagnostics, refactorings, previews, links, and file handling.
+- Complete JSON language-server and JSON Schema validation messages, trusted schema controls, and
+  schema descriptions.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 0.4.6
 
 - Expand the pack by 1,043 messages to 14,855 Danish translations (59.28% of the pinned catalog).

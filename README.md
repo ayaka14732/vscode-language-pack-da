@@ -1,13 +1,13 @@
 # Danish Language Pack for Visual Studio Code
 
-Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 15,580 Danish translations
-(62.17% coverage) across the core UI and 91 built-in extension resources. Run `pnpm coverage` for
+Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 16,336 Danish translations
+(65.18% coverage) across the core UI and 91 built-in extension resources. Run `pnpm coverage` for
 the live report.
 
 ## Installation
 
 1. Run **Extensions: Install from VSIX...** from the Command Palette.
-2. Select `vscode-language-pack-da-0.5.0.vsix`.
+2. Select `vscode-language-pack-da-1.0.0.vsix`.
 3. Run **Configure Display Language**, select **Dansk**, and restart VS Code.
 
 ## Development

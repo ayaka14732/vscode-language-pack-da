@@ -10,14 +10,10 @@ const environment = { ...process.env };
 delete environment.npm_config_manage_package_manager_versions;
 
 const exitCode = await new Promise<number>((resolve, reject) => {
-	const child = spawn(
-		process.execPath,
-		[vscePath, 'package', '--no-dependencies', '--allow-missing-repository'],
-		{
-			env: environment,
-			stdio: 'inherit',
-		},
-	);
+	const child = spawn(process.execPath, [vscePath, 'package', '--no-dependencies'], {
+		env: environment,
+		stdio: 'inherit',
+	});
 	child.once('error', reject);
 	child.once('exit', (code) => resolve(code ?? 1));
 });

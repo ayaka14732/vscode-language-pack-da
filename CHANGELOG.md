@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.0
+
+- Expand the pack by 756 messages to 16,336 Danish translations (65.18% of the pinned catalog).
+- Complete current MCP server installation and configuration, AI customization management, chat
+  context states, model pricing and visibility, quota and error messages, status controls, and agent
+  session actions.
+- Complete current terminal-agent sandbox settings and approvals, Run in Terminal prompts and
+  failures, and remote agent host connection flows for SSH, development tunnels, and WSL.
+- Add the GitHub repository, homepage, and issue-tracker metadata to the Marketplace listing.
+- Remove the Preview designation from the extension.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 0.5.0
 
 - Change the Marketplace display name to `Danish Language Pack by Katrine Jensen for Visual Studio Code`.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0
+
+- Change the Marketplace display name to `Danish Language Pack by Katrine Jensen for Visual Studio Code`.
+
 ## 0.4.7
 
 - Expand the pack by 725 messages to 15,580 Danish translations (62.17% of the pinned catalog).

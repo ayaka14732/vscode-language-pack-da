@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.0.2
+
+- Expand the pack by 1,493 messages to 19,243 Danish translations (76.78% of the pinned catalog).
+- Complete current onboarding, Getting Started, extension installation and publisher trust,
+  workspace configuration, remote port forwarding, update, profile import/export, and Settings
+  Sync messages.
+- Complete current agent-host configuration and OpenTelemetry settings, chat tools and plugins,
+  session navigation, plan review, questions, debugging logs, hook and prompt-file management, and
+  remote agent-host status messages.
+- Complete current theme sizing, token classification, symbol icons, notebook cell commands and
+  icons, terminal symbol settings, speech languages, screencast controls, surveys, and merge-editor
+  actions.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 1.0.1
 
 - Expand the pack by 1,414 messages to 17,750 Danish translations (70.83% of the pinned catalog).

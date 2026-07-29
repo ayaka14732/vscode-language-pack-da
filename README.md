@@ -2,8 +2,8 @@
 
 Use Visual Studio Code in Danish with translations for the core interface and built-in extensions.
 
-Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 17,750 Danish translations
-(70.83% coverage) across the core UI and 91 built-in extension resources. Run `pnpm coverage` for
+Current baseline: VS Code `1.129.0`, 25,061 language-pack messages, 19,243 Danish translations
+(76.78% coverage) across the core UI and 91 built-in extension resources. Run `pnpm coverage` for
 the live report.
 
 ## Installation

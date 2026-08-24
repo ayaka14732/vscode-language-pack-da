@@ -31,7 +31,7 @@ Expect the first export to take time because VS Code's build dependencies must b
 To export another release explicitly:
 
 ```bash
-pnpm source:export -- --ref=1.129.0
+pnpm source:export -- --ref=1.134.0
 ```
 
 ## Translate

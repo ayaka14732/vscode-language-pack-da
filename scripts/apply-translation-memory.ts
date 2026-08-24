@@ -8,6 +8,7 @@ import { isRecord, readJson, sortRecord, writeJsonAtomic } from './lib/json.js';
 import { discoverTranslationEntries, updateManifestTranslations } from './lib/manifest.js';
 import type { ExtensionManifest, I18nPack } from './lib/model.js';
 import { haveEqualPlaceholders } from './lib/placeholders.js';
+import { decodeXmlNumericCharacterReferences } from './lib/xml.js';
 
 interface SourceUnit {
 	id: string;
@@ -38,7 +39,7 @@ function asArray(value: unknown): unknown[] {
 
 function textValue(value: unknown): string | undefined {
 	if (typeof value === 'string') {
-		return value;
+		return decodeXmlNumericCharacterReferences(value);
 	}
 	if (typeof value === 'number' || typeof value === 'boolean') {
 		return String(value);

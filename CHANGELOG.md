@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.3
+
+- Refresh the pinned VS Code baseline from 1.129.0 to 1.134.0, expanding the source catalog to
+  26,491 language-pack messages.
+- Reapply the translation memory to add 414 current messages, bringing the pack to 19,657 Danish
+  translations (74.20% of the pinned catalog) across the core UI and 91 built-in extensions.
+- Render line breaks correctly in 74 multiline translations instead of showing XML character
+  references such as `&#10;` in the interface.
+
 ## 1.0.2
 
 - Expand the pack by 1,493 messages to 19,243 Danish translations (76.78% of the pinned catalog).

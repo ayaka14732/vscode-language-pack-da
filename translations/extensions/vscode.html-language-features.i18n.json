@@ -263,7 +263,7 @@
 			"html.completion.attributeDefaultValue.doublequotes": "Attributværdien angives til \"\".",
 			"html.completion.attributeDefaultValue.empty": "Attributværdien angives ikke.",
 			"html.completion.attributeDefaultValue.singlequotes": "Attributværdien angives til ''.",
-			"html.customData.desc": "En liste over relative filstier, der peger på JSON-filer, som følger [formatet for brugerdefinerede data](https://github.com/microsoft/vscode-html-languageservice/blob/master/docs/customData.md).&#10;&#10;VS Code indlæser brugerdefinerede data ved start for at forbedre HTML-understøttelsen af de brugerdefinerede HTML-tags, attributter og attributværdier, du angiver i JSON-filerne.&#10;&#10;Filstierne er relative til arbejdsområdet, og kun indstillinger for arbejdsområdemapper tages i betragtning.",
+			"html.customData.desc": "En liste over relative filstier, der peger på JSON-filer, som følger [formatet for brugerdefinerede data](https://github.com/microsoft/vscode-html-languageservice/blob/master/docs/customData.md).\n\nVS Code indlæser brugerdefinerede data ved start for at forbedre HTML-understøttelsen af de brugerdefinerede HTML-tags, attributter og attributværdier, du angiver i JSON-filerne.\n\nFilstierne er relative til arbejdsområdet, og kun indstillinger for arbejdsområdemapper tages i betragtning.",
 			"html.format.contentUnformatted.desc": "Kommasepareret liste over tags, hvor indholdet ikke skal omformateres. `null` bruger som standard tagget `pre`.",
 			"html.format.enable.desc": "Aktivér/deaktiver HTML-standardformateringen.",
 			"html.format.extraLiners.desc": "Kommasepareret liste over tags, der skal have et ekstra linjeskift før sig. `null` bruger som standard `\"head, body, /html\"`.",

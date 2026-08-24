@@ -2,7 +2,7 @@
 	"name": "vscode-language-pack-da",
 	"displayName": "Danish Language Pack by Katrine Jensen for Visual Studio Code",
 	"description": "Language pack extension for Danish",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "katrine-jensen",
 	"author": "Katrine Jensen",
 	"license": "MIT",
@@ -18,7 +18,7 @@
 	"pricing": "Free",
 	"type": "module",
 	"engines": {
-		"vscode": "^1.129.0",
+		"vscode": "^1.134.0",
 		"node": ">=26.0.0"
 	},
 	"categories": [

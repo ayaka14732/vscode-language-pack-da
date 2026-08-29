@@ -2300,6 +2300,10 @@
 			"telemetry": "Viser alle telemetrihændelser, som VS Code indsamler.",
 			"usage": "Brug"
 		},
+		"vs/platform/extensionManagement/common/abstractExtensionManagementService": {
+			"notFoundCompatibleDependency": "Udvidelsen '{0}' kan ikke installeres, fordi den ikke er kompatibel med den aktuelle version af {1} (version {2}).",
+			"notFoundReleaseExtension": "Udgivelsesversionen af udvidelsen '{0}' kan ikke installeres, fordi den ikke har nogen udgivelsesversion."
+		},
 		"vs/platform/extensionManagement/common/extensionManagement": {
 			"extensions": "Udvidelser",
 			"extensionsConfigurationTitle": "Udvidelser",
@@ -3418,7 +3422,8 @@
 			"agentSessions.openPullRequest": "Åbn pull request",
 			"agentSessions.openPullRequest.tooltip": "Åbn pull request",
 			"agentSessions.pullRequestList.labelWithAttention": "{0}, {1}",
-			"agentSessions.pullRequestList.open": "Åbn pull request"
+			"agentSessions.pullRequestList.open": "Åbn pull request",
+			"agentSessions.pullRequestList.pullRequest": "Pull request"
 		},
 		"vs/sessions/contrib/github/browser/pullRequestHover": {
 			"agentSessions.pullRequestHover.baseFallback": "mål",
@@ -5950,48 +5955,92 @@
 		"vs/workbench/contrib/authentication/browser/actions/manageAccountPreferencesForExtensionAction": {
 			"accounts": "Konti",
 			"currentAccount": "Aktuel konto",
+			"manageAccountPreferenceForExtension": "Administrer udvidelsens kontoindstillinger...",
+			"noAccounts": "Ingen konti bruges i øjeblikket af denne udvidelse.",
+			"noAccountUsage": "Denne udvidelse har endnu ikke brugt nogen konti.",
+			"pickAProviderTitle": "Administrer udvidelsens kontoindstillinger",
+			"placeholder v2": "Administrer kontoindstillinger for '{0}' i {1}...",
+			"selectExtension": "Vælg en udvidelse, der skal administreres kontoindstillinger for",
+			"selectProvider": "Vælg en godkendelsesudbyder, der skal administreres kontoindstillinger for",
+			"title": "Kontoindstillinger for '{0}' i dette arbejdsområde",
 			"use new account": "Brug en ny konto..."
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageAccountPreferencesForMcpServerAction": {
 			"accounts": "Konti",
 			"currentAccount": "Aktuel konto",
 			"manageAccountPreferenceForMcpServer": "Administrer kontoindstillinger for MCP-server",
+			"noAccounts": "Ingen konti bruges i øjeblikket af denne MCP-server.",
+			"noAccountUsage": "Denne MCP-server har endnu ikke brugt nogen konti.",
 			"pickAProviderTitle": "Administrer kontoindstillinger for MCP-server",
+			"placeholder v2": "Administrer kontoindstillinger for '{0}' i {1}...",
+			"selectProvider": "Vælg en godkendelsesudbyder, der skal administreres kontoindstillinger for",
+			"title": "Kontoindstillinger for '{0}' i dette arbejdsområde",
 			"use new account": "Brug en ny konto..."
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageAccountsAction": {
 			"accounts": "Konti",
+			"manageAccount": "Administrer '{0}'",
+			"manageAccounts": "Administrer konti",
 			"manageTrustedExtensions": "Administrer udvidelser, der er tillid til",
 			"manageTrustedMCPServers": "Administrer MCP-servere, der er tillid til",
+			"noActiveAccounts": "Der er ingen aktive konti.",
+			"pickAccount": "Vælg en konto, der skal administreres",
+			"selectAction": "Vælg en handling",
 			"signOut": "Log af"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageDynamicAuthenticationProvidersAction": {
 			"authenticationCategory": "Godkendelse",
-			"remove": "Fjern"
+			"clientId": "Klient-id: {0}",
+			"confirmDeleteDetail": "Dette fjerner alle gemte godkendelsesdata for de valgte udbydere. Du skal godkende igen, hvis du bruger disse udbydere på ny.",
+			"confirmDeleteMultipleProviders": "Er du sikker på, at du vil fjerne {0} dynamiske godkendelsesudbydere: {1}?",
+			"confirmDeleteSingleProvider": "Er du sikker på, at du vil fjerne den dynamiske godkendelsesudbyder \"{0}\"?",
+			"noDynamicProviders": "Ingen dynamiske godkendelsesudbydere",
+			"noDynamicProvidersDetail": "Der er endnu ikke brugt nogen dynamiske godkendelsesudbydere.",
+			"remove": "Fjern",
+			"removeDynamicAuthProviders": "Fjern dynamiske godkendelsesudbydere",
+			"selectProviderToRemove": "Vælg en dynamisk godkendelsesudbyder, der skal fjernes"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageTrustedExtensionsForAccountAction": {
 			"accountLastUsedDate": "Brugte sidst denne konto {0}",
+			"accountPreferences": "Administrer kontoindstillinger for denne udvidelse",
 			"accounts": "Konti",
+			"manageExtensions": "Vælg, hvilke udvidelser der må tilgå denne konto",
 			"manageTrustedExtensions": "Administrer udvidelser, der er tillid til",
 			"manageTrustedExtensions.cancel": "Annuller",
+			"manageTrustedExtensionsForAccount": "Administrer pålidelige udvidelser for konto",
+			"noTrustedExtensions": "Denne konto er ikke blevet brugt af nogen udvidelser.",
 			"notUsed": "Har ikke brugt denne konto",
-			"trustedExtensions": "Betroet af Microsoft"
+			"pickAccount": "Vælg en konto, der skal administreres pålidelige udvidelser for",
+			"trustedExtensions": "Betroet af Microsoft",
+			"trustedExtensionTooltip": "Microsoft har tillid til denne udvidelse, og den har\naltid adgang til denne konto",
+			"viewExtensionDetails": "Vis oplysninger om udvidelsen"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/manageTrustedMcpServersForAccountAction": {
 			"accountLastUsedDate": "Brugte sidst denne konto {0}",
+			"accountPreferences": "Administrer kontoindstillinger for denne MCP-server",
 			"accounts": "Konti",
+			"agentHostMcpServers": "MCP-servere i {0}",
+			"manageMcpServers": "Vælg, hvilke MCP-servere der må tilgå denne konto",
 			"manageTrustedMcpServers": "Administrer MCP-servere, der er tillid til",
 			"manageTrustedMcpServers.cancel": "Annuller",
+			"manageTrustedMcpServersForAccount": "Administrer pålidelige MCP-servere for konto",
+			"noTrustedMcpServers": "Denne konto er ikke blevet brugt af nogen MCP-servere.",
 			"notUsed": "Har ikke brugt denne konto",
-			"trustedMcpServers": "Betroet af Microsoft"
+			"pickAccount": "Vælg en konto, der skal administreres pålidelige MCP-servere for",
+			"trustedMcpServers": "Betroet af Microsoft",
+			"trustedMcpServerTooltip": "Microsoft har tillid til denne MCP-server, og den har\naltid adgang til denne konto"
 		},
 		"vs/workbench/contrib/authentication/browser/actions/signOutOfAccountAction": {
-			"signOut": "&&Log af"
+			"signOut": "&&Log af",
+			"signOutMessage": "Kontoen '{0}' er blevet brugt af: \n\n{1}\n\n Vil du logge af i disse udvidelser?",
+			"signOutMessageSimple": "Log af '{0}'?",
+			"signOutOfAccount": "Log af konto"
 		},
 		"vs/workbench/contrib/authentication/browser/authentication.contribution": {
 			"authentication": "Godkendelse",
 			"authenticationid": "Id",
-			"authenticationlabel": "Etiket"
+			"authenticationlabel": "Etiket",
+			"authenticationMcpAuthorizationServers": "MCP-godkendelsesservere"
 		},
 		"vs/workbench/contrib/browserView/common/browserEditorInput": {
 			"browser.editorLabel": "Browser"
@@ -9079,6 +9128,7 @@
 			"chat.planReview.inlineCommentLocation": "Linje {0}, kolonne {1}",
 			"chat.planReview.inlineCommentLocationLine": "Linje {0}",
 			"chat.planReview.openTooltip": "Åbn {0}",
+			"chat.planReview.outdated": "Forældet",
 			"chat.planReview.reject": "Afvis",
 			"chat.planReview.submitFeedback": "Send feedback",
 			"chat.planReview.submitFeedbackWithCount": "Send feedback ({0})"
@@ -10180,6 +10230,7 @@
 			"toggle.openInAgentsWindowDescription": "Slå synligheden af knappen Åbn i vinduet Agenter på titellinjen til/fra"
 		},
 		"vs/workbench/contrib/chat/electron-browser/builtInTools/fetchPageTool": {
+			"fetchWebPage.confirmationMessage.plural": "Webindhold kan indeholde skadelig kode eller forsøge promptinjektionsangreb.",
 			"fetchWebPage.invocationMessage.singular": "Henter {0}",
 			"fetchWebPage.pastTenseMessageResult.singular": "Hentede {0}"
 		},
@@ -10530,36 +10581,133 @@
 		"vs/workbench/contrib/codeEditor/electron-browser/startDebugTextMate": {
 			"startDebugTextMate": "Start logføring af TextMate-syntaksgrammatik"
 		},
+		"vs/workbench/contrib/comments/browser/commentColors": {
+			"commentReplyInputBackground": "Baggrundsfarve for inputfeltet til kommentarsvar.",
+			"commentThreadActiveRangeBackground": "Baggrundsfarve for det aktuelt markerede kommentarområde eller det, som markøren holdes over.",
+			"commentThreadRangeBackground": "Baggrundsfarve for kommentarområder.",
+			"resolvedCommentBorder": "Farve på kanter og pil for løste kommentarer.",
+			"resolvedCommentIcon": "Ikonfarve for løste kommentarer.",
+			"unresolvedCommentBorder": "Farve på kanter og pil for uløste kommentarer.",
+			"unresolvedCommentIcon": "Ikonfarve for uløste kommentarer."
+		},
+		"vs/workbench/contrib/comments/browser/commentGlyphWidget": {
+			"editorGutterCommentDraftGlyphForeground": "Farve på editormargenens markering for kommentarglyffer til kommentartråde med kladdekommentarer.",
+			"editorGutterCommentGlyphForeground": "Farve på editormargenens markering for kommentarglyffer.",
+			"editorGutterCommentRangeForeground": "Farve på editormargenens markering for kommentarområder. Farven skal være uigennemsigtig.",
+			"editorGutterCommentUnresolvedGlyphForeground": "Farve på editormargenens markering for kommentarglyffer til uløste kommentartråde.",
+			"editorOverviewRuler.commentDraftForeground": "Markeringsfarve på editorens oversigtslineal for kommentartråde med kladdekommentarer. Farven skal være uigennemsigtig.",
+			"editorOverviewRuler.commentForeground": "Markeringsfarve på editorens oversigtslineal for løste kommentarer. Farven skal være uigennemsigtig.",
+			"editorOverviewRuler.commentUnresolvedForeground": "Markeringsfarve på editorens oversigtslineal for uløste kommentarer. Farven skal være uigennemsigtig."
+		},
 		"vs/workbench/contrib/comments/browser/commentNode": {
 			"commentAddReactionDefaultError": "Sletning af kommentarreaktionen mislykkedes",
-			"commentDeleteReactionDefaultError": "Sletning af kommentarreaktionen mislykkedes"
+			"commentAddReactionError": "Kommentartilkendegivelsen kunne ikke slettes: {0}.",
+			"commentDeleteReactionDefaultError": "Sletning af kommentarreaktionen mislykkedes",
+			"commentDeleteReactionError": "Kommentartilkendegivelsen kunne ikke slettes: {0}.",
+			"commentToggleReaction": "Slå tilkendegivelse til eller fra",
+			"commentToggleReactionDefaultError": "Kommentartilkendegivelsen kunne ikke slås til eller fra",
+			"commentToggleReactionError": "Kommentartilkendegivelsen kunne ikke slås til eller fra: {0}."
+		},
+		"vs/workbench/contrib/comments/browser/commentReply": {
+			"newComment": "Skriv en ny kommentar",
+			"reply": "Svar..."
 		},
 		"vs/workbench/contrib/comments/browser/comments.contribution": {
 			"collapseAll": "Fold alle sammen",
+			"collapseOnResolve": "Styrer, om kommentartråden skal foldes sammen, når tråden løses.",
+			"comments.maxHeight": "Styrer, om kommentarwidgetten ruller eller udvides.",
+			"comments.openPanel.deprecated": "Denne indstilling er udfaset til fordel for `comments.openView`.",
+			"comments.openView": "Styrer, hvornår kommentarvisningen skal åbnes.",
+			"comments.openView.file": "Kommentarvisningen åbnes, når en fil med kommentarer er aktiv.",
+			"comments.openView.firstFile": "Hvis kommentarvisningen endnu ikke er blevet åbnet i denne session, åbnes den første gang, en fil med kommentarer er aktiv i sessionen.",
+			"comments.openView.firstFileUnresolved": "Hvis kommentarvisningen endnu ikke er blevet åbnet i denne session, og kommentaren ikke er løst, åbnes visningen første gang, en fil med kommentarer er aktiv i sessionen.",
+			"comments.openView.never": "Kommentarvisningen åbnes aldrig.",
+			"comments.visible": "Styrer synligheden af kommentarbjælken og kommentartråde i editorer, der har kommentarområder og kommentarer. Kommentarer er stadig tilgængelige via visningen Kommentarer og medfører, at kommentarer slås til på samme måde, som når kommandoen \"Kommentarer: Slå editorkommentarer til eller fra\" køres.",
 			"commentsConfigurationTitle": "Kommentarer",
+			"confirmOnCollapse": "Styrer, om der vises en bekræftelsesdialogboks, når en kommentartråd foldes sammen.",
+			"confirmOnCollapse.never": "Vis aldrig en bekræftelsesdialogboks, når en kommentartråd foldes sammen.",
+			"confirmOnCollapse.whenHasUnsubmittedComments": "Vis en bekræftelsesdialogboks, når en kommentartråd med kommentarer, der ikke er indsendt, foldes sammen.",
 			"expandAll": "Fold alle ud",
-			"reply": "Svar"
+			"openComments": "Styrer, hvornår kommentarpanelet skal åbnes.",
+			"reply": "Svar",
+			"totalUnresolvedComments": "{0} uløste kommentarer",
+			"useRelativeTime": "Bestemmer, om der bruges relativ tid i tidsstempler for kommentarer (f.eks. 'for 1 dag siden')."
+		},
+		"vs/workbench/contrib/comments/browser/commentsAccessibility": {
+			"addCommentNoKb": "- Tilføj kommentar til den aktuelle markering{0}.",
+			"commentCommands": "Nogle nyttige kommentarkommandoer omfatter:",
+			"escape": "- Afvis kommentar{0}.",
+			"intro": "Editoren indeholder områder, der kan kommenteres. Nogle nyttige kommandoer omfatter:",
+			"introWidget": "Denne widget indeholder et tekstområde til at skrive nye kommentarer og handlinger, der kan nås med tabulatortasten, når tilstanden, hvor tabulatortasten flytter fokus, er aktiveret med kommandoen Slå Tabulatortasten flytter fokus til eller fra{0}.",
+			"next": "- Gå til næste kommentarområde{0}.",
+			"nextCommentedRangeKb": "- Gå til næste kommenterede område{0}.",
+			"nextCommentThreadKb": "- Gå til næste kommentartråd{0}.",
+			"previous": "- Gå til forrige kommentarområde{0}.",
+			"previousCommentedRangeKb": "- Gå til forrige kommenterede område{0}.",
+			"previousCommentThreadKb": "- Gå til forrige kommentartråd{0}.",
+			"submitComment": "- Indsend kommentar{0}."
 		},
 		"vs/workbench/contrib/comments/browser/commentsController": {
-			"commentRange": "Linje {0}"
+			"commentRange": "Linje {0}",
+			"commentRangeStart": "Linje {0} til {1}",
+			"comments.addCommand.error": "Markøren skal være inden for et kommentarområde for at tilføje en kommentar.",
+			"comments.addFileCommentCommand.error": "Filkommentarer er ikke tilladt i denne fil.",
+			"hasCommentRanges": "Editoren har kommentarområder.",
+			"hasCommentRangesKb": "Editoren har kommentarområder. Kør kommandoen Åbn hjælp til tilgængelighed ({0}) for at få flere oplysninger.",
+			"hasCommentRangesNoKb": "Editoren har kommentarområder. Kør kommandoen Åbn hjælp til tilgængelighed, som i øjeblikket ikke kan udløses med en tastaturgenvej, for at få flere oplysninger.",
+			"pickCommentService": "Vælg kommentarudbyder"
 		},
 		"vs/workbench/contrib/comments/browser/commentsEditorContribution": {
+			"comments.addCommand": "Tilføj kommentar til den aktuelle markering",
+			"comments.collapseAll": "Fold alle kommentarer sammen",
+			"comments.expandAll": "Fold alle kommentarer ud",
+			"comments.expandUnresolved": "Fold uløste kommentarer ud",
+			"comments.focusCommand.error": "Markøren skal være på en linje med en kommentar, for at kommentaren kan få fokus",
+			"comments.focusCommentOnCurrentLine": "Fokuser kommentar på den aktuelle linje",
+			"comments.NextCommentedRange": "Gå til næste kommenterede område",
+			"comments.nextCommentingRange": "Gå til næste kommentarområde",
+			"comments.previousCommentedRange": "Gå til forrige kommenterede område",
+			"comments.previousCommentingRange": "Gå til forrige kommentarområde",
+			"comments.toggleCommenting": "Slå editorkommentarer til eller fra",
 			"commentsCategory": "Kommentarer"
+		},
+		"vs/workbench/contrib/comments/browser/commentsModel": {
+			"noComments": "Der er endnu ingen kommentarer i dette arbejdsområde."
 		},
 		"vs/workbench/contrib/comments/browser/commentsTreeViewer": {
 			"commentCount": "1 kommentar",
+			"commentLine": "[Ln. {0}]",
+			"commentRange": "[Ln. {0}-{1}]",
 			"comments.view.title": "Kommentarer",
+			"commentsCountReplies": "{0} svar",
 			"commentsCountReply": "1 svar",
-			"image": "Billede"
+			"image": "Billede",
+			"imageWithLabel": "Billede: {0}",
+			"lastReplyFrom": "Seneste svar fra {0}",
+			"outdated": "Forældet"
 		},
 		"vs/workbench/contrib/comments/browser/commentsView": {
+			"accessibleViewHint": "\nUndersøg dette i tilgængelighedsvisningen ({0}).",
+			"acessibleViewHintNoKbOpen": "\nUndersøg dette i tilgængelighedsvisningen via kommandoen Åbn tilgængelighedsvisning, som i øjeblikket ikke kan udløses med en tastaturgenvej.",
+			"comments.filter.ariaLabel": "Filtrer kommentarer",
+			"comments.filter.placeholder": "Filtrer (f.eks. tekst, forfatter)",
 			"fileCommentLabel": "om {0}",
+			"multiLineCommentLabel": "fra linje {0} til linje {1} i {2}",
+			"oneLineCommentLabel": "på linje {0}, kolonne {1} i {2}",
+			"replyCount": " {0} svar,",
+			"resourceWithCommentLabel": "{0}: {1}\n{2}\n{3}\n{4}",
+			"resourceWithCommentLabelOutdated": "Forældet fra {0}: {1}\n{2}\n{3}\n{4}",
+			"resourceWithCommentThreadsLabel": "Kommentarer i {0}, fuld sti {1}",
 			"resourceWithRepliesLabel": "{0} {1}",
+			"rootCommentsLabel": "Kommentarer til det aktuelle arbejdsområde",
 			"showing filtered results": "Viser {0} af {1}"
 		},
 		"vs/workbench/contrib/comments/browser/commentsViewActions": {
 			"comment sorts": "Sortér efter",
 			"comments": "Kommentarer",
+			"commentsClearFilterText": "Ryd filtertekst",
+			"focusCommentsFilter": "Fokuser kommentarfilter",
+			"focusCommentsList": "Fokuser visningen Kommentarer",
 			"resolved": "Vis løste",
 			"sorting by position in file": "Placering i fil",
 			"sorting by updated at": "Opdateringstidspunkt",
@@ -10569,8 +10717,15 @@
 			"toggle unresolved": "Vis uløste",
 			"unresolved": "Vis uløste"
 		},
+		"vs/workbench/contrib/comments/browser/commentThreadBody": {
+			"commentThreadAria": "Kommentartråd med {0} kommentarer. {1}.",
+			"commentThreadAria.document": "Kommentartråd med {0} kommentarer til hele dokumentet. {1}.",
+			"commentThreadAria.withRange": "Kommentartråd med {0} kommentarer til linje {1} til {2}. {3}."
+		},
 		"vs/workbench/contrib/comments/browser/commentThreadHeader": {
-			"label.collapse": "Fold sammen"
+			"collapseIcon": "Ikon til at folde en gennemgangskommentar sammen.",
+			"label.collapse": "Fold sammen",
+			"startThread": "Start diskussion"
 		},
 		"vs/workbench/contrib/comments/browser/commentThreadWidget": {
 			"commentLabel": "Kommentar",
@@ -10578,7 +10733,32 @@
 			"commentLabelWithKeybindingNoKeybinding": "{0}, kør kommandoen Åbn hjælp til tilgængelighed, som i øjeblikket ikke kan udløses med en tastebinding."
 		},
 		"vs/workbench/contrib/comments/browser/commentThreadZoneWidget": {
-			"discard": "Kassér"
+			"confirmCollapse": "Hvis du folder denne kommentartråd sammen, kasseres kommentarer, der ikke er indsendt. Er du sikker på, at du vil kassere kommentarerne?",
+			"discard": "Kassér",
+			"neverAskAgain": "Spørg mig aldrig igen"
+		},
+		"vs/workbench/contrib/comments/browser/reactionsAction": {
+			"comment.reactionLabelMany": "{0}{1} tilkendegivelser med {2}",
+			"comment.reactionLabelNone": "{0}{1} tilkendegivelse",
+			"comment.reactionLabelOne": "{0}1 tilkendegivelse med {1}",
+			"comment.reactionLessThanTen": "{0}{1} reagerede med {2}",
+			"comment.reactionMoreThanTen": "{0}{1} og {2} andre reagerede med {3}",
+			"comment.toggleableReaction": "Slå tilkendegivelse til eller fra, ",
+			"pickReactions": "Vælg tilkendegivelser..."
+		},
+		"vs/workbench/contrib/comments/common/commentContextKeys": {
+			"comment": "Kommentarens kontekstværdi",
+			"commentController": "Id'et for den kommentarcontroller, der er knyttet til en kommentartråd",
+			"commentFocused": "Angives, når kommentaren har fokus",
+			"commentingEnabled": "Om kommentarfunktionen er aktiveret",
+			"commentIsEmpty": "Angives, når kommentaren ikke har noget input",
+			"commentThread": "Kommentartrådens kontekstværdi",
+			"commentThreadIsEmpty": "Angives, når kommentartråden ikke har nogen kommentarer",
+			"commentWidgetVisible": "Angives, når en kommentarwidget er synlig i editoren",
+			"editorHasCommentingRange": "Om den aktive editor har et kommentarområde",
+			"hasComment": "Om placeringen ved den aktive markør har en kommentar",
+			"hasCommentingProvider": "Om det åbne arbejdsområde har kommentarer eller kommentarområder.",
+			"hasCommentingRange": "Om placeringen ved den aktive markør har et kommentarområde"
 		},
 		"vs/workbench/contrib/customEditor/browser/customEditorDiffInput": {
 			"customEditorDiffLabel": "{0} - {1}",
@@ -12876,42 +13056,68 @@
 			"disableHint": " Slå {0} til eller fra i indstillingerne for at deaktivere dette tip."
 		},
 		"vs/workbench/contrib/issue/browser/baseIssueReporterService": {
+			"acknowledge": "Bekræft anerkendelse af version",
+			"bugDescription": "Beskriv de trin, der kræves for at genskabe problemet pålideligt. Medtag de faktiske og forventede resultater. Vi understøtter Markdown i GitHub-format. Du kan redigere din problemrapport og tilføje skærmbilleder, når vi forhåndsviser den på GitHub.",
+			"bugReporter": "Fejlrapport",
 			"closed": "Lukket",
 			"create": "Opret på GitHub",
 			"createInternally": "Opret internt",
 			"createOnGitHub": "Opret på GitHub",
 			"description": "Beskrivelse",
+			"disabledExtensions": "Udvidelser er deaktiveret",
+			"elsewhereDescription": "Udvidelsen '{0}' foretrækker at bruge en ekstern problemrapportering. Klik på knappen nedenfor for at åbne denne problemrapportering.",
 			"extension": "En VS Code-udvidelse",
 			"extensionPlaceholder": "F.eks. Manglende alternativ tekst på billedet i udvidelsens readme-fil",
 			"featureRequest": "Funktionsanmodning",
+			"featureRequestDescription": "Beskriv den funktion, du gerne vil se. Vi understøtter Markdown i GitHub-format. Du kan redigere din problemrapport og tilføje skærmbilleder, når vi forhåndsviser den på GitHub.",
+			"handlesIssuesElsewhere": "Denne udvidelse håndterer problemer uden for VS Code",
 			"hide": "skjul",
+			"internalPreviewMessage": "Hvis dine Copilot-fejlfindingslogge indeholder private oplysninger:",
 			"marketplace": "Marketplace for udvidelser",
+			"marketplacePlaceholder": "F.eks. Installeret udvidelse kan ikke deaktiveres",
 			"open": "Åbn",
 			"openIssueReporter": "Åbn ekstern problemrapportering",
 			"pasteData": "De nødvendige data er skrevet til din udklipsholder, fordi de var for store til at sende. Indsæt dem.",
+			"performanceIssue": "Ydelsesproblem (fryser, er langsom eller går ned)",
+			"performanceIssueDesciption": "Hvornår opstod dette ydelsesproblem? Opstår det ved start eller efter en bestemt række handlinger? Vi understøtter Markdown i GitHub-format. Du kan redigere din problemrapport og tilføje skærmbilleder, når vi forhåndsviser den på GitHub.",
 			"preview": "Vis eksempel på GitHub",
 			"previewOnGitHub": "Vis eksempel på GitHub",
 			"privateCreate": "Opret internt",
 			"saveExtensionData": "Gem udvidelsesdata",
 			"selectExtension": "Vælg udvidelse",
+			"selectSource": "Vælg kilde",
 			"show": "vis",
+			"similarIssues": "Lignende problemer",
+			"stepsToReproduce": "Trin til genskabelse",
+			"submittingIssue": "Indsender...",
 			"undefinedPlaceholder": "Angiv en titel",
 			"unknown": "Ved ikke",
-			"vscode": "Visual Studio Code"
+			"vscode": "Visual Studio Code",
+			"vscodePlaceholder": "F.eks. Arbejdsområdet mangler problempanelet"
 		},
 		"vs/workbench/contrib/issue/browser/issueFormService": {
+			"additionalIssueData": "Yderligere problemdata",
 			"cancel": "Annuller",
+			"confirmCloseIssueReporter": "Dit input gemmes ikke. Er du sikker på, at du vil lukke dette vindue?",
+			"issueData": "Problemdata",
 			"issueReporter.attachmentsHeading": "Vedhæftede filer",
+			"issueReporter.attachmentsUploadFailed": "Upload mislykkedes. Træk og slip vedhæftede filer manuelt.",
+			"issueReporterWriteToClipboard": "Der er for mange data til at sende direkte til GitHub. Dataene kopieres til udklipsholderen. Indsæt dem på den GitHub-problemside, der åbnes.",
 			"ok": "&&OK",
 			"pasteData": "De nødvendige data er skrevet til din udklipsholder, fordi de var for store til at sende. Indsæt dem.",
 			"yes": "&&Ja"
 		},
 		"vs/workbench/contrib/issue/browser/issueQuickAccess": {
-			"extensions": "Udvidelser"
+			"contributedIssuePage": "Åbn udvidelsesside",
+			"extensions": "Udvidelser",
+			"reportExtensionMarketplace": "Marketplace for udvidelser"
 		},
 		"vs/workbench/contrib/issue/browser/issueReporterEditorInput": {
 			"discard": "Kassér",
-			"issueReporterEditorInputName": "Rapportér problem"
+			"discardIssue": "Kassér problemrapport?",
+			"discardIssueDetail": "Din problemrapport har ændringer, der ikke er gemt, og som går tabt.",
+			"issueReporterEditorInputName": "Rapportér problem",
+			"issueReporterIcon": "Ikon for editoren til problemrapportering."
 		},
 		"vs/workbench/contrib/issue/browser/issueReporterOverlay": {
 			"abExperiments": "A/B-eksperimenter",
@@ -13018,22 +13224,61 @@
 			"workspaceMetadata": "Metadata om arbejdsområdet"
 		},
 		"vs/workbench/contrib/issue/browser/issueReporterPage": {
+			"acknowledgements": "Jeg anerkender, at min version af VS Code ikke er opdateret, og at problemrapporten muligvis lukkes.",
 			"chooseExtension": "Udvidelse",
+			"completeInEnglish": "Udfyld formularen på engelsk.",
+			"descriptionEmptyValidation": "Der kræves en beskrivelse.",
+			"descriptionTooShortValidation": "Angiv en længere beskrivelse.",
+			"details": "Angiv oplysninger.",
+			"disableExtensions": "at deaktivere alle udvidelser og genindlæse vinduet",
+			"disableExtensionsLabelText": "Prøv at genskabe problemet efter {0}. Hvis problemet kun kan genskabes, når udvidelser er aktive, skyldes det sandsynligvis en udvidelse.",
+			"downloadExtensionData": "Download udvidelsesdata",
+			"extensionData": "Udvidelsen har ingen yderligere data, der kan medtages.",
+			"extensionWithNoBugsUrl": "Problemrapporteringen kan ikke oprette problemrapporter for denne udvidelse, da udvidelsen ikke angiver en URL-adresse til problemrapportering. Se udvidelsens Marketplace-side for at finde eventuelle andre instruktioner.",
+			"extensionWithNonstandardBugsUrl": "Problemrapporteringen kan ikke oprette problemrapporter for denne udvidelse. Gå til {0} for at rapportere et problem.",
+			"issueSourceEmptyValidation": "Der kræves en problemkilde.",
 			"issueSourceLabel": "For",
 			"issueTitleLabel": "Titel",
-			"show": "vis"
+			"issueTitleRequired": "Angiv en titel.",
+			"issueTypeLabel": "Dette er en",
+			"reviewGuidanceLabel": "Før du rapporterer et problem her, skal du <a href=\"https://github.com/microsoft/vscode/wiki/Submitting-Bugs-and-Suggestions\" target=\"_blank\">gennemgå vores vejledning</a>. Udfyld formularen på engelsk.",
+			"sendExperiments": "Medtag oplysninger om A/B-eksperimenter",
+			"sendExtensionData": "Medtag yderligere oplysninger om udvidelsen",
+			"sendExtensions": "Medtag mine aktiverede udvidelser",
+			"sendProcessInfo": "Medtag mine aktuelt kørende processer",
+			"sendSystemInfo": "Medtag mine systemoplysninger",
+			"sendWorkspaceInfo": "Medtag metadata for mit arbejdsområde",
+			"show": "vis",
+			"titleEmptyValidation": "Der kræves en titel.",
+			"titleLengthValidation": "Titlen er for lang."
 		},
 		"vs/workbench/contrib/issue/browser/issueReporterService": {
 			"undefinedPlaceholder": "Angiv en titel"
 		},
 		"vs/workbench/contrib/issue/browser/issueTroubleshoot": {
+			"ask to download insiders": "Prøv at downloade {0} Insiders og genskabe problemet der.",
+			"ask to reproduce issue": "Prøv at genskabe problemet i {0} Insiders, og bekræft, om problemet også findes der.",
 			"bad": "Jeg kan genskabe problemet",
+			"detail.start": "Fejlfinding af problemer er en proces, der hjælper dig med at finde årsagen til et problem. Problemet kan skyldes en forkert konfiguration, en udvidelse eller selve {0}.\n\nUnder processen genindlæses vinduet flere gange. Hver gang skal du bekræfte, om problemet stadig opstår.",
+			"download insiders": "Download {0} Insiders",
+			"empty.profile": "Fejlfinding af problemer er aktiv og har midlertidigt nulstillet dine konfigurationer til standardværdierne. Kontrollér, om du stadig kan genskabe problemet, og fortsæt ved at vælge en af disse muligheder.",
 			"good": "Jeg kan ikke genskabe problemet",
+			"I cannot reproduce": "Jeg kan ikke genskabe problemet",
+			"issue is in core": "Fejlfindingen har fastslået, at problemet ligger i {0}.",
+			"issue is with configuration": "Fejlfindingen har fastslået, at problemet skyldes dine konfigurationer. Rapportér problemet ved at eksportere dine konfigurationer med kommandoen \"Eksportér profil\", og del filen i problemrapporten.",
+			"msg": "&&Foretag fejlfinding af problem",
+			"profile.extensions.disabled": "Fejlfinding af problemer er aktiv og har midlertidigt deaktiveret alle installerede udvidelser. Kontrollér, om du stadig kan genskabe problemet, og fortsæt ved at vælge en af disse muligheder.",
+			"report anyway": "Rapportér problemet alligevel",
 			"stop": "Stop",
 			"Stop": "Stop",
-			"troubleshoot issue": "Foretag fejlfinding af problem"
+			"This is Bad": "Jeg kan genskabe problemet",
+			"title.stop": "Stop fejlfinding af problem",
+			"troubleshoot issue": "Foretag fejlfinding af problem",
+			"troubleshootIssue": "Foretag fejlfinding af problem...",
+			"use insiders": "Det betyder sandsynligvis, at problemet allerede er løst, og at rettelsen bliver tilgængelig i en kommende version. Du kan trygt bruge {0} Insiders, indtil den nye stabile version er tilgængelig."
 		},
 		"vs/workbench/contrib/issue/browser/screenshotAnnotation": {
+			"annotationHint": "Rediger skærmbilledet for at fremhæve problemet",
 			"apply": "Anvend",
 			"arrow": "Pil",
 			"cancel": "Annuller",
@@ -13042,11 +13287,28 @@
 			"discard": "Kassér",
 			"ellipse": "Ellipse",
 			"eraser": "Viskelæder",
+			"fillColor": "Fyldfarve",
 			"freehand": "Tegn",
+			"opacity": "Uigennemsigtighed",
 			"pan": "Panorér",
+			"rectangle": "Rektangel",
 			"redo": "Annuller fortrydelse",
 			"save": "Gem",
+			"select": "Vælg/flyt",
+			"setFillColor": "Angiv fyldfarve",
+			"setOpacity": "Angiv uigennemsigtighed",
+			"setStrokeColor": "Angiv stregfarve",
+			"setStrokeWidth": "Angiv stregbredden til {0} px",
+			"setTextSize": "Angiv tekststørrelsen til {0} px",
+			"strokeColor": "Stregfarve",
+			"strokeWidth": "Stregbredde",
 			"text": "Tekst",
+			"textBackgroundColor": "Baggrundsfarve",
+			"textColor": "Tekstfarve",
+			"textSize": "Tekststørrelse",
+			"toolOptions": "Værktøjsindstillinger",
+			"transparentColor": "{0}: Gennemsigtig",
+			"typeText": "Skriv tekst",
 			"undo": "Fortryd"
 		},
 		"vs/workbench/contrib/issue/common/issue.contribution": {
@@ -13054,11 +13316,21 @@
 			"reportIssueInEnglish": "Rapportér problem..."
 		},
 		"vs/workbench/contrib/issue/electron-browser/issue.contribution": {
+			"issueReporter.wizard.enabled": "Aktivér den nye guide til problemrapportering i stedet for den klassiske problemrapportering.",
+			"issueReporter.wizard.fullWorkspaceScan": "Gennemgå hele arbejdsområdet, når der automatisk indsamles ydelsesdiagnosticering til guiden til problemrapportering, i stedet for at stoppe ved standardgrænsen på 20.000 filer. Angiv som falsk for meget store arbejdsområder, hvis scanningen gør den indledende gengivelse af guiden langsommere.",
 			"issueReporterConfigurationTitle": "Problemrapportering",
-			"issueReporterEditorPaneTitle": "Problemrapportering"
+			"issueReporterEditorPaneTitle": "Problemrapportering",
+			"openIssueReporter": "Åbn problemrapportering",
+			"reportPerformanceIssue": "Rapportér ydelsesproblem...",
+			"tasksQuickAccessPlaceholder": "Skriv navnet på den udvidelse, du vil rapportere om."
 		},
 		"vs/workbench/contrib/issue/electron-browser/issueReporterEditorPane": {
-			"noExperiments": "Ingen aktuelle eksperimenter."
+			"noData": "Der er ingen tilgængelige data fra problemrapporteringen.",
+			"noExperiments": "Ingen aktuelle eksperimenter.",
+			"openSystemSettings": "Åbn systemindstillinger",
+			"recordingTooLarge": "Optagelsen stoppede automatisk: Uploadgrænsen på 100 MB blev nået.",
+			"screenRecordingPermissionDenied": "{0} skal have tilladelse til skærmoptagelse for at optage videoer. Giv adgang i Systemindstillinger, og klik derefter på Optag igen.",
+			"screenRecordingPermissionDeniedGeneric": "Tilladelse til skærmoptagelse blev afvist. Tillad, at {0} optager skærmen, og prøv igen."
 		},
 		"vs/workbench/contrib/issue/electron-browser/issueReporterService": {
 			"noCurrentExperiments": "Ingen aktuelle eksperimenter.",
@@ -13135,12 +13407,39 @@
 			"revealInMac": "Vis i Finder",
 			"revealInWindows": "Vis i Stifinder"
 		},
+		"vs/workbench/contrib/localization/common/localization.contribution": {
+			"language id": "Sprog-id",
+			"localizations": "Sprogpakker",
+			"localizations language name": "Sprognavn",
+			"localizations localized language name": "Sprognavn (lokaliseret)",
+			"vscode.extension.contributes.localizations": "Bidrager med lokaliseringer til editoren",
+			"vscode.extension.contributes.localizations.languageId": "Id'et for det sprog, som visningsteksterne er oversat til.",
+			"vscode.extension.contributes.localizations.languageName": "Sprogets navn på engelsk.",
+			"vscode.extension.contributes.localizations.languageNameLocalized": "Sprogets navn på det bidragede sprog.",
+			"vscode.extension.contributes.localizations.translations": "Liste over oversættelser, der er knyttet til sproget.",
+			"vscode.extension.contributes.localizations.translations.id": "Id'et for den VS Code-udgave eller udvidelse, som denne oversættelse bidrages til. Id'et for VS Code er altid `vscode`, og id'et for en udvidelse skal have formatet `publisherId.extensionName`.",
+			"vscode.extension.contributes.localizations.translations.id.pattern": "Id'et skal være `vscode` eller have formatet `publisherId.extensionName` ved oversættelse af henholdsvis VS Code eller en udvidelse.",
+			"vscode.extension.contributes.localizations.translations.path": "En relativ sti til en fil, der indeholder oversættelser til sproget."
+		},
 		"vs/workbench/contrib/localization/common/localizationsActions": {
+			"available": "Tilgængelig",
+			"chooseLocale": "Vælg visningssprog",
+			"clearDisplayLanguage": "Ryd indstilling for visningssprog",
+			"configureLocale": "Konfigurer visningssprog",
+			"configureLocaleDescription": "Ændrer landestandarden for VS Code ud fra installerede sprogpakker. Almindelige sprog omfatter fransk, kinesisk, spansk, japansk, tysk, koreansk med flere.",
 			"installed": "Installeret",
 			"moreInfo": "Flere oplysninger"
 		},
 		"vs/workbench/contrib/localization/electron-browser/localization.contribution": {
-			"neverAgain": "Vis ikke igen"
+			"changeAndRestart": "Skift sprog, og genstart",
+			"neverAgain": "Vis ikke igen",
+			"updateLocale": "Vil du ændre visningssproget i {0} til {1} og genstarte?"
+		},
+		"vs/workbench/contrib/localization/electron-browser/minimalTranslations": {
+			"installAndRestart": "Installer og genstart",
+			"installAndRestartMessage": "Installer sprogpakken for at ændre visningssproget til {0}.",
+			"searchMarketplace": "Søg på Marketplace",
+			"showLanguagePackExtensions": "Søg efter sprogpakker på Marketplace for at ændre visningssproget til {0}."
 		},
 		"vs/workbench/contrib/logs/common/logs.contribution": {
 			"remote name": "{0} (fjern)"
@@ -13695,8 +13994,15 @@
 			"title": "Åbn fletteeditor"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/commands/devCommands": {
+			"merge.dev.copyState": "Kopiér fletningseditorens tilstand som JSON",
+			"merge.dev.loadContentsFromFolder": "Indlæs fletningseditorens tilstand fra mappe",
+			"merge.dev.saveContentsToFolder": "Gem fletningseditorens tilstand i mappe",
 			"mergeEditor": "Fletningseditor (udvikling)",
-			"mergeEditor.name": "Fletningseditor"
+			"mergeEditor.name": "Fletningseditor",
+			"mergeEditor.noActiveMergeEditor": "Ingen aktiv fletningseditor",
+			"mergeEditor.selectFolderToSaveTo": "Vælg den mappe, der skal gemmes i",
+			"mergeEditor.successfullyCopiedMergeEditorContents": "Fletningseditorens tilstand blev kopieret",
+			"mergeEditor.successfullySavedMergeEditorContentsToFolder": "Fletningseditorens tilstand blev gemt i mappen"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/mergeEditor.contribution": {
 			"diffAlgorithm.advanced": "Bruger den avancerede forskelsalgoritme.",
@@ -13705,41 +14011,138 @@
 			"diffAlgorithm.legacy": "Bruger den ældre forskelsalgoritme.",
 			"name": "Fletningseditor"
 		},
+		"vs/workbench/contrib/mergeEditor/browser/mergeEditorAccessibilityHelp": {
+			"msg1": "Du er i en fletningseditor.",
+			"msg2": "Naviger mellem fletningskonflikter med kommandoerne Gå til næste uhåndterede konflikt{0} og Gå til forrige uhåndterede konflikt{1}.",
+			"msg3": "Kør kommandoerne Fletningseditor: Acceptér alle indgående ændringer fra venstre{0} og Fletningseditor: Acceptér alle aktuelle ændringer fra højre{1}",
+			"msg4": "Fuldfør fletningen{0}.",
+			"msg5": "Skift mellem fletningseditorens input, indgående og aktuelle ændringer {0}."
+		},
+		"vs/workbench/contrib/mergeEditor/browser/mergeEditorInput": {
+			"mergeEditor.input1": "Indgående, venstre input",
+			"mergeEditor.input2": "Aktuel, højre input",
+			"mergeEditor.result": "Fletningsresultat",
+			"name": "Fletter: {0}"
+		},
 		"vs/workbench/contrib/mergeEditor/browser/mergeEditorInputModel": {
+			"acceptMerge": "&&Acceptér fletning",
+			"detail1": "Fletningsresultatet går tabt, hvis du ikke gemmer det.",
+			"detail1Conflicts": "Filen indeholder uhåndterede konflikter. Fletningsresultatet går tabt, hvis du ikke gemmer det.",
+			"detailN": "Fletningsresultaterne går tabt, hvis du ikke gemmer dem.",
+			"detailNConflicts": "Filerne indeholder uhåndterede konflikter. Fletningsresultaterne går tabt, hvis du ikke gemmer dem.",
 			"discard": "Gem &&ikke",
+			"merge-editor.source": "Før konflikter løses i fletningseditoren",
+			"message1": "Vil du beholde fletningsresultatet for {0}?",
+			"messageN": "Vil du beholde fletningsresultatet for {0} filer?",
 			"noMoreWarn": "Spørg mig ikke igen",
 			"save": "&&Gem",
+			"saveTempFile.detail": "Dette skriver fletningsresultatet til den oprindelige fil og lukker fletningseditoren.",
+			"saveTempFile.message": "Vil du acceptere fletningsresultatet?",
+			"saveWithConflict": "&&Gem med konflikter",
 			"workspace.close": "&&Luk",
+			"workspace.closeWithConflicts": "&&Luk med konflikter",
 			"workspace.detail1.handled": "Dine ændringer går tabt, hvis du ikke gemmer dem.",
+			"workspace.detail1.unhandled": "Filen indeholder uhåndterede konflikter. Dine ændringer går tabt, hvis du ikke gemmer dem.",
 			"workspace.detail1.unhandled.nonDirty": "Filen indeholder uhåndterede konflikter.",
 			"workspace.detailN.handled": "Dine ændringer går tabt, hvis du ikke gemmer dem.",
+			"workspace.detailN.unhandled": "Filerne indeholder uhåndterede konflikter. Dine ændringer går tabt, hvis du ikke gemmer dem.",
+			"workspace.detailN.unhandled.nonDirty": "Filerne indeholder uhåndterede konflikter.",
 			"workspace.doNotSave": "Gem &&ikke",
 			"workspace.message1": "Vil du gemme de ændringer, du har foretaget i {0}?",
-			"workspace.save": "&&Gem"
+			"workspace.message1.nonDirty": "Vil du lukke fletningseditoren for {0}?",
+			"workspace.messageN": "Vil du gemme de ændringer, du har foretaget i {0} filer?",
+			"workspace.messageN.nonDirty": "Vil du lukke {0} fletningseditorer?",
+			"workspace.save": "&&Gem",
+			"workspace.saveWithConflict": "&&Gem med konflikter"
+		},
+		"vs/workbench/contrib/mergeEditor/browser/mergeMarkers/mergeMarkersController": {
+			"conflictingLine": "1 linje med konflikt",
+			"conflictingLines": "{0} linjer med konflikter"
+		},
+		"vs/workbench/contrib/mergeEditor/browser/model/mergeEditorModel": {
+			"setInputHandled": "Markér input som håndteret",
+			"undoMarkAsHandled": "Fortryd markering som håndteret"
+		},
+		"vs/workbench/contrib/mergeEditor/browser/view/colors": {
+			"mergeEditor.change.background": "Baggrundsfarven for ændringer.",
+			"mergeEditor.change.word.background": "Baggrundsfarven for ordændringer.",
+			"mergeEditor.changeBase.background": "Baggrundsfarven for ændringer i grundversionen.",
+			"mergeEditor.changeBase.word.background": "Baggrundsfarven for ordændringer i grundversionen.",
+			"mergeEditor.conflict.handled.minimapOverViewRuler": "Forgrundsfarven for ændringer i input 1.",
+			"mergeEditor.conflict.handledFocused.border": "Kantfarven for håndterede konflikter med fokus.",
+			"mergeEditor.conflict.handledUnfocused.border": "Kantfarven for håndterede konflikter uden fokus.",
+			"mergeEditor.conflict.input1.background": "Baggrundsfarven for markeringer i input 1.",
+			"mergeEditor.conflict.input2.background": "Baggrundsfarven for markeringer i input 2.",
+			"mergeEditor.conflict.unhandled.minimapOverViewRuler": "Forgrundsfarven for ændringer i input 1.",
+			"mergeEditor.conflict.unhandledFocused.border": "Kantfarven for uhåndterede konflikter med fokus.",
+			"mergeEditor.conflict.unhandledUnfocused.border": "Kantfarven for uhåndterede konflikter uden fokus.",
+			"mergeEditor.conflictingLines.background": "Baggrunden for teksten \"Linjer med konflikter\"."
 		},
 		"vs/workbench/contrib/mergeEditor/browser/view/conflictActions": {
 			"accept": "Acceptér {0}",
 			"acceptBoth": "Acceptér kombination",
+			"acceptBoth0First": "Acceptér kombination ({0} først)",
+			"acceptBothTooltip": "Acceptér en automatisk kombination af begge sider i resultatdokumentet.",
+			"acceptTooltip": "Acceptér {0} i resultatdokumentet.",
+			"append": "Tilføj {0}",
+			"appendTooltip": "Tilføj {0} i slutningen af resultatdokumentet.",
 			"combine": "Acceptér kombination",
 			"ignore": "Ignorer",
-			"remove": "Fjern {0}"
+			"manualResolution": "Manuel løsning",
+			"manualResolutionTooltip": "Denne konflikt er blevet løst manuelt.",
+			"markAsHandledTooltip": "Medtag ikke denne side af konflikten.",
+			"noChangesAccepted": "Ingen ændringer accepteret",
+			"noChangesAcceptedTooltip": "Den aktuelle løsning af konflikten svarer til den fælles forgænger for ændringerne til højre og venstre.",
+			"remove": "Fjern {0}",
+			"removeTooltip": "Fjern {0} fra resultatdokumentet.",
+			"resetToBase": "Nulstil til grundversionen",
+			"resetToBaseTooltip": "Nulstil denne konflikt til den fælles forgænger for ændringerne til højre og venstre."
 		},
 		"vs/workbench/contrib/mergeEditor/browser/view/editors/baseCodeEditorView": {
-			"base": "Basis"
+			"base": "Basis",
+			"compareWith": "Sammenligner med {0}",
+			"compareWithTooltip": "Forskelle fremhæves med en baggrundsfarve."
 		},
 		"vs/workbench/contrib/mergeEditor/browser/view/editors/inputCodeEditorView": {
+			"accept.conflicting": "Acceptér (resultatet har ikke-gemte ændringer)",
 			"accept.excluded": "Acceptér",
+			"accept.first": "Fortryd accept",
+			"accept.second": "Fortryd accept (aktuelt nummer to)",
 			"input1": "Input 1",
 			"input2": "Input 2",
 			"mergeEditor.accept": "Acceptér {0}",
 			"mergeEditor.acceptBoth": "Acceptér begge",
+			"mergeEditor.markAsHandled": "Markér som håndteret",
 			"mergeEditor.swap": "Ombyt"
 		},
 		"vs/workbench/contrib/mergeEditor/browser/view/editors/resultCodeEditorView": {
+			"allConflictHandled": "Alle konflikter er håndteret. Fletningen kan nu fuldføres.",
+			"goToNextConflict": "Gå til næste konflikt",
+			"mergeEditor.remainingConflict": "{0} resterende konflikter ",
+			"mergeEditor.remainingConflicts": "{0} resterende konflikt",
 			"result": "Resultat"
 		},
+		"vs/workbench/contrib/mergeEditor/browser/view/mergeEditor": {
+			"mergeEditor": "Fletningseditor til tekst"
+		},
+		"vs/workbench/contrib/mergeEditor/browser/view/viewModel": {
+			"noConflictMessage": "Der er i øjeblikket ingen konflikt med fokus, der kan ændres."
+		},
+		"vs/workbench/contrib/mergeEditor/common/mergeEditor": {
+			"baseUri": "URI-adressen til grundversionen i en fletningseditor",
+			"editorLayout": "Layouttilstanden for en fletningseditor",
+			"is": "Editoren er en fletningseditor",
+			"isr": "Editoren er resultateditoren i en fletningseditor.",
+			"resultUri": "URI-adressen til resultatet i en fletningseditor",
+			"showBase": "Om fletningseditoren viser grundversionen",
+			"showBaseAtTop": "Om grundversionen skal vises øverst",
+			"showNonConflictingChanges": "Om fletningseditoren viser konfliktfrie ændringer"
+		},
 		"vs/workbench/contrib/mergeEditor/electron-browser/devCommands": {
-			"mergeEditor": "Fletningseditor (udvikling)"
+			"merge.dev.openSelectionInTemporaryMergeEditor": "Åbn markering i midlertidig fletningseditor",
+			"merge.dev.openState": "Åbn fletningseditorens tilstand fra JSON",
+			"mergeEditor": "Fletningseditor (udvikling)",
+			"mergeEditor.enterJSON": "Angiv JSON"
 		},
 		"vs/workbench/contrib/meteredConnection/browser/meteredConnection.contribution": {
 			"meteredConnection.auto": "Automatisk",
@@ -16734,37 +17137,166 @@
 		"vs/workbench/contrib/terminal/electron-browser/terminalRemote": {
 			"workbench.action.terminal.newLocal": "Opret ny integreret terminal (lokal)"
 		},
+		"vs/workbench/contrib/terminalContrib/accessibility/browser/terminal.accessibility.contribution": {
+			"workbench.action.terminal.accessibleBufferGoToNextCommand": "Tilgængelig buffer: Gå til næste kommando",
+			"workbench.action.terminal.accessibleBufferGoToPreviousCommand": "Tilgængelig buffer: Gå til forrige kommando",
+			"workbench.action.terminal.focusAccessibleBuffer": "Fokuser terminalens tilgængelighedsvisning",
+			"workbench.action.terminal.scrollToBottomAccessibleView": "Rul til bunden af tilgængelighedsvisningen",
+			"workbench.action.terminal.scrollToTopAccessibleView": "Rul til toppen af tilgængelighedsvisningen"
+		},
+		"vs/workbench/contrib/terminalContrib/accessibility/browser/terminalAccessibilityHelp": {
+			"commandPromptMigration": "Overvej at bruge PowerShell i stedet for Kommandoprompt for at få en bedre oplevelse",
+			"focusAccessibleTerminalView": "Kommandoen Fokuser terminalens tilgængelighedsvisning<keybinding:{0}> gør det muligt for skærmlæsere at læse terminalens indhold.",
+			"focusAfterRun": "Konfigurer, hvad der får fokus, efter markeret tekst er kørt i terminalen, med `{0}`.",
+			"focusViewOnExecution": "Aktivér `terminal.integrated.accessibleViewFocusOnCommandExecution` for automatisk at fokusere terminalens tilgængelighedsvisning, når en kommando køres i terminalen.",
+			"goToNextCommand": "Gå til næste kommando<keybinding:{0}> i tilgængelighedsvisningen",
+			"goToPreviousCommand": "Gå til forrige kommando<keybinding:{0}> i tilgængelighedsvisningen",
+			"goToRecentDirectory": "Gå til seneste mappe<keybinding:{0}>",
+			"goToSymbol": "Gå til symbol<keybinding:{0}>",
+			"newWithProfile": "Kommandoen Opret ny terminal (med profil)<keybinding:{0}> gør det nemt at oprette en terminal med en bestemt profil.",
+			"noShellIntegration": "Shellintegration er ikke aktiveret. Nogle tilgængelighedsfunktioner er muligvis ikke tilgængelige.",
+			"openDetectedLink": "Kommandoen Åbn registreret link<keybinding:{0}> gør det nemt for skærmlæsere at åbne links, der findes i terminalen.",
+			"preserveCursor": "Tilpas markørens funktionsmåde, når der skiftes mellem terminalen og tilgængelighedsvisningen, med `terminal.integrated.accessibleViewPreserveCursorPosition.`",
+			"runRecentCommand": "Kør seneste kommando<keybinding:{0}>",
+			"shellIntegration": "Terminalen har en funktion kaldet shellintegration, som giver en forbedret oplevelse og nyttige kommandoer til skærmlæsere, f.eks.:",
+			"suggest": "Når terminalens forslagswidget har fokus:",
+			"suggestCommands": "- Acceptér forslaget<keybinding:{0}>, og konfigurer forslagsindstillingerne<keybinding:{1}>.",
+			"suggestCommandsMore": "- Skift mellem widgetten og terminalen<keybinding:{0}>, og slå fokus på oplysninger til eller fra<keybinding:{1}> for at få mere at vide om forslaget.",
+			"suggestConfigure": "-Konfigurer forslagsindstillinger<keybinding:{0}> ",
+			"suggestLearnMore": "- Få mere at vide om forslaget<keybinding:{0}>.",
+			"suggestTrigger": "Kommandoen til at anmode om terminalfuldførelser kan startes manuelt<keybinding:{0}>, men vises også, mens der skrives.",
+			"terminalDictation": "Start eller stop diktering i terminalen<keybinding:{0}>."
+		},
+		"vs/workbench/contrib/terminalContrib/accessibility/common/terminalAccessibilityConfiguration": {
+			"terminal.integrated.accessibleViewFocusOnCommandExecution": "Fokuser terminalens tilgængelighedsvisning, når en kommando køres.",
+			"terminal.integrated.accessibleViewPreserveCursorPosition": "Styrer, om markørens placering bevares i terminalens tilgængelighedsvisning.",
+			"terminal.integrated.accessibleViewPreserveCursorPosition.always": "Bevar altid markørens placering, også når der kommer nyt terminalindhold.",
+			"terminal.integrated.accessibleViewPreserveCursorPosition.false": "Placer altid markøren nederst i bufferen.",
+			"terminal.integrated.accessibleViewPreserveCursorPosition.true": "Bevar markørens placering ved genåbning, indtil der kommer nyt terminalindhold."
+		},
+		"vs/workbench/contrib/terminalContrib/autoReplies/common/terminalAutoRepliesConfiguration": {
+			"terminal.integrated.autoReplies": "Et sæt meddelelser, der besvares automatisk, når de forekommer i terminalen. Hvis meddelelsen er tilstrækkeligt specifik, kan dette automatisere almindelige svar.\n\nBemærkninger:\n\n- Brug {0} til automatisk at besvare prompten om at afslutte batchjobbet i Windows.\n- Meddelelsen indeholder escape-sekvenser, så svaret forekommer muligvis ikke med formateret tekst.\n- Hvert svar kan kun forekomme én gang i sekundet.\n- Brug {1} i svaret som Enter-tasten.\n- Angiv værdien til null for at fjerne en standardnøgle.\n- Genstart VS Code, hvis nye værdier ikke anvendes.",
+			"terminal.integrated.autoReplies.reply": "Det svar, der skal sendes til processen."
+		},
+		"vs/workbench/contrib/terminalContrib/chat/browser/terminalChat": {
+			"chatAgentRegisteredContextKey": "Om en chatagent er registreret til terminalplaceringen.",
+			"chatFocusedContextKey": "Om chatvisningen har fokus.",
+			"chatInputHasTextContextKey": "Om chatinputtet indeholder tekst.",
+			"chatRequestActiveContextKey": "Om der er en aktiv chatanmodning.",
+			"chatResponseContainsCodeBlockContextKey": "Om chatsvaret indeholder en kodeblok.",
+			"chatResponseContainsMultipleCodeBlocksContextKey": "Om chatsvaret indeholder flere kodeblokke.",
+			"chatVisibleContextKey": "Om chatvisningen er synlig.",
+			"terminalHasChatTerminals": "Om der findes chatterminaler.",
+			"terminalHasHiddenChatTerminals": "Om der findes skjulte chatterminaler."
+		},
 		"vs/workbench/contrib/terminalContrib/chat/browser/terminalChatAccessibilityHelp": {
 			"chat.signals": "Tilgængelighedssignaler kan ændres via indstillinger med præfikset signals.chat. Hvis en anmodning tager mere end 4 sekunder, hører du som standard en lyd, der angiver, at behandlingen stadig er i gang.",
+			"inlineChat.access": "Den kan aktiveres med kommandoen Terminal: Start chat ({0}), som fokuserer inputfeltet.",
+			"inlineChat.focusInput": "Gå til inputfeltet fra svaret ({0}).",
+			"inlineChat.focusInputNoKb": "Gå til svaret fra inputfeltet ved at trykke Skift+Tab eller tildele kommandoen Fokuser terminalinput en tastaturgenvej.",
+			"inlineChat.focusResponse": "Gå til svaret fra inputfeltet ({0}).",
+			"inlineChat.focusResponseNoKb": "Gå til svaret fra inputfeltet ved at trykke på Tab eller tildele kommandoen Fokuser terminalsvar en tastaturgenvej.",
+			"inlineChat.input": "I inputfeltet kan brugeren skrive og sende en anmodning ({0}). Når der trykkes på Escape-tasten, lukkes widgetten, alt indhold kasseres, og terminalen får fokus igen.",
+			"inlineChat.inputNoKb": "I inputfeltet kan brugeren skrive en anmodning og sende den ved at bruge Tab til knappen Send anmodning, som i øjeblikket ikke kan udløses med en tastaturgenvej. Når der trykkes på Escape-tasten, lukkes widgetten, alt indhold kasseres, og terminalen får fokus igen.",
+			"inlineChat.insertCommand": "Brug handlingen Terminal: Indsæt chatkommando ({0}), når inputfeltets kommandoeditor har fokus.",
+			"inlineChat.insertCommandNoKb": "Indsæt en kommando ved at bruge Tab til knappen, da handlingen i øjeblikket ikke kan udløses med en tastaturgenvej.",
+			"inlineChat.inspectResponseMessage": "Svaret kan undersøges i tilgængelighedsvisningen ({0}).",
+			"inlineChat.inspectResponseNoKb": "Når inputfeltet har fokus, kan du undersøge svaret i tilgængelighedsvisningen med kommandoen Åbn tilgængelighedsvisning, som i øjeblikket ikke kan udløses med en tastaturgenvej.",
+			"inlineChat.overview": "Indlejret chat foregår i en terminal og er nyttig til at foreslå terminalkommandoer. Husk, at AI-genereret kode kan være forkert.",
+			"inlineChat.runCommand": "Brug handlingen Terminal: Kør chatkommando ({0}), når inputfeltet eller kommandoeditoren har fokus.",
+			"inlineChat.runCommandNoKb": "Kør en kommando ved at bruge Tab til knappen, da handlingen i øjeblikket ikke kan udløses med en tastaturgenvej.",
 			"inlineChat.toolbar": "Brug Tab til at nå betingede dele som kommandoer, status, svarmeddelelser med mere."
 		},
 		"vs/workbench/contrib/terminalContrib/chat/browser/terminalChatActions": {
+			"chat.focusMostRecentTerminal": "Chat: Fokuser seneste terminal",
+			"chat.focusMostRecentTerminalOutput": "Chat: Fokuser seneste terminaloutput",
+			"chat.rerun.label": "Kør anmodning igen",
+			"chatTerminal.lastCommand": "Seneste: {0}",
 			"closeChat": "Luk",
 			"insert": "Indsæt",
+			"insertCommand": "Indsæt chatkommando",
+			"insertFirst": "Indsæt den første",
+			"insertFirstCommand": "Indsæt den første chatkommando",
 			"run": "Kør",
+			"runCommand": "Kør chatkommando",
+			"runFirst": "Kør den første",
+			"runFirstCommand": "Kør den første chatkommando",
+			"selectChatTerminal": "Vælg en chatterminal, der skal vises og fokuseres",
+			"showChatTerminals.title": "Chatterminaler",
 			"startChat": "Åbn indlejret chat",
 			"terminalCategory": "Terminal",
-			"terminalCategory2": "Terminal"
+			"terminalCategory2": "Terminal",
+			"viewHiddenChatTerminals": "Vis skjulte chatterminaler",
+			"viewInChat": "Vis i chat"
+		},
+		"vs/workbench/contrib/terminalContrib/chat/browser/terminalChatWidget": {
+			"askAboutCommands": "Spørg om kommandoer"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/runInTerminalHelpers": {
-			"allowSessionTooltip": "Tillad, at dette værktøj køres i denne session uden bekræftelse."
+			"allowSession": "Tillad alle kommandoer i denne session",
+			"allowSessionTooltip": "Tillad, at dette værktøj køres i denne session uden bekræftelse.",
+			"autoApprove.configure": "Konfigurer automatisk godkendelse...",
+			"autoApprove.exactCommand": "Tillad altid den nøjagtige kommandolinje",
+			"autoApprove.exactCommand1": "Tillad den nøjagtige kommandolinje i denne session",
+			"autoApprove.exactCommand2": "Tillad den nøjagtige kommandolinje i dette arbejdsområde"
+		},
+		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/terminal.chatAgentTools.contribution": {
+			"addTerminalSelection": "Føj terminalmarkering til chat",
+			"terminalSelection": "Terminalmarkering"
+		},
+		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/commandLineAnalyzer/autoApprove/npmScriptAutoApprover": {
+			"autoApprove.npmScript": "Automatisk godkendt, fordi {0} er defineret i package.json"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/commandLineAnalyzer/commandLineAutoApproveAnalyzer": {
+			"autoApprove.global": "Automatisk godkendt af indstillingen {0}",
+			"autoApprove.rule": "Automatisk godkendt af reglen {0}",
+			"autoApprove.rules": "Automatisk godkendt af reglerne {0}",
 			"autoApprove.session": "Automatisk godkendt i denne session",
 			"autoApprove.session.disable": "Deaktiver",
-			"ruleTooltip": "Vis regel i indstillinger"
+			"autoApproveDenied.rule": "Automatisk godkendelse afvist af reglen {0}",
+			"autoApproveDenied.rules": "Automatisk godkendelse afvist af reglerne {0}",
+			"autoApproveRule.sessionIndicator": "{0} (session)",
+			"ruleTooltip": "Vis regel i indstillinger",
+			"ruleTooltip.global": "Vis indstillinger",
+			"runInTerminal.promptInjectionDisclaimer": "Webindhold kan indeholde skadelig kode eller forsøge promptinjektionsangreb."
+		},
+		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/commandLineAnalyzer/commandLineFileWriteAnalyzer": {
+			"runInTerminal.fileWriteBlockedDisclaimer": "Der blev registreret filskrivningshandlinger, som ikke kan godkendes automatisk: {0}",
+			"runInTerminal.fileWriteDisclaimer": "Der blev registreret filskrivningshandlinger: {0}"
+		},
+		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/getTerminalLastCommandTool": {
+			"getTerminalLastCommand.past": "Hentede seneste terminalkommando",
+			"getTerminalLastCommand.progressive": "Henter seneste terminalkommando",
+			"terminalLastCommandTool.displayName": "Hent seneste terminalkommando"
+		},
+		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/getTerminalOutputTool": {
+			"getTerminalOutput.past": "Kontrollerede terminaloutput",
+			"getTerminalOutput.progressive": "Kontrollerer terminaloutput",
+			"getTerminalOutputTool.displayName": "Hent terminaloutput"
+		},
+		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/getTerminalSelectionTool": {
+			"getTerminalSelection.past": "Læste terminalmarkering",
+			"getTerminalSelection.progressive": "Læser terminalmarkering",
+			"terminalSelectionTool.displayName": "Hent terminalmarkering"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/killTerminalTool": {
+			"kill.past": "Afsluttede terminal",
+			"kill.progressive": "Afslutter terminal",
 			"killTerminalTool.displayName": "Luk terminal"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/monitoring/outputMonitor": {
 			"closeTerminal": "Terminalen genbruges af opgaver. Tryk på en vilkårlig tast for at lukke den.",
 			"exitCode.closeTerminal": "Tryk på en vilkårlig tast for at lukke terminalen.",
 			"exitCode.reuseTerminal": "Tryk på en vilkårlig tast for at lukke terminalen.",
-			"reuseTerminal": "Terminalen genbruges af opgaver. Tryk på en vilkårlig tast for at lukke den."
+			"reuseTerminal": "Terminalen genbruges af opgaver. Tryk på en vilkårlig tast for at lukke den.",
+			"reuseTerminal.pressClose": "Terminalen genbruges af opgaver. Tryk på en vilkårlig tast for at lukke."
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/runInTerminalConfirmationTool": {
-			"confirmTerminalCommandTool.sandboxBypass.title": "Kør i terminal uden for sandkassen?"
+			"confirmTerminalCommandTool.displayName": "Bekræft terminalkommando",
+			"confirmTerminalCommandTool.sandboxBypass.message": "Denne kommando køres uden for sandkassen.",
+			"confirmTerminalCommandTool.sandboxBypass.message.reason": "Denne kommando køres uden for sandkassen.\n\nÅrsag: {0}",
+			"confirmTerminalCommandTool.sandboxBypass.title": "Kør i terminal uden for sandkassen?",
+			"confirmTerminalCommandTool.userDescription": "Værktøj til bekræftelse af terminalkommandoer"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/runInTerminalTool": {
 			"allow": "Tillad",
@@ -16782,11 +17314,14 @@
 			"runInTerminal.bubblewrap.applyFix": "Anvend rettelse, og prøv igen",
 			"runInTerminal.bubblewrap.cancel": "Annuller",
 			"runInTerminal.bubblewrap.cancelled": "Brugeren annullerede reparationen af Bubblewrap-sandkassen.",
+			"runInTerminal.bubblewrap.hostRestriction": "Sandkassen kunne ikke oprettes på grund af begrænsninger på værten. Sandkassen kan deaktiveres ved at angive `{0}` til `off`.",
 			"runInTerminal.bubblewrap.message": "Bubblewrap kan ikke oprette sandkassemiljøet.",
 			"runInTerminal.bubblewrap.repairFailed": "Reparationen af Bubblewrap mislykkedes (afslutningskode {0}). Kommandoen blev ikke kørt.",
 			"runInTerminal.bubblewrap.repairUnknown": "Det kunne ikke fastslås, om reparationen af Bubblewrap lykkedes. Kommandoen blev ikke kørt.",
 			"runInTerminal.bubblewrap.stillUnavailable": "Bubblewrap kan stadig ikke oprette det nødvendige sandkassenavneområde efter afhjælpningen. Kommandoen blev ikke kørt.",
 			"runInTerminal.bubblewrap.title": "Reparer Bubblewrap-sandkasse",
+			"runInTerminal.bubblewrap.unsupportedEnvironment": "Sandkassen understøttes ikke i dette miljø. Angiv `{0}` til `off` for at deaktivere sandkassen. Kommandoen blev ikke kørt.",
+			"runInTerminal.bubblewrap.unsupportedEnvironmentWithSettingsLink": "Sandkassen understøttes ikke i dette miljø. [Åbn indstillingen `{0}`](command:workbench.action.openSettings?{1} \"Åbn indstillinger\"), og angiv den til `off`. Kommandoen blev ikke kørt.",
 			"runInTerminal.bubblewrap.unusable": "Bubblewrap er installeret, men kan ikke oprette det nødvendige sandkassenavneområde på dette system. Kommandoen blev ikke kørt.",
 			"runInTerminal.confirmationMessage": "Forklaring: {0}\n\nMål: {1}",
 			"runInTerminal.defaultExplanation": "Der blev ikke angivet nogen forklaring",
@@ -16800,10 +17335,12 @@
 			"runInTerminal.missingDeps.cancelled": "Brugeren annullerede installationen af sandkasseafhængigheder.",
 			"runInTerminal.missingDeps.failed": "Installationen af sandkasseafhængigheder mislykkedes (afslutningskode {0}). Kommandoen blev ikke kørt.",
 			"runInTerminal.missingDeps.install": "Installer",
+			"runInTerminal.missingDeps.installed": "Sandkasseafhængighederne blev installeret. Hvis problemet fortsætter, skal du genindlæse vinduet og prøve at køre kommandoen igen.",
 			"runInTerminal.missingDeps.message": "Følgende afhængigheder, der kræves til kørsel i sandkassen, er ikke installeret: {0}. Vil du installere dem?",
 			"runInTerminal.missingDeps.recheckFailed": "Forudsætningerne for sandkassen er stadig ikke opfyldt efter installationen. Kommandoen blev ikke kørt.",
 			"runInTerminal.missingDeps.title": "Manglende sandkasseafhængigheder",
 			"runInTerminal.missingDeps.unknown": "Det kunne ikke fastslås, om installationen af sandkasseafhængigheder lykkedes. Kommandoen blev ikke kørt.",
+			"runInTerminal.missingDeps.unsupportedInstaller": "Følgende afhængigheder, der kræves til kørsel i sandkassen, er ikke installeret: {0}. Installer dem med systemets pakkehåndtering, og kør derefter kommandoen igen.",
 			"runInTerminal.presentationOverride": "Vil du køre kommandoen `{0}` i `{1}`?",
 			"runInTerminal.presentationOverride.inDirectory": "Vil du køre kommandoen `{0}` i `{1}` inden for `{2}`?",
 			"runInTerminal.presentationOverride.inDirectory.withoutLanguage": "Vil du køre kommandoen i `{0}` inden for `{1}`?",
@@ -16846,25 +17383,56 @@
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/sendToTerminalTool": {
 			"focusTerminal": "Fokuser terminal",
+			"send.confirm.message": "Kør {0} i terminal {1}",
+			"send.confirm.message.enter": "Tryk på `Enter` i terminal {0}",
 			"send.confirm.title": "Send til terminal",
+			"send.past": "Sendte {0} til terminalen",
+			"send.past.enter": "Trykkede på `Enter` i terminalen",
+			"send.progressive": "Sender {0} til terminalen",
+			"send.progressive.enter": "Trykker på `Enter` i terminalen",
+			"send.replyingTo": "svarer på: ",
 			"sendToTerminalTool.displayName": "Send til terminal"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/createAndRunTaskTool": {
+			"allowTaskCreationExecution": "Tillad oprettelse og kørsel af opgaver?",
+			"alreadyRunning": "Opgaven `{0}` kører allerede.",
+			"copilotChat.fetchingTask": "Fortolker opgaven",
+			"copilotChat.noTerminal": "Opgaven blev startet, men der blev ikke fundet en terminal til: `{0}`",
+			"copilotChat.runningTask": "Kører opgaven `{0}`",
 			"copilotChat.taskNotFound": "Opgaven blev ikke fundet: `{0}`",
+			"createAndRunTask.displayName": "Opret og kør opgave",
+			"createAndRunTask.userDescription": "Opret og kør en opgave i arbejdsområdet",
 			"createdTask": "Oprettede opgaven `{0}`",
 			"createdTaskPast": "Oprettede opgaven `{0}`",
+			"createTask": "Der oprettes en opgave `{0}` med kommandoen `{1}`{2}.",
 			"taskExists": "Opgaven `{0}` findes allerede.",
 			"taskExistsPast": "Opgaven `{0}` findes allerede."
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/getTaskOutputTool": {
+			"copilotChat.checkedTerminalOutput": "Kontrollerede output for opgaven `{0}`",
+			"copilotChat.checkingTerminalOutput": "Kontrollerer output for opgaven `{0}`",
 			"copilotChat.taskAlreadyRunning": "Opgaven `{0}` kører allerede.",
-			"copilotChat.taskNotFound": "Opgaven blev ikke fundet: `{0}`"
+			"copilotChat.taskNotFound": "Opgaven blev ikke fundet: `{0}`",
+			"copilotChat.terminalNotFound": "Terminalen til opgaven `{0}` blev ikke fundet",
+			"getTaskOutputTool.displayName": "Hent opgaveoutput"
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/runTaskTool": {
+			"chat.allowTaskRunMsg": "Tillad kørsel af opgaven `{0}`?",
+			"chat.allowTaskRunTitle": "Tillad opgavekørsel?",
+			"chat.noTerminal": "Opgaven blev startet, men der blev ikke fundet en terminal til: `{0}`",
+			"chat.ranTask": "Kørte `{0}`",
 			"chat.runningTask": "Kører `{0}`",
+			"chat.startedTask": "Startede `{0}`",
+			"chat.taskAlreadyActive": "Opgaven kører allerede.",
 			"chat.taskAlreadyRunning": "Opgaven `{0}` kører allerede.",
+			"chat.taskIsAlreadyRunning": "`{0}` kører allerede.",
 			"chat.taskNotFound": "Opgaven blev ikke fundet: `{0}`",
-			"runInTerminalTool.displayName": "Kør opgave"
+			"chat.taskWasAlreadyRunning": "`{0}` kørte allerede.",
+			"runInTerminalTool.displayName": "Kør opgave",
+			"runInTerminalTool.userDescription": "Kør opgaver i arbejdsområdet"
+		},
+		"vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/taskHelpers": {
+			"copilotChat.taskFailedWithExitCode": "Opgaven `{0}` mislykkedes med afslutningskoden {1}."
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/common/terminalChatAgentToolsConfiguration": {
 			"agentSandbox.allowAutoApprove": "Styrer, om terminalkommandoer i agenttilstand, der kører i sandkassen, godkendes automatisk. Når dette er deaktiveret, bruger værktøjet Kør i terminal det eksisterende godkendelsesforløb. Dette gælder kun, når {0} er aktiveret.",
@@ -16933,6 +17501,7 @@
 			"idlePollInterval.description": "Konfigurerer intervallet i millisekunder for forespørgsler under inaktivitet, som værktøjet Kør i terminal bruger til at registrere, hvornår kommandoer er færdige. Lavere værdier gør registreringen hurtigere, men kan medføre falske positive resultater på langsomme systemer. Dette påvirker primært terminaler uden shellintegration, hvor registrering af inaktivitet bruges i stedet for hændelser fra shellintegrationen.",
 			"idleSilenceTimeoutMs.description": "Antallet af millisekunder, som værktøjet Kør i terminal venter på nyt output fra en synkron kommando, før den flyttes til en baggrundsterminal, og det hidtil indsamlede returneres. Processen afsluttes ikke – værktøjet returnerer terminal-id'et, så modellen kan forespørge, sende input eller afslutte den. Angiv til {0} for at deaktivere.",
 			"ignoreDefaultAutoApproveRules.description": "Om de indbyggede standardregler for automatisk godkendelse, der bruges af værktøjet Kør i terminal og er defineret i {0}, skal ignoreres. Når denne indstilling er aktiveret, ignorerer værktøjet alle regler fra standardsættet, men følger fortsat regler i bruger-, fjern- og arbejdsområdeindstillingerne. Brug indstillingen på eget ansvar. Standardreglerne for automatisk godkendelse er beregnet til at beskytte dig mod at køre farlige kommandoer.",
+			"outputCompaction.description": "Når dette er aktiveret, komprimeres outputtet fra kommandoer, som køres af værktøjet Kør i terminal, før det returneres til modellen. Det reducerer antallet af tokens, der bruges på støjende output, f.eks. statuslinjer eller gentagne loglinjer, samtidig med at de vigtige oplysninger bevares.",
 			"outputDeltas.description": "Når dette er aktiveret, returnerer gentagne kald til værktøjet Hent terminaloutput kun det output, der er tilføjet siden den forrige forespørgsel for den samme terminalkørsel, eller en kort meddelelse om uændret output, når der ikke er nyt output.",
 			"outputLocation.chat": "Vis kun terminaloutputtet i chatten.",
 			"outputLocation.description": "Hvor outputtet fra værktøjet Kør i terminal skal vises.",
@@ -16950,49 +17519,142 @@
 			"terminalChatAgentProfile.windows": "Den terminalprofil, der skal bruges på Windows af chatagentens værktøj Kør i terminal."
 		},
 		"vs/workbench/contrib/terminalContrib/chatAgentTools/common/terminalSandboxService": {
-			"runInTerminal.missingDeps.focusTerminal": "Fokuser terminal"
+			"deleteFilesInSandboxTempDir": "Slet filer i sandkassens midlertidige mappe",
+			"runInTerminal.missingDeps.focusTerminal": "Fokuser terminal",
+			"runInTerminal.missingDeps.passwordPromptMessage": "Anvendelse af forudsætninger for sandkassen kan bede om din sudo-adgangskode. Vælg Fokuser terminal for at skrive den i terminalen.",
+			"runInTerminal.missingDeps.passwordPromptTitle": "Terminalen afventer input."
+		},
+		"vs/workbench/contrib/terminalContrib/clipboard/browser/terminal.clipboard.contribution": {
+			"workbench.action.terminal.copyAndClearSelection": "Kopiér og ryd markering",
+			"workbench.action.terminal.copyLastCommand": "Kopiér seneste kommando",
+			"workbench.action.terminal.copyLastCommandAndOutput": "Kopiér seneste kommando og output",
+			"workbench.action.terminal.copyLastCommandOutput": "Kopiér output fra seneste kommando",
+			"workbench.action.terminal.copySelection": "Kopiér markering",
+			"workbench.action.terminal.copySelectionAsHtml": "Kopiér markering som HTML",
+			"workbench.action.terminal.paste": "Indsæt i aktiv terminal",
+			"workbench.action.terminal.pasteSelection": "Indsæt markering i aktiv terminal"
 		},
 		"vs/workbench/contrib/terminalContrib/clipboard/browser/terminalClipboard": {
+			"confirmMoveTrashMessageFilesAndDirectories": "Er du sikker på, at du vil indsætte {0} tekstlinjer i terminalen?",
 			"doNotAskAgain": "Spørg mig ikke igen",
-			"multiLinePasteButton": "&&Indsæt"
+			"multiLinePasteButton": "&&Indsæt",
+			"multiLinePasteButton.oneLine": "Indsæt som &&én linje",
+			"preview": "Forhåndsvisning:"
+		},
+		"vs/workbench/contrib/terminalContrib/commandGuide/browser/terminal.commandGuide.contribution": {
+			"terminalCommandGuide.foreground": "Forgrundsfarven på terminalens kommandovejledning, der vises til venstre for en kommando og dens output, når markøren holdes over dem."
+		},
+		"vs/workbench/contrib/terminalContrib/commandGuide/common/terminalCommandGuideConfiguration": {
+			"showCommandGuide": "Om kommandovejledningen skal vises, når markøren holdes over en kommando i terminalen."
+		},
+		"vs/workbench/contrib/terminalContrib/developer/browser/terminal.developer.contribution": {
+			"workbench.action.terminal.recordSession": "Optag terminalsession",
+			"workbench.action.terminal.recordSession.recording": "Optager terminalsession...",
+			"workbench.action.terminal.restartPtyHost": "Genstart pty-vært",
+			"workbench.action.terminal.showTextureAtlas": "Vis terminalens teksturatlas",
+			"workbench.action.terminal.writeDataToTerminal": "Skriv data til terminal",
+			"workbench.action.terminal.writeDataToTerminal.prompt": "Angiv data, der skal skrives direkte til terminalen uden om pty'en"
 		},
 		"vs/workbench/contrib/terminalContrib/environmentChanges/browser/terminal.environmentChanges.contribution": {
+			"envChanges": "Ændringer i terminalmiljø",
 			"extension": "Udvidelse: {0}",
 			"ScopedEnvironmentContributionInfo": "arbejdsområde",
 			"workbench.action.terminal.showEnvironmentContributions": "Vis miljøbidrag"
 		},
 		"vs/workbench/contrib/terminalContrib/find/browser/terminal.find.contribution": {
 			"workbench.action.terminal.findNext": "Find næste",
-			"workbench.action.terminal.findPrevious": "Find forrige"
+			"workbench.action.terminal.findPrevious": "Find forrige",
+			"workbench.action.terminal.focusFind": "Fokuser søgning",
+			"workbench.action.terminal.hideFind": "Skjul søgning",
+			"workbench.action.terminal.searchWorkspace": "Søg i arbejdsområde",
+			"workbench.action.terminal.toggleFindCaseSensitive": "Slå søgning med forskel på store og små bogstaver til eller fra",
+			"workbench.action.terminal.toggleFindRegex": "Slå søgning med regulære udtryk til eller fra",
+			"workbench.action.terminal.toggleFindWholeWord": "Slå søgning efter hele ord til eller fra"
 		},
 		"vs/workbench/contrib/terminalContrib/find/browser/terminalFindAccessibilityHelp": {
+			"terminal.closingDesc": "Tryk på Escape for at lukke Terminalsøgning. Fokus flyttes til terminalens kommandolinje, og din søgehistorik er tilgængelig ved næste søgning.",
 			"terminal.closingHeader": "Lukker:",
+			"terminal.context": "Du er i søgefeltet i terminalen. Det søger i hele terminalbufferen: både det aktuelle output og tilbagerulningshistorikken.",
+			"terminal.focusDesc1": "Når du navigerer fra søgefeltet i terminalen, opdateres terminalbufferen i baggrunden, mens fokus forbliver i feltet. Det er tilsigtet, så du kan fortsætte med at præcisere søgningen uden at miste din placering.",
+			"terminal.focusDesc2": "Terminalen ruller automatisk for at vise det resultat, du navigerer til.",
+			"terminal.focusDesc3": "Hvis du vil lukke Søg og flytte fokus tilbage til terminalens kommandolinje, skal du trykke på Escape. Fokus flyttes til kommandofeltet nederst i terminalen.",
 			"terminal.focusHeader": "Fokusadfærd (vigtigt):",
+			"terminal.header": "Hjælp til tilgængelighed: Terminalsøgning",
 			"terminal.hear1": "1) Hele linjen, der indeholder matchet, læses først op, så du straks får konteksten.",
 			"terminal.hear2": "2) Din placering blandt matchene oplyses, så du ved, hvor langt du er i resultaterne.",
+			"terminal.hear3": "3) Den nøjagtige linje og kolonne oplæses, så du ved præcist, hvor resultatet er i bufferen.",
 			"terminal.hearDesc": "Hvert navigationstrin giver dig en komplet oplæst opdatering:",
 			"terminal.hearHeader": "Det hører du, hver gang du går til et match:",
+			"terminal.inputDesc": "Mens du er i søgefeltet i terminalen, forbliver fokus i feltet. Du kan skrive, redigere søgeordet eller navigere mellem resultater uden at forlade feltet. Når du navigerer til et resultat, ruller terminalen for at vise det, men fokus forbliver i søgefeltet.",
+			"terminal.inputHeader": "I søgefeltet i terminalen (hvad det gør):",
 			"terminal.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"terminal.keyEnter": "- Enter: Gå til næste resultat, mens du bliver i søgefeltet.",
 			"terminal.keyNavHeader": "Mens fokus er I feltet Find:",
+			"terminal.keyNavNote": "Bemærk: Terminalsøgning bevarer fokus i søgefeltet. Hvis du vil tilbage til terminalens kommandolinje, skal du trykke på Escape for at lukke Søg.",
+			"terminal.keyShiftEnter": "- Skift+Enter: Gå til forrige resultat, mens du bliver i søgefeltet.",
 			"terminal.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"terminal.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"terminal.optionsHeader": "Søgeindstillinger:",
 			"terminal.optionWord": "- Hele ord: Der søges kun efter hele ord.",
+			"terminal.settingsDesc": "Terminalsøgning har begrænsede konfigurationsmuligheder. Det meste af funktionsmåden styres af selve terminalen.",
 			"terminal.settingsHeader": "Indstillinger, du kan justere ({0} åbner Indstillinger):",
+			"terminal.settingVerbosity": "- `accessibility.verbosity.find`: Styrer, om søgefeltet i terminalen oplæser tippet om hjælp til tilgængelighed.",
+			"terminal.statusDesc": "Du søger i terminalbufferen.",
 			"terminal.statusHeader": "Aktuel søgestatus:"
 		},
+		"vs/workbench/contrib/terminalContrib/history/browser/terminal.history.contribution": {
+			"goToRecentDirectory.metadata": "Går til en seneste mappe",
+			"workbench.action.terminal.clearPreviousSessionHistory": "Ryd historik fra forrige session",
+			"workbench.action.terminal.goToRecentDirectory": "Gå til seneste mappe...",
+			"workbench.action.terminal.runRecentCommand": "Kør seneste kommando..."
+		},
 		"vs/workbench/contrib/terminalContrib/history/browser/terminalRunRecentQuickPick": {
-			"openShellHistoryFile": "Åbn fil"
+			"fuzzySearch": "Fuzzy-søgning",
+			"openShellHistoryFile": "Åbn fil",
+			"removeCommand": "Fjern fra kommandohistorik",
+			"selectRecentCommand": "Vælg en kommando, der skal køres (hold Alt-tasten nede for at redigere kommandoen)",
+			"selectRecentCommandMac": "Vælg en kommando, der skal køres (hold Option-tasten nede for at redigere kommandoen)",
+			"selectRecentDirectory": "Vælg en mappe, der skal åbnes (hold Alt-tasten nede for at redigere kommandoen)",
+			"selectRecentDirectoryMac": "Vælg en mappe, der skal åbnes (hold Option-tasten nede for at redigere kommandoen)",
+			"shellFileHistoryCategory": "Historik for {0}",
+			"viewCommandOutput": "Vis kommandooutput"
+		},
+		"vs/workbench/contrib/terminalContrib/history/common/terminal.history": {
+			"terminal.integrated.shellIntegration.history": "Styrer antallet af senest brugte kommandoer, der bevares i terminalens kommandohistorik. Angiv 0 for at deaktivere terminalens kommandohistorik."
 		},
 		"vs/workbench/contrib/terminalContrib/inlineHint/browser/terminal.initialHint.contribution": {
-			"disableHint": " Slå {0} til eller fra i indstillingerne for at deaktivere dette tip."
+			"copilotCliHint": "Skriv [[copilot]] for at bruge Copilot CLI.",
+			"copilotCliHintAriaLabel": "Skriv copilot for at bruge Copilot CLI.",
+			"disableHint": " Slå {0} til eller fra i indstillingerne for at deaktivere dette tip.",
+			"disableInitialHint": "Deaktiver indledende tip",
+			"hintTextDismiss": "[[vis ikke]] dette igen.",
+			"hintTextDismissAriaLabel": "Begynd at skrive for at afvise, eller vis ikke dette igen.",
+			"hintTextDismissCompact": "[[Vis ikke dette igen]]",
+			"hintTextDismissProse": " Begynd at skrive for at afvise, eller ",
+			"showSuggestHint": "Vis forslag {0}. "
+		},
+		"vs/workbench/contrib/terminalContrib/inlineHint/common/terminalInitialHintConfiguration": {
+			"terminal.integrated.initialHint": "Styrer, om den første terminal uden input viser et tip om tilgængelige handlinger, når den får fokus. Dette vises kun, når {0} er deaktiveret."
+		},
+		"vs/workbench/contrib/terminalContrib/links/browser/terminal.links.contribution": {
+			"workbench.action.terminal.openDetectedLink": "Åbn registreret link...",
+			"workbench.action.terminal.openLastLocalFileLink": "Åbn seneste link til lokal fil",
+			"workbench.action.terminal.openLastUrlLink": "Åbn seneste URL-link",
+			"workbench.action.terminal.openLastUrlLink.description": "Åbner det senest registrerede URL-/URI-link i terminalen"
 		},
 		"vs/workbench/contrib/terminalContrib/links/browser/terminalLinkDetectorAdapter": {
-			"followLink": "Følg link"
+			"focusFolder": "Fokuser mappe i Stifinder",
+			"followLink": "Følg link",
+			"openFile": "Åbn fil i editor",
+			"openFolder": "Åbn mappe i nyt vindue",
+			"searchWorkspace": "Søg i arbejdsområde"
 		},
 		"vs/workbench/contrib/terminalContrib/links/browser/terminalLinkManager": {
+			"allow": "Tillad {0}",
+			"followForwardedLink": "Følg link via videresendt port",
 			"followLink": "Følg link",
 			"followLinkUrl": "Link",
+			"scheme": "Det kan være usikkert at åbne URI'er. Vil du tillade åbning af links med skemaet {0}?",
 			"terminalLinkHandler.followLinkAlt": "Alt + klik",
 			"terminalLinkHandler.followLinkAlt.mac": "Option + klik",
 			"terminalLinkHandler.followLinkCmd": "Cmd + klik",
@@ -17001,31 +17663,94 @@
 		"vs/workbench/contrib/terminalContrib/links/browser/terminalLinkQuickpick": {
 			"terminal.integrated.localFileLinks": "Fil",
 			"terminal.integrated.localFolderLinks": "Mappe",
+			"terminal.integrated.openDetectedLink": "Vælg det link, der skal åbnes. Skriv for at filtrere alle links",
+			"terminal.integrated.searchLinks": "Søgning i arbejdsområde",
 			"terminal.integrated.urlLinks": "URL-adresse"
 		},
 		"vs/workbench/contrib/terminalContrib/notification/browser/terminalNotificationHandler": {
+			"terminalNotificationDisable": "Deaktiver terminalmeddelelser",
 			"terminalNotificationDismiss": "Afvis",
 			"terminalNotificationSource": "Terminal"
 		},
+		"vs/workbench/contrib/terminalContrib/notification/common/terminalNotificationConfiguration": {
+			"terminal.integrated.enableNotifications": "Styrer, om meddelelser, der sendes fra terminalen via OSC 99, vises. Dette bruger meddelelser i produktet i stedet for skrivebordsmeddelelser. Lyde, ikoner og filtrering understøttes ikke."
+		},
+		"vs/workbench/contrib/terminalContrib/quickAccess/browser/terminal.quickAccess.contribution": {
+			"quickAccessTerminal": "Skift aktiv terminal",
+			"tasksQuickAccessHelp": "Vis alle åbne terminaler",
+			"tasksQuickAccessPlaceholder": "Skriv navnet på en terminal, der skal åbnes."
+		},
 		"vs/workbench/contrib/terminalContrib/quickAccess/browser/terminalQuickAccess": {
-			"workbench.action.terminal.newplus": "Opret ny terminal"
+			"renameTerminal": "Omdøb terminal",
+			"workbench.action.terminal.newplus": "Opret ny terminal",
+			"workbench.action.terminal.newWithProfilePlus": "Opret ny terminal med profil..."
 		},
 		"vs/workbench/contrib/terminalContrib/quickFix/browser/quickFixAddon": {
 			"codeAction.widget.id.quickfix": "Hurtig rettelse",
-			"quickFix.command": "Kør: {0}"
+			"quickFix.command": "Kør: {0}",
+			"quickFix.opener": "Åbn: {0}"
+		},
+		"vs/workbench/contrib/terminalContrib/quickFix/browser/terminal.quickFix.contribution": {
+			"workbench.action.terminal.showQuickFixes": "Vis hurtige rettelser til terminalen"
+		},
+		"vs/workbench/contrib/terminalContrib/quickFix/browser/terminalQuickFixBuiltinActions": {
+			"terminal.createPR": "Opret PR {0}",
+			"terminal.freePort": "Frigør port {0}"
+		},
+		"vs/workbench/contrib/terminalContrib/quickFix/browser/terminalQuickFixService": {
+			"vscode.extension.contributes.terminalQuickFixes": "Bidrager med hurtige rettelser til terminalen.",
+			"vscode.extension.contributes.terminalQuickFixes.commandExitResult": "Det afslutningsresultat fra kommandoen, der skal matches",
+			"vscode.extension.contributes.terminalQuickFixes.commandLineMatcher": "Et regulært udtryk eller en streng, som kommandolinjen skal testes mod",
+			"vscode.extension.contributes.terminalQuickFixes.id": "Id'et for udbyderen af hurtige rettelser",
+			"vscode.extension.contributes.terminalQuickFixes.kind": "Typen af den resulterende hurtige rettelse. Dette ændrer, hvordan den hurtige rettelse præsenteres. Standardværdien er {0}.",
+			"vscode.extension.contributes.terminalQuickFixes.outputMatcher": "Et regulært udtryk eller en streng, som en enkelt linje i outputtet skal matches mod, og som leverer grupper, der kan refereres i terminalCommand og uri.\n\nEksempel:\n\n `lineMatcher: /git push --set-upstream origin (?<branchName>[^s]+)/;`\n\n`terminalCommand: 'git push --set-upstream origin ${group:branchName}';`\n"
+		},
+		"vs/workbench/contrib/terminalContrib/resizeDimensionsOverlay/common/terminalResizeDimensionsOverlayConfiguration": {
+			"resizeDimensionsOverlay.enabled": "Om der skal vises en visuel overlejring med terminalens kolonner og rækker, når dens størrelse ændres."
+		},
+		"vs/workbench/contrib/terminalContrib/sendSequence/browser/terminal.sendSequence.contribution": {
+			"sendSequence": "Send sekvens",
+			"sendSequence.text.desc": "Den tekstsekvens, der skal sendes til terminalen",
+			"workbench.action.terminal.sendSequence.prompt": "Angiv den sekvens, der skal sendes til terminalen"
 		},
 		"vs/workbench/contrib/terminalContrib/sendSignal/browser/terminal.sendSignal.contribution": {
-			"SIGHUP": "Læg på"
+			"enterSignal": "Angiv signalnavn (f.eks. SIGTERM eller SIGKILL)",
+			"manualSignal": "Angiv signal manuelt",
+			"selectSignal": "Vælg det signal, der skal sendes til terminalprocessen",
+			"sendSignal": "Send signal",
+			"sendSignal.signal.desc": "Det signal, der skal sendes til terminalprocessen (f.eks. 'SIGTERM', 'SIGINT' eller 'SIGKILL')",
+			"SIGCONT": "Fortsæt proces",
+			"SIGHUP": "Læg på",
+			"SIGINT": "Afbryd proces (Ctrl+C)",
+			"SIGKILL": "Gennemtving afslutning af proces",
+			"SIGQUIT": "Afslut proces",
+			"SIGSTOP": "Stop proces",
+			"SIGTERM": "Afslut proces kontrolleret",
+			"SIGUSR1": "Brugerdefineret signal 1",
+			"SIGUSR2": "Brugerdefineret signal 2"
 		},
 		"vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminal.stickyScroll.contribution": {
 			"miStickyScroll": "&&Fast rulning",
-			"stickyScroll": "Fast rulning"
+			"stickyScroll": "Fast rulning",
+			"workbench.action.terminal.toggleStickyScroll": "Slå fastgjort rulning til eller fra"
+		},
+		"vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminalStickyScrollColorRegistry": {
+			"terminalStickyScroll.background": "Baggrundsfarven på overlejringen til fastgjort rulning i terminalen.",
+			"terminalStickyScroll.border": "Kanten på overlejringen til fastgjort rulning i terminalen.",
+			"terminalStickyScrollHover.background": "Baggrundsfarven på overlejringen til fastgjort rulning i terminalen, når markøren holdes over den."
 		},
 		"vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminalStickyScrollOverlay": {
-			"labelWithKeybinding": "{0} ({1})"
+			"labelWithKeybinding": "{0} ({1})",
+			"stickyScrollHoverTitle": "Naviger til kommando"
+		},
+		"vs/workbench/contrib/terminalContrib/stickyScroll/common/terminalStickyScrollConfiguration": {
+			"stickyScroll.enabled": "Viser den aktuelle kommando øverst i terminalen. Denne funktion kræver, at [shellintegration]({0}) er aktiveret. Se {1}.",
+			"stickyScroll.ignoredCommands": "En liste over kommandoer, der ikke skal udløse fastgjort rulning. Når en kommando fra listen registreres, skjules overlejringen til fastgjort rulning.",
+			"stickyScroll.maxLineCount": "Definerer det maksimale antal fastgjorte linjer, der skal vises. Linjer med fastgjort rulning overstiger aldrig 40 % af visningsområdet, uanset denne indstilling."
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/browser/terminal.suggest.contribution": {
 			"workbench.action.terminal.acceptSelectedSuggestion": "Indsæt",
+			"workbench.action.terminal.acceptSelectedSuggestionEnter": "Acceptér valgt forslag (Enter)",
 			"workbench.action.terminal.changeSelectionMode.always": "Markeringstilstand: Altid (Tab eller Enter)",
 			"workbench.action.terminal.changeSelectionMode.always.tooltip": "Vælg altid det øverste forslag. Tab eller Enter accepterer et forslag, når det er synligt. Aktivér for at ændre.",
 			"workbench.action.terminal.changeSelectionMode.never": "Markeringstilstand: Ingen",
@@ -17034,9 +17759,18 @@
 			"workbench.action.terminal.changeSelectionMode.partial.tooltip": "Markér det øverste forslag delvist. Tab accepterer et forslag, når det er synligt. Aktivér for at ændre.",
 			"workbench.action.terminal.configureSuggestSettings": "Konfigurer",
 			"workbench.action.terminal.doNotShowSuggestOnType": "Vis ikke IntelliSense, medmindre det udløses udtrykkeligt. Dette deaktiverer indstillingerne for hurtige forslag og forslag ved udløsertegn.",
+			"workbench.action.terminal.hideSuggestWidget": "Skjul forslagswidget",
+			"workbench.action.terminal.hideSuggestWidgetAndNavigateHistory": "Skjul forslagswidget, og naviger i historik",
 			"workbench.action.terminal.learnMore": "Få mere at vide",
 			"workbench.action.terminal.resetSuggestWidgetSize": "Nulstil størrelsen på forslagswidgetten",
+			"workbench.action.terminal.selectNextPageSuggestion": "Vælg forslaget på næste side",
+			"workbench.action.terminal.selectNextSuggestion": "Vælg næste forslag",
+			"workbench.action.terminal.selectPrevPageSuggestion": "Vælg forslaget på forrige side",
+			"workbench.action.terminal.selectPrevSuggestion": "Vælg forrige forslag",
 			"workbench.action.terminal.showSuggestOnType": "Vis IntelliSense under indtastning. Dette aktiverer hurtige forslag til kommandoer og argumenter samt indstillingen for forslag ved udløsertegn.",
+			"workbench.action.terminal.suggestToggleDetails": "Forslag: Slå oplysninger til eller fra",
+			"workbench.action.terminal.suggestToggleDetailsFocus": "Forslag: Slå forslagsfokus til eller fra",
+			"workbench.action.terminal.suggestToggleExplainMode": "Forslag: Skift forklaringstilstand",
 			"workbench.action.terminal.triggerSuggest": "Udløs forslag"
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/browser/terminalSuggestAddon": {
@@ -17051,8 +17785,13 @@
 			"inlineSuggestionAlwaysOnTop": "Indlejret forslag",
 			"method": "Metode",
 			"option": "Indstilling",
+			"optionValue": "Indstillingsværdi",
+			"pullRequest": "Pull request",
+			"pullRequestDone": "Pull request (færdig)",
 			"remote": "Fjern",
 			"stash": "Stash",
+			"symbolicLinkFile": "Symbolsk linkfil",
+			"symbolicLinkFolder": "Symbolsk linkmappe",
 			"tag": "Tag"
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/browser/terminalSymbolIcons": {
@@ -17096,21 +17835,75 @@
 			"terminalSymbolTagIcon": "Ikon for mærker i terminalens forslagswidget."
 		},
 		"vs/workbench/contrib/terminalContrib/suggest/common/terminalSuggestConfiguration": {
+			"runOnEnter.always": "Kør altid ved `Enter`.",
+			"runOnEnter.exactMatch": "Kør ved `Enter`, når hele forslaget er skrevet.",
+			"runOnEnter.exactMatchIgnoreExtension": "Kør ved `Enter`, når hele forslaget er skrevet, eller når et filnavn er skrevet uden filtypenavnet.",
+			"runOnEnter.never": "Kør aldrig ved `Enter`.",
+			"suggest.cdPath": "Styrer, om understøttelse af $CDPATH skal aktiveres, så undermapperne i mapperne i variablen $CDPATH vises uanset den aktuelle arbejdsmappe. $CDPATH forventes at være adskilt med semikolon i Windows og kolon på andre platforme.",
+			"suggest.cdPath.absolute": "Aktivér funktionen, og brug absolutte stier. Dette er nyttigt, når shellen ikke har indbygget understøttelse af `$CDPATH`.",
 			"suggest.cdPath.off": "Deaktiver funktionen.",
+			"suggest.cdPath.relative": "Aktivér funktionen, og brug relative stier.",
+			"suggest.enabled": "Aktiverer IntelliSense-forslag i terminalen (også kendt som autofuldførelse) for understøttede shells ({0}). Dette kræver, at {1} er aktiveret og fungerer eller er [installeret manuelt](https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation-install).",
+			"suggest.inlineSuggestion": "Styrer, om shellens indlejrede forslag skal registreres, og hvordan det rangeres.",
+			"suggest.inlineSuggestion.alwaysOnTop": "Aktivér funktionen, og placer altid det indlejrede forslag øverst.",
+			"suggest.inlineSuggestion.alwaysOnTopExceptExactMatch": "Aktivér funktionen, og sorter det indlejrede forslag uden at gennemtvinge, at det placeres øverst. Det betyder, at nøjagtige resultater placeres over det indlejrede forslag.",
 			"suggest.inlineSuggestion.off": "Deaktiver funktionen.",
-			"suggest.suggestOnTriggerCharacters": "Styrer, om forslag automatisk skal vises, når der skrives udløsertegn."
+			"suggest.insertTrailingSpace": "Styrer, om der automatisk indsættes et mellemrum, efter et forslag er accepteret, og forslag udløses igen. Der føjes aldrig et afsluttende mellemrum til mapper og symbolske linkmapper.",
+			"suggest.provider.lsp.description": "Vis forslag fra sprogservere.",
+			"suggest.provider.title": "Vis forslag fra {0}.",
+			"suggest.providers": "Udbydere er aktiveret som standard. Udelad dem ved at angive udbyderens id til `false`.",
+			"suggest.providersEnabledByDefault": "Styrer, hvilke forslag der automatisk vises, mens der skrives. Forslagsudbydere er aktiveret som standard.",
+			"suggest.quickSuggestions": "Styrer, om forslag automatisk skal vises, mens der skrives. Bemærk også indstillingen {0}, som styrer, om forslag udløses af specialtegn.",
+			"suggest.quickSuggestions.arguments": "Aktivér hurtige forslag til argumenter, dvs. alt efter det første ord i et kommandolinjeinput.",
+			"suggest.quickSuggestions.commands": "Aktivér hurtige forslag til kommandoer, dvs. det første ord i et kommandolinjeinput.",
+			"suggest.quickSuggestions.unknown": "Aktivér hurtige forslag, når det er uklart, hvilket forslag der er bedst. Hvis dette er slået til, foreslås filer og mapper som reserve.",
+			"suggest.runOnEnter": "Styrer, om forslag skal køres med det samme, når `Enter` (ikke `Tab`) bruges til at acceptere resultatet.",
+			"suggest.showStatusBar": "Styrer, om statuslinjen for terminalforslag skal vises.",
+			"suggest.suggestOnTriggerCharacters": "Styrer, om forslag automatisk skal vises, når der skrives udløsertegn.",
+			"suggest.upArrowNavigatesHistory": "Bestemmer, om pil op navigerer i kommandohistorikken, når fokus er på det første forslag, og der endnu ikke er navigeret. Når værdien er falsk, flytter pil op i stedet fokus til det sidste forslag.",
+			"terminal.integrated.selectionMode": "Styrer, hvordan valg af forslag fungerer i den integrerede terminal.",
+			"terminal.integrated.selectionMode.always": "Vælg altid et forslag, når IntelliSense udløses automatisk. `Enter` eller `Tab` kan bruges til at acceptere det første forslag.",
+			"terminal.integrated.selectionMode.never": "Vælg aldrig et forslag, når IntelliSense udløses automatisk. Der skal navigeres i listen med `Pil ned`, før `Enter` eller `Tab` kan bruges til at acceptere det aktive forslag.",
+			"terminal.integrated.selectionMode.partial": "Vælg et forslag delvist, når IntelliSense udløses automatisk. `Tab` kan bruges til at acceptere det første forslag. Først efter navigation i forslagene med `Pil ned` accepterer `Enter` også det aktive forslag.",
+			"terminalSuggestProvidersConfigurationTitle": "Udbydere af terminalforslag",
+			"terminalWindowsExecutableSuggestionSetting": "Et sæt filtypenavne for eksekverbare Windows-kommandoer, som medtages som forslag i terminalen.\n\nMange eksekverbare filtyper er medtaget som standard og er angivet nedenfor:\n\n{0}.\n\nAngiv et filtypenavn til `false` for at udelade det\n\n. Tilføj et filtypenavn, der ikke findes på listen, og angiv det til `true` for at medtage det."
+		},
+		"vs/workbench/contrib/terminalContrib/typeAhead/common/terminalTypeAheadConfiguration": {
+			"terminal.integrated.localEchoEnabled": "Hvornår lokalt ekko skal aktiveres. Dette tilsidesætter {0}",
+			"terminal.integrated.localEchoEnabled.auto": "Kun aktiveret for fjernarbejdsområder",
+			"terminal.integrated.localEchoEnabled.off": "Altid deaktiveret",
+			"terminal.integrated.localEchoEnabled.on": "Altid aktiveret",
+			"terminal.integrated.localEchoExcludePrograms": "Lokalt ekko deaktiveres, når et af disse programnavne findes i terminaltitlen.",
+			"terminal.integrated.localEchoLatencyThreshold": "Længden af netværksforsinkelsen i millisekunder, hvor lokale redigeringer gengives i terminalen uden at vente på serverbekræftelse. Hvis værdien er '0', er lokalt ekko altid slået til, og hvis den er '-1', er det deaktiveret.",
+			"terminal.integrated.localEchoStyle": "Terminaltypografi for lokalt gengivet tekst, enten en skrifttypografi eller en RGB-farve."
 		},
 		"vs/workbench/contrib/terminalContrib/voice/browser/terminalVoice": {
 			"terminalVoice.stopDictationHover": "Stop diktering ({0})",
-			"terminalVoice.stopDictationHoverNoKeybinding": "Stop diktering"
+			"terminalVoice.stopDictationHoverNoKeybinding": "Stop diktering",
+			"terminalVoiceTextInserted": "{0} indsat"
 		},
 		"vs/workbench/contrib/terminalContrib/voice/browser/terminalVoiceActions": {
 			"enableExtension": "Aktivér udvidelse",
 			"installExtension": "Installer udvidelse",
-			"voiceCategory": "Stemme"
+			"terminal.voice.detail": "Mikrofonunderstøttelse kræver denne udvidelse.",
+			"terminal.voice.enableSpeechExtension": "Vil du aktivere taleudvidelsen?",
+			"terminal.voice.installSpeechExtension": "Vil du installere udvidelsen 'VS Code Speech' fra 'Microsoft'?",
+			"voiceCategory": "Stemme",
+			"workbench.action.terminal.startDictation": "Start diktering i terminal",
+			"workbench.action.terminal.stopDictation": "Stop diktering i terminal"
 		},
 		"vs/workbench/contrib/terminalContrib/wslRecommendation/browser/terminal.wslRecommendation.contribution": {
-			"install": "Installer"
+			"install": "Installer",
+			"useWslExtension.title": "Udvidelsen '{0}' anbefales til at åbne en terminal i WSL."
+		},
+		"vs/workbench/contrib/terminalContrib/zoom/browser/terminal.zoom.contribution": {
+			"fontZoomIn": "Forøg skriftstørrelse",
+			"fontZoomOut": "Formindsk skriftstørrelse",
+			"fontZoomReset": "Nulstil skriftstørrelse"
+		},
+		"vs/workbench/contrib/terminalContrib/zoom/common/terminal.zoom": {
+			"terminal.integrated.mouseWheelZoom": "Zoom terminalens skrifttype med musehjulet, mens `Ctrl` holdes nede.",
+			"terminal.integrated.mouseWheelZoom.mac": "Zoom terminalens skrifttype med musehjulet, mens `Cmd` holdes nede."
 		},
 		"vs/workbench/contrib/testing/browser/codeCoverageDecorations": {
 			"coverage.branchCovered": "Gren {0} i {1} blev udført {2} gang(e).",
@@ -17982,7 +18775,9 @@
 			"webview.hearDesc": "Hvert navigationstrin giver dig en komplet oplæst opdatering:",
 			"webview.hearHeader": "Det hører du, hver gang du går til et match:",
 			"webview.keyboardHeader": "Oversigt over tastaturnavigation:",
+			"webview.keyEnter": "- Enter: Gå til næste resultat, mens du bliver i søgefeltet.",
 			"webview.keyNavHeader": "Mens fokus er I feltet Find:",
+			"webview.keyShiftEnter": "- Skift+Enter: Gå til forrige resultat, mens du bliver i søgefeltet.",
 			"webview.optionCase": "- Forskel på store og små bogstaver: Kun match med identiske store og små bogstaver medtages.",
 			"webview.optionRegex": "- Regulært udtryk: Brug mønstermatch til avancerede søgninger.",
 			"webview.optionsHeader": "Søgeindstillinger:",
@@ -18783,7 +19578,10 @@
 		"vs/workbench/services/authentication/browser/authenticationExtensionsService": {
 			"accessRequest": "Giv {0} adgang til {1}... (1)",
 			"allow": "&&Tillad",
+			"confirmAuthenticationAccess": "Udvidelsen '{0}' vil have adgang til {1}-kontoen '{2}'.",
 			"deny": "&&Afvis",
+			"getSessionPlateholder": "Vælg en konto, som '{0}' skal bruge, eller tryk på Esc for at annullere",
+			"selectAccount": "Udvidelsen '{0}' vil have adgang til en {1}-konto",
 			"sign in": "Anmodning om logon",
 			"signInRequest": "Log på med {0} for at bruge {1} (1)",
 			"useOtherAccount": "Log på en anden konto"
@@ -18791,10 +19589,23 @@
 		"vs/workbench/services/authentication/browser/authenticationMcpService": {
 			"accessRequest": "Giv {0} adgang til {1}... (1)",
 			"allow": "&&Tillad",
+			"confirmAuthenticationAccess": "MCP-serveren '{0}' vil have adgang til {1}-kontoen '{2}'.",
 			"deny": "&&Afvis",
+			"getSessionPlateholder": "Vælg en konto, som '{0}' skal bruge, eller tryk på Esc for at annullere",
+			"selectAccount": "MCP-serveren '{0}' vil have adgang til en {1}-konto",
 			"sign in": "Anmodning om logon",
 			"signInRequest": "Log på med {0} for at bruge {1} (1)",
 			"useOtherAccount": "Log på en anden konto"
+		},
+		"vs/workbench/services/authentication/browser/authenticationService": {
+			"authentication.authorizationServerGlobs": "En liste over globmønstre, der matcher de godkendelsesservere, som denne udbyder understøtter.",
+			"authentication.authorizationServerGlobsDescription": "En liste over globmønstre, der matcher de godkendelsesservere, som denne udbyder understøtter.",
+			"authentication.id": "Godkendelsesudbyderens id.",
+			"authentication.idConflict": "Godkendelses-id'et '{0}' er allerede registreret",
+			"authentication.label": "Godkendelsesudbyderens læsbare navn.",
+			"authentication.missingId": "Et godkendelsesbidrag skal angive et id.",
+			"authentication.missingLabel": "Et godkendelsesbidrag skal angive en etiket.",
+			"authenticationExtensionPoint": "Bidrager med godkendelse"
 		},
 		"vs/workbench/services/auxiliaryWindow/browser/auxiliaryWindowService": {
 			"retry": "&&Prøv igen"
@@ -18850,6 +19661,52 @@
 			"saveAndRetry": "Gem, og prøv igen",
 			"userTarget": "Brugerindstillinger",
 			"workspaceTarget": "Arbejdsområdeindstillinger"
+		},
+		"vs/workbench/services/configurationResolver/browser/baseConfigurationResolverService": {
+			"commandVariable.noStringType": "Kommandovariablen '{0}' kan ikke erstattes, fordi kommandoen ikke returnerede et resultat af typen streng.",
+			"inputVariable.command.noStringType": "Inputvariablen '{0}' kan ikke erstattes, fordi kommandoen '{1}' ikke returnerede et resultat af typen streng.",
+			"inputVariable.defaultInputValue": "(Standard)",
+			"inputVariable.missingAttribute": "Inputvariablen '{0}' er af typen '{1}' og skal indeholde '{2}'.",
+			"inputVariable.noInputSection": "Variablen '{0}' skal defineres i en '{1}'-sektion i fejlfindings- eller opgavekonfigurationen.",
+			"inputVariable.undefinedVariable": "Der blev fundet en udefineret inputvariabel '{0}'. Fjern eller definer '{0}' for at fortsætte.",
+			"inputVariable.unknownType": "Inputvariablen '{0}' kan kun være af typen 'promptString', 'pickString' eller 'command'."
+		},
+		"vs/workbench/services/configurationResolver/common/configurationResolverSchema": {
+			"JsonSchema.input.command.args": "Valgfrie argumenter, der sendes til kommandoen.",
+			"JsonSchema.input.command.command": "Den kommando, der skal køres for denne inputvariabel.",
+			"JsonSchema.input.default": "Standardværdien for inputtet.",
+			"JsonSchema.input.description": "Beskrivelsen vises, når brugeren bliver bedt om input.",
+			"JsonSchema.input.id": "Inputtets id bruges til at knytte et input til en variabel med formen ${input:id}.",
+			"JsonSchema.input.options": "En matrix af strenge, der definerer valgmulighederne for et hurtigt valg.",
+			"JsonSchema.input.password": "Styrer, om der vises et adgangskodefelt. Adgangskodefeltet skjuler den indtastede tekst.",
+			"JsonSchema.input.pickString.optionLabel": "Etiket for valgmuligheden.",
+			"JsonSchema.input.pickString.optionValue": "Værdi for valgmuligheden.",
+			"JsonSchema.input.type": "Den type prompt om brugerinput, der skal bruges.",
+			"JsonSchema.input.type.command": "Typen 'command' kører en kommando.",
+			"JsonSchema.input.type.pickString": "Typen 'pickString' viser en valgliste.",
+			"JsonSchema.input.type.promptString": "Typen 'promptString' åbner et inputfelt for at bede brugeren om input.",
+			"JsonSchema.inputs": "Brugerinput. Bruges til at definere prompter om brugerinput, f.eks. fri tekst eller et valg mellem flere muligheder."
+		},
+		"vs/workbench/services/configurationResolver/common/configurationResolverUtils": {
+			"deprecatedVariables": "'env.', 'config.' og 'command.' er udfaset. Brug 'env:', 'config:' og 'command:' i stedet."
+		},
+		"vs/workbench/services/configurationResolver/common/variableResolver": {
+			"canNotFindFolder": "Variablen {0} kan ikke fortolkes. Mappen '{1}' findes ikke.",
+			"canNotResolveColumnNumber": "Variablen {0} kan ikke fortolkes. Sørg for, at der er valgt en kolonne i den aktive editor.",
+			"canNotResolveFile": "Variablen {0} kan ikke fortolkes. Åbn en editor.",
+			"canNotResolveFolderForFile": "Variablen {0}: Arbejdsområdemappen for '{1}' blev ikke fundet.",
+			"canNotResolveLineNumber": "Variablen {0} kan ikke fortolkes. Sørg for, at der er valgt en linje i den aktive editor.",
+			"canNotResolveSelectedText": "Variablen {0} kan ikke fortolkes. Sørg for, at der er markeret tekst i den aktive editor.",
+			"canNotResolveUserHome": "Variablen {0} kan ikke fortolkes. Stien UserHome er ikke defineret",
+			"canNotResolveWorkspaceFolder": "Variablen {0} kan ikke fortolkes. Åbn en mappe.",
+			"canNotResolveWorkspaceFolderMultiRoot": "Variablen {0} kan ikke fortolkes i et arbejdsområde med flere mapper. Afgræns variablen med ':' og navnet på en arbejdsområdemappe.",
+			"configNoString": "Variablen {0} kan ikke fortolkes, fordi '{1}' er en struktureret værdi.",
+			"configNotFound": "Variablen {0} kan ikke fortolkes, fordi indstillingen '{1}' ikke blev fundet.",
+			"extensionNotInstalled": "Variablen {0} kan ikke fortolkes, fordi udvidelsen {1} ikke er installeret.",
+			"missingConfigName": "Variablen {0} kan ikke fortolkes, fordi der ikke er angivet et indstillingsnavn.",
+			"missingEnvVarName": "Variablen {0} kan ikke fortolkes, fordi der ikke er angivet et miljøvariabelnavn.",
+			"missingExtensionName": "Variablen {0} kan ikke fortolkes, fordi der ikke er angivet et udvidelsesnavn.",
+			"noValueForCommand": "Variablen {0} kan ikke fortolkes, fordi kommandoen ikke har nogen værdi."
 		},
 		"vs/workbench/services/dialogs/browser/abstractFileDialogService": {
 			"allFiles": "Alle filer",
@@ -18912,16 +19769,50 @@
 			"editor.markdownDefaultEditorInAgentsWindow": "Styrer, om Markdown-editoren bruges som standardeditor for Markdown-filer i vinduet Agenter."
 		},
 		"vs/workbench/services/extensionManagement/browser/extensionBisect": {
+			"bisect": "Halveringssøgning i udvidelser er aktiv og har deaktiveret {0} udvidelser. Kontrollér, om du stadig kan genskabe problemet, og fortsæt ved at vælge en af disse muligheder.",
+			"bisect.plural": "Halveringssøgning i udvidelser er aktiv og har deaktiveret {0} udvidelser. Kontrollér, om du stadig kan genskabe problemet, og fortsæt ved at vælge en af disse muligheder.",
+			"bisect.singular": "Halveringssøgning i udvidelser er aktiv og har deaktiveret 1 udvidelse. Kontrollér, om du stadig kan genskabe problemet, og fortsæt ved at vælge en af disse muligheder.",
 			"continue": "Fortsæt",
+			"detail.start": "Halveringssøgning i udvidelser bruger binær søgning til at finde en udvidelse, der forårsager et problem. Under processen genindlæses vinduet flere gange (ca. {0} gange). Hver gang skal du bekræfte, om problemet stadig opstår.",
+			"done.detail": "Halveringssøgningen i udvidelser er fuldført og har identificeret {0} som den udvidelse, der forårsager problemet.",
+			"done.detail2": "Halveringssøgningen i udvidelser er fuldført, men ingen udvidelse blev identificeret. Det kan være et problem med {0}.",
+			"done.disbale": "Behold denne udvidelse deaktiveret",
 			"done.msg": "Halveringssøgning i udvidelser",
 			"I cannot reproduce": "Jeg kan ikke genskabe problemet",
 			"msg.next": "Halveringssøgning i udvidelser",
 			"msg.start": "Halveringssøgning i udvidelser",
+			"msg2": "&&Start halveringssøgning i udvidelser",
+			"next.bad": "Jeg kan &&genskabe problemet",
+			"next.cancel": "&&Annuller halveringssøgning",
+			"next.good": "Jeg kan &&ikke genskabe problemet",
+			"next.stop": "&&Stop halveringssøgning",
+			"report": "&&Rapportér problem, og fortsæt",
 			"This is Bad": "Jeg kan genskabe problemet",
-			"title.start": "Start halveringssøgning i udvidelser"
+			"title.isBad": "Fortsæt halveringssøgning i udvidelser",
+			"title.start": "Start halveringssøgning i udvidelser",
+			"title.stop": "Stop halveringssøgning i udvidelser"
+		},
+		"vs/workbench/services/extensionManagement/browser/extensionEnablementService": {
+			"cannot change disablement environment": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi den er deaktiveret i miljøet",
+			"cannot change disallowed extension enablement": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi den ikke er tilladt",
+			"cannot change enablement dependency": "Udvidelsen '{0}' kan ikke aktiveres, fordi den afhænger af udvidelsen '{1}', som ikke kan aktiveres",
+			"cannot change enablement environment": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi den er aktiveret i miljøet",
+			"cannot change enablement extension kind": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres på grund af dens udvidelsestype",
+			"cannot change enablement malicious": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi den er skadelig",
+			"cannot change enablement virtual workspace": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi den ikke understøtter virtuelle arbejdsområder",
+			"cannot change invalid extension enablement": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi udvidelsen er ugyldig",
+			"cannot disable language pack extension": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi den bidrager med sprogpakker.",
+			"cannot disable settings sync auth extension": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres, fordi Synkronisering af indstillinger afhænger af den.",
+			"cannot disable settings sync auth extension in workspace": "Aktiveringstilstanden for udvidelsen {0} kan ikke ændres i arbejdsområdet, fordi Synkronisering af indstillinger afhænger af den.",
+			"extensionsDisabled": "Alle installerede udvidelser er midlertidigt deaktiveret.",
+			"noWorkspace": "Intet arbejdsområde.",
+			"Reload": "Genindlæs og aktivér udvidelser"
 		},
 		"vs/workbench/services/extensionManagement/common/extensionFeaturesManagemetService": {
-			"allow": "Tillad"
+			"accessExtensionFeature": "Tilgå funktionen '{0}'",
+			"accessExtensionFeatureMessage": "Udvidelsen '{0}' vil gerne tilgå funktionen '{1}'.",
+			"allow": "Tillad",
+			"disallow": "Tillad ikke"
 		},
 		"vs/workbench/services/extensionManagement/common/extensionManagementService": {
 			"allUnverifed": "Alle udgivere er [**ikke** bekræftede]({0}).",
@@ -18967,20 +19858,57 @@
 			"verifiedPublisherWithName": "{0} har bekræftet ejerskabet af {1}.",
 			"VS Code for Web": "{0} til internettet"
 		},
+		"vs/workbench/services/extensionManagement/common/extensionsIcons": {
+			"extensionDefault": "Ikon, der bruges til standardudvidelsen i udvidelsesvisningen og editoren.",
+			"extensionIconVerifiedForeground": "Ikonfarven for en bekræftet udgiver af en udvidelse.",
+			"verifiedPublisher": "Ikon, der bruges til den bekræftede udgiver af en udvidelse i udvidelsesvisningen og editoren."
+		},
 		"vs/workbench/services/extensionManagement/electron-browser/extensionGalleryManifestService": {
+			"extensionGalleryManifestService.accountChange": "{0} er nu konfigureret til en anden Marketplace. Genstart for at anvende ændringerne.",
 			"restart": "&&Genstart"
 		},
 		"vs/workbench/services/extensionManagement/electron-browser/extensionManagementServerService": {
 			"local": "Lokal",
 			"remote": "Fjern"
 		},
+		"vs/workbench/services/extensionManagement/electron-browser/remoteExtensionManagementService": {
+			"notFoundCompatibleDependency": "Udvidelsen '{0}' kan ikke installeres, fordi den ikke er kompatibel med den aktuelle version af {1} (version {2}).",
+			"notFoundReleaseExtension": "Udgivelsesversionen af udvidelsen '{0}' kan ikke installeres, fordi den ikke har nogen udgivelsesversion."
+		},
 		"vs/workbench/services/extensionRecommendations/common/workspaceExtensionsConfig": {
 			"workspace": "Arbejdsområde",
 			"workspace folder": "Arbejdsområdemappe"
 		},
 		"vs/workbench/services/extensions/browser/extensionUrlHandler": {
+			"confirmUrl": "Tillad, at udvidelsen '{0}' åbner denne URI?",
 			"extensions": "Udvidelser",
-			"open": "&&Åbn"
+			"installDetail": "Denne udvidelse vil åbne en URI:",
+			"manage": "Administrer godkendte URI'er for udvidelser...",
+			"no": "Der er i øjeblikket ingen godkendte URI'er for udvidelser.",
+			"open": "&&Åbn",
+			"openUri": "Åbn URI",
+			"reloadAndHandle": "Udvidelsen '{0}' er ikke indlæst. Vil du genindlæse vinduet for at indlæse udvidelsen og åbne URL-adressen?",
+			"reloadAndOpen": "&&Genindlæs vindue, og åbn",
+			"rememberConfirmUrl": "Spørg mig ikke igen for denne udvidelse"
+		},
+		"vs/workbench/services/extensions/common/abstractExtensionService": {
+			"activation": "Aktiveringshændelser",
+			"disconnectRemote": "Afbryd forbindelsen til fjernagent",
+			"extensionService.autoRestart": "Fjernudvidelsesværten blev uventet afsluttet. Genstarter...",
+			"extensionService.crash": "Fjernudvidelsesværten blev uventet afsluttet 3 gange inden for de seneste 5 minutter.",
+			"extensionStopVetoError": "{0} (fejl: {1})",
+			"extensionStopVetoMessage": "Bekræft genstart af udvidelser.",
+			"extensionTestError": "Der blev ikke fundet en udvidelsesvært, som kan starte testkørslen på {0}.",
+			"looping": "Følgende udvidelser indeholder cirkulære afhængigheder og er blevet deaktiveret: {0}",
+			"proceedAnyways": "Genstart alligevel",
+			"restart": "Genstart fjernudvidelsesvært",
+			"stopExtensionHosts": "Stopper udvidelsesværter"
+		},
+		"vs/workbench/services/extensions/common/extensionHostManager": {
+			"measureExtHostLatency": "Mål udvidelsesværtens ventetid"
+		},
+		"vs/workbench/services/extensions/common/extensionsProposedApi": {
+			"enabledProposedAPIs": "API-forslag"
 		},
 		"vs/workbench/services/extensions/common/extensionsRegistry": {
 			"extensionKind": "Definer typen af en udvidelse. `ui`-udvidelser installeres og køres på den lokale computer, mens `workspace`-udvidelser køres på fjerncomputeren.",
@@ -19072,20 +20000,43 @@
 			"vscode.extension.scripts.uninstall": "Afinstallationshook til VS Code-udvidelsen. Script, der køres, når udvidelsen er helt afinstalleret fra VS Code, hvilket sker, når VS Code genstartes (lukkes og startes), efter udvidelsen er afinstalleret. Kun Node-scripts understøttes.",
 			"workspace": "Udvidelsestypen Arbejdsområde. I et fjernvindue aktiveres sådanne udvidelser kun, når de er tilgængelige på fjerncomputeren."
 		},
+		"vs/workbench/services/extensions/common/extensionsUtil": {
+			"extensionUnderDevelopment": "Indlæser udviklingsudvidelse på {0}",
+			"overwritingExtension": "Overskriver udvidelsen {0} med {1}.",
+			"overwritingWithWorkspaceExtension": "Overskriver {0} med arbejdsområdeudvidelsen {1}."
+		},
 		"vs/workbench/services/extensions/electron-browser/cachedExtensionScanner": {
+			"extensionCache.invalid": "Udvidelser er blevet ændret på disken. Genindlæs vinduet.",
+			"extensionsUnderDevelopment.invalid": "Udviklingsudvidelserne {0} kunne ikke indlæses, fordi de er ugyldige: {1}",
+			"extensionUnderDevelopment.invalid": "Udviklingsudvidelsen '{0}' kunne ikke indlæses, fordi den er ugyldig: {1}",
 			"reloadWindow": "Genindlæs vindue"
 		},
 		"vs/workbench/services/extensions/electron-browser/localProcessExtensionHost": {
+			"extensionHost.startupFail": "Udvidelsesværten startede ikke inden for 10 sekunder. Det kan være et problem.",
+			"extensionHost.startupFailDebug": "Udvidelsesværten startede ikke inden for 10 sekunder. Den er muligvis stoppet på den første linje og skal bruge en fejlfinding til at fortsætte.",
+			"join.extensionDevelopment": "Afslutter fejlfindingssession for udvidelse",
 			"reloadWindow": "Genindlæs vindue"
 		},
 		"vs/workbench/services/extensions/electron-browser/nativeExtensionService": {
 			"devTools": "Åbn udviklerværktøjer",
 			"enable": "Aktivér og genindlæs",
+			"enableResolver": "Udvidelsen '{0}' kræves for at åbne fjernvinduet.\nMå den aktiveres?",
+			"extensionService.autoRestart": "Udvidelsesværten blev uventet afsluttet. Genstarter...",
+			"extensionService.crash": "Udvidelsesværten blev uventet afsluttet 3 gange inden for de seneste 5 minutter.",
+			"extensionService.versionMismatchCrash": "Udvidelsesværten kan ikke starte: Versionerne stemmer ikke overens.",
+			"getEnvironmentFailure": "Fjernmiljøet kunne ikke hentes",
 			"install": "Installer og genindlæs",
+			"installResolver": "Udvidelsen '{0}' kræves for at åbne fjernvinduet.\nVil du installere udvidelsen?",
 			"learnMore": "Få mere at vide",
+			"relaunch": "Start VS Code igen",
+			"remoteConnectionConfirm": "Tillad forbindelse til fjernserveren '{0}:{1}'?",
 			"remoteConnectionConfirmButton": "Opret forbindelse",
+			"remoteConnectionConfirmDetail": "Code er ved at oprette forbindelse til '{0}:{1}' for at være vært for en fjernudvidelsesvært. Fortsæt kun, hvis du har tillid til serveren, da den vil kunne køre kode og tilgå filer på dine vegne.",
+			"remoteConnectionRejected": "Forbindelsen til '{0}:{1}' blev ikke tilladt.",
+			"resolverExtensionNotFound": "`{0}` blev ikke fundet på Marketplace",
 			"restart": "Genstart udvidelsesvært",
 			"restartExtensionHost": "Genstart udvidelsesvært",
+			"restartExtensionHost.reason": "En udtrykkelig anmodning",
 			"startBisect": "Start halveringssøgning i udvidelser"
 		},
 		"vs/workbench/services/integrity/electron-browser/integrityService": {
@@ -19128,21 +20079,42 @@
 			"workspaceNameVerbose": "{0} (arbejdsområde)"
 		},
 		"vs/workbench/services/language/common/languageService": {
+			"file extensions": "Filtypenavne",
 			"grammar": "Grammatik",
+			"invalid": "Ugyldig `contributes.{0}`. Der blev forventet en matrix.",
+			"invalid.empty": "Tom værdi for `contributes.{0}`",
 			"language id": "Id",
 			"language name": "Navn",
 			"languages": "Programmeringssprog",
 			"opt.aliases": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
+			"opt.configuration": "egenskaben `{0}` kan udelades og skal være af typen `string`",
 			"opt.extensions": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
 			"opt.filenames": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
+			"opt.firstLine": "egenskaben `{0}` kan udelades og skal være af typen `string`",
+			"opt.icon": "egenskaben `{0}` kan udelades og skal være af typen `object` med egenskaberne `{1}` og `{2}` af typen `string`",
 			"opt.mimetypes": "egenskaben `{0}` kan udelades og skal være af typen `string[]`",
 			"require.id": "egenskaben `{0}` er obligatorisk og skal være af typen `string`",
 			"snippets": "Kodestykker",
+			"vscode.extension.contributes.languages": "Bidrager med sprogerklæringer.",
+			"vscode.extension.contributes.languages.aliases": "Navnealiasser for sproget.",
+			"vscode.extension.contributes.languages.configuration": "En relativ sti til en fil, der indeholder konfigurationsindstillinger for sproget.",
+			"vscode.extension.contributes.languages.extensions": "Filtypenavne, der er knyttet til sproget.",
+			"vscode.extension.contributes.languages.filenamePatterns": "Globmønstre for filnavne, der er knyttet til sproget.",
+			"vscode.extension.contributes.languages.filenames": "Filnavne, der er knyttet til sproget.",
+			"vscode.extension.contributes.languages.firstLine": "Et regulært udtryk, der matcher den første linje i en fil på sproget.",
+			"vscode.extension.contributes.languages.icon": "Et ikon, der bruges som filikon, hvis intet ikontema leverer et for sproget.",
 			"vscode.extension.contributes.languages.icon.dark": "Ikonsti, når der bruges et mørkt tema",
-			"vscode.extension.contributes.languages.icon.light": "Ikonsti, når der bruges et lyst tema"
+			"vscode.extension.contributes.languages.icon.light": "Ikonsti, når der bruges et lyst tema",
+			"vscode.extension.contributes.languages.id": "Sprogets id.",
+			"vscode.extension.contributes.languages.mimetypes": "MIME-typer, der er knyttet til sproget."
 		},
 		"vs/workbench/services/localization/electron-browser/localeService": {
-			"restart": "&&Genstart"
+			"argvInvalid": "Visningssproget kunne ikke skrives. Åbn kørselsindstillingerne, ret fejl og advarsler i dem, og prøv igen.",
+			"installing": "Installerer sprogunderstøttelse for {0}...",
+			"openArgv": "Åbn kørselsindstillinger",
+			"restart": "&&Genstart",
+			"restartDisplayLanguageDetail1": "{1} skal genstartes for at ændre visningssproget til {0}.",
+			"restartDisplayLanguageMessage1": "Genstart {0} for at skifte til {1}?"
 		},
 		"vs/workbench/services/log/common/logConstants": {
 			"window": "Vindue"
@@ -19267,50 +20239,265 @@
 			"skip": "Spring over"
 		},
 		"vs/workbench/services/textMate/browser/textMateTokenizationFeatureImpl": {
+			"alreadyDebugging": "Logger allerede.",
+			"invalid.embeddedLanguages": "Ugyldig værdi i `contributes.{0}.embeddedLanguages`. Skal være en objekttilknytning fra områdenavn til sprog. Angivet værdi: {1}",
+			"invalid.injectTo": "Ugyldig værdi i `contributes.{0}.injectTo`. Skal være en matrix af sprogområdenavne. Angivet værdi: {1}",
 			"invalid.language": "Ukendt sprog i `contributes.{0}.language`. Angivet værdi: {1}",
 			"invalid.path.0": "Forventede en streng i `contributes.{0}.path`. Angivet værdi: {1}",
 			"invalid.path.1": "Forventede, at `contributes.{0}.path` ({1}) lå i udvidelsens mappe ({2}). Dette kan gøre udvidelsen ikke-portabel.",
+			"invalid.scopeName": "Der blev forventet en streng i `contributes.{0}.scopeName`. Angivet værdi: {1}",
+			"invalid.tokenTypes": "Ugyldig værdi i `contributes.{0}.tokenTypes`. Skal være en objekttilknytning fra områdenavn til tokentype. Angivet værdi: {1}",
+			"progress1": "Forbereder logføring af fortolkning af TM-grammatik. Tryk på Stop, når du er færdig.",
+			"progress2": "Logger nu fortolkning af TM-grammatik. Tryk på Stop, når du er færdig.",
 			"stop": "Stop"
 		},
+		"vs/workbench/services/textMate/common/TMGrammars": {
+			"vscode.extension.contributes.grammars": "Bidrager med TextMate-tokenizere.",
+			"vscode.extension.contributes.grammars.balancedBracketScopes": "Definerer, hvilke områdenavne der indeholder balancerede parenteser.",
+			"vscode.extension.contributes.grammars.embeddedLanguages": "En tilknytning fra områdenavn til sprog-id, hvis denne grammatik indeholder integrerede sprog.",
+			"vscode.extension.contributes.grammars.injectTo": "Liste over sprogområdenavne, som denne grammatik indsættes i.",
+			"vscode.extension.contributes.grammars.language": "Sprog-id'et, som denne syntaks bidrages til.",
+			"vscode.extension.contributes.grammars.path": "Stien til tmLanguage-filen. Stien er relativ i forhold til udvidelsesmappen og begynder typisk med './syntaxes/'.",
+			"vscode.extension.contributes.grammars.scopeName": "Det TextMate-områdenavn, der bruges af tmLanguage-filen.",
+			"vscode.extension.contributes.grammars.tokenTypes": "En tilknytning fra områdenavn til tokentyper.",
+			"vscode.extension.contributes.grammars.unbalancedBracketScopes": "Definerer, hvilke områdenavne der ikke indeholder balancerede parenteser."
+		},
+		"vs/workbench/services/themes/browser/cssExtensionPoint": {
+			"contributes.css": "Bidrager med CSS-filer, der skal indlæses i arbejdsområdet.",
+			"contributes.css.path": "Stien til CSS-filen. Stien er relativ i forhold til udvidelsesmappen.",
+			"invalid.css.configuration": "'contributes.css' skal være en matrix.",
+			"invalid.css.path": "'contributes.css.path' skal være en streng.",
+			"invalid.css.path.location": "Det blev forventet, at 'contributes.css.path' ({0}) var placeret i udvidelsens mappe ({1})."
+		},
+		"vs/workbench/services/themes/browser/fileIconThemeData": {
+			"error.cannotparseicontheme": "Der opstod problemer under fortolkningen af filikonfilen: {0}",
+			"error.invalidformat": "Ugyldigt format for filikontemafilen: Der blev forventet et objekt."
+		},
 		"vs/workbench/services/themes/browser/productIconThemeData": {
-			"defaultTheme": "Standard"
+			"defaultTheme": "Standard",
+			"error.cannotparseicontheme": "Der opstod problemer under fortolkningen af produktikonfilen: {0}",
+			"error.fontId": "Manglende eller ugyldigt skrifttype-id '{0}'. Springer skrifttypedefinitionen over.",
+			"error.fontSrc": "Ugyldig skrifttypekilde i skrifttypen '{0}'. Ignorerer kilden.",
+			"error.fontStyle": "Ugyldig skrifttypografi i skrifttypen '{0}'. Ignorerer indstillingen.",
+			"error.fontWeight": "Ugyldig skrifttykkelse i skrifttypen '{0}'. Ignorerer indstillingen.",
+			"error.icon.font": "Springer ikondefinitionen '{0}' over. Ukendt skrifttype.",
+			"error.icon.fontCharacter": "Springer ikondefinitionen '{0}' over: Den skal defineres",
+			"error.invalidformat": "Ugyldigt format for produktikontemafilen: Der blev forventet et objekt.",
+			"error.missingProperties": "Ugyldigt format for produktikontemafilen: Skal indeholde iconDefinitions og fonts.",
+			"error.noFontSrc": "Ingen gyldig skrifttypekilde i skrifttypen '{0}'. Ignorerer skrifttypedefinitionen.",
+			"error.parseicondefs": "Der opstod problemer under behandlingen af produktikondefinitioner i {0}:\n{1}"
+		},
+		"vs/workbench/services/themes/browser/workbenchThemeService": {
+			"error.cannotloadtheme": "{0} kunne ikke indlæses: {1}",
+			"noThanks": "Nej tak",
+			"themeUpdatedNotification": "VS Code har et nyt standardtema: '{0}'.",
+			"tryNewTheme": "Behold det"
 		},
 		"vs/workbench/services/themes/common/colorExtensionPoint": {
 			"colors": "Farver",
+			"contributes.color": "Bidrager med tematilpassede farver, der er defineret af udvidelsen",
+			"contributes.color.description": "Beskrivelsen af den tematilpassede farve",
+			"contributes.color.id": "Id'et for den tematilpassede farve",
+			"contributes.color.id.format": "Id'er må kun indeholde bogstaver, cifre og punktummer og må ikke begynde med et punktum",
+			"contributes.defaults.dark": "Standardfarven for mørke temaer. Enten en farveværdi i hex-format (#RRGGBB[AA]) eller id'et for en tematilpasset farve, der leverer standardværdien.",
+			"contributes.defaults.highContrast": "Standardfarven for mørke temaer med høj kontrast. Enten en farveværdi i hex-format (#RRGGBB[AA]) eller id'et for en tematilpasset farve, der leverer standardværdien. Hvis den ikke angives, bruges farven `dark` som standard for mørke temaer med høj kontrast.",
+			"contributes.defaults.highContrastLight": "Standardfarven for lyse temaer med høj kontrast. Enten en farveværdi i hex-format (#RRGGBB[AA]) eller id'et for en tematilpasset farve, der leverer standardværdien. Hvis den ikke angives, bruges farven `light` som standard for lyse temaer med høj kontrast.",
+			"contributes.defaults.light": "Standardfarven for lyse temaer. Enten en farveværdi i hex-format (#RRGGBB[AA]) eller id'et for en tematilpasset farve, der leverer standardværdien.",
+			"defaultDark": "Mørk standard",
+			"defaultHC": "Standard med høj kontrast",
+			"defaultLight": "Lys standard",
 			"description": "Beskrivelse",
-			"id": "Id"
+			"id": "Id",
+			"invalid.colorConfiguration": "'configuration.colors' skal være en matrix",
+			"invalid.default.colorType": "{0} skal enten være en farveværdi i hex-format (#RRGGBB[AA] eller #RGB[A]) eller id'et for en tematilpasset farve, der leverer standardværdien.",
+			"invalid.defaults": "'configuration.colors.defaults' skal defineres og skal indeholde 'light' og 'dark'",
+			"invalid.defaults.highContrast": "Hvis 'configuration.colors.defaults.highContrast' er defineret, skal den være en streng.",
+			"invalid.defaults.highContrastLight": "Hvis 'configuration.colors.defaults.highContrastLight' er defineret, skal den være en streng.",
+			"invalid.description": "'configuration.colors.description' skal defineres og må ikke være tom",
+			"invalid.id": "'configuration.colors.id' skal defineres og må ikke være tom",
+			"invalid.id.format": "'configuration.colors.id' må kun indeholde bogstaver, cifre og punktummer og må ikke begynde med et punktum"
+		},
+		"vs/workbench/services/themes/common/colorThemeData": {
+			"error.cannotload": "Der opstod problemer under indlæsningen af tmTheme-filen {0}: {1}",
+			"error.cannotparse": "Der opstod problemer under fortolkningen af tmTheme-filen: {0}",
+			"error.cannotparsejson": "Der opstod problemer under fortolkningen af JSON-temafilen: {0}",
+			"error.invalidformat": "Ugyldigt format for JSON-temafilen: Der blev forventet et objekt.",
+			"error.invalidformat.colors": "Problem under fortolkningen af farvetemafilen: {0}. Egenskaben 'colors' er ikke af typen 'object'.",
+			"error.invalidformat.semanticTokenColors": "Problem under fortolkningen af farvetemafilen: {0}. Egenskaben 'semanticTokenColors' indeholder en ugyldig vælger",
+			"error.invalidformat.tokenColors": "Problem under fortolkningen af farvetemafilen: {0}. Egenskaben 'tokenColors' skal enten være en matrix, der angiver farver, eller en sti til en TextMate-temafil",
+			"error.plist.invalidformat": "Problem under fortolkningen af tmTheme-filen: {0}. 'settings' er ikke en matrix."
 		},
 		"vs/workbench/services/themes/common/colorThemeSchema": {
+			"schema.colors": "Farver til syntaksfremhævning",
+			"schema.fontStyle.error": "Skrifttypografien skal være 'italic', 'bold', 'underline', 'strikethrough', en kombination eller den tomme streng.",
+			"schema.properties.name": "Beskrivelse af reglen.",
+			"schema.properties.scope": "Områdevælger, som denne regel matches mod.",
+			"schema.semanticTokenColors": "Farver til semantiske tokens",
+			"schema.supportsSemanticHighlighting": "Om semantisk fremhævning skal aktiveres for dette tema.",
 			"schema.token.background.warning": "Baggrundsfarver til tokens understøttes ikke i øjeblikket.",
+			"schema.token.fontFamily": "Skrifttypefamilie for tokenet (f.eks. \"Fira Code\" eller \"JetBrains Mono\").",
+			"schema.token.fontSize": "Skriftstørrelsesmultiplikator for tokenet (f.eks. bruger 1,2 en skriftstørrelse, der er 1,2 gange standardstørrelsen).",
+			"schema.token.fontStyle": "Reglens skrifttypografi: 'italic', 'bold', 'underline', 'strikethrough' eller en kombination. Den tomme streng fjerner nedarvede indstillinger.",
 			"schema.token.fontStyle.none": "Ingen (ryd nedarvet stil)",
 			"schema.token.foreground": "Forgrundsfarve for tokenet.",
-			"schema.token.settings": "Farver og typografier for tokenet."
+			"schema.token.lineHeight": "Linjehøjdemultiplikator for tokenet (f.eks. bruger 1,2 en højde, der er 1,2 gange standardhøjden). Hvis skriftstørrelsen er angivet, og linjehøjden ikke er angivet udtrykkeligt, beregnes linjehøjden ud fra skriftstørrelsen.",
+			"schema.token.settings": "Farver og typografier for tokenet.",
+			"schema.tokenColors.path": "Sti til en tmTheme-fil (relativ i forhold til den aktuelle fil).",
+			"schema.workbenchColors": "Farver i arbejdsområdet"
 		},
 		"vs/workbench/services/themes/common/fileIconThemeSchema": {
+			"schema.file": "Standardfilikonet, som vises for alle filer, der ikke matcher et filtypenavn, filnavn eller sprog-id.",
 			"schema.fileExtension": "Id'et for den ikondefinition, der bruges til tilknytningen.",
+			"schema.fileExtensions": "Knytter filtypenavne til ikoner. Objektnøglen er filtypenavnet. Filtypenavnet er det sidste segment i et filnavn efter det sidste punktum (uden punktummet). Der skelnes ikke mellem store og små bogstaver ved sammenligning af filtypenavne.",
 			"schema.fileName": "Id'et for den ikondefinition, der bruges til tilknytningen.",
+			"schema.fileNames": "Knytter filnavne til ikoner. Objektnøglen er det fulde filnavn uden stisegmenter. Filnavnet kan indeholde punktummer og et muligt filtypenavn. Mønstre og jokertegn er ikke tilladt. Der skelnes ikke mellem store og små bogstaver ved matchning af filnavne.",
+			"schema.folder": "Mappeikonet for sammenfoldede mapper og, hvis folderExpanded ikke er angivet, også for udfoldede mapper.",
+			"schema.folderExpanded": "Mappeikonet for udfoldede mapper. Ikonet for udfoldede mapper er valgfrit. Hvis det ikke er angivet, vises det ikon, der er defineret for folder.",
 			"schema.folderName": "Id'et for den ikondefinition, der bruges til tilknytningen.",
 			"schema.folderNameExpanded": "Id'et for den ikondefinition, der bruges til tilknytningen.",
+			"schema.folderNames": "Knytter mappenavne til ikoner. Objektnøglen er mappenavnet uden stisegmenter. Mønstre og jokertegn er ikke tilladt. Der skelnes ikke mellem store og små bogstaver ved matchning af mappenavne.",
+			"schema.folderNamesExpanded": "Knytter mappenavne til ikoner for udfoldede mapper. Objektnøglen er mappenavnet uden stisegmenter. Mønstre og jokertegn er ikke tilladt. Der skelnes ikke mellem store og små bogstaver ved matchning af mappenavne.",
 			"schema.font-format": "Skrifttypens format.",
+			"schema.font-path": "Skrifttypestien, relativ i forhold til den aktuelle filikontemafil.",
+			"schema.font-size": "Skrifttypens standardstørrelse. Vi anbefaler kraftigt at bruge en procentværdi, f.eks. 125 %.",
+			"schema.font-style": "Skrifttypens typografi. Se https://developer.mozilla.org/en-US/docs/Web/CSS/font-style for gyldige værdier.",
+			"schema.font-weight": "Skrifttypens tykkelse. Se https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight for gyldige værdier.",
+			"schema.fontCharacter": "Ved brug af en glyfskrifttype: Det tegn i skrifttypen, der skal bruges.",
+			"schema.fontColor": "Ved brug af en glyfskrifttype: Den farve, der skal bruges.",
+			"schema.fontId": "Ved brug af en skrifttype: Skrifttypens id. Hvis det ikke er angivet, bruges den første skrifttypedefinition som standard.",
+			"schema.fonts": "Skrifttyper, der bruges i ikondefinitionerne.",
+			"schema.fontSize": "Ved brug af en skrifttype: Skriftstørrelsen i procent af tekstskrifttypen. Hvis den ikke er angivet, bruges størrelsen i skrifttypedefinitionen som standard.",
+			"schema.hidesExplorerArrows": "Konfigurerer, om pilene i Stifinder skal skjules, når dette tema er aktivt.",
+			"schema.highContrast": "Valgfrie tilknytninger for filikoner i farvetemaer med høj kontrast.",
+			"schema.iconDefinition": "En ikondefinition. Objektnøglen er definitionens id.",
+			"schema.iconDefinitions": "Beskrivelse af alle ikoner, der kan bruges, når filer knyttes til ikoner.",
+			"schema.iconPath": "Ved brug af SVG eller PNG: Stien til billedet. Stien er relativ i forhold til ikonsætfilen.",
 			"schema.id": "Skrifttypens id.",
 			"schema.languageId": "Id'et for den ikondefinition, der bruges til tilknytningen.",
+			"schema.languageIds": "Knytter sprog til ikoner. Objektnøglen er sprog-id'et som defineret i bidragspunktet for sprog.",
+			"schema.light": "Valgfrie tilknytninger for filikoner i lyse farvetemaer.",
+			"schema.rootFolder": "Mappeikonet for sammenfoldede rodmapper og, hvis rootFolderExpanded ikke er angivet, også for udfoldede rodmapper.",
+			"schema.rootFolderExpanded": "Mappeikonet for udfoldede rodmapper. Ikonet for udfoldede rodmapper er valgfrit. Hvis det ikke er angivet, vises det ikon, der er defineret for rodmappen.",
 			"schema.rootFolderNameExpanded": "Id'et for den ikondefinition, der bruges til tilknytningen.",
-			"schema.src": "Skrifttypens placering."
+			"schema.rootFolderNames": "Knytter rodmappenavne til ikoner. Objektnøglen er rodmappenavnet. Mønstre og jokertegn er ikke tilladt. Der skelnes ikke mellem store og små bogstaver ved matchning af rodmappenavne.",
+			"schema.rootFolderNamesExpanded": "Knytter rodmappenavne til ikoner for udfoldede rodmapper. Objektnøglen er rodmappenavnet. Mønstre og jokertegn er ikke tilladt. Der skelnes ikke mellem store og små bogstaver ved matchning af rodmappenavne.",
+			"schema.showLanguageModeIcons": "Konfigurerer, om standardsprogikonerne skal bruges, hvis temaet ikke definerer et ikon for et sprog.",
+			"schema.src": "Skrifttypens placering.",
+			"schema.usesCurrentColor": "Om billedikoner bruger deres alfakanal som en maske, der udfyldes med den aktuelle tekstfarve. Når dette er aktiveret, bruges kun billedikonets form, så alle farver, der er defineret i ikonet (herunder lyse varianter og varianter med høj kontrast), ignoreres."
+		},
+		"vs/workbench/services/themes/common/iconExtensionPoint": {
+			"contributes.icon.default": "Ikonets standardværdi. Enten en reference til et eksisterende ThemeIcon eller et ikon i en ikonskrifttype.",
+			"contributes.icon.default.fontCharacter": "Tegnet for ikonet i ikonskrifttypen.",
+			"contributes.icon.default.fontPath": "Stien til den ikonskrifttype, der definerer ikonet.",
+			"contributes.icon.description": "Beskrivelsen af det tematilpassede ikon",
+			"contributes.icon.id": "Id'et for det tematilpassede ikon",
+			"contributes.icon.id.format": "Id'er må kun indeholde bogstaver, cifre og bindestreger og skal bestå af mindst to segmenter i formen `component-iconname`.",
+			"contributes.icons": "Bidrager med tematilpassede ikoner, der er defineret af udvidelsen",
+			"invalid.icons.configuration": "'configuration.icons' skal være et objekt med ikonnavnene som egenskaber.",
+			"invalid.icons.default": "'configuration.icons.default' skal enten være en reference til id'et for et andet temaikon (streng) eller en ikondefinition (objekt) med egenskaberne `fontPath` og `fontCharacter`.",
+			"invalid.icons.default.fontPath.extension": "Det blev forventet, at `contributes.icons.default.fontPath` havde filtypenavnet 'woff', 'woff2' eller 'ttf', men det er '{0}'.",
+			"invalid.icons.default.fontPath.path": "Det blev forventet, at `contributes.icons.default.fontPath` ({0}) var placeret i udvidelsens mappe ({0}).",
+			"invalid.icons.description": "'configuration.icons.description' skal defineres og må ikke være tom",
+			"invalid.icons.id.format": "Nøglerne i 'configuration.icons' repræsenterer ikon-id'et og må kun indeholde bogstaver, cifre og bindestreger. De skal bestå af mindst to segmenter i formen `component-iconname`."
 		},
 		"vs/workbench/services/themes/common/productIconThemeSchema": {
 			"schema.font-format": "Skrifttypens format.",
+			"schema.font-path": "Skrifttypestien, relativ i forhold til den aktuelle produktikontemafil.",
+			"schema.font-style": "Skrifttypens typografi. Se https://developer.mozilla.org/en-US/docs/Web/CSS/font-style for gyldige værdier.",
+			"schema.font-weight": "Skrifttypens tykkelse. Se https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight for gyldige værdier.",
+			"schema.iconDefinitions": "Tilknytning af ikonnavn til et skrifttegn.",
 			"schema.id": "Skrifttypens id.",
 			"schema.src": "Skrifttypens placering."
 		},
 		"vs/workbench/services/themes/common/themeConfiguration": {
+			"autoDetectHighContrast": "Når dette er aktiveret, skiftes der automatisk til et tema med høj kontrast, hvis operativsystemet bruger et tema med høj kontrast. Det tema med høj kontrast, der skal bruges, angives af {0} og {1}.",
+			"colorTheme": "Angiver det farvetema, der bruges i arbejdsområdet, når {0} ikke er aktiveret.",
+			"colorThemeError": "Temaet er ukendt eller ikke installeret.",
 			"defaultProductIconThemeDesc": "Standard",
 			"defaultProductIconThemeLabel": "Standard",
-			"noIconThemeLabel": "Ingen"
+			"detectColorScheme": "Når dette er aktiveret, vælges der automatisk et farvetema ud fra systemets farvetilstand. Hvis systemets farvetilstand er mørk, bruges {0}, ellers bruges {1}.",
+			"editorColors": "Tilsidesætter editorens syntaksfarver og skrifttypografi fra det aktuelt valgte farvetema.",
+			"editorColors.comments": "Angiver farver og typografier for kommentarer",
+			"editorColors.functions": "Angiver farver og typografier for funktionserklæringer og -referencer.",
+			"editorColors.keywords": "Angiver farver og typografier for nøgleord.",
+			"editorColors.numbers": "Angiver farver og typografier for numeriske litteraler.",
+			"editorColors.semanticHighlighting": "Om semantisk fremhævning skal aktiveres for dette tema.",
+			"editorColors.semanticHighlighting.deprecationMessage": "Brug i stedet `enabled` i indstillingen `editor.semanticTokenColorCustomizations`.",
+			"editorColors.semanticHighlighting.deprecationMessageMarkdown": "Brug i stedet `enabled` i indstillingen {0}.",
+			"editorColors.semanticHighlighting.enabled": "Om semantisk fremhævning er aktiveret eller deaktiveret for dette tema",
+			"editorColors.semanticHighlighting.rules": "Typografiregler for semantiske tokens i dette tema.",
+			"editorColors.strings": "Angiver farver og typografier for strenglitteraler.",
+			"editorColors.textMateRules": "Angiver farver og typografier med TextMate-temaregler (avanceret).",
+			"editorColors.types": "Angiver farver og typografier for typeerklæringer og -referencer.",
+			"editorColors.variables": "Angiver farver og typografier for variabelerklæringer og -referencer.",
+			"iconTheme": "Angiver det filikontema, der bruges i arbejdsområdet, eller 'null' for ikke at vise filikoner.",
+			"iconThemeError": "Filikontemaet er ukendt eller ikke installeret.",
+			"noIconThemeDesc": "Ingen filikoner",
+			"noIconThemeLabel": "Ingen",
+			"preferredDarkColorTheme": "Angiver farvetemaet, når systemets farvetilstand er mørk, og {0} er aktiveret.",
+			"preferredHCDarkColorTheme": "Angiver farvetemaet i mørk tilstand med høj kontrast, når {0} er aktiveret.",
+			"preferredHCLightColorTheme": "Angiver farvetemaet i lys tilstand med høj kontrast, når {0} er aktiveret.",
+			"preferredLightColorTheme": "Angiver farvetemaet, når systemets farvetilstand er lys, og {0} er aktiveret.",
+			"productIconTheme": "Angiver det produktikontema, der bruges.",
+			"productIconThemeError": "Produktikontemaet er ukendt eller ikke installeret.",
+			"semanticTokenColors": "Tilsidesætter editorens farver og typografier for semantiske tokens fra det aktuelt valgte farvetema.",
+			"workbenchColors": "Tilsidesætter farver fra det aktuelt valgte farvetema."
 		},
 		"vs/workbench/services/themes/common/themeExtensionPoints": {
+			"color themes": "Farvetemaer",
+			"file icon themes": "Filikontemaer",
 			"invalid.path.1": "Forventede, at `contributes.{0}.path` ({1}) lå i udvidelsens mappe ({2}). Dette kan gøre udvidelsen ikke-portabel.",
+			"product icon themes": "Produktikontemaer",
+			"reqarray": "Udvidelsespunktet `{0}` skal være en matrix.",
+			"reqid": "Der blev forventet en streng i `contributes.{0}.id`. Angivet værdi: {1}",
 			"reqpath": "Forventede en streng i `contributes.{0}.path`. Angivet værdi: {1}",
-			"themes": "Temaer"
+			"themes": "Temaer",
+			"vscode.extension.contributes.iconThemes": "Bidrager med filikontemaer.",
+			"vscode.extension.contributes.iconThemes.id": "Id'et for filikontemaet som anvendt i brugerindstillingerne.",
+			"vscode.extension.contributes.iconThemes.label": "Etiketten for filikontemaet som vist i brugergrænsefladen.",
+			"vscode.extension.contributes.iconThemes.path": "Stien til filikontemaets definitionsfil. Stien er relativ i forhold til udvidelsesmappen og er typisk './fileicons/awesome-icon-theme.json'.",
+			"vscode.extension.contributes.productIconThemes": "Bidrager med produktikontemaer.",
+			"vscode.extension.contributes.productIconThemes.id": "Id'et for produktikontemaet som anvendt i brugerindstillingerne.",
+			"vscode.extension.contributes.productIconThemes.label": "Etiketten for produktikontemaet som vist i brugergrænsefladen.",
+			"vscode.extension.contributes.productIconThemes.path": "Stien til produktikontemaets definitionsfil. Stien er relativ i forhold til udvidelsesmappen og er typisk './producticons/awesome-product-icon-theme.json'.",
+			"vscode.extension.contributes.themes": "Bidrager med TextMate-farvetemaer.",
+			"vscode.extension.contributes.themes.id": "Id'et for farvetemaet som anvendt i brugerindstillingerne.",
+			"vscode.extension.contributes.themes.label": "Etiketten for farvetemaet som vist i brugergrænsefladen.",
+			"vscode.extension.contributes.themes.path": "Stien til tmTheme-filen. Stien er relativ i forhold til udvidelsesmappen og er typisk `./colorthemes/awesome-color-theme.json`.",
+			"vscode.extension.contributes.themes.uiTheme": "Grundtemaet, der definerer farverne omkring editoren: `vs` er det lyse farvetema, og `vs-dark` er det mørke farvetema. `hc-black` er det mørke tema med høj kontrast, og `hc-light` er det lyse tema med høj kontrast."
+		},
+		"vs/workbench/services/themes/common/tokenClassificationExtensionPoint": {
+			"contributes.color.description": "Beskrivelsen af den semantiske tokentype",
+			"contributes.semanticTokenModifiers": "Bidrager med modifikatorer til semantiske tokens.",
+			"contributes.semanticTokenModifiers.description": "Beskrivelsen af modifikatoren til semantiske tokens",
+			"contributes.semanticTokenModifiers.id": "Id'et for modifikatoren til semantiske tokens",
+			"contributes.semanticTokenModifiers.id.format": "Id'er skal have formen letterOrDigit[_-letterOrDigit]*",
+			"contributes.semanticTokenScopes": "Bidrager med områdetilknytninger for semantiske tokens.",
+			"contributes.semanticTokenScopes.languages": "Angiver det sprog, som standardværdierne gælder for.",
+			"contributes.semanticTokenScopes.scopes": "Knytter et semantisk token (beskrevet af en vælger til semantiske tokens) til et eller flere TextMate-områder, der bruges til at repræsentere tokenet.",
+			"contributes.semanticTokenTypes": "Bidrager med semantiske tokentyper.",
+			"contributes.semanticTokenTypes.id": "Id'et for den semantiske tokentype",
+			"contributes.semanticTokenTypes.id.format": "Id'er skal have formen letterOrDigit[_-letterOrDigit]*",
+			"contributes.semanticTokenTypes.superType": "Supertypen for den semantiske tokentype",
+			"contributes.semanticTokenTypes.superType.format": "Supertyper skal have formen letterOrDigit[_-letterOrDigit]*",
+			"invalid.description": "'configuration.{0}.description' skal defineres og må ikke være tom",
+			"invalid.id": "'configuration.{0}.id' skal defineres og må ikke være tom",
+			"invalid.id.format": "'configuration.{0}.id' skal følge mønsteret letterOrDigit[-_letterOrDigit]*",
+			"invalid.semanticTokenModifierConfiguration": "'configuration.semanticTokenModifier' skal være en matrix",
+			"invalid.semanticTokenScopes.configuration": "'configuration.semanticTokenScopes' skal være en matrix",
+			"invalid.semanticTokenScopes.language": "'configuration.semanticTokenScopes.language' skal være en streng",
+			"invalid.semanticTokenScopes.scopes": "'configuration.semanticTokenScopes.scopes' skal defineres som et objekt",
+			"invalid.semanticTokenScopes.scopes.selector": "configuration.semanticTokenScopes.scopes': Der opstod problemer under fortolkningen af vælgeren {0}.",
+			"invalid.semanticTokenScopes.scopes.value": "Værdierne i 'configuration.semanticTokenScopes.scopes' skal være en matrix af strenge",
+			"invalid.semanticTokenTypeConfiguration": "'configuration.semanticTokenType' skal være en matrix",
+			"invalid.superType.format": "'configuration.{0}.superType' skal følge mønsteret letterOrDigit[-_letterOrDigit]*"
+		},
+		"vs/workbench/services/themes/electron-browser/themes.contribution": {
+			"window.systemColorTheme": "Angiv farvetilstanden for systembaserede UI-elementer såsom dialogbokse, menuer og titellinjen. Selvom operativsystemet er konfigureret til en lys farvetilstand, kan du vælge et mørkt systemfarvetema til vinduet. Du kan også konfigurere automatisk tilpasning ud fra indstillingen {0}.\n\nBemærk: Denne indstilling ignoreres, når {1} er aktiveret.",
+			"window.systemColorTheme.auto": "Brug lyse farver til systemwidgets i lyse farvetemaer og mørke farver i mørke farvetemaer.",
+			"window.systemColorTheme.dark": "Brug mørke farver til systemwidgets.",
+			"window.systemColorTheme.default": "Farverne på systemwidgets svarer til systemfarverne.",
+			"window.systemColorTheme.light": "Brug lyse farver til systemwidgets."
 		},
 		"vs/workbench/services/userDataProfile/browser/extensionsResource": {
 			"extensions": "Udvidelser"

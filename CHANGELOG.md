@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.4
+
+- Expand the pack by 1,043 messages to 20,700 Danish translations (78.14% of the pinned catalog).
+- Complete current comments, issue reporting, merge-editor conflict resolution, authentication,
+  account access, display-language, and localization flows.
+- Complete current configuration-variable resolution, extension bisect and management,
+  extension-host diagnostics, language contribution metadata, and TextMate grammar messages.
+- Complete current Integrated Terminal accessibility, chat, sandbox, task, search, link,
+  notification, quick-fix, sticky-scroll, suggestion, signal, and speech messages.
+- Complete workbench color-theme, file-icon, product-icon, and semantic-token contribution and
+  configuration messages.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 1.0.3
 
 - Refresh the pinned VS Code baseline from 1.129.0 to 1.134.0, expanding the source catalog to

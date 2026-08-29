@@ -1,5 +1,32 @@
 # Changelog
 
+## 1.0.5
+
+- Expand the pack by 2,001 messages to 22,701 Danish translations (85.69% of the pinned catalog).
+- Complete current notebook commands, navigation, find, execution, diff, accessibility, trust,
+  output rendering, kernel selection, colors, and extension contribution metadata.
+- Complete current Voice Mode settings, onboarding, transcripts, language selection, and status
+  messages, together with remote reconnection, port forwarding, health, and explorer flows.
+- Complete current Unicode highlighting, list and tree navigation, terminal profiles, folding,
+  indentation, inline suggestions and edits, peek views, symbol navigation, undo, and theme colors.
+- Complete current agent automation creation, scheduling, tools, run history, session grouping,
+  external-session visibility, account quotas, and new-session task prompts.
+- Complete current Getting Started, startup editor, Integrated Browser element commenting, and
+  user profile management messages.
+- Complete current shared chat, Agent Host, tool search, dictation, external-session, response
+  collapsing, customization migration, accessibility help, and VS Code pet messages.
+- Complete current chat participant, language-model provider, model group, status indicator,
+  request bubble, Voice Mode glow, and modern workbench surface and tab metadata.
+- Complete current Markdown editing, Mermaid diagram, JSON schema configuration, extension CLI,
+  and application window messages.
+- Complete current Agent Host tool progress, provider capabilities, multi-root sessions, proxy
+  discovery, rich plan links, Claude built-in commands, and Agent Merge settings.
+- Complete current MCP discovery and server details, plugin installation, language-model tools,
+  chat tips and diagnostics, quota notifications, voice chat, and speech-to-text messages.
+- Complete current OAuth and GitHub authentication, Settings Sync conflicts, proxy and certificate
+  settings, telemetry controls, JSON validation metadata, and inline merge-conflict commands.
+- Keep coverage across the core UI and 91 built-in extension resources.
+
 ## 1.0.4
 
 - Expand the pack by 1,043 messages to 20,700 Danish translations (78.14% of the pinned catalog).

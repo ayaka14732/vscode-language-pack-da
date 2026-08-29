@@ -8,8 +8,32 @@
 			"++CODE++6dce414a2ff85a0e6d8e856bcbe38125c4744e34d9c131a0a0bd3a54a327cd14": "Åbn diagram i editor"
 		},
 		"package": {
+			"command.copySource.title": "Kopiér diagramkilde",
 			"command.openInEditor.title": "Åbn diagram i editor",
-			"command.resetPanZoom.title": "Nulstil panorering og zoom"
+			"command.resetPanZoom.title": "Nulstil panorering og zoom",
+			"config.markdown-mermaid.controls.show.always": "Vis altid zoomknapper.",
+			"config.markdown-mermaid.controls.show.description": "Styrer visning af betjeningselementer på Mermaid-diagrammer.",
+			"config.markdown-mermaid.controls.show.never": "Vis aldrig betjeningselementer.",
+			"config.markdown-mermaid.controls.show.onHoverOrFocus": "Vis zoomknapper, når markøren holdes over et diagram, eller det får fokus.",
+			"config.markdown-mermaid.darkModeTheme.description": "Mermaid-standardtema til mørk tilstand.",
+			"config.markdown-mermaid.languages.description": "Standardsprog i Markdown.",
+			"config.markdown-mermaid.lightModeTheme.description": "Mermaid-standardtema til lys tilstand.",
+			"config.markdown-mermaid.maxHeight.markdownDescription": "Maksimal højde for diagrammer. Skal være en CSS-værdi med enheder som `80vh` eller `400px`. Lad feltet stå tomt for at forsøge at tilpasse diagrammers størrelse automatisk efter deres indhold.",
+			"config.markdown-mermaid.maxTextSize.description": "Den maksimalt tilladte størrelse på brugerens tekstdiagram.",
+			"config.markdown-mermaid.mouseNavigation.enabled.alt": "Aktivér kun musenavigation, når Alt (Option på macOS) holdes nede. Bevægelser som knib for at zoome fungerer stadig uden Alt.",
+			"config.markdown-mermaid.mouseNavigation.enabled.always": "Aktivér altid musenavigation i Mermaid-diagrammer.",
+			"config.markdown-mermaid.mouseNavigation.enabled.description": "Styrer, hvornår musebaseret navigation er aktiveret i Mermaid-diagrammer.",
+			"config.markdown-mermaid.mouseNavigation.enabled.never": "Deaktiver musenavigation.",
+			"config.markdown-mermaid.resizable.description": "Tillad, at diagrammers størrelse ændres lodret ved at trække i den nederste kant.",
+			"config.markdown-mermaid.theme.base.description": "Indbygget Mermaid-tema. Det eneste Mermaid-tema, der kan tilpasses med temavariabler.",
+			"config.markdown-mermaid.theme.dark.description": "Indbygget Mermaid-tema til mørke baggrunde.",
+			"config.markdown-mermaid.theme.default.description": "Mermaids indbyggede standardtema. Fungerer godt med lyse baggrunde.",
+			"config.markdown-mermaid.theme.forest.description": "Indbygget Mermaid-tema med grønne nuancer.",
+			"config.markdown-mermaid.theme.neutral.description": "Indbygget Mermaid-tema med en neutral gråtonepalet. Velegnet til sort-hvide udskrifter.",
+			"config.markdown-mermaid.theme.vscode.description": "Mermaid-tema, der er afledt af det aktuelle VS Code-farvetema.",
+			"config.title": "Mermaid",
+			"description": "Tilføjer understøttelse af Mermaid-diagrammer i indbyggede chats, Markdown-forhåndsvisninger og notesbøger.",
+			"displayName": "Mermaid Markdown-funktioner"
 		}
 	}
 }

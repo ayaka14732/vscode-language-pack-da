@@ -5,9 +5,26 @@
 			"++CODE++3910559471149316e3794fed81dd0027e3daa2594db8e35f1a003f1018dd49ad": "Sammenlign ændringer"
 		},
 		"package": {
+			"command.accept.all-both": "Acceptér alle begge",
+			"command.accept.all-current": "Acceptér alle aktuelle",
+			"command.accept.all-incoming": "Acceptér alle indgående",
 			"command.accept.both": "Acceptér begge",
+			"command.accept.current": "Acceptér aktuelle",
+			"command.accept.incoming": "Acceptér indgående",
+			"command.accept.selection": "Acceptér markering",
 			"command.category": "Fletningskonflikt",
+			"command.compare": "Sammenlign aktuel konflikt",
+			"command.next": "Næste konflikt",
+			"command.previous": "Forrige konflikt",
+			"config.autoNavigateNextConflictEnabled": "Om der automatisk skal navigeres til den næste flettekonflikt, når en flettekonflikt er løst.",
+			"config.codeLensEnabled": "Opret en CodeLens til flettekonfliktblokke i editoren.",
+			"config.decoratorsEnabled": "Opret dekorationer til flettekonfliktblokke i editoren.",
+			"config.diffViewPosition": "Styrer, hvor diffvisningen skal åbnes ved sammenligning af ændringer i flettekonflikter.",
+			"config.diffViewPosition.below": "Åbn diffvisningen under den aktuelle editorgruppe.",
+			"config.diffViewPosition.beside": "Åbn diffvisningen ud for den aktuelle editorgruppe.",
+			"config.diffViewPosition.current": "Åbn diffvisningen i den aktuelle editorgruppe.",
 			"config.title": "Fletningskonflikt",
+			"description": "Fremhævning og kommandoer til indlejrede flettekonflikter.",
 			"displayName": "Fletningskonflikt"
 		}
 	}

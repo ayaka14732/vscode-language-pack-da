@@ -167,6 +167,30 @@
 			"++CODE++fd4b366fa38073251d3803fa4edbe7fa6ff3c76b6b205a3af55ef7561277992a": "Den maksimale længde på en streng.",
 			"++CODE++fda8a7c585e659b6849c5da1efab67368ee333e8b6ff265d453cd1f23e9c7d6f": "Valideringsresultatet for underskemaet \"if\" styrer, hvilket af nøgleordene \"then\" og \"else\" der evalueres.",
 			"++CODE++fe73b33b867234bfd25771b58359306547b1edaa7f85435996838353bf94cb86": "Åbn udvidelse"
+		},
+		"package": {
+			"description": "Leverer omfattende sprogunderstøttelse af JSON-filer.",
+			"displayName": "JSON-sprogfunktioner",
+			"json.clickToRetry": "Klik for at prøve igen.",
+			"json.colorDecorators.enable.deprecationMessage": "Indstillingen `json.colorDecorators.enable` er blevet udfaset til fordel for `editor.colorDecorators`.",
+			"json.colorDecorators.enable.desc": "Aktiverer eller deaktiverer farvedekorationer",
+			"json.command.clearCache": "Ryd skemacache",
+			"json.command.sort": "Sortér dokument",
+			"json.enableSchemaDownload.desc": "Når indstillingen er aktiveret, kan JSON-skemaer hentes fra http- og https-placeringer.",
+			"json.format.enable.desc": "Aktivér/deaktivér JSON-standardformatering",
+			"json.format.keepLines.desc": "Bevar alle eksisterende linjeskift under formatering.",
+			"json.maxItemsComputed.desc": "Det maksimale antal dispositionssymboler og foldningsområder, der beregnes (begrænset af hensyn til ydeevnen).",
+			"json.maxItemsExceededInformation.desc": "Vis en meddelelse, når det maksimale antal dispositionssymboler og foldningsområder overskrides.",
+			"json.schemaDownload.trustedDomains.desc": "Liste over domæner, der er tillid til ved download af JSON-skemaer via http(s). Brug `*` for at have tillid til alle domæner. `*` kan også bruges som jokertegn i domænenavne.",
+			"json.schemaResolutionErrorMessage": "Skemaet kan ikke fortolkes.",
+			"json.schemas.desc": "Knyt skemaer til JSON-filer i det aktuelle projekt.",
+			"json.schemas.fileMatch.desc": "En matrix med filmønstre, som der matches med, når JSON-filer knyttes til skemaer. `*` og `**` kan bruges som jokertegn. Der kan også defineres udelukkelsesmønstre, som starter med `!`. En fil matcher, når der er mindst ét matchende mønster, og det sidste matchende mønster ikke er et udelukkelsesmønster.",
+			"json.schemas.fileMatch.item.desc": "Et filmønster, der kan indeholde `*` og `**`, som der matches med, når JSON-filer knyttes til skemaer. Når det begynder med `!`, definerer det et udelukkelsesmønster.",
+			"json.schemas.schema.desc": "Skemadefinitionen for den angivne URL-adresse. Skemaet behøver kun at blive angivet for at undgå adgang til skemaets URL-adresse.",
+			"json.schemas.url.desc": "En URL-adresse eller absolut filsti til et skema. Kan være en relativ sti (der starter med `./`) i indstillinger for arbejdsområdet og arbejdsområdemappen.",
+			"json.tracing.desc": "Sporer kommunikationen mellem VS Code og JSON-sprogserveren.",
+			"json.validate.enable.desc": "Aktivér/deaktivér JSON-validering.",
+			"json.workspaceTrust": "Udvidelsen kræver tillid til arbejdsområdet for at indlæse skemaer fra http og https."
 		}
 	}
 }

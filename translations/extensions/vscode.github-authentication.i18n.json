@@ -2,11 +2,28 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
+			"++CODE++030248d797725762fcfcadd8e0c074a04036fd678e4211f1d93102c47b934ad4": "enhedskode",
+			"++CODE++120ec0ffa190a8e7759483f35d54a335e265693733bd681f5edf54448861ffcf": "Der kræves en genindlæsning, før ændringen af fetch-indstillingen træder i kraft.",
 			"++CODE++1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d": "Nej",
+			"++CODE++2c1355b1b52e1bb108a7d638522f74ca3b7fe8aebbae36fda7902ccbdbe9e335": "Har du problemer med at logge på? Vil du prøve på en anden måde? ({0})",
+			"++CODE++401c9d5938a3808b7f0f056710e8fea7bcceaca69b428cd9247eadda3b40be6b": "Fortsæt til GitHub",
 			"++CODE++423e44de44431caef68c0c61968777e088fd50d2577feea60b9ba4a14b28a827": "Genindlæs vindue",
+			"++CODE++483548c44e4bd1ccd117f8087f641c1a392885d1378106b2a20e63cd2f23a4d2": "Logger på {0}...",
+			"++CODE++489a897c4d7e10b6db6824153c5bfa9256603e8d494f5af8524e349d6d7fa213": "Du er endnu ikke færdig med at godkende, at denne udvidelse bruger GitHub. Vil du prøve på en anden måde? ({0})",
 			"++CODE++54b9687194ef1807b08b011cd34280e34844af4f912562c2c9513ab8dc65695c": "Åbn [{0}]({0}) i en ny fane, og indsæt din engangskode: {1}",
 			"++CODE++5cd54bf182ab05afda0e219c101add4b96941dd2f851acc6d7e211136f05e26b": "Din kode: {0}",
-			"++CODE++85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e": "Ja"
+			"++CODE++60609d4c011ba044569e8d990343f22439f06f4c2401c49fb4e1b7ff3cd49dcc": "Gå til GitHub for at oprette et PAT, og indsæt derefter PAT'et i inputfeltet for at fuldføre godkendelsen.",
+			"++CODE++7e9ae1524cde7a3fe3b4cb46067df4b27c189353cd4ed576f246293c5b457274": "URL-handler",
+			"++CODE++85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e": "Ja",
+			"++CODE++87fb8c7a5a4e4a2001d3556350d50560cd5f0d6423f0c780e0b447f0aefb0583": "GitHub-godkendelse – genindlæsning påkrævet",
+			"++CODE++a093812fd21d65a4cd97e289705124445d735cd50ffb7f88f4abbac215c5d5a2": "Log af mislykkedes: {0}",
+			"++CODE++b60aed3c58e6e5d2b56709f9cacbec0e9aa1acc8158597fe444c8778d2fdfb06": "Fortsæt til GitHub for at oprette et personligt adgangstoken (PAT)",
+			"++CODE++c5088ec1e7edb5a2484598d19d071f2549e71a5bb7525fc6d08b6f105bc7a743": "personligt adgangstoken",
+			"++CODE++c7bd7105f7c2bf98654930d6271e164cb935b377cf2d167bdb4fe8fff95d9336": "Logon mislykkedes: {0}",
+			"++CODE++db70ed1bfc4262628dc4f1adcd07e5220f86833a256706f2d42f0d2767f16176": "Kopiér, og fortsæt til browseren",
+			"++CODE++de597b4537605540f77c1475713aa6a04c823bb6a8fda97d24705eccf184f18e": "Gå til GitHub, og indsæt engangskoden ovenfor for at fuldføre godkendelsen.",
+			"++CODE++ec19f01de52b36689edfccd0fc86e8521bab59d83a3d611b35882f044d54d833": "GitHub Enterprise Server-URI'en er ikke en gyldig URI: {0}",
+			"++CODE++f45eb99f1444e6011414403ea4059ccfe0952c1363288fd0bf4929975e12b83c": "lokal server"
 		}
 	}
 }

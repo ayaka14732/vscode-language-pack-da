@@ -2,7 +2,18 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
-			"++CODE++3910559471149316e3794fed81dd0027e3daa2594db8e35f1a003f1018dd49ad": "Sammenlign ændringer"
+			"++CODE++3910559471149316e3794fed81dd0027e3daa2594db8e35f1a003f1018dd49ad": "Sammenlign ændringer",
+			"++CODE++3d6e417a3f59c93908c253e59f61eb973c4e39b27ff3a96432d954785ea92d97": "{0}: Aktuelle ændringer ↔ indgående ændringer",
+			"++CODE++61567c1dfe2c66e62eeba538b15c7751ba46d43862cd6ae1ecc36d9548fa4947": "(Indgående ændring)",
+			"++CODE++64be7cd0d6812f62757b30a6ef1eb0143de39839d30d97cc48cba9aa73cb8dc0": "(Aktuel ændring)",
+			"++CODE++66247633e041f8b77963b88cad988197d3c706973d520d78038c39354d1fc75a": "Editorens markør er i blokken med fælles forfædre. Flyt den til enten blokken \"aktuel\" eller \"indgående\"",
+			"++CODE++663e7f17a611d2a3948128b511ad431578b02b9040666ffb144b610b528ddc1f": "Acceptér indgående ændring",
+			"++CODE++6ac29f5e756c68952c258049b06eb7907e3bac89d600bb24a1438b36ea8e6c56": "Acceptér begge ændringer",
+			"++CODE++71b315790f1dd7cc4104a190a93503f511494fc9230379bd87ccf45587e617e6": "Editorens markør er i flettekonfliktens skillelinje. Flyt den til enten blokken \"aktuel\" eller \"indgående\"",
+			"++CODE++a83d37047dad3ed5a567475cb81939b329403f40759d597fcb047cfaf24de60c": "Acceptér aktuel ændring",
+			"++CODE++c76522a7e73e95a209f0fdb45074a5eed941fc5e147585a3da74a18f4d71ebc3": "Editorens markør er ikke i en flettekonflikt",
+			"++CODE++c80a1638f8069a69ed78e4537ac50e140887f027905de1ce3eee3bb32296757a": "Der er ingen andre flettekonflikter i denne fil",
+			"++CODE++ea41ba85ee3788b41d702b0f75b19c927cb2d7a96906110042807f8f18e6c16f": "Der blev ikke fundet nogen flettekonflikter i denne fil"
 		},
 		"package": {
 			"command.accept.all-both": "Acceptér alle begge",

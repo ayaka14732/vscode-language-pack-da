@@ -1,0 +1,10 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"package": {
+			"description": "Et moderne filikontema til Visual Studio Code",
+			"displayName": "Moderne filikoner til VS Code",
+			"themeLabel": "Moderne ikoner til VS Code"
+		}
+	}
+}

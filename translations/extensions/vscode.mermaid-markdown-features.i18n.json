@@ -5,7 +5,9 @@
 			"++CODE++24649ee0c7a92fd868db079f46ef6b58509081e8b0e8b9ed929606f33c62831d": "Zoom ud",
 			"++CODE++269c42912818c6500892ffbd18e6fa99133e7e6a9973745b06c4353bb911d964": "Nulstil panorering og zoom",
 			"++CODE++5a982cf9dc11b4ec88b6151a75c4b45e269a5694c941c3c4c96689bed0c7d312": "Zoom ind",
-			"++CODE++6dce414a2ff85a0e6d8e856bcbe38125c4744e34d9c131a0a0bd3a54a327cd14": "Åbn diagram i editor"
+			"++CODE++6dce414a2ff85a0e6d8e856bcbe38125c4744e34d9c131a0a0bd3a54a327cd14": "Åbn diagram i editor",
+			"++CODE++c5f1949e37a66b52cbad31d9cdcda5f0b49fe32106223999d0afdb2aebe52821": "Mermaid-diagram",
+			"++CODE++e4fc36a4c3ffd62e499befb2deda8649f60db909bc1ee496cf1ee81fc0f70ac6": "Slå panoreringstilstand til eller fra"
 		},
 		"package": {
 			"command.copySource.title": "Kopiér diagramkilde",

@@ -50,8 +50,17 @@
 			"command.copyVscodeDevLink": "Kopiér vscode.dev-link",
 			"command.createPullRequest": "Opret PR",
 			"command.openOnGitHub": "Åbn på GitHub",
+			"command.openOnVscodeDev": "Åbn i vscode.dev",
 			"command.openPullRequest": "Åbn PR",
-			"displayName": "GitHub"
+			"command.publish": "Publicer på GitHub",
+			"config.branchProtection": "Styrer, om der skal forespørges om lagerregler for GitHub-lagre",
+			"config.gitAuthentication": "Styrer, om automatisk GitHub-godkendelse skal aktiveres for Git-kommandoer i VS Code.",
+			"config.gitProtocol": "Styrer, hvilken protokol der bruges til at klone et GitHub-lager",
+			"config.showAvatar": "Styrer, om commitforfatterens GitHub-avatar skal vises i forskellige pop op-vinduer (f.eks. Git blame, Tidslinje, Kildekontrolgraf osv.)",
+			"description": "GitHub-funktioner til VS Code",
+			"displayName": "GitHub",
+			"welcome.publishFolder": "Du kan publicere denne mappe direkte i et GitHub-lager. Når den er publiceret, får du adgang til kildekontrolfunktioner fra Git og GitHub.\n[$(github) Publicer på GitHub](command:github.publish)",
+			"welcome.publishWorkspaceFolder": "Du kan publicere en arbejdsområdemappe direkte i et GitHub-lager. Når den er publiceret, får du adgang til kildekontrolfunktioner fra Git og GitHub.\n[$(github) Publicer på GitHub](command:github.publish)"
 		}
 	}
 }

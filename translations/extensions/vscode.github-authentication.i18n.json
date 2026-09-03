@@ -24,6 +24,14 @@
 			"++CODE++de597b4537605540f77c1475713aa6a04c823bb6a8fda97d24705eccf184f18e": "Gå til GitHub, og indsæt engangskoden ovenfor for at fuldføre godkendelsen.",
 			"++CODE++ec19f01de52b36689edfccd0fc86e8521bab59d83a3d611b35882f044d54d833": "GitHub Enterprise Server-URI'en er ikke en gyldig URI: {0}",
 			"++CODE++f45eb99f1444e6011414403ea4059ccfe0952c1363288fd0bf4929975e12b83c": "lokal server"
+		},
+		"package": {
+			"config.github-authentication.preferDeviceCodeFlow.description": "Når dette er sandt, prioriteres enhedskodeflowet til godkendelse frem for andre tilgængelige flows. Det er nyttigt i miljøer som WSL, hvor flows med en lokal server eller URL-handler muligvis ikke fungerer som forventet.",
+			"config.github-authentication.useElectronFetch.description": "Når dette er sandt, bruges Electrons indbyggede fetch-funktion til HTTP-anmodninger. Når det er falsk, bruges den globale fetch-funktion i Node.js. Indstillingen gælder kun ved kørsel i Electron-miljøet. **Bemærk:** Der kræves en genstart, før indstillingen træder i kraft.",
+			"config.github-enterprise.title": "Godkendelse med GHE.com og GitHub Enterprise Server",
+			"config.github-enterprise.uri.description": "URI'en til din GHE.com- eller GitHub Enterprise Server-instans.\n\nEksempler:\n* GHE.com: `https://octocat.ghe.com`\n* GitHub Enterprise Server: `https://github.octocat.com`\n\n> **Bemærk:** Dette må _ikke_ angives til en GitHub.com-URI. Hvis din konto findes på GitHub.com eller er en administreret GitHub Enterprise-bruger, behøver du ikke yderligere konfiguration og kan blot logge på GitHub.",
+			"description": "GitHub-godkendelsesudbyder",
+			"displayName": "GitHub-godkendelse"
 		}
 	}
 }

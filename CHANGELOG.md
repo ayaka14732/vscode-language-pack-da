@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.0.6
+
+- Expand the pack by 2,017 messages to 24,718 Danish translations (93.31% of the pinned catalog).
+- Complete current built-in configuration editing, Node.js auto-attach, Git and GitHub
+  authentication, Grunt/Gulp/Jake tasks, Jupyter notebooks, Markdown security, media previews,
+  merge conflicts, Microsoft authentication, npm, PHP, references, themes, tunnel forwarding, and
+  modern file-icon messages.
+- Complete current accessibility signals and navigation, update and release-note flows, Webview
+  Find help, inline chat, REPL and interactive-window guidance, call and type hierarchies, cloud
+  changes, surveys, profile switching, remote port forwarding, code actions, AI edit statistics,
+  and external terminal settings.
+- Complete current agent-feedback, chat-customization, parent-repository, aquarium, automation,
+  session changes, GitHub issue and pull-request, session layout, onboarding, organization-policy,
+  input-banner, and terminal-tracking messages.
+- Complete the remaining smaller workbench resources, including image browsing, logs, performance
+  profiling, welcome flows, link presentation, Settings Sync, view history and labels, workspace
+  policy, external links, metered connections, sharing, trusted domains, webviews, suggestions,
+  drop and paste actions, language status, process exploration, secrets, inlay hints, inline
+  completions, language detection, file handling, remote access, and editor services.
+- Complete the current VS Code platform catalog, including Agent Host configuration, merge,
+  feedback, worktree, SSH, WSL, and tunnel flows; browser permissions and element comments;
+  configuration, context-key, extension-management, file-system, terminal, and quick-input
+  messages; theme colors and icons; and update, Settings Sync, and window services.
+- Complete the current core editor, core workbench, Sessions shell, and Sessions UI-action
+  catalogs, including diff navigation, window and editor layouts, breadcrumbs, notifications,
+  extension APIs, status and title bars, accessibility, sign-in, mobile session changes, blocked
+  sessions, and session grouping.
+- Keep coverage across the core UI and 92 built-in extension resources.
+
 ## 1.0.5
 
 - Expand the pack by 2,001 messages to 22,701 Danish translations (85.69% of the pinned catalog).

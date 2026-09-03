@@ -2,13 +2,19 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
+			"++CODE++100680ad546ce6a577f42f52df33b4cfdca756859e664b8d7de329b150d09ce9": "https://example.com",
 			"++CODE++62a2dc1bd5977c0304574b84ea7a998728daf2dee66e56a12d5ed4936d20fee5": "Åbn i browser",
 			"++CODE++76900f1bfd16c8d4dd3d25e6f46638d7165aee23883ccea6bfe071c514421769": "Tilbage",
+			"++CODE++7d50d78e3e9adcd928be00226e7d7605ba4626cf287c323d43c1f43d1ff8a531": "Fokuslås",
+			"++CODE++9e154bc2635a352b508e2f8148e185602c42b452e14a5dd6193e48bffaf0490a": "Angiv den URL, der skal besøges",
 			"++CODE++bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6": "Genindlæs",
 			"++CODE++c8d224c0c8da5c595bfc40f72c5f7fa83c222926641d75f7de96d77edf8da764": "Enkel browser",
-			"++CODE++f1c65e14817efef2b77973a4f63446a7d462cd2636bbe721207107b7d126a001": "Fremad"
+			"++CODE++f1c65e14817efef2b77973a4f63446a7d462cd2636bbe721207107b7d126a001": "Fremad",
+			"++CODE++fbe02134887eb5facee8113a5f55fef1a8f086fee438c789709bffab07d39b53": "Åbn i simpel browser"
 		},
 		"package": {
+			"configuration.focusLockIndicator.enabled.description": "Aktivér/deaktiver den flydende indikator, der vises, når den simple browser har fokus.",
+			"description": "En meget enkel indbygget webvisning til visning af webindhold.",
 			"displayName": "Enkel browser"
 		}
 	}

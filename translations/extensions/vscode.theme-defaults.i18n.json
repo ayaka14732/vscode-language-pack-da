@@ -2,12 +2,19 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
+			"dark2026ThemeLabel": "Mørk 2026",
+			"darkColorThemeLabel": "Mørk (Visual Studio)",
 			"darkModernThemeLabel": "Mørk moderne",
 			"darkPlusColorThemeLabel": "Mørk+",
+			"description": "Visual Studios lyse og mørke standardtemaer",
+			"displayName": "Standardtemaer",
 			"hcColorThemeLabel": "Mørk høj kontrast",
+			"light2026ThemeLabel": "Lys 2026",
+			"lightColorThemeLabel": "Lys (Visual Studio)",
 			"lightHcColorThemeLabel": "Lys høj kontrast",
 			"lightModernThemeLabel": "Lys moderne",
-			"lightPlusColorThemeLabel": "Lys+"
+			"lightPlusColorThemeLabel": "Lys+",
+			"minimalIconThemeLabel": "Minimal (Visual Studio Code)"
 		}
 	}
 }

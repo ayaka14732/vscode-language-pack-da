@@ -1,10 +1,22 @@
 {
 	"version": "1.0.0",
 	"contents": {
+		"bundle": {
+			"++CODE++19b3753f5af801ce9a4b20949f3f633c4a7eeb14029257f769451d6775a56cce": "Indsæt billede som vedhæftet fil"
+		},
 		"package": {
 			"addCellOutputToChat.title": "Føj celleoutput til chat",
+			"cleanInvalidImageAttachment.title": "Ryd ugyldig reference til vedhæftet billede",
 			"copyCellOutput.title": "Kopiér celleoutput",
-			"openCellOutput.title": "Åbn celleoutput i teksteditor"
+			"description": "Leverer grundlæggende understøttelse af åbning og læsning af Jupyters .ipynb-notesbogsfiler",
+			"displayName": ".ipynb-understøttelse",
+			"ipynb.experimental.serialization": "Eksperimentel funktion til serialisering af Jupyter-notesbogen i en arbejdstråd.",
+			"ipynb.pasteImagesAsAttachments.enabled": "Aktivér/deaktiver indsættelse af billeder i Markdown-celler i ipynb-notesbogsfiler. Indsatte billeder tilføjes som vedhæftede filer til cellen.",
+			"markdownAttachmentRenderer.displayName": "Markdown-It-renderer til vedhæftede filer i ipynb-celler",
+			"newUntitledIpynb.shortTitle": "Jupyter-notesbog",
+			"newUntitledIpynb.title": "Ny Jupyter-notesbog",
+			"openCellOutput.title": "Åbn celleoutput i teksteditor",
+			"openIpynbInNotebookEditor.title": "Åbn IPYNB-fil i notesbogseditor"
 		}
 	}
 }

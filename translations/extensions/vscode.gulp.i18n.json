@@ -2,7 +2,16 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
-			"++CODE++1e733c1852786819fa91beda7fc2fd57da09e7de94e0564fd0b8fc61cc610eaf": "Gå til output"
+			"++CODE++1e733c1852786819fa91beda7fc2fd57da09e7de94e0564fd0b8fc61cc610eaf": "Gå til output",
+			"++CODE++70db48540b315c427dec51efefd857f5ad96679d5841cced3637a5573b4d8774": "Automatisk registrering af Gulp for mappen {0} mislykkedes med fejlen: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown",
+			"++CODE++9c86fc82725603de61ff39969e396e79393e0b6b9639c077421dfe0118eb3c65": "Der opstod et problem under søgningen efter Gulp-opgaver. Se outputtet for at få flere oplysninger."
+		},
+		"package": {
+			"config.gulp.autoDetect": "Styrer aktiveringen af registrering af Gulp-opgaver. Registrering af Gulp-opgaver kan medføre, at filer i et åbent arbejdsområde køres.",
+			"description": "Udvidelse, der føjer Gulp-funktioner til VSCode.",
+			"displayName": "Gulp-understøttelse til VSCode",
+			"gulp.taskDefinition.file.description": "Den Gulp-fil, der leverer opgaven. Kan udelades.",
+			"gulp.taskDefinition.type.description": "Den Gulp-opgave, der skal tilpasses."
 		}
 	}
 }

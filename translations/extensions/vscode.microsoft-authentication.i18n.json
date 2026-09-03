@@ -2,15 +2,41 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
+			"++CODE++0a3b6324edad55e0af962b4093244fbf54ee11be03dba1fe9ae77d74b3091ec2": "Miljøet `{0}` er ikke et gyldigt miljø.",
 			"++CODE++1ea442a134b2a184bd5d40104401f2a37fbc09ccf3f4bc9da161c6099be3691d": "Nej",
 			"++CODE++24d0a8cae43900b8ff761c8be7d45e038921609c10f6e8462839333b89abc873": "Åbn [{0}]({0}) i en ny fane, og indsæt din engangskode: {1}",
 			"++CODE++2c1355b1b52e1bb108a7d638522f74ca3b7fe8aebbae36fda7902ccbdbe9e335": "Har du problemer med at logge på? Vil du prøve på en anden måde? ({0})",
+			"++CODE++3d16e08ba7da5814cb58bbc53d0b9904ec6b00593e40644497e2fe4b6716348f": "Fejl under validering af indstillingen for det brugerdefinerede miljø: {0}",
+			"++CODE++5af70f3eafdda951e76e977d91b933b1f8fdc8a772ce4bb4501eae929a0307ab": "Godkendelse med Microsoft Sovereign Cloud",
 			"++CODE++5cd54bf182ab05afda0e219c101add4b96941dd2f851acc6d7e211136f05e26b": "Din kode: {0}",
+			"++CODE++6e8766bd45dfbf6ab5663cda427ca7bca612c493c3e063a96ae0d0fbe33c1760": "Logger på Microsoft...",
 			"++CODE++85a39ab345d672ff8ca9b9c6876f3adcacf45ee7c1e2dbd2408fd338bd55e07e": "Ja",
+			"++CODE++915085da15e4202a102aa9c4b9df0ec1596c94264ba7405de6f10c1980cceb7e": "Kopiér, og fortsæt til Microsoft",
+			"++CODE++97e3447a773bc2cd2f5f31a05ac17d624f0d7e8996241fa3944e58893f6faa89": "Du skal også angive et brugerdefineret miljø for at bruge godkendelsesudbyderen til brugerdefinerede miljøer.",
+			"++CODE++9adc8f6192670f4cf3ef694d60d421042584fad3d5aa3fdc3cfc1e05a71e0845": "Du er endnu ikke færdig med at godkende, at denne udvidelse bruger din Microsoft-konto. Vil du prøve på en anden måde? ({0})",
+			"++CODE++9cbd34dd316d693742dd120af0f59ec6075d7020661356360a0404258aa0bdaa": "Microsoft-godkendelse",
 			"++CODE++bdc090ec61e3fcfc65f469951dfe00f3f2ecfc6003c44deac8e05b7237092de6": "Genindlæs",
-			"++CODE++ca381c1e76e681b6c18fa984a2e2fda6ed4a9f28e914f539db34a6dcb3737149": "Åbn indstillinger"
+			"++CODE++ca381c1e76e681b6c18fa984a2e2fda6ed4a9f28e914f539db34a6dcb3737149": "Åbn indstillinger",
+			"++CODE++e81c4cad2a4a64d4a15d4280188ae05c9d441a0d0b3b298ff69aa72a20163b01": "Konfigurationen af Microsoft-kontoen er blevet ændret.",
+			"++CODE++ff5f5d54f4fa2a219a852e80817e2b77b141c08bd8285aea2ea13e6338133831": "Gå til Microsoft, og indsæt engangskoden ovenfor for at fuldføre godkendelsen."
 		},
 		"package": {
+			"description": "Microsoft-godkendelsesudbyder",
+			"displayName": "Microsoft-konto",
+			"microsoft-authentication.implementation.description": "Den godkendelsesimplementering, der skal bruges til at logge på med en Microsoft-konto.",
+			"microsoft-authentication.implementation.enumDescriptions.msal": "Brug Microsoft Authentication Library (MSAL) til at logge på med en Microsoft-konto.",
+			"microsoft-authentication.implementation.enumDescriptions.msal-no-broker": "Brug Microsoft Authentication Library (MSAL) til at logge på med en Microsoft-konto via en browser. Dette er nyttigt, hvis du har problemer med den integrerede mægler.",
+			"microsoft-sovereign-cloud.customEnvironment.activeDirectoryEndpointUrl.description": "Active Directory-slutpunktet for den brugerdefinerede Sovereign Cloud.",
+			"microsoft-sovereign-cloud.customEnvironment.activeDirectoryResourceId.description": "Active Directory-ressource-id'et for den brugerdefinerede Sovereign Cloud.",
+			"microsoft-sovereign-cloud.customEnvironment.description": "Den brugerdefinerede konfiguration af den Sovereign Cloud, der skal bruges med godkendelsesudbyderen til Microsoft Sovereign Cloud. Denne konfiguration samt værdien `custom` for indstillingen `#microsoft-sovereign-cloud.environment#` er påkrævet for at bruge funktionen.",
+			"microsoft-sovereign-cloud.customEnvironment.managementEndpointUrl.description": "Administrationsslutpunktet for den brugerdefinerede Sovereign Cloud.",
+			"microsoft-sovereign-cloud.customEnvironment.name.description": "Navnet på den brugerdefinerede Sovereign Cloud.",
+			"microsoft-sovereign-cloud.customEnvironment.portalUrl.description": "Portal-URL'en til den brugerdefinerede Sovereign Cloud.",
+			"microsoft-sovereign-cloud.customEnvironment.resourceManagerEndpointUrl.description": "Ressourcestyringsslutpunktet for den brugerdefinerede Sovereign Cloud.",
+			"microsoft-sovereign-cloud.environment.description": "Den Sovereign Cloud, der skal bruges til godkendelse. Hvis du vælger `custom`, skal du også angive indstillingen `#microsoft-sovereign-cloud.customEnvironment#`.",
+			"microsoft-sovereign-cloud.environment.enumDescriptions.AzureChinaCloud": "Azure Kina",
+			"microsoft-sovereign-cloud.environment.enumDescriptions.AzureUSGovernment": "Azure US Government",
+			"microsoft-sovereign-cloud.environment.enumDescriptions.custom": "En brugerdefineret Microsoft Sovereign Cloud",
 			"signIn": "Log på",
 			"signOut": "Log af"
 		}

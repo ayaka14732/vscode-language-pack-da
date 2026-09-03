@@ -61,6 +61,10 @@
 			"++CODE++f5b79eb894a66fd54b05e969c54c4dc8e9d35ced4c9efb95bbca0c5449cfc05d": "Navnet på editorens n-te overordnede mappe",
 			"++CODE++f640baf16c8b3a4229376f1186e108a68019bcc4ca5f139633c25b65b8f4cf76": "Filnavnet i editoren uden mappe eller filtypenavn (f.eks. myFile)",
 			"++CODE++f911e414cf6bdfc595532ab166b5ba0f63d73c021452fcdacbda363dda6ad8fb": "GitHub"
+		},
+		"package": {
+			"description": "Leverer funktioner (avanceret IntelliSense og automatisk rettelse) i konfigurationsfiler som indstillinger, startkonfigurationer og filer med anbefalinger af udvidelser.",
+			"displayName": "Konfigurationsredigering"
 		}
 	}
 }

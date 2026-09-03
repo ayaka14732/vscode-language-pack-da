@@ -2,7 +2,16 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
-			"++CODE++1e733c1852786819fa91beda7fc2fd57da09e7de94e0564fd0b8fc61cc610eaf": "Gå til output"
+			"++CODE++1e733c1852786819fa91beda7fc2fd57da09e7de94e0564fd0b8fc61cc610eaf": "Gå til output",
+			"++CODE++73410527e1bce3f337076c76f574d56a196b217084c59a15840eb7182657ac90": "Automatisk registrering af Jake for mappen {0} mislykkedes med fejlen: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown",
+			"++CODE++ce2a522c079d5ba22789ad79b402ed89ab6ce078aec72d88147bba687b3774d3": "Der opstod et problem under søgningen efter Jake-opgaver. Se outputtet for at få flere oplysninger."
+		},
+		"package": {
+			"config.jake.autoDetect": "Styrer aktiveringen af registrering af Jake-opgaver. Registrering af Jake-opgaver kan medføre, at filer i et åbent arbejdsområde køres.",
+			"description": "Udvidelse, der føjer Jake-funktioner til VS Code.",
+			"displayName": "Jake-understøttelse til VS Code",
+			"jake.taskDefinition.file.description": "Den Jake-fil, der leverer opgaven. Kan udelades.",
+			"jake.taskDefinition.type.description": "Den Jake-opgave, der skal tilpasses."
 		}
 	}
 }

@@ -2,11 +2,23 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
-			"++CODE++3f940108cb1ecd9c0090da0b51b45f9fe673f00b22c7ffe3d013319b97456674": "Åbn indstillinger"
+			"++CODE++3f940108cb1ecd9c0090da0b51b45f9fe673f00b22c7ffe3d013319b97456674": "Åbn indstillinger",
+			"++CODE++440e4d34486580e60277cd8a924216c3d7f72bb4803257c8f75dd013201cc474": "Kan ikke validere, da der ikke er angivet en eksekverbar PHP-fil. Brug indstillingen 'php.validate.executablePath' til at konfigurere den eksekverbare PHP-fil.",
+			"++CODE++6c2541aae942abc4c387918fdc47f1f20fa9f21a05e5702deb62dc96b241cf56": "PHP kunne ikke køres med stien: {0}. Årsagen er ukendt.",
+			"++CODE++a2b0c138e62e546b529a12d0e6148999c8dd88b53789493dcbf99b9a2f1abcf1": "Kan ikke validere, da {0} ikke er en gyldig eksekverbar PHP-fil. Brug indstillingen 'php.validate.executablePath' til at konfigurere den eksekverbare PHP-fil.",
+			"++CODE++a672d54b87df71bf836b86ddeb97b023cc1e4c471aa5bb40106151f91d221760": "Kan ikke validere, da der ikke blev fundet en PHP-installation. Brug indstillingen 'php.validate.executablePath' til at konfigurere den eksekverbare PHP-fil."
 		},
 		"package": {
+			"command.untrustValidationExecutable": "Afvis eksekverbar fil til PHP-validering (defineret som arbejdsområdeindstilling)",
 			"commands.categroy.php": "PHP",
-			"configuration.title": "PHP"
+			"configuration.suggest.basic": "Styrer, om de indbyggede PHP-sprogforslag er aktiveret. Understøttelsen foreslår globale PHP-værdier og variabler.",
+			"configuration.title": "PHP",
+			"configuration.validate.enable": "Aktivér/deaktiver indbygget PHP-validering.",
+			"configuration.validate.executablePath": "Peger på den eksekverbare PHP-fil.",
+			"configuration.validate.run": "Om linteren køres ved lagring eller indtastning.",
+			"description": "Leverer omfattende sprogunderstøttelse til PHP-filer.",
+			"displayName": "PHP-sprogfunktioner",
+			"workspaceTrust": "Udvidelsen kræver tillid til arbejdsområdet, når indstillingen `php.validate.executablePath` indlæser en version af PHP i arbejdsområdet."
 		}
 	}
 }

@@ -3,11 +3,21 @@
 	"contents": {
 		"bundle": {
 			"++CODE++06f6bb7108ffdb5caf844b4538b5ec8f44cc1b3bc6b577624d32fc57eff9fe3f": "Grennavn",
+			"++CODE++31d53c86fdf2d53060cb71bb888f8ad83b1dd6e9c2be5ac389671386ba26e8fd": "Lagernavn (skriv for at søge)",
+			"++CODE++8fcac67ee85e97fbfe731ebc3fca3a5beed1076700fe862d261a8e9ec529c7cd": "{0}-fejl: {1}",
 			"++CODE++968d1f3bdf727d26b2658b599484235429cded615ee52a054392cf8d3b3d7fac": "senest åbnet",
-			"++CODE++e7a241debad56609ee660a5d2ef258a1aceb7357ff210ac66d7280b3add02a9a": "URL-adresse"
+			"++CODE++a2b1b3f24a4b0370e287023edc5ccf8c9b4d8af69e97a2f698cf3aa6dae8c558": "Lagernavn",
+			"++CODE++aceba33b4406f3906102cd82ed39a7fad9518d970f9b17b0c8d88623bfee1cb1": "fjernkilder",
+			"++CODE++c2fa2f449ea8d49bbc3a9bf455f5d6c16ebe650897eb2d0338b98dddb021545f": "Vælg en URL, der skal klones fra.",
+			"++CODE++d607ef6368c425c42a1ec43e35dc475df28f819680af42826c4d760073ad56b2": "Angiv lagerets URL",
+			"++CODE++e7a241debad56609ee660a5d2ef258a1aceb7357ff210ac66d7280b3add02a9a": "URL-adresse",
+			"++CODE++f9fee30a9be5a95956accba8731f5a0632ec4e0402929306bb7b7d2f3574cf09": "Der blev ikke fundet nogen fjernlagre.",
+			"++CODE++fbf6eba980bda8feba1c77235c85f44c9a15adfa8afd9ce0bd1bf1bf00c3a8a1": "Angiv lagerets URL, eller vælg en lagerkilde."
 		},
 		"package": {
-			"command.api.getRemoteSources": "Hent fjernkilder"
+			"command.api.getRemoteSources": "Hent fjernkilder",
+			"description": "Statiske Git-bidrag og -vælgere.",
+			"displayName": "Git-grundlag"
 		}
 	}
 }

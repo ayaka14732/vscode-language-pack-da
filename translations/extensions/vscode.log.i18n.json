@@ -2,6 +2,7 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
+			"description": "Leverer syntaksfremhævning til filer med filtypen .log.",
 			"displayName": "Log"
 		}
 	}

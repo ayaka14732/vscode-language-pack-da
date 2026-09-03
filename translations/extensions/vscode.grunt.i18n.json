@@ -2,7 +2,17 @@
 	"version": "1.0.0",
 	"contents": {
 		"bundle": {
-			"++CODE++1e733c1852786819fa91beda7fc2fd57da09e7de94e0564fd0b8fc61cc610eaf": "Gå til output"
+			"++CODE++1e733c1852786819fa91beda7fc2fd57da09e7de94e0564fd0b8fc61cc610eaf": "Gå til output",
+			"++CODE++78343a340627e53ae433fe08564c2382662800293754a79abedb401d9521b5e2": "Der opstod et problem under søgningen efter Grunt-opgaver. Se outputtet for at få flere oplysninger.",
+			"++CODE++e8e1219ac22d41c312d1e421fa27f1d7b1195c08c6c777d3402c510044c950f6": "Automatisk registrering af Grunt for mappen {0} mislykkedes med fejlen: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown"
+		},
+		"package": {
+			"config.grunt.autoDetect": "Styrer aktiveringen af registrering af Grunt-opgaver. Registrering af Grunt-opgaver kan medføre, at filer i et åbent arbejdsområde køres.",
+			"description": "Udvidelse, der føjer Grunt-funktioner til VS Code.",
+			"displayName": "Grunt-understøttelse til VS Code",
+			"grunt.taskDefinition.args.description": "Kommandolinjeargumenter, der skal overføres til Grunt-opgaven",
+			"grunt.taskDefinition.file.description": "Den Grunt-fil, der leverer opgaven. Kan udelades.",
+			"grunt.taskDefinition.type.description": "Den Grunt-opgave, der skal tilpasses."
 		}
 	}
 }

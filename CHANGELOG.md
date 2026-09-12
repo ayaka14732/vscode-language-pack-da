@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.0.8
+
+- Add 1,011 newly translated messages, bringing the pack to 26,526 Danish translations (96.11% of
+  the pinned catalog).
+- Complete current Agent Merge controls and status messages, pull-request lifecycle operations,
+  auto-routing profiles, workspace transitions, and Dev Container agent-host flows.
+- Complete current Automations templates, loading and error states, session banners, managed
+  settings policies, GitHub link details, diff-layout controls, and remote connection messages.
+- Complete the current GitHub Authentication messages for Microsoft sign-in and SSO.
+- Complete Sessions chat backgrounds, workspace and branch pickers, side chats, task storage,
+  artifacts, status pills, dictation, and accessibility guidance.
+- Complete plugin creation and discovery, customization and prompt migration, chat configuration
+  policies, agent and session options, and VS Code pet achievements.
+- Keep coverage across the core UI and 92 built-in extension resources.
+
 ## 1.0.7
 
 - Add 518 newly translated messages and carry forward 279 exact-source matches for the refreshed

@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.0.7
+
+- Add 518 newly translated messages and carry forward 279 exact-source matches for the refreshed
+  catalog, bringing the pack to 25,515 Danish translations (92.44% of the pinned catalog).
+- Refresh the pinned VS Code baseline from 1.134.0 to 1.137.0, expanding the source catalog to
+  27,601 language-pack messages.
+- Complete the remaining core editor contribution messages, including selection anchors, code
+  actions, the color picker, paste and drop actions, find and folding controls, problem and symbol
+  navigation, rename suggestions, sticky scroll, word highlights, and accessibility guidance.
+- Complete the current MCP server resource, marketplace, installation, trust, sampling, sandbox,
+  debugging, and connection-state messages.
+- Complete current Sessions provider permissions, configuration, Agent Merge, remote agent host,
+  development tunnel, SSH host-key, plugin, and preferred agent-location messages.
+- Keep coverage across the core UI and 92 built-in extension resources.
+
 ## 1.0.6
 
 - Expand the pack by 2,017 messages to 24,718 Danish translations (93.31% of the pinned catalog).

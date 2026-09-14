@@ -110,7 +110,6 @@
 			"++CODE++a7da8f981a7a09d597a9c95b4cadaa6440101a8cb1bd0a74646b8c0e014b732d": "Det skema, som dette dokument skal kontrolleres i forhold til.",
 			"++CODE++a8997b7246081993a65673af2c9baa81a06dd86ee1210237fd2a97d02273c967": "Objektet har færre egenskaber end det krævede antal på {0}",
 			"++CODE++a8dcde372265d6d3b887ed71c698e571a2656d4812cc3aeadab624ea810ec66b": "Beskriver indholdskodningen af en strengegenskab.",
-			"++CODE++ab8a60f361f7c44b45cd74e840c07eeb0e1e60828120180031b8d7b479a40f30": "Skemaet bruger metaskemafunktioner ({0}), som endnu ikke understøttes af validatoren.",
 			"++CODE++ad797f4b7d849b77cbd9cb2d29743e02e9bfeaa2eea2ff62e972dd5b1f3e3ff2": "Enten en streng med en af de grundlæggende skematyper (number, integer, null, array, object, boolean, string) eller en matrix med strenge, der angiver et undersæt af disse typer.",
 			"++CODE++ae43926d1f2eedb21e83606da7eb6c0bb333ed16b859aac88b07f784d090363f": "En matrixforekomst er gyldig i forhold til \"contains\", hvis mindst ét af dens elementer er gyldigt i forhold til det angivne skema.",
 			"++CODE++afe780c4a34f7fe972f1877d0ec4faad654f76da75e9531b01f3308284d732e9": "Et entydigt id for skemaet.",

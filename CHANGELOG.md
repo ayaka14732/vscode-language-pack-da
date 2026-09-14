@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.9
+
+- Add 1,672 newly translated messages and complete the pinned catalog at 27,601 of 27,601 Danish
+  translations (100.00%).
+- Complete current Chat artifacts, code blocks, file trees, task lists, context windows, model
+  selection, prompt timelines, tools, permissions, sessions, agents, and accessibility labels.
+- Complete current customizations, plugins, prompts, voice and dictation, chat debugging, file
+  changes, feedback, MCP interactions, plan review, and pet achievements.
+- Prune 597 obsolete generated messages from earlier catalogs so packaged coverage reflects the
+  current VS Code source IDs exactly.
+- Keep complete coverage across the core UI and 92 built-in extension resources.
+
 ## 1.0.8
 
 - Add 1,011 newly translated messages, bringing the pack to 26,526 Danish translations (96.11% of

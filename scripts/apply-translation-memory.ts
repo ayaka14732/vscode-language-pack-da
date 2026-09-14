@@ -135,8 +135,10 @@ packs.set('vscode', packs.get('vscode') ?? emptyPack());
 let sourceFiles = 0;
 let sourceMessages = 0;
 let added = 0;
+let pruned = 0;
 const usedMemory = new Set<string>();
 const mismatches: string[] = [];
+const sourceMessageIds = new Map<string, Map<string, Set<string>>>();
 
 for await (const relativePath of (await import('node:fs/promises')).glob('**/*.xlf', {
 	cwd: sourceDirectory,
@@ -154,8 +156,11 @@ for await (const relativePath of (await import('node:fs/promises')).glob('**/*.x
 		const { packId, moduleName } = resourceLocation(resource.original);
 		const pack = packs.get(packId) ?? emptyPack();
 		const moduleMessages = { ...(pack.contents[moduleName] ?? {}) };
+		const packSourceMessageIds = sourceMessageIds.get(packId) ?? new Map<string, Set<string>>();
+		const moduleSourceMessageIds = packSourceMessageIds.get(moduleName) ?? new Set<string>();
 		for (const unit of resource.units) {
 			sourceMessages += 1;
+			moduleSourceMessageIds.add(unit.id);
 			if (unit.id in moduleMessages) {
 				continue;
 			}
@@ -178,6 +183,8 @@ for await (const relativePath of (await import('node:fs/promises')).glob('**/*.x
 			pack.contents[moduleName] = sortRecord(moduleMessages);
 			packs.set(packId, pack);
 		}
+		packSourceMessageIds.set(moduleName, moduleSourceMessageIds);
+		sourceMessageIds.set(packId, packSourceMessageIds);
 	}
 }
 
@@ -186,9 +193,25 @@ if (mismatches.length > 0) {
 }
 
 for (const [packId, pack] of [...packs].sort(([left], [right]) => left.localeCompare(right))) {
+	const currentContents: I18nPack['contents'] = {};
+	const packSourceMessageIds = sourceMessageIds.get(packId);
+	for (const [moduleName, moduleMessages] of Object.entries(pack.contents)) {
+		const moduleSourceMessageIds = packSourceMessageIds?.get(moduleName);
+		if (!moduleSourceMessageIds) {
+			pruned += Object.keys(moduleMessages).length;
+			continue;
+		}
+		const currentMessages = Object.fromEntries(
+			Object.entries(moduleMessages).filter(([id]) => moduleSourceMessageIds.has(id)),
+		);
+		pruned += Object.keys(moduleMessages).length - Object.keys(currentMessages).length;
+		if (Object.keys(currentMessages).length > 0) {
+			currentContents[moduleName] = sortRecord(currentMessages);
+		}
+	}
 	const sortedPack: I18nPack = {
 		version: '1.0.0',
-		contents: sortRecord(pack.contents),
+		contents: sortRecord(currentContents),
 	};
 	const outputPath =
 		packId === 'vscode'
@@ -203,5 +226,5 @@ await updateManifestTranslations(manifestPath, entries);
 console.log(
 	`Applied ${usedMemory.size}/${Object.keys(memory).length} translation-memory entries: ` +
 		`${added} new strings across ${packs.size} packs from ${sourceFiles} XLIFF files ` +
-		`(${sourceMessages} source messages).`,
+		`(${sourceMessages} source messages); pruned ${pruned} stale strings.`,
 );

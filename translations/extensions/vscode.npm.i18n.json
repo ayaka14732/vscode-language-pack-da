@@ -88,7 +88,6 @@
 			"command.runSelectedScript": "Kør script",
 			"config.npm.autoDetect": "Styrer, om npm-scripts skal registreres automatisk.",
 			"config.npm.enableRunFromFolder": "Aktivér kørsel af npm-scripts i en mappe fra genvejsmenuen i Stifinder.",
-			"config.npm.enableScriptExplorer": "Aktivér en stifindervisning til npm-scripts, når der ikke findes en `package.json`-fil på øverste niveau.",
 			"config.npm.exclude": "Konfigurer globmønstre for mapper, der skal udelades fra automatisk scriptregistrering.",
 			"config.npm.fetchOnlinePackageInfo": "Hent data fra https://registry.npmjs.org og https://registry.bower.io for at levere automatisk fuldførelse og oplysninger ved pegning på npm-afhængigheder.",
 			"config.npm.packageManager": "Den pakkehåndtering, der bruges til at installere afhængigheder.",

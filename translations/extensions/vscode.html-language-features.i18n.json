@@ -286,8 +286,6 @@
 			"html.format.wrapLineLength.desc": "Maksimalt antal tegn pr. linje (0 = deaktiver).",
 			"html.hover.documentation": "Vis dokumentation til tags og attributter i pegetippet.",
 			"html.hover.references": "Vis referencer til MDN i pegetippet.",
-			"html.mirrorCursorOnMatchingTag": "Aktivér/deaktiver spejling af markøren ved det matchende HTML-tag.",
-			"html.mirrorCursorOnMatchingTagDeprecationMessage": "Udfaset til fordel for `editor.linkedEditing`",
 			"html.suggest.hideEndTagSuggestions.desc": "Styrer, om den indbyggede HTML-sprogunderstøttelse foreslår afsluttende tags. Når indstillingen er deaktiveret, vises fuldførelser af sluttags som `</div>` ikke.",
 			"html.suggest.html5.desc": "Styrer, om den indbyggede HTML-sprogunderstøttelse foreslår HTML5-tags, -egenskaber og -værdier.",
 			"html.trace.server.desc": "Sporer kommunikationen mellem VS Code og HTML-sprogserveren.",

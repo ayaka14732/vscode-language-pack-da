@@ -430,14 +430,14 @@
 		"vscode:prepublish": "pnpm check"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.12",
-		"@types/node": "26.5.0",
+		"@biomejs/biome": "2.5.13",
+		"@types/node": "26.6.1",
 		"@vscode/l10n-dev": "0.0.35",
-		"@vscode/vsce": "3.9.2",
+		"@vscode/vsce": "4.0.0",
 		"fast-xml-parser": "5.11.1",
 		"tsx": "4.23.13",
 		"typescript": "7.0.2",
-		"vitest": "5.0.0"
+		"vitest": "5.0.1"
 	},
 	"packageManager": "pnpm@11.13.1"
 }

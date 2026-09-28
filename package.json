@@ -1,9 +1,9 @@
 {
-	"name": "vscode-language-pack-da",
-	"displayName": "Danish Language Pack by Katrine Jensen for Visual Studio Code",
+	"name": "vscode-language-pack-da-next",
+	"displayName": "Danish Language Pack by Katrine Jensen for Visual Studio Code (Next)",
 	"description": "Language pack extension for Danish",
-	"version": "1.0.9",
-	"publisher": "katrine-jensen",
+	"version": "1.0.10",
+	"publisher": "katrine-jensen-next",
 	"author": "Katrine Jensen",
 	"license": "MIT",
 	"icon": "languagepack.png",

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.10
+
+- Republish the language pack under the `katrine-jensen-next` Marketplace publisher.
+- Add `(Next)` to the display name to distinguish the new Marketplace listing.
+- Use the new extension ID `katrine-jensen-next.vscode-language-pack-da-next`; users of the previous
+  listing need to install the new listing separately.
+
 ## 1.0.9
 
 - Add 1,672 newly translated messages and complete the pinned catalog at 27,601 of 27,601 Danish

@@ -437,7 +437,7 @@
 		"fast-xml-parser": "5.11.2",
 		"tsx": "4.23.15",
 		"typescript": "7.0.2",
-		"vitest": "5.0.4"
+		"vitest": "5.0.5"
 	},
 	"packageManager": "pnpm@11.13.1"
 }
